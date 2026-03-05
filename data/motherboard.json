@@ -1,0 +1,65 @@
+{
+  "name": "Motherboard",
+  "definition": "The main printed circuit board (PCB) in general-purpose computers and other expandable systems.",
+  "overview": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals.",
+  "history": "Before motherboards, computers consisted of multiple printed circuit boards plugged into a backplane. The original IBM PC motherboard (the planar) established the standard.",
+  "architecture": "Includes the CPU socket, RAM slots, PCIe slots, chipset (Northbridge/Southbridge historically, now highly integrated PCH), VRMs (Voltage Regulator Modules), and I/O ports.",
+  "working_principle": "Traces on the PCB act as buses, routing data and power. The chipset manages data flow between the CPU, memory, and peripherals using protocols like PCIe, SATA, and USB.",
+  "applications": [
+    "Desktop PCs",
+    "Servers",
+    "Laptops",
+    "Embedded computing"
+  ],
+  "manufacturing": "Constructed from fiberglass and copper in multiple layers (often 6 to 12 layers for modern boards). Surface-mount technology (SMT) is used to attach thousands of tiny components.",
+  "benchmarks": [
+    "DPC Latency Checker",
+    "PassMark System Test"
+  ],
+  "future_research": "Focus on signal integrity for PCIe 6.0/7.0, integrated optical interconnects, and advanced power delivery for high-TDP processors.",
+  "references": [
+    {
+      "text": "ATX Specification",
+      "url": "https://en.wikipedia.org/wiki/ATX"
+    },
+    {
+      "text": "PCI Express Standard",
+      "url": "https://pcisig.com/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Motherboard Components",
+      "slug": "motherboard-components.html"
+    },
+    {
+      "title": "Motherboard Chipset",
+      "slug": "motherboard-chipset.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/motherboard/386DX40_MB_Jaguar_V.jpg",
+        "alt_text": "Image of Motherboard",
+        "caption": "Technical diagram or image related to Motherboard",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/d/de/386DX40_MB_Jaguar_V.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [
+      {
+        "embed_url": "https://www.youtube.com/embed/Q0F7Z5Y4AXY",
+        "caption": "How the Motherboard works",
+        "source": "YouTube"
+      }
+    ],
+    "audio": [
+      {
+        "local_path": "assets/audio/motherboard/motherboard-overview.mp3",
+        "caption": "Audio Overview of Motherboard",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

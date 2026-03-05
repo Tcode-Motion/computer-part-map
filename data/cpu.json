@@ -28,5 +28,74 @@
     }
   ],
   "scholarly_links": [],
-  "last_updated": "2026-03-05T22:51:51.654821"
+  "last_updated": "2026-03-05T22:51:51.654821",
+  "name": "Central Processing Unit",
+  "definition": "The primary component of a computer that acts as its brain.",
+  "overview": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations.",
+  "history": "The first commercial microprocessor was the Intel 4004, released in 1971. Over decades, CPUs evolved from single-core processors to multi-core giants, adhering to Moore's Law for many years.",
+  "architecture": "Modern CPUs use the Von Neumann or Harvard architectures. Key components include the ALU (Arithmetic Logic Unit), CU (Control Unit), Registers, and Cache hierarchy (L1, L2, L3).",
+  "working_principle": "CPUs operate on the fetch-decode-execute cycle. The Control Unit fetches an instruction from memory, decodes it into commands, and the ALU executes them.",
+  "applications": [
+    "General-purpose computing",
+    "Server processing",
+    "Embedded systems",
+    "Mobile devices"
+  ],
+  "manufacturing": "CPUs are manufactured on silicon wafers using photolithography. Billions of transistors are etched into the silicon at nanometer scales (e.g., 3nm, 5nm nodes).",
+  "benchmarks": [
+    "Cinebench R23",
+    "Geekbench 6",
+    "PassMark",
+    "SPEC CPU"
+  ],
+  "future_research": "Future research directions include quantum computing integration, advanced 3D packaging (chiplets), and photonics for interconnects.",
+  "references": [
+    {
+      "text": "Intel Microprocessor History",
+      "url": "https://www.intel.com/"
+    },
+    {
+      "text": "Computer Architecture: A Quantitative Approach",
+      "url": "https://en.wikipedia.org/wiki/Computer_Architecture:_A_Quantitative_Approach"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "CPU Architecture",
+      "slug": "cpu-architecture.html"
+    },
+    {
+      "title": "CPU History",
+      "slug": "cpu-history.html"
+    },
+    {
+      "title": "CPU Benchmarks",
+      "slug": "cpu-benchmarks.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/cpu/Binary_Forty.PNG",
+        "alt_text": "Image of Central Processing Unit",
+        "caption": "Technical diagram or image related to Central Processing Unit",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/2/25/Binary_Forty.PNG",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [
+      {
+        "embed_url": "https://www.youtube.com/embed/cNN_tTXABUA",
+        "caption": "How the Central Processing Unit works",
+        "source": "YouTube"
+      }
+    ],
+    "audio": [
+      {
+        "local_path": "assets/audio/cpu/cpu-overview.mp3",
+        "caption": "Audio Overview of Central Processing Unit",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ subpage_title }} | Computer Parts Map</title>
+  <meta name="description" content="Detailed research page covering {{ subpage_title }}.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-mode">
+<div id="navbar-placeholder"></div>
+
+<div class="component-hero">
+  <div class="badge">🔬 Deep Detail</div>
+  <h1>{{ subpage_title }}</h1>
+  <p class="hero-subtitle">Advanced documentation and architecture breakdown for {{ component_name }}.</p>
+</div>
+
+<div class="page-content">
+  <div class="content-section">
+    <h2>📖 Overview</h2>
+    <p>{{ overview }}</p>
+  </div>
+
+  <div class="content-section">
+    <h2>⚙️ Architecture & Working Principle</h2>
+    <p>{{ architecture }}</p>
+    <p>{{ working_principle }}</p>
+  </div>
+
+  {% if media and media.images %}
+  <div class="content-section">
+    <h2>🖼️ Technical Diagrams</h2>
+    <div class="products-grid">
+      {% for img in media.images %}
+      <figure class="product-card" style="margin:0;">
+        <img src="{{ img.local_path }}" alt="{{ img.alt_text }}" style="max-width:100%; border-radius:8px;">
+        <figcaption style="margin-top:10px; font-size:0.9rem; color:var(--text-muted);">
+          {{ img.caption }}<br>
+          <a href="{{ img.source_link }}" target="_blank" style="color:var(--primary);">Source</a> | License: {{ img.license }}
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="content-section">
+    <h2>🔗 Back to Component</h2>
+    <div class="related-grid">
+      <a href="{{ parent_slug }}.html" class="related-link">⬅️ Back to {{ component_name }}</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "name": "Random Access Memory",
+  "definition": "A form of computer memory that can be read and changed in any order, typically used to store working data and machine code.",
+  "overview": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution.",
+  "history": "Early RAM included magnetic-core memory. Dynamic RAM (DRAM) was invented in 1968. SDRAM became the standard in the 1990s, evolving through DDR to today's DDR5.",
+  "architecture": "RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers.",
+  "working_principle": "The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU.",
+  "applications": [
+    "System working memory",
+    "VRAM in graphics cards",
+    "Cache systems",
+    "In-memory databases"
+  ],
+  "manufacturing": "Manufactured primarily by Samsung, SK Hynix, and Micron, involving complex multi-layer silicon fabrication focusing on capacitor density and retention time.",
+  "benchmarks": [
+    "AIDA64 Memory Benchmark",
+    "MemTest86",
+    "MaxxMem2"
+  ],
+  "future_research": "Research includes MRAM (Magnetoresistive RAM), phase-change memory, and computing-in-memory (CIM) paradigms.",
+  "references": [
+    {
+      "text": "JEDEC DDR5 Standard",
+      "url": "https://www.jedec.org/"
+    },
+    {
+      "text": "Dynamic Random-Access Memory",
+      "url": "https://en.wikipedia.org/wiki/Dynamic_random-access_memory"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "RAM Types",
+      "slug": "ram-types.html"
+    },
+    {
+      "title": "RAM Architecture",
+      "slug": "ram-architecture.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/ram/Bundesarchiv_Bild_183-1989-0406-022%2C_VEB_Carl_Zeiss_Jena%2C_1-Megabit-Chip.jpg",
+        "alt_text": "Image of Random Access Memory",
+        "caption": "Technical diagram or image related to Random Access Memory",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bundesarchiv_Bild_183-1989-0406-022%2C_VEB_Carl_Zeiss_Jena%2C_1-Megabit-Chip.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [
+      {
+        "embed_url": "https://www.youtube.com/embed/p3q5zWCwTeM",
+        "caption": "How the Random Access Memory works",
+        "source": "YouTube"
+      }
+    ],
+    "audio": [
+      {
+        "local_path": "assets/audio/ram/ram-overview.mp3",
+        "caption": "Audio Overview of Random Access Memory",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

@@ -28,5 +28,70 @@
     }
   ],
   "scholarly_links": [],
-  "last_updated": "2026-03-05T22:52:07.580178"
+  "last_updated": "2026-03-05T22:52:07.580178",
+  "name": "Graphics Processing Unit",
+  "definition": "A specialized electronic circuit designed to manipulate and alter memory to accelerate the creation of images.",
+  "overview": "GPUs are highly parallel processors originally designed for rendering graphics, now widely used for AI, machine learning, and scientific simulations.",
+  "history": "Early graphics accelerators emerged in the 1980s. Nvidia coined the term GPU in 1999 with the GeForce 256. The advent of CUDA in 2007 unlocked General Purpose GPU computing (GPGPU).",
+  "architecture": "GPUs consist of thousands of smaller, simpler cores compared to CPUs. Architectures like Nvidia's Hopper or AMD's RDNA feature Streaming Multiprocessors, Tensor Cores, and RT Cores.",
+  "working_principle": "GPUs excel at SIMD (Single Instruction, Multiple Data) operations, applying the same instruction to multiple data points simultaneously, ideal for pixel rendering and matrix math.",
+  "applications": [
+    "3D Gaming",
+    "Video Editing",
+    "Deep Learning / AI",
+    "Cryptocurrency Mining"
+  ],
+  "manufacturing": "Manufactured using advanced nodes (like TSMC 4N), featuring large die sizes and massive transistor counts, often paired with HBM (High Bandwidth Memory).",
+  "benchmarks": [
+    "3DMark Time Spy",
+    "FurMark",
+    "Blender Benchmark",
+    "MLPerf"
+  ],
+  "future_research": "Future GPU research focuses on AI integration, path tracing efficiency, multi-chip-module (MCM) designs, and lower power consumption.",
+  "references": [
+    {
+      "text": "Nvidia CUDA Programming Guide",
+      "url": "https://docs.nvidia.com/cuda/"
+    },
+    {
+      "text": "GPU Rendering Pipeline",
+      "url": "https://en.wikipedia.org/wiki/Graphics_pipeline"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "GPU Architecture",
+      "slug": "gpu-architecture.html"
+    },
+    {
+      "title": "GPU Rendering Pipeline",
+      "slug": "gpu-rendering-pipeline.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/gpu/A790GXH-128M-Motherboard.jpg",
+        "alt_text": "Image of Graphics Processing Unit",
+        "caption": "Technical diagram or image related to Graphics Processing Unit",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/0c/A790GXH-128M-Motherboard.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [
+      {
+        "embed_url": "https://www.youtube.com/embed/L1jkEht3Ezo",
+        "caption": "How the Graphics Processing Unit works",
+        "source": "YouTube"
+      }
+    ],
+    "audio": [
+      {
+        "local_path": "assets/audio/gpu/gpu-overview.mp3",
+        "caption": "Audio Overview of Graphics Processing Unit",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
 }

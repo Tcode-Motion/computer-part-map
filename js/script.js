@@ -6,10 +6,19 @@
 // --- Constants & Config ---
 const SITE_PAGES = [
     { name: "CPU (Processor)", url: "cpu.html", cat: "Core" },
+    { name: "CPU Architecture", url: "cpu-architecture.html", cat: "Core" },
+    { name: "CPU History", url: "cpu-history.html", cat: "History" },
+    { name: "CPU Benchmarks", url: "cpu-benchmarks.html", cat: "Core" },
     { name: "GPU (Graphics Card)", url: "gpu.html", cat: "Core" },
+    { name: "GPU Architecture", url: "gpu-architecture.html", cat: "Core" },
+    { name: "GPU Rendering Pipeline", url: "gpu-rendering-pipeline.html", cat: "Core" },
     { name: "NPU (AI Processor)", url: "npu.html", cat: "Core" },
     { name: "RAM (Memory)", url: "ram.html", cat: "Core" },
+    { name: "RAM Types", url: "ram-types.html", cat: "Core" },
+    { name: "RAM Architecture", url: "ram-architecture.html", cat: "Core" },
     { name: "Motherboard", url: "motherboard.html", cat: "Core" },
+    { name: "Motherboard Components", url: "motherboard-components.html", cat: "Core" },
+    { name: "Motherboard Chipset", url: "motherboard-chipset.html", cat: "Core" },
     { name: "SSD (Solid State)", url: "ssd.html", cat: "Core" },
     { name: "HDD (Hard Drive)", url: "hdd.html", cat: "Core" },
     { name: "PSU (Power Supply)", url: "psu.html", cat: "Core" },
@@ -44,6 +53,11 @@ const SITE_PAGES = [
 
 // --- Navbar & Footer Injection ---
 const injectCommonElements = () => {
+    // Inject lunr.js dynamically
+    const lunrScript = document.createElement('script');
+    lunrScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js';
+    document.head.appendChild(lunrScript);
+
     const navbarHTML = `
     <nav class="navbar">
       <div class="nav-container">
@@ -179,27 +193,76 @@ const injectCommonElements = () => {
 };
 
 // --- Search Logic ---
-const initSearch = (inputId, resultsId) => {
+let searchIndex = null;
+let searchDocs = [];
+
+const initSearch = async (inputId, resultsId) => {
     const input = document.getElementById(inputId);
     const results = document.getElementById(resultsId);
     if (!input || !results) return;
+
+    // Load search index if not loaded
+    if (!searchIndex) {
+        try {
+            const res = await fetch('search_index.json');
+            searchDocs = await res.json();
+            
+            // Wait for lunr to be available if injected dynamically
+            let retries = 0;
+            while(typeof lunr === 'undefined' && retries < 20) {
+                await new Promise(r => setTimeout(r, 100));
+                retries++;
+            }
+            
+            if (typeof lunr !== 'undefined') {
+                searchIndex = lunr(function () {
+                    this.ref('id');
+                    this.field('title', { boost: 10 });
+                    this.field('body');
+                    
+                    searchDocs.forEach(function (doc) {
+                        this.add(doc);
+                    }, this);
+                });
+            }
+        } catch (e) {
+            console.error("Failed to load search index", e);
+        }
+    }
 
     input.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase();
         results.innerHTML = "";
         
-        if (query.length < 1) {
+        if (query.length < 2) {
             results.classList.remove('active');
             return;
         }
 
-        const matches = SITE_PAGES.filter(p => p.name.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query)).slice(0, 8);
+        let matches = [];
+        if (searchIndex) {
+            try {
+                // Fuzzy search
+                const lunrResults = searchIndex.search(query + "~1");
+                matches = lunrResults.slice(0, 8).map(r => {
+                    const doc = searchDocs.find(d => d.id === r.ref);
+                    return { name: doc.title, url: doc.url, cat: 'Article' };
+                });
+            } catch (e) {
+                // fallback to old
+            }
+        } 
+        
+        if(matches.length === 0) {
+            // fallback
+            matches = SITE_PAGES.filter(p => p.name.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query)).slice(0, 8);
+        }
         
         if (matches.length > 0) {
             matches.forEach(m => {
                 const div = document.createElement('div');
                 div.className = 'search-item';
-                div.innerHTML = `<span>${m.name}</span><span class="cat-tag">${m.cat}</span>`;
+                div.innerHTML = `<span>${m.name}</span><span class="cat-tag">${m.cat || 'Page'}</span>`;
                 div.onclick = () => window.location.href = m.url;
                 results.appendChild(div);
             });

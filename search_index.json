@@ -1,0 +1,308 @@
+[
+  {
+    "id": "battery.html",
+    "title": "Battery \u2014 Laptop & UPS Guide",
+    "body": "In computing, batteries serve two major roles: the rechargeable pack in laptops and tablets that enables portability, and the UPS (Uninterruptible Power Supply) battery that protects desktop systems from power outages, protecting data and hardware from power surges. Lithium-ion batteries degrade with charge cycles. Keeping a laptop battery between 20\u201380% charge can double its lifespan from ~500 cycles to ~1000 cycles. Li-Ion (Lithium-Ion) 150\u2013265 Wh/kg 500\u20131000 cycles Laptops, UPS, phones LiPo (Lithium Polymer) 100\u2013265 Wh/kg 300\u2013500 cycles Thin laptops, tablets Lead-Acid (SLA) 30\u201350 Wh/kg 200\u2013300 cycles UPS backup systems CMOS Battery (CR2032) N/A 5\u201310 years BIOS clock, settings 1100VA / 660W \u00b7 8 outlets \u00b7 1-hour runtime for basic PC \u00b7 USB charging \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) 1000VA \u00b7 Pure sine wave \u00b7 LCD display \u00b7 Best Indian brand UPS pick \u20b94,025 \u2013 \u20b95,575 (Avg: \u20b94,800) To elevate your understanding of Battery to an academic and engineering level, explore the curated resources below",
+    "url": "battery.html"
+  },
+  {
+    "id": "computer-history.html",
+    "title": "Computer History \u2014 Full Timeline",
+    "body": "1837: Analytical Engine concept (Charles Babbage) 1945: ENIAC \u2014 First Electronic Computer 1947: Transistor Invented (Bell Labs) 1971: First Microprocessor (Intel 4004) 2022-2024: Generative AI Revolution (LLMs) To elevate your understanding of Computer History to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer History Google Scholar: Recent Papers on Computer History IEEE Xplore: Engineering Specifications",
+    "url": "computer-history.html"
+  },
+  {
+    "id": "computer-types.html",
+    "title": "Computer Types \u2014 Desktop, Laptop, Server, Mainframe",
+    "body": "Supercomputer Room-sized Scientific research Server Rack/Tower Data services Desktop Tower Home / Gaming Embedded Chip-sized IoT / Appliances To elevate your understanding of Computer Types to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer Types Google Scholar: Recent Papers on Computer Types IEEE Xplore: Engineering Specifications",
+    "url": "computer-types.html"
+  },
+  {
+    "id": "cooling.html",
+    "title": "Cooling \u2014 Air, Water & Thermal Paste",
+    "body": "Computer components generate heat as they process electricity. If they get too hot, they suffer from thermal throttling (slowing down to save themselves) or even permanent damage. A good cooling system ensures your CPU and GPU can run at maximum speed for long periods. Stock Cooler Basic Loud High Budget / Office PCs Air Cooler (Tower) Good Moderate High Most Gamers AIO Liquid Cooler Excellent Quiet Moderate Overclocking / Aesthetics Custom Water Loop Top Tier Silent Low (Risk of leaks) Enthusiasts Dual-Tower Air Cooler \u00b7 260W TDP \u00b7 Digital Status Screen \u00b7 6 Heat Pipes \u20b95,100 \u2013 \u20b97,500 (Avg: \u20b96,000) 360mm AIO \u00b7 VRM Fan \u00b7 Thick Radiator \u00b7 Best-in-class performance \u20b99,350 \u2013 \u20b913,000 (Avg: \u20b911,000) To elevate your understanding of Cooling to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Cooling Goog",
+    "url": "cooling.html"
+  },
+  {
+    "id": "cpu-architecture.html",
+    "title": "CPU Architecture",
+    "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. Modern CPUs use the Von Neumann or Harvard architectures. Key components include the ALU (Arithmetic Logic Unit), CU (Control Unit), Registers, and Cache hierarchy (L1, L2, L3). CPUs operate on the fetch-decode-execute cycle. The Control Unit fetches an instruction from memory, decodes it into commands, and the ALU executes them.",
+    "url": "cpu-architecture.html"
+  },
+  {
+    "id": "cpu-benchmarks.html",
+    "title": "CPU Benchmarks",
+    "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. Modern CPUs use the Von Neumann or Harvard architectures. Key components include the ALU (Arithmetic Logic Unit), CU (Control Unit), Registers, and Cache hierarchy (L1, L2, L3). CPUs operate on the fetch-decode-execute cycle. The Control Unit fetches an instruction from memory, decodes it into commands, and the ALU executes them.",
+    "url": "cpu-benchmarks.html"
+  },
+  {
+    "id": "cpu-history.html",
+    "title": "CPU History",
+    "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. Modern CPUs use the Von Neumann or Harvard architectures. Key components include the ALU (Arithmetic Logic Unit), CU (Control Unit), Registers, and Cache hierarchy (L1, L2, L3). CPUs operate on the fetch-decode-execute cycle. The Control Unit fetches an instruction from memory, decodes it into commands, and the ALU executes them.",
+    "url": "cpu-history.html"
+  },
+  {
+    "id": "cpu.html",
+    "title": "CPU \u2014 Central Processing Unit",
+    "body": "\n     The\n     \n      Central Processing Unit (CPU)\n     \n     is the primary component responsible for executing instructions in a computer program. It performs arithmetic, logic, control, and input/output operations as specified by the program. Modern CPUs can execute billions of operations per second and are built using transistors just a few nanometers in size.\n     \n     Every action you take on a computer \u2014 opening a browser, playing a game, running AI models \u2014 is ultimately processed by the CPU. It fetches instructions from RAM, decodes them, executes them, and writes results back.\n     \n      The Intel 4004, launched in 1971, was the world's first commercial microprocessor. It ran at 740 kHz and had just 2,300 transistors. Today's CPUs have over 50 billion transistors and run at 5+ GHz.\n      \n        Architecture\n        \n        Raptor Lake / Meteor Lake\n        \n        Zen 4 / Zen 5\n        \n        Top Consumer CPU\n        \n        Core i9-14900K\n        \n        Ryzen 9 7",
+    "url": "cpu.html"
+  },
+  {
+    "id": "gpu-architecture.html",
+    "title": "GPU Architecture",
+    "body": "GPUs are highly parallel processors originally designed for rendering graphics, now widely used for AI, machine learning, and scientific simulations. GPUs consist of thousands of smaller, simpler cores compared to CPUs. Architectures like Nvidia's Hopper or AMD's RDNA feature Streaming Multiprocessors, Tensor Cores, and RT Cores. GPUs excel at SIMD (Single Instruction, Multiple Data) operations, applying the same instruction to multiple data points simultaneously, ideal for pixel rendering and matrix math.",
+    "url": "gpu-architecture.html"
+  },
+  {
+    "id": "gpu-rendering-pipeline.html",
+    "title": "GPU Rendering Pipeline",
+    "body": "GPUs are highly parallel processors originally designed for rendering graphics, now widely used for AI, machine learning, and scientific simulations. GPUs consist of thousands of smaller, simpler cores compared to CPUs. Architectures like Nvidia's Hopper or AMD's RDNA feature Streaming Multiprocessors, Tensor Cores, and RT Cores. GPUs excel at SIMD (Single Instruction, Multiple Data) operations, applying the same instruction to multiple data points simultaneously, ideal for pixel rendering and matrix math.",
+    "url": "gpu-rendering-pipeline.html"
+  },
+  {
+    "id": "gpu.html",
+    "title": "GPU \u2014 Graphics Processing Unit",
+    "body": "\n     A\n     \n      Graphics Processing Unit (GPU)\n     \n     is a specialized processor designed to handle parallel computations at massive scale. Originally built to render graphics, GPUs are now central to gaming, video editing, scientific simulation, machine learning, and cryptocurrency mining.\n     \n     While a CPU has 8\u201324 powerful cores for sequential tasks, a GPU has thousands of smaller cores optimized for doing many things simultaneously \u2014 perfect for rendering millions of pixels or training neural networks.\n     \n      NVIDIA's H100 GPU, used for AI training, contains 80 billion transistors and costs over $30,000. A single H100 can train a large language model 30x faster than the previous generation.\n      \n        Architecture\n        \n        Ada Lovelace\n        \n        RDNA 3\n        \n        Xe-HPG\n        \n        VRAM\n        \n        16 GB GDDR6X\n        \n        24 GB GDDR6\n        \n        16 GB GDDR6\n        \n        Ray Tracing\n        \n        Excellent\n      ",
+    "url": "gpu.html"
+  },
+  {
+    "id": "graphics-card.html",
+    "title": "Graphics Card \u2014 Guide",
+    "body": "A graphics card (also called a discrete GPU or video card) is an expansion card that installs into a PCIe slot on the motherboard. It has its own dedicated GPU chip, VRAM, power delivery, and cooling \u2014 offloading all rendering tasks from the CPU and integrated graphics. Modern graphics cards include hardware ray tracing units, dedicated AI tensor cores (NVIDIA) or matrix accelerators (AMD), and support technologies like DLSS 3 and FSR 3 for AI-powered upscaling. The NVIDIA RTX 4090 has 16,384 CUDA cores and 76 billion transistors. It's so powerful that it can render 60fps at 8K resolution in some games \u2014 a resolution most monitors don't even support yet. VRAM Shared system RAM (0.5\u20134 GB) 4\u20138 GB dedicated 12\u201324 GB dedicated Gaming Performance 1080p Low settings 1080p Medium\u2013High 4K Ultra Ray Tracing None / Very weak Basic Excellent Power 15\u201335W 75\u2013150W 250\u2013450W Cost Free (built-in) \u20b910,000\u2013\u20b925,000 \u20b950,000\u2013\u20b91,65,000 Best For Office, casual use 1080p Gaming 4K, VR, 3D, AI 16 GB GDDR6X \u00b7 2",
+    "url": "graphics-card.html"
+  },
+  {
+    "id": "hdd.html",
+    "title": "HDD \u2014 Hard Disk Drive",
+    "body": "A Hard Disk Drive (HDD) stores data on spinning magnetic platters. A read/write head moves across the platters to access data. HDDs are much slower than SSDs but offer enormous storage at very low cost \u2014 making them ideal for backups, NAS systems, and bulk media storage. IBM introduced the first HDD in 1956 \u2014 it weighed over 900 kg, held 5 MB of data, and cost $10,000 per month to lease. Today, you can buy 20 TB for under \u20b925,000. Speed (Read) 80\u2013160 MB/s 550 MB/s 3,500\u20137,000 MB/s Price per TB \u20b91,500 Cheapest \u20b93,500 \u20b95,000 Max Capacity 24 TB (consumer) 8 TB 8 TB Durability Fragile (moving parts) Solid state Solid state Noise Audible spin/seek Silent Silent Best Use Backup, NAS, bulk storage OS drive, games OS, creative work 2 TB \u00b7 7200 RPM \u00b7 256MB cache \u00b7 SATA 6Gb/s \u00b7 Desktop \u20b93,225 \u2013 \u20b94,375 (Avg: \u20b93,800) 1 TB \u00b7 2.5\" \u00b7 5400 RPM \u00b7 128MB cache \u00b7 SATA 6Gb/s \u20b92,125 \u2013 \u20b92,875 (Avg: \u20b92,500) 4 TB \u00b7 NAS-optimized \u00b7 5400 RPM \u00b7 3-year warranty \u00b7 CMR recording \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) 2 TB \u00b7 ",
+    "url": "hdd.html"
+  },
+  {
+    "id": "keyboard.html",
+    "title": "Keyboard \u2014 Complete Guide",
+    "body": "A keyboard is an input device that lets you type characters, execute commands, and interact with your computer. Modern keyboards come in an enormous variety of form factors, switch types, layouts, and connectivity options \u2014 from ultra-portable 60% layouts to full-size numpad keyboards. The QWERTY layout was designed in the 1870s for typewriters \u2014 partly to slow typists down to prevent mechanical key jams. Yet it remains the global standard 150 years later. Cherry MX Red / Speed Silver Linear (smooth) Quiet 45g Gaming Cherry MX Brown / Gateron Brown Tactile (bump) Moderate 55g Typing + Gaming Cherry MX Blue / Kailh Box White Clicky tactile Loud 60g Typing / Enthusiast Topre Electrostatic capacitive Thocky 45g Premium Typing Membrane Mushy, flat Very quiet Variable Office / Budget 75% layout \u00b7 Hot-swap \u00b7 Gateron switches \u00b7 Wireless / Wired \u00b7 Aluminum frame \u20b97,225 \u2013 \u20b99,775 (Avg: \u20b98,500) TKL \u00b7 Hot-swap \u00b7 GX switches (Red/Blue/Brown) \u00b7 USB \u00b7 Pro gaming \u20b98,025 \u2013 \u20b910,975 (Avg: \u20b99,500) Full si",
+    "url": "keyboard.html"
+  },
+  {
+    "id": "linux.html",
+    "title": "Linux \u2014 Open Source OS",
+    "body": "Linux is an open-source, Unix-like operating system kernel first released by Linus Torvalds in 1991. It is the core of Android and most servers worldwide. Ubuntu Debian Beginners Fedora RPM Developers Arch Linux Independent Power Users Debian Independent Servers To elevate your understanding of Linux to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Linux Google Scholar: Recent Papers on Linux IEEE Xplore: Engineering Specifications",
+    "url": "linux.html"
+  },
+  {
+    "id": "macos.html",
+    "title": "macOS \u2014 Apple's Desktop OS",
+    "body": "macOS is Apple's proprietary desktop operating system. Built on a UNIX base, it is renowned for its stability, security, and tight ecosystem integration. Mac OS X 10.0 2001 Cheetah macOS 11 2020 Big Sur (M1 support) macOS 15 2024 Sequoia Latest To elevate your understanding of Macos to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Macos Google Scholar: Recent Papers on Macos IEEE Xplore: Engineering Specifications",
+    "url": "macos.html"
+  },
+  {
+    "id": "microphone.html",
+    "title": "Microphone \u2014 Audio Input Guide",
+    "body": "A microphone is an input device that converts sound (air pressure waves) into electrical signals. Used for voice calls, podcasting, streaming, recording music, voice assistants, and gaming communication. The two main transducer types are condenser (sensitive, studio-quality) and dynamic (rugged, handles loud volumes). The cardioid polar pattern (most common in USB mics) picks up sound primarily from the front while rejecting noise from the sides and rear \u2014 perfect for home recording where you can't fully control the room's acoustics. USB Condenser High Moderate Streaming, Podcasting, Calls \u20b93,000\u2013\u20b920,000 XLR Condenser Very High Needs quiet room Professional recording \u20b95,000\u2013\u20b91,00,000 USB Dynamic Moderate Excellent Rejects background Gaming, noisy environments \u20b94,000\u2013\u20b918,000 Lapel / Lavalier Moderate Good Video recording, interviews \u20b9500\u2013\u20b98,000 Headset Mic Low\u2013Moderate Basic Gaming, calls \u20b9300\u2013\u20b95,000 USB Condenser \u00b7 4 polar patterns \u00b7 Built-in shock mount \u00b7 Anti-vibration \u00b7 RGB \u20b911,025 ",
+    "url": "microphone.html"
+  },
+  {
+    "id": "monitor.html",
+    "title": "Monitor \u2014 Display Guide",
+    "body": "A monitor is the primary output device of a computer \u2014 it displays visual information by converting electrical signals into light. Modern monitors come in a variety of resolutions, panel types, refresh rates, and sizes, tailored for everything from competitive gaming to professional color work. The human eye can detect motion differences up to roughly 1000 fps in ideal conditions, but the perceptible benefit of going above 240Hz diminishes drastically. Most pro gamers use 240Hz or 360Hz monitors. IPS Excellent wide gamut 1\u20135ms 178\u00b0 all sides Design, Creative, General VA Good, high contrast 4\u20138ms Good but limited Movies, Dark content TN Limited, washed out 0.5\u20131ms Poor off-axis Competitive gaming OLED Perfect blacks, infinite contrast 0.1ms Perfect Premium gaming & media 1920\u00d71080 Full HD (1080p) 24\" RTX 3060, RX 6600 2560\u00d71440 Quad HD (1440p) Sweet Spot 27\" RTX 4070, RX 7700 XT 3840\u00d72160 4K UHD 32\"\u201340\" RTX 4080/4090, RX 7900 XTX 2560\u00d71080 Ultra-Wide 21:9 29\"\u201334\" RTX 4070 Ti 3440\u00d71440 U",
+    "url": "monitor.html"
+  },
+  {
+    "id": "motherboard-chipset.html",
+    "title": "Motherboard Chipset",
+    "body": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. Includes the CPU socket, RAM slots, PCIe slots, chipset (Northbridge/Southbridge historically, now highly integrated PCH), VRMs (Voltage Regulator Modules), and I/O ports. Traces on the PCB act as buses, routing data and power. The chipset manages data flow between the CPU, memory, and peripherals using protocols like PCIe, SATA, and USB.",
+    "url": "motherboard-chipset.html"
+  },
+  {
+    "id": "motherboard-components.html",
+    "title": "Motherboard Components",
+    "body": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. Includes the CPU socket, RAM slots, PCIe slots, chipset (Northbridge/Southbridge historically, now highly integrated PCH), VRMs (Voltage Regulator Modules), and I/O ports. Traces on the PCB act as buses, routing data and power. The chipset manages data flow between the CPU, memory, and peripherals using protocols like PCIe, SATA, and USB.",
+    "url": "motherboard-components.html"
+  },
+  {
+    "id": "motherboard.html",
+    "title": "Motherboard \u2014 The Component Backbone",
+    "body": "The motherboard (or mobo) is the main printed circuit board (PCB) in a computer. It holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. The first motherboard is often considered to be the \"Planar\" board used in the IBM Personal Computer released in 1981. It held the CPU and RAM but had very few built-in ports compared to modern boards. E-ATX 12\" x 13\" 4+ slots High-end workstations ATX 12\" x 9.6\" 3-4 slots Standard / Gaming Micro-ATX (mATX) 9.6\" x 9.6\" 2-3 slots Budget / Compact builds Mini-ITX (ITX) 6.7\" x 6.7\" 1 slot SFF (Small Form Factor) Intel Z790 \u00b7 LGA 1700 \u00b7 DDR5 \u00b7 PCIe 5.0 \u00b7 5x M.2 slots \u00b7 WiFi 6E \u20b945,000 \u2013 \u20b955,000 (Avg: \u20b950,000) AMD B650 \u00b7 AM5 \u00b7 DDR5 \u00b7 PCIe 4.0 \u00b7 3x M.2 slots \u00b7 WiFi 6E \u20b921,000 \u2013 \u20b928,000 (Avg: \u20b924,000) To elevate your understanding of Motherboard to an academic and engineering level, explore the curated resources below. These materials cover the",
+    "url": "motherboard.html"
+  },
+  {
+    "id": "mouse.html",
+    "title": "Mouse \u2014 Gaming & Office Guide",
+    "body": "A computer mouse is a pointing device that detects motion and translates it into cursor movement on screen. Modern mice use optical or laser sensors to track movement with extreme precision \u2014 gaming mice can register up to 36,000 DPI and poll at 8,000 Hz (once every 0.125ms). The first mouse was invented by Douglas Engelbart in 1964. It was a wooden block with two perpendicular wheels. He called it a \"mouse\" because its wire resembled a tail. DPI Range 800\u20131600 800\u20136400 100\u201336000 Polling Rate 125 Hz 500 Hz 1000\u20138000 Hz Sensor Generic Optical PixArt 3325 PixArt 3395 / Hero 25K Weight 120\u2013150g 80\u2013120g 50\u201395g (ultralight) Connectivity Wired USB Wired or 2.4GHz 2.4GHz Wireless + USB Price (India) \u20b9200\u2013\u20b9800 \u20b91,500\u2013\u20b93,500 \u20b94,000\u2013\u20b918,000 60g ultralight \u00b7 Hero 25K sensor \u00b7 2.4GHz wireless \u00b7 95hr battery \u20b911,025 \u2013 \u20b914,975 (Avg: \u20b913,000) 59g \u00b7 Focus Pro 30K optical \u00b7 8000Hz HyperPolling \u00b7 Iconic ergonomic shape \u20b97,225 \u2013 \u20b99,775 (Avg: \u20b98,500) 101g \u00b7 HERO 12K \u00b7 2.4GHz LIGHTSPEED \u00b7 250-hour battery ",
+    "url": "mouse.html"
+  },
+  {
+    "id": "nic.html",
+    "title": "NIC \u2014 Network Interface Card",
+    "body": "A Network Interface Card (NIC) is a hardware component that allows a computer to connect to a network \u2014 either via Ethernet (wired) or Wi-Fi (wireless). Every modern motherboard includes a built-in NIC, but dedicated add-in NICs offer higher speeds (2.5G, 10G) and better reliability for servers, NAS, and enthusiast builds. A 10 Gigabit Ethernet (10GbE) NIC can transfer data at 1,250 MB/s \u2014 fast enough to completely fill a 1 TB SSD in under 15 minutes over a local network. Fast Ethernet 100 Mbps Basic networking (obsolete) Cat5 Gigabit Ethernet 1 Gbps Common Home / Office standard Cat5e/Cat6 2.5G Ethernet 2.5 Gbps Growing Gaming, NAS, enthusiasts Cat5e/Cat6 5G Ethernet 5 Gbps High-speed workstations Cat6 10G Ethernet 10 Gbps Pro/Server Data centers, NAS Cat6a/Cat7 2.5 Gbps \u00b7 PCIe x1 \u00b7 Low power \u00b7 Most reliable 2.5G controller \u20b92,125 \u2013 \u20b92,875 (Avg: \u20b92,500) 10 Gbps \u00b7 PCIe 3.0 x4 \u00b7 Aquantia AQC107 chip \u00b7 For NAS/servers \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) To elevate your understanding of Nic to ",
+    "url": "nic.html"
+  },
+  {
+    "id": "npu.html",
+    "title": "NPU \u2014 Neural Processing Unit",
+    "body": "A Neural Processing Unit (NPU), also known as an AI Accelerator or Tensor Processing Unit (TPU), is a specialized microprocessor designed specifically to accelerate the math required for machine learning algorithms, particularly artificial neural networks. While CPUs are optimized for low-latency serial processing, and GPUs for highly parallel graphical pixel rendering, NPUs are optimized for dense matrix multiplication and convolution operations. They execute low-precision math (like INT8, FP16, BF16) at staggering speeds, dramatically reducing the time and power required to train or infer with large AI models. Modern NPUs use systolic arrays, a hardware architecture where data flows through a grid of arithmetic logic units (ALUs) in a pipelined fashion, minimizing the need to fetch data from memory repeatedly. This makes them up to 100x more efficient per watt than CPUs for AI workloads. Primary Math General Purpose (Scalar) Vector Operations (1D) Matrix / Tensor (2D/3D) Core Count F",
+    "url": "npu.html"
+  },
+  {
+    "id": "operating-systems.html",
+    "title": "Operating Systems \u2014 Complete Guide",
+    "body": "An Operating System (OS) is system software that manages computer hardware, software resources, and provides common services for application programs. It acts as an intermediary between the user and the hardware. Desktop OS Personal computing Windows 11, macOS, Ubuntu Mobile OS Phones/Tablets Android, iOS Server OS Network services Windows Server, Red Hat Embedded OS IoT / Appliances FreeRTOS, Embedded Linux To elevate your understanding of Operating Systems to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Operating Systems Google Scholar: Recent Papers on Operating Systems IEEE Xplore: Engineering Specifications",
+    "url": "operating-systems.html"
+  },
+  {
+    "id": "optical-drive.html",
+    "title": "Optical Drive \u2014 CD/DVD/Blu-ray Guide",
+    "body": "An optical drive reads (and sometimes writes) data from optical discs \u2014 CDs, DVDs, and Blu-ray discs \u2014 using a laser. While largely replaced by USB drives and streaming for consumer use, optical drives remain important for legacy software, physical media collectors, and archival backup. A single-layer Blu-ray disc holds 25 GB, while a 4K Ultra HD Blu-ray disc can hold 100 GB \u2014 enough for a full 4K movie with Dolby Atmos audio, something streaming often can't match in quality. CD 700 MB Infrared (780nm) Music, small data Legacy DVD 4.7 GB (SL) / 8.5 GB (DL) Red (650nm) Movies, software installs Blu-ray 25 GB (SL) / 50 GB (DL) Blue (405nm) HD/4K movies, archival Current 4K UHD Blu-ray 66\u2013100 GB Blue (405nm) Premium 4K/HDR content Premium To elevate your understanding of Optical Drive to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent",
+    "url": "optical-drive.html"
+  },
+  {
+    "id": "printer.html",
+    "title": "Printer \u2014 Buying Guide",
+    "body": "A printer is an output device that creates physical copies of digital documents and images. Modern printers support wireless printing via Wi-Fi and Bluetooth, automatic duplex (double-sided) printing, and multi-function capabilities including scanning, copying, and faxing. Printer ink is one of the most expensive liquids in the world \u2014 certified OEM inkjet ink can cost over \u20b915,000 per 100ml. This is why ink tank printers like the Epson EcoTank series (using cheap refillable ink bottles) have become so popular in India. Inkjet (Cartridge) Excellent (photos) Slow (5\u201315 ppm) \u20b93\u2013\u20b98 Photo printing, occasional use Ink Tank (EcoTank) Excellent Slow\u2013Moderate \u20b90.15\u2013\u20b90.40 Cheapest Home, frequent printing Monochrome Laser Sharp text Fast (30\u201350 ppm) \u20b90.50\u2013\u20b91.50 Office documents Color Laser Good (no photos) Fast \u20b93\u2013\u20b96 Office color documents Thermal (Label) Label/receipt only Very fast Very low Shipping labels, receipts Ink Tank \u00b7 Print/Scan/Copy \u00b7 Wi-Fi \u00b7 \u20b90.20/page B&W \u00b7 \u20b90.50/page Color \u20b99,325 ",
+    "url": "printer.html"
+  },
+  {
+    "id": "projector.html",
+    "title": "Projector \u2014 Display Guide",
+    "body": "A projector is an output device that casts a large image from a computer or media source onto a screen or wall. Used in classrooms, offices, home theaters, and events, modern projectors support Full HD, 4K resolution, and can project images 100\u2013150 inches in size. A laser projector bulb never needs replacing and lasts 20,000+ hours (vs 2,000\u20135,000 hours for lamp projectors). Over 10 years of use, a laser projector saves \u20b915,000\u2013\u20b940,000 in lamp replacement costs. DLP Accurate Yes 2,000\u20135,000 ANSI 5,000 hrs lamp Business / Portable LCD Vibrant Yes 3,000\u20138,000 ANSI 5,000 hrs lamp Classroom / Home Laser (ALPD/Laser) Wide gamut Works in daylight 2,500\u201330,000 ANSI 20,000+ hrs No bulb Premium home theater, large venues LCoS (SXRD/D-ILA) Excellent Yes 2,000\u20134,000 ANSI 5,000 hrs 4K home cinema 4K UHD \u00b7 DCI-P3 95% \u00b7 2,000 ANSI \u00b7 HDR Pro \u00b7 Best home theater under \u20b91L \u20b980,725 \u2013 \u20b9109,275 (Avg: \u20b995,000) 4K Enhancement \u00b7 3,000 ANSI \u00b7 LCD \u00b7 Excellent for bright rooms \u20b993,525 \u2013 \u20b9126,475 (Avg: \u20b9110,000)",
+    "url": "projector.html"
+  },
+  {
+    "id": "psu.html",
+    "title": "PSU \u2014 Power Supply Unit",
+    "body": "The Power Supply Unit (PSU) converts AC power from your wall outlet into the DC voltages (3.3V, 5V, 12V) that your computer components require. A quality PSU provides stable, clean power, which directly impacts system stability and component longevity. A low-quality PSU is one of the most common causes of random crashes, data corruption, and even component damage. Spending \u20b93,000 more on a good PSU can save you \u20b930,000 in cooked components. 80 Plus 80% Entry Level \u20b91,500\u2013\u20b92,500 80 Plus Bronze 85% Budget \u20b92,500\u2013\u20b94,000 80 Plus Silver 88% Mid-range \u20b93,500\u2013\u20b95,000 80 Plus Gold 92% Recommended \u20b94,500\u2013\u20b99,000 80 Plus Platinum 94% Premium \u20b98,000\u2013\u20b915,000 80 Plus Titanium 96% Flagship \u20b915,000+ 750W \u00b7 Fully Modular \u00b7 80+ Gold \u00b7 Zero RPM fan mode \u00b7 10-year warranty \u20b97,625 \u2013 \u20b910,375 (Avg: \u20b99,000) 850W \u00b7 Fully Modular \u00b7 80+ Gold \u00b7 10-year warranty \u00b7 Ultra-quiet \u20b99,725 \u2013 \u20b913,275 (Avg: \u20b911,500) 650W \u00b7 Semi-Modular \u00b7 80+ Gold \u00b7 Budget-friendly quality \u20b94,625 \u2013 \u20b96,375 (Avg: \u20b95,500) 1000W \u00b7 Fully Modular ",
+    "url": "psu.html"
+  },
+  {
+    "id": "quantum-computing.html",
+    "title": "Quantum Computing",
+    "body": "Classical computers encode information in Bits, which strictly hold a value of 0 or 1. A Quantum Computer encodes information in Qubits (Quantum Bits), which operate based on the principles of quantum mechanics. Due to phenomena like superposition and entanglement, qubits can represent 0, 1, or any quantum superposition of these states simultaneously. This allows quantum computers to perform massive multi-dimensional computations at once, scaling exponentially. While a classical 100-bit state represents exactly one of $2^{100}$ possible states, a 100-qubit state represents a probability distribution across all $2^{100}$ states simultaneously. In 1994, Peter Shor formulated an algorithm that can theoretically factor large prime numbers exponentially faster than any known classical algorithm. If a large enough stable quantum computer is built, it will break modern RSA encryption overnight. Superposition A quantum system remains in a linear combination of multiple states until measured. A",
+    "url": "quantum-computing.html"
+  },
+  {
+    "id": "ram-architecture.html",
+    "title": "RAM Architecture",
+    "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers. The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU.",
+    "url": "ram-architecture.html"
+  },
+  {
+    "id": "ram-types.html",
+    "title": "RAM Types",
+    "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers. The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU.",
+    "url": "ram-types.html"
+  },
+  {
+    "id": "ram.html",
+    "title": "RAM \u2014 Random Access Memory",
+    "body": "Random Access Memory (RAM) is your computer's working memory. Unlike storage (HDD/SSD), RAM is volatile \u2014 it loses its data when powered off. But it's extremely fast, allowing the CPU to instantly access data it's actively working with. When you open Chrome with 30 tabs, edit a video, or run a game, all that active data lives in RAM. More RAM means you can do more things simultaneously without slowdowns. Modern systems typically need 16\u201332 GB for smooth multitasking. RAM is about 100,000x faster than a traditional HDD and ~10\u201320x faster than even the fastest NVMe SSD. This is why your OS loads frequently-used files into RAM automatically. DDR3 800 \u2013 2133 MHz 1.5V Up to 17 GB/s Legacy DDR4 2133 \u2013 5000 MHz 1.2V Up to 40 GB/s Current \u2014 Most Common DDR5 4800 \u2013 8400+ MHz 1.1V Up to 67 GB/s Latest Standard 4 GB Very basic computing, older laptops Insufficient today 8 GB Light browsing, office work Minimum 16 GB Gaming, coding, everyday use Sweet spot 32 GB Video editing, Photoshop, heavy mul",
+    "url": "ram.html"
+  },
+  {
+    "id": "raspberry-pi.html",
+    "title": "Raspberry Pi & SBCs",
+    "body": "A Single Board Computer (SBC) is a complete computer built on a single circuit board, with microprocessor, memory, input/output (I/O), and other features required of a functional computer. Unlike traditional motherboards, SBCs do not rely on expansion slots for peripheral functions. The Raspberry Pi, launched in 2012, is the most famous SBC. It uses an ARM-based System-on-a-Chip (SoC) similar to smartphones, making it highly power-efficient and cheap to produce. It bridges the gap between software programming and physical hardware interaction. The defining feature of SBCs is the GPIO (General Purpose Input/Output) header. These pins allow the computer to directly read sensors (temperature, light) and control physical components (motors, LEDs) using code like Python. SoC Broadcom BCM2712 Custom silicon, 16nm process CPU Quad-core ARM Cortex-A76 @ 2.4GHz 3x faster than Pi 4, approaches desktop speed GPU VideoCore VII, 800MHz Supports dual 4K60 displays, Vulkan 1.2 I/O Controller RP1 \"Sou",
+    "url": "raspberry-pi.html"
+  },
+  {
+    "id": "router.html",
+    "title": "Router \u2014 Networking Guide",
+    "body": "A router is a networking device that forwards data packets between computer networks. In a home context, it connects your local network (your phones, laptops, smart TVs) to the internet via your ISP. Modern routers also include built-in Wi-Fi, firewall, DHCP server, and often parental controls and VPN support. Wi-Fi 7 (802.11be), releasing in 2024\u20132025, can theoretically hit speeds of 46 Gbps \u2014 fast enough to transfer a full 4K movie in under a second on a local network. 802.11n Wi-Fi 4 600 Mbps 2.4 / 5 GHz Good 2009 802.11ac Wi-Fi 5 Still Common 3.5 Gbps 5 GHz Good 2013 802.11ax Wi-Fi 6 Current 9.6 Gbps 2.4/5 GHz Excellent 2019 802.11ax Wi-Fi 6E Current 9.6 Gbps 2.4/5/6 GHz Excellent 2021 802.11be Wi-Fi 7 Latest 46 Gbps 2.4/5/6 GHz Excellent 2024 Wi-Fi 6 \u00b7 AX5400 \u00b7 6 Antennas \u00b7 HomeCare Security \u00b7 Great mid-range \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) Wi-Fi 6 \u00b7 Tri-band \u00b7 11000 Mbps \u00b7 Gaming priority \u00b7 VPN Fusion \u20b923,825 \u2013 \u20b932,175 (Avg: \u20b928,000) Wi-Fi 6E \u00b7 Tri-band Mesh \u00b7 4200 Mbps \u00b7 Whole-hom",
+    "url": "router.html"
+  },
+  {
+    "id": "scanner.html",
+    "title": "Scanner \u2014 Digitization Guide",
+    "body": "A scanner is an input device that captures the visual content of physical documents, photos, or objects and converts them into digital files. Used for digitizing paperwork, archiving photos, creating digital signatures, and OCR (Optical Character Recognition) to make scanned documents searchable and editable. Modern smartphone cameras can replace basic scanners for documents, but a dedicated flatbed scanner at 1200 DPI can capture fine art and photos with detail that no phone camera can match \u2014 resolving individual ink dots and film grain. Flatbed Scanner 600\u20134800 DPI Photos, books, delicate docs Versatile Slow \u20b93,000\u2013\u20b920,000 Sheet-fed Document Scanner 300\u2013600 DPI Office paperwork, invoices Fast batch Fast (50+ ppm) \u20b98,000\u2013\u20b950,000 Film/Slide Scanner 2400\u20139600 DPI Negative film, 35mm slides Very slow \u20b915,000\u2013\u20b980,000 3D Scanner 0.1mm accuracy Object capture, 3D printing Variable \u20b930,000\u2013\u20b95,00,000 Flatbed \u00b7 4800 DPI \u00b7 USB \u00b7 A4 \u00b7 Photo + document scanning \u00b7 Compact \u20b93,825 \u2013 \u20b95,175 (Avg: \u20b94",
+    "url": "scanner.html"
+  },
+  {
+    "id": "server-guide.html",
+    "title": "Server Guide \u2014 Data Centers & Cloud",
+    "body": "CPU Consumer (Core/Ryzen) Enterprise (Xeon/EPYC) RAM Non-ECC ECC (Error Correcting) Uptime Personal use 24/7 (99.99%) To elevate your understanding of Server Guide to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Server Guide Google Scholar: Recent Papers on Server Guide IEEE Xplore: Engineering Specifications",
+    "url": "server-guide.html"
+  },
+  {
+    "id": "software-types.html",
+    "title": "Software Types \u2014 Complete Guide",
+    "body": "System Software Platform for apps OS, Drivers, BIOS Application Software Specific tasks Chrome, Photoshop Firmware Embedded code SSD firmware, BIOS To elevate your understanding of Software Types to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Software Types Google Scholar: Recent Papers on Software Types IEEE Xplore: Engineering Specifications",
+    "url": "software-types.html"
+  },
+  {
+    "id": "sound-card.html",
+    "title": "Sound Card \u2014 Audio Guide",
+    "body": "A sound card is a hardware component that processes audio signals \u2014 converting digital data into analog sound for speakers/headphones (DAC), and analog input from microphones into digital data (ADC). Modern CPUs include basic integrated audio (Realtek ALC codecs), but dedicated sound cards or external DACs offer dramatically better audio quality, lower noise floor, and more connectivity. Integrated motherboard audio typically has a Signal-to-Noise Ratio (SNR) of 90\u2013100 dB. A quality dedicated DAC like the Schiit Modi 3+ achieves 120 dB SNR \u2014 that's 10,000\u00d7 quieter background noise. Audio Quality (SNR) 90\u2013100 dB 110\u2013124 dB 115\u2013120 dB Electrical Noise High (near GPU/CPU) Moderate None (outside PC) Headphone Amp Weak (max 32\u03a9 well) Moderate\u2013strong Strong (drives 300\u03a9) Surround Sound Virtual only 7.1 hardware Stereo focused Cost Free (on mobo) \u20b92,000\u2013\u20b915,000 \u20b93,000\u2013\u20b925,000 Best For Casual users Gaming + Surround Music, Studio PCIe \u00b7 32-bit/384kHz \u00b7 127dB SNR \u00b7 ESS ES9038 DAC \u00b7 Flagship gam",
+    "url": "sound-card.html"
+  },
+  {
+    "id": "speakers.html",
+    "title": "Speakers \u2014 Audio Output Guide",
+    "body": "Computer speakers convert electrical audio signals into sound waves. They range from tiny built-in laptop speakers to high-end studio monitors worth lakhs. For desktop setups, a 2.0 or 2.1 system offers excellent stereo sound, while 5.1 setups deliver cinematic surround sound for movies and games. A \"2.1\" speaker system means 2 satellite speakers + 1 subwoofer. The subwoofer handles frequencies below 200 Hz (bass), which requires a much larger driver to reproduce accurately. 2.0 Stereo 2 No Music, casual gaming \u20b9500\u2013\u20b915,000 2.1 Stereo+Sub 2+1 Yes Popular Gaming, movies, music \u20b92,000\u2013\u20b925,000 5.1 Surround 5+1 Yes Home theater, movies \u20b98,000\u2013\u20b980,000 Studio Monitors (2.0) 2 Optional Music production \u20b910,000\u2013\u20b91,00,000 42W total \u00b7 Dual RCA inputs \u00b7 Wooden cabinet \u00b7 Excellent studio aesthetic \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) USB-C/USB-A \u00b7 Bluetooth 5.0 \u00b7 Up-firing drivers \u00b7 Great desk speaker \u20b94,225 \u2013 \u20b95,775 (Avg: \u20b95,000) 80W \u00b7 Bluetooth + Optical + HDMI ARC \u00b7 Subwoofer \u00b7 Budget pick India \u20b93,22",
+    "url": "speakers.html"
+  },
+  {
+    "id": "ssd.html",
+    "title": "SSD \u2014 Solid State Drive",
+    "body": "A Solid State Drive (SSD) stores data on NAND flash memory chips \u2014 no moving parts, no spinning platters. This makes SSDs dramatically faster, quieter, more durable, and more energy-efficient than traditional HDDs. SSDs are now standard in all modern laptops and desktops. Your operating system, games, and frequently-used applications should always be on an SSD for the best experience. An NVMe SSD can read data at 7,000 MB/s \u2014 fast enough to copy an entire Blu-ray disc in under 7 seconds. A classic HDD manages only around 120 MB/s for the same task. NVMe Gen 4 PCIe 4.0 x4 5,000\u20137,000 MB/s M.2 2280 ~\u20b96,000 OS, Gaming, Creative NVMe Gen 3 PCIe 3.0 x4 3,000\u20133,500 MB/s M.2 2280 ~\u20b94,500 Great all-rounder SATA SSD SATA III 550 MB/s 2.5\" / M.2 ~\u20b93,500 Budget OS drive HDD SATA III 80\u2013150 MB/s 3.5\" / 2.5\" ~\u20b91,500 Mass storage / Backup 1 TB \u00b7 PCIe 4.0 \u00b7 7,450 MB/s read \u00b7 Excellent reliability \u00b7 PS5 compatible \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) 1 TB \u00b7 PCIe 4.0 \u00b7 7,300 MB/s read \u00b7 Gaming optimized with ",
+    "url": "ssd.html"
+  },
+  {
+    "id": "touchpad.html",
+    "title": "Touchpad \u2014 Laptop Input Guide",
+    "body": "A touchpad (or trackpad) is a flat, touch-sensitive surface built into laptops that replaces a mouse. It detects finger position, pressure, and gestures (pinch-to-zoom, two-finger scroll, three-finger swipe). Modern precision touchpads use Microsoft's Precision Touchpad drivers for superior accuracy and gesture support. Apple's Force Touch trackpad uses a linear actuator (Taptic Engine) to simulate click feel, despite the surface not actually moving at all. It's an illusion created by vibration patterns. Generic (Synaptics) Moderate Basic (2-finger scroll) Budget laptops Microsoft Precision Touchpad Excellent Standard Full (3/4-finger gestures) Most modern Windows laptops Apple Force Touch Trackpad Best-in-class Premium Force Touch + all gestures MacBooks Haptic Touchpad Excellent Simulated click via haptics Premium Windows laptops To elevate your understanding of Touchpad to an academic and engineering level, explore the curated resources below. These materials cover the fundamental p",
+    "url": "touchpad.html"
+  },
+  {
+    "id": "ups.html",
+    "title": "UPS \u2014 Uninterruptible Power Supply Guide",
+    "body": "A UPS (Uninterruptible Power Supply) provides battery backup power when the main electrical supply fails. It gives you enough time to save work and safely shut down your system \u2014 preventing data loss, hardware damage, and file corruption from sudden power cuts. In India, where power fluctuations and cuts are common, a UPS is almost mandatory for desktop PCs, networking equipment, and servers. A sudden power loss while Windows is writing to the disk can corrupt the entire file system, requiring a full reinstall. A UPS costing just \u20b93,000 can prevent this catastrophic scenario. Standby (Offline) 5\u201312ms None (basic relay) \u20b91,500\u2013\u20b93,000 Home PCs, basic protection Line-Interactive 2\u20134ms Yes (AVR built-in) Recommended \u20b93,000\u2013\u20b910,000 Home + Office PCs Online (Double Conversion) 0ms (always on battery) Perfect Best \u20b915,000\u2013\u20b91,00,000 Servers, medical, critical systems 1100VA / 660W \u00b7 Line-Interactive \u00b7 6 outlets \u00b7 USB charging \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) 1500VA / 1000W \u00b7 Pure sine wave \u00b7 LCD ",
+    "url": "ups.html"
+  },
+  {
+    "id": "usb-flash.html",
+    "title": "USB Flash Drive \u2014 Portable Storage Guide",
+    "body": "A USB flash drive (also called a pen drive or thumb drive) is a portable NAND flash memory device with a USB connector. Used for transferring files, booting operating systems, storing portable apps, and as quick backups. The key performance difference is which USB standard it uses. The first USB flash drive (USB 1.0) was introduced in 2000 with just 8 MB of storage. Today, a single USB-C flash drive can hold 2 TB \u2014 250,000\u00d7 more data. USB 2.0 480 Mbps (60 MB/s) 20\u201325 MB/s Black port USB 3.0 / 3.2 Gen 1 5 Gbps (625 MB/s) 80\u2013150 MB/s Blue port USB 3.1 / 3.2 Gen 2 10 Gbps (1250 MB/s) 400\u2013900 MB/s Teal/Red port USB 3.2 Gen 2\u00d72 20 Gbps (2500 MB/s) 1,500+ MB/s Only USB-C USB4 / Thunderbolt 4 40 Gbps 3,000+ MB/s USB-C only USB 3.1 \u00b7 300 MB/s read \u00b7 Metal body \u00b7 Durable \u00b7 5-year warranty \u20b92,125 \u2013 \u20b92,875 (Avg: \u20b92,500) USB 3.2 Gen 2 \u00b7 1,000 MB/s read \u00b7 900 MB/s write \u00b7 1 TB available \u20b93,825 \u2013 \u20b95,175 (Avg: \u20b94,500) USB 3.0 \u00b7 150 MB/s read \u00b7 Compact metal body \u00b7 Great budget pick \u20b9625 \u2013 \u20b9875 (Avg: ",
+    "url": "usb-flash.html"
+  },
+  {
+    "id": "webcam.html",
+    "title": "Webcam \u2014 Streaming & Video Guide",
+    "body": "A webcam is a digital camera that feeds or streams an image or video in real-time to or through a computer. While most laptops have them built-in, external USB webcams offer significantly better image quality, resolution, and low-light performance. 720p (HD) 30 fps Basic meetings Entry 1080p (FHD) 30/60 fps Office work / Education Standard 2K (QHD) 30 fps Content creation Premium 4K (UHD) 30 fps Professional streaming Ultra 1080p 30fps / 720p 60fps \u00b7 Hyperfast frame rate \u00b7 Autolight correction \u20b98,500 \u2013 \u20b911,500 (Avg: \u20b910,000) 4K UHD \u00b7 HDR support \u00b7 5x Digital Zoom \u00b7 RightLight 3 technology \u20b914,450 \u2013 \u20b919,000 (Avg: \u20b917,000) To elevate your understanding of Webcam to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Webcam Google Scholar: Recent Papers on Webcam IEEE Xplore: Engineering Specifications",
+    "url": "webcam.html"
+  },
+  {
+    "id": "wifi-adapter.html",
+    "title": "Wi-Fi Adapter \u2014 Wireless Guide",
+    "body": "A Wi-Fi adapter adds wireless connectivity to a desktop PC or any device without built-in Wi-Fi. They come as USB dongles (plug-and-play, portable) or PCIe cards (faster, more stable, with antenna). Modern Wi-Fi 6 and 6E adapters support OFDMA and MU-MIMO for much lower latency in congested environments. Wi-Fi 6E adds the 6 GHz band \u2014 a completely new, less congested spectrum. In a crowded apartment building, switching from Wi-Fi 5 to Wi-Fi 6E can cut latency by 75%. USB Nano (Wi-Fi 5) 150\u2013433 Mbps Poor Plug & Play Temporary / Travel USB Dual-Band (Wi-Fi 6) 600\u20131800 Mbps Moderate Plug & Play Casual desktop use PCIe (Wi-Fi 6) Up to 3000 Mbps Excellent Internal card Desktop gaming / work PCIe (Wi-Fi 6E) Up to 9600 Mbps Excellent Internal card Future-proof desktop PCIe \u00b7 Wi-Fi 6E \u00b7 AXE5400 \u00b7 Bluetooth 5.2 \u00b7 2\u00d7Antenna \u00b7 Best PCIe pick \u20b93,825 \u2013 \u20b95,175 (Avg: \u20b94,500) USB 3.0 \u00b7 AC1300 (Wi-Fi 5) \u00b7 Dual-band \u00b7 High-gain antenna \u00b7 Budget pick \u20b91,025 \u2013 \u20b91,375 (Avg: \u20b91,200) To elevate your understa",
+    "url": "wifi-adapter.html"
+  },
+  {
+    "id": "windows.html",
+    "title": "Windows \u2014 History & Architecture",
+    "body": "Microsoft Windows is a family of proprietary graphical operating systems developed by Microsoft. It dominates the desktop market with ~72% share. Windows 95 1995 Start Menu, Taskbar Windows XP 2001 Stability Classic Windows 7 2009 Perfected UI Legendary Windows 10 2015 WSL, DirectX 12 Windows 11 2021 Centered Taskbar Latest To elevate your understanding of Windows to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Windows Google Scholar: Recent Papers on Windows IEEE Xplore: Engineering Specifications",
+    "url": "windows.html"
+  },
+  {
+    "id": "data-cpu",
+    "title": "Central Processing Unit Deep Data",
+    "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. Modern CPUs use the Von Neumann or Harvard architectures. Key components include the ALU (Arithmetic Logic Unit), CU (Control Unit), Registers, and Cache hierarchy (L1, L2, L3). The first commercial microprocessor was the Intel 4004, released in 1971. Over decades, CPUs evolved from single-core processors to multi-core giants, adhering to Moore's Law for many years. CPUs operate on the fetch-decode-execute cycle. The Control Unit fetches an instruction from memory, decodes it into commands, and the ALU executes them. General-purpose computing Server processing Embedded systems Mobile devices Cinebench R23 Geekbench 6 PassMark SPEC CPU Intel Microprocessor History Computer Architecture: A Quantitative Approach",
+    "url": "cpu.html"
+  },
+  {
+    "id": "data-gpu",
+    "title": "Graphics Processing Unit Deep Data",
+    "body": "GPUs are highly parallel processors originally designed for rendering graphics, now widely used for AI, machine learning, and scientific simulations. GPUs consist of thousands of smaller, simpler cores compared to CPUs. Architectures like Nvidia's Hopper or AMD's RDNA feature Streaming Multiprocessors, Tensor Cores, and RT Cores. Early graphics accelerators emerged in the 1980s. Nvidia coined the term GPU in 1999 with the GeForce 256. The advent of CUDA in 2007 unlocked General Purpose GPU computing (GPGPU). GPUs excel at SIMD (Single Instruction, Multiple Data) operations, applying the same instruction to multiple data points simultaneously, ideal for pixel rendering and matrix math. 3D Gaming Video Editing Deep Learning / AI Cryptocurrency Mining 3DMark Time Spy FurMark Blender Benchmark MLPerf Nvidia CUDA Programming Guide GPU Rendering Pipeline",
+    "url": "gpu.html"
+  },
+  {
+    "id": "data-motherboard",
+    "title": "Motherboard Deep Data",
+    "body": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. Includes the CPU socket, RAM slots, PCIe slots, chipset (Northbridge/Southbridge historically, now highly integrated PCH), VRMs (Voltage Regulator Modules), and I/O ports. Before motherboards, computers consisted of multiple printed circuit boards plugged into a backplane. The original IBM PC motherboard (the planar) established the standard. Traces on the PCB act as buses, routing data and power. The chipset manages data flow between the CPU, memory, and peripherals using protocols like PCIe, SATA, and USB. Desktop PCs Servers Laptops Embedded computing DPC Latency Checker PassMark System Test ATX Specification PCI Express Standard",
+    "url": "motherboard.html"
+  },
+  {
+    "id": "data-ram",
+    "title": "Random Access Memory Deep Data",
+    "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers. Early RAM included magnetic-core memory. Dynamic RAM (DRAM) was invented in 1968. SDRAM became the standard in the 1990s, evolving through DDR to today's DDR5. The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU. System working memory VRAM in graphics cards Cache systems In-memory databases AIDA64 Memory Benchmark MemTest86 MaxxMem2 JEDEC DDR5 Standard Dynamic Random-Access Memory",
+    "url": "ram.html"
+  }
+]
