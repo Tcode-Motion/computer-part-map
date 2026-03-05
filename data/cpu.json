@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "1033577240472324186",
+      "filename": "pro-imagery-submittal-radiation-harden-gan.jpg",
+      "local_path": "assets/images/cpu/pro-imagery-submittal-radiation-harden-gan.jpg",
+      "type": "image",
+      "license": "NASA Public Domain",
+      "creator": "JSC",
+      "source_url": "http://images-assets.nasa.gov/image/jsc2025e015684/jsc2025e015684~orig.jpg",
+      "retrieved_at": "2026-03-05T22:51:46.429236",
+      "checksum": "e3254cd8b28bf0ee57bb800d0a31ef6d0f5d2d5273bb88b13d55afc5ed114b9a",
+      "caption": "PRO Imagery Submittal - Radiation Harden GaN",
+      "alt_text": "jsc2025e015684 (3/6/2025) --- The Radiation Harden GaN research team in the lithography room where p"
+    },
+    {
+      "id": "7939305359688930829",
+      "filename": "pro-imagery-submittal-radiation-harden-gan.jpg",
+      "local_path": "assets/images/cpu/pro-imagery-submittal-radiation-harden-gan.jpg",
+      "type": "image",
+      "license": "NASA Public Domain",
+      "creator": "JSC",
+      "source_url": "http://images-assets.nasa.gov/image/jsc2025e015690/jsc2025e015690~orig.jpg",
+      "retrieved_at": "2026-03-05T22:51:51.653788",
+      "checksum": "385076aad85ea5f000d3e020cb2c023f181320020a78f71ef6b684d6f488e053",
+      "caption": "PRO Imagery Submittal - Radiation Harden GaN",
+      "alt_text": "jsc2025e015690 (3/6/2025) --- An overview of the prototype with the various components as part of th"
+    }
+  ],
+  "scholarly_links": [],
+  "last_updated": "2026-03-05T22:51:51.654821"
+}

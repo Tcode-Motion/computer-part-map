@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "3644036380177476258",
+      "filename": "silicon-carbide-integrated-circuit-chip.jpg",
+      "local_path": "assets/images/gpu/silicon-carbide-integrated-circuit-chip.jpg",
+      "type": "image",
+      "license": "NASA Public Domain",
+      "creator": "GRC",
+      "source_url": "http://images-assets.nasa.gov/image/GRC-2015-C-00595/GRC-2015-C-00595~orig.jpg",
+      "retrieved_at": "2026-03-05T22:51:59.899969",
+      "checksum": "c4c26e0cb830fa3ac3d92f6154bcc4538864f334a046c04000e392a181b5c81f",
+      "caption": "Silicon Carbide Integrated Circuit Chip",
+      "alt_text": "A multilevel interconnect silicon carbide integrated circuit chip with co-fired ceramic package and "
+    },
+    {
+      "id": "-4756197828434361466",
+      "filename": "grc-2015-c-00598.jpg",
+      "local_path": "assets/images/gpu/grc-2015-c-00598.jpg",
+      "type": "image",
+      "license": "NASA Public Domain",
+      "creator": "GRC",
+      "source_url": "http://images-assets.nasa.gov/image/GRC-2015-C-00598/GRC-2015-C-00598~orig.jpg",
+      "retrieved_at": "2026-03-05T22:52:07.578744",
+      "checksum": "a0c2f5482e584533674fa82eb6db88feb05ae993e6f6c8d46b83cdcd7c1e87c6",
+      "caption": "GRC-2015-C-00598",
+      "alt_text": "Silicon Carbide, SiC wafer v8.1 OpAmp Chip in Co-fired Alumina Package for High-temperature Applicat"
+    }
+  ],
+  "scholarly_links": [],
+  "last_updated": "2026-03-05T22:52:07.580178"
+}

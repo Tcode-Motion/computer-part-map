@@ -1,0 +1,53 @@
+<!-- Research Assets Section -->
+<section id="research-assets" class="content-section">
+    <h2>🔬 Research Assets & Media</h2>
+    <div class="assets-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        {% for asset in assets %}
+        <figure class="research-figure" style="margin: 0; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 12px;">
+            {% if asset.type == 'image' %}
+                <img src="{{ asset.local_path }}" alt="{{ asset.alt_text }}" style="width: 100%; border-radius: 8px; height: 200px; object-fit: cover;">
+            {% elif asset.type == 'video' %}
+                <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe src="{{ asset.embed_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+                </div>
+            {% elif asset.type == 'audio' %}
+                <audio controls src="{{ asset.local_path }}" style="width: 100%; margin-top: 10px;"></audio>
+            {% endif %}
+            <figcaption style="margin-top: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
+                <strong>{{ asset.caption }}</strong><br>
+                <small>Creator: {{ asset.creator }} | License: {{ asset.license }}</small>
+            </figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+
+    {% if scholarly_links %}
+    <div class="scholarly-links" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <h3>📚 Scholarly Resources</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% for link in scholarly_links %}
+            <li style="margin-bottom: 10px;">
+                <a href="{{ link.url }}" target="_blank" style="color: #60a5fa; text-decoration: none;">🔗 {{ link.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "about": "{{ component_name }}",
+  "hasPart": [
+    {% for asset in assets %}
+    {
+      "@type": "{{ 'ImageObject' if asset.type == 'image' else 'VideoObject' }}",
+      "caption": "{{ asset.caption }}",
+      "contentUrl": "{{ asset.source_url }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
