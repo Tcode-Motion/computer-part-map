@@ -24,7 +24,7 @@
 **Computer Parts Map** is an open-source educational library designed to bridge the gap between "basic hardware guides" and "complex engineering papers." It provides a structured, interactive journey through every layer of modern computing.
 
 ### What makes Version 2.0 different?
-- **Research-Level Depth**: Every page now features an academic "Deep Dive" section.
+- **Research-Level Depth**: Every page features an academic "Deep Dive" section designed to help students and enthusiasts write their own research papers.
 - **Academic Integration**: Direct links to **Google Scholar** and **IEEE Xplore** for every component.
 - **Embedded Lectures**: Intelligent YouTube integration that surfaces CS university lectures relevant to each topic.
 - **Modern Hardware**: New dedicated guides for **NPUs (AI Processors)**, **Quantum Computing**, and **Raspberry Pi Architecture**.
@@ -40,6 +40,16 @@
 - ⚡ **Anime.js Animations** — Smooth transitions, statistics counters, and interactive loaders.
 - 🔍 **Global Search** — Real-time search engine to find any guide instantly.
 - 📱 **Mobile Optimized** — Fully responsive design for learning on the go.
+
+---
+
+## 🔬 Research & Study Capability
+
+This project is built to be more than just a list of parts. It is a **Research Springboard**. By studying the data-rich paragraphs, spec tables, and academic links provided on every page, anyone can:
+1.  Understand the underlying physics of transistors and qubits.
+2.  Analyze the architectural differences between Scalar, Vector, and Matrix processing.
+3.  Gather sources for independent academic engineering papers.
+4.  Watch university-level demonstrations directly within the interface.
 
 ---
 
@@ -61,24 +71,6 @@
 - **Vanilla JavaScript**: Modular layout injection and dynamic section generation.
 - **Anime.js**: Powering the high-end UI animations and stat-counters.
 - **Academic APIs**: Dynamic linking to scholarly databases.
-
----
-
-## 📁 Project Structure
-
-```
-computer-part-map/
-├── index.html                  # Version 2.0 Premium Home Page
-├── cpu.html, gpu.html, ...     # 35+ Component Guides
-├── npu.html                    # New: AI Processor Deep-Dive
-├── quantum-computing.html      # New: Quantum Mechanics in Computing
-├── raspberry-pi.html           # New: SBC & IoT Architecture
-├── css/
-│   └── styles.css              # Unified Global Design System (v2.0)
-├── js/
-│   └── script.js               # Core Engine (Search, Injection, Animation)
-└── images/                     # 45+ High-resolution hardware assets
-```
 
 ---
 
