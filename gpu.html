@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPU - Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/gpu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPU — Graphics Processing Unit | Computer Parts Map</title>
+  <meta name="description" content="Everything about GPUs — VRAM, ray tracing, NVIDIA vs AMD, top graphics cards and buying guide.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="navbar-placeholder"></div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Power</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<div class="component-hero">
+  <div class="badge">⚙️ Core Component</div>
+  <h1>GPU — Graphics Processing Unit</h1>
+  <p class="hero-subtitle">Powers every pixel — from gaming to AI to 3D rendering.</p>
+  <img src="images/gpu.jpg" alt="GPU" class="hero-img">
+</div>
 
-    <!-- Content for GPU Page -->
-    <section>
-        <h1>GPU (Graphics Processing Unit)</h1>
-        <img src="images/gpu.jpg" alt="GPU" class="device-img">
-        <p>The Graphics Processing Unit (GPU) is a specialized processor designed to accelerate the rendering of images, animations, and video. It is commonly used in gaming, video editing, and machine learning to handle computationally intensive tasks. Modern GPUs are also used in data centers for AI training, autonomous vehicles, and real-time ray tracing, which creates realistic lighting effects in games and movies.</p>
+<div class="page-content">
 
-        <h2>History of GPU</h2>
-        <p>The first GPUs appeared in the late 1990s, with NVIDIA's GeForce 256, launched in 1999, being one of the first to integrate multiple processing cores specifically for 3D graphics. GPUs have evolved from simple rendering engines to highly parallel processors capable of handling diverse computational workloads. Today, GPUs are not only used for graphics but also for tasks like cryptocurrency mining, scientific research, and cloud computing, making them a key part of modern technology.</p>
+  <div class="content-section">
+    <h2>📖 What is a GPU?</h2>
+    <p>A <strong>Graphics Processing Unit (GPU)</strong> is a specialized processor designed to handle parallel computations at massive scale. Originally built to render graphics, GPUs are now central to gaming, video editing, scientific simulation, machine learning, and cryptocurrency mining.</p>
+    <p>While a CPU has 8–24 powerful cores for sequential tasks, a GPU has thousands of smaller cores optimized for doing many things simultaneously — perfect for rendering millions of pixels or training neural networks.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Did You Know?</div>
+      <p>NVIDIA's H100 GPU, used for AI training, contains 80 billion transistors and costs over $30,000. A single H100 can train a large language model 30x faster than the previous generation.</p>
+    </div>
+  </div>
 
-        <h2>Types of GPUs</h2>
-        <ul>
-            <li><strong>Integrated GPUs</strong>: These are built into the motherboard or CPU and share system memory. They're cost-effective but less powerful than discrete GPUs. Integrated GPUs are commonly found in laptops and budget desktops for basic tasks like web browsing and video playback.</li>
-            <li><strong>Discrete GPUs</strong>: Dedicated graphics cards that come with their own memory (VRAM) and processing power. They're used for high-performance tasks like gaming, video editing, and 3D modeling. Modern discrete GPUs also support advanced features like real-time ray tracing and AI-based image upscaling.</li>
-            <li><strong>External GPUs (eGPUs)</strong>: GPUs connected externally to laptops or computers, often through Thunderbolt or other high-speed interfaces. These are used to boost performance in portable devices. eGPUs are popular among professionals who need extra power for tasks like video editing or 3D rendering on lightweight laptops.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🆚 NVIDIA vs AMD vs Intel Arc</h2>
+    <table class="spec-table">
+      <thead><tr><th>Feature</th><th>NVIDIA RTX 4080</th><th>AMD RX 7900 XTX</th><th>Intel Arc A770</th></tr></thead>
+      <tbody>
+        <tr><td>Architecture</td><td>Ada Lovelace</td><td>RDNA 3</td><td>Xe-HPG</td></tr>
+        <tr><td>VRAM</td><td>16 GB GDDR6X</td><td>24 GB GDDR6</td><td>16 GB GDDR6</td></tr>
+        <tr><td>Ray Tracing</td><td>Excellent <span class="tag tag-best">Best</span></td><td>Good <span class="tag tag-good">Good</span></td><td>Average <span class="tag tag-basic">Basic</span></td></tr>
+        <tr><td>AI / DLSS</td><td>DLSS 3 (Frame Gen) <span class="tag tag-best">Best</span></td><td>FSR 3 <span class="tag tag-good">Good</span></td><td>XeSS <span class="tag tag-basic">Basic</span></td></tr>
+        <tr><td>4K Gaming</td><td>Excellent</td><td>Excellent</td><td>1440p optimized</td></tr>
+        <tr><td>Power (TDP)</td><td>320W</td><td>355W</td><td>225W</td></tr>
+        <tr><td>Price (India)</td><td>~₹1,05,000</td><td>~₹90,000</td><td>~₹28,000</td></tr>
+        <tr><td>Best For</td><td>Gaming + AI workloads</td><td>Value 4K gaming</td><td>Budget 1440p gaming</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>How a GPU Works</h2>
-        <p>The GPU works by performing many calculations simultaneously, making it ideal for rendering complex graphics and parallel computing tasks. It breaks down graphical tasks (like drawing pixels, textures, and 3D models) into small parts that can be processed in parallel, allowing for faster execution. Modern GPUs also use AI-based algorithms to optimize rendering and improve performance in real-time applications.</p>
-        <p>The GPU is especially efficient for handling tasks that can be parallelized, such as video rendering, image processing, and scientific simulations. It works by utilizing hundreds or even thousands of cores to perform these tasks simultaneously. Advanced GPUs now support technologies like DLSS (Deep Learning Super Sampling) to enhance gaming visuals and reduce computational load.</p>
+  <div class="content-section">
+    <h2>📊 VRAM — Why It Matters</h2>
+    <table class="spec-table">
+      <thead><tr><th>VRAM</th><th>Suitable For</th><th>Example GPUs</th></tr></thead>
+      <tbody>
+        <tr><td>4 GB</td><td>1080p gaming (old titles), basic rendering</td><td>GTX 1650</td></tr>
+        <tr><td>8 GB</td><td>1080p / 1440p gaming <span class="tag tag-good">Popular</span></td><td>RTX 3060 Ti, RX 6700 XT</td></tr>
+        <tr><td>12 GB</td><td>1440p / light 4K, small AI models</td><td>RTX 3060, RX 6750 XT</td></tr>
+        <tr><td>16 GB</td><td>4K gaming, 3D rendering, AI inference</td><td>RTX 4080, RX 7900 GRE</td></tr>
+        <tr><td>24 GB+</td><td>Professional rendering, LLM training <span class="tag tag-best">Workstation</span></td><td>RTX 4090, RX 7900 XTX</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>Common Uses of GPUs</h2>
-        <ul>
-            <li><strong>Gaming</strong>: GPUs are essential for rendering high-quality graphics in modern video games. They enable features like ray tracing, high frame rates, and 4K resolution for an immersive gaming experience.</li>
-            <li><strong>Video Editing</strong>: GPUs accelerate video processing, enabling faster rendering and smooth playback of high-definition videos. They also support advanced effects like color grading and motion tracking.</li>
-            <li><strong>Machine Learning</strong>: GPUs are used in AI and machine learning tasks, where large amounts of data need to be processed simultaneously. They power applications like natural language processing, image recognition, and autonomous driving.</li>
-            <li><strong>Cryptocurrency Mining</strong>: The parallel nature of GPUs makes them ideal for mining cryptocurrencies such as Bitcoin and Ethereum. Modern GPUs are optimized for energy efficiency to reduce mining costs.</li>
-            <li><strong>Virtual Reality (VR) and Augmented Reality (AR)</strong>: GPUs render high-resolution graphics for immersive virtual experiences in VR and AR applications. They are critical for creating smooth and realistic environments in these technologies.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🛒 Top GPU Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/gpu.jpg" alt="NVIDIA RTX 4070">
+        <h4>NVIDIA RTX 4070</h4>
+        <p class="product-spec">12 GB GDDR6X · 200W · DLSS 3 · Excellent 1440p performance</p>
+        <p class="product-price">~₹52,000</p>
+        <a href="https://amzn.in/d/rtx4070" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/gpu.jpg" alt="AMD RX 7600">
+        <h4>AMD RX 7600</h4>
+        <p class="product-spec">8 GB GDDR6 · 165W · Excellent 1080p gaming · Best budget pick</p>
+        <p class="product-price">~₹24,000</p>
+        <a href="https://www.flipkart.com/search?q=RX+7600" target="_blank" rel="noopener" class="buy-btn flipkart">🛒 Flipkart</a>
+      </div>
+      <div class="product-card">
+        <img src="images/gpu.jpg" alt="NVIDIA RTX 4090">
+        <h4>NVIDIA RTX 4090</h4>
+        <p class="product-spec">24 GB GDDR6X · 450W · Absolute performance king</p>
+        <p class="product-price">~₹1,65,000</p>
+        <a href="https://amzn.in/d/rtx4090" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/gpu.jpg" alt="Intel Arc A750">
+        <h4>Intel Arc A750</h4>
+        <p class="product-spec">8 GB GDDR6 · 225W · Great for video creators (AV1 encode)</p>
+        <p class="product-price">~₹22,000</p>
+        <a href="https://amzn.in/d/arca750" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>Top GPU Manufacturers</h2>
-        <ul>
-            <li><strong>NVIDIA</strong>: Known for its GeForce and Quadro series, NVIDIA is one of the leading GPU manufacturers for gaming and professional workstations. NVIDIA also develops AI-focused GPUs like the Tesla and A100 series for data centers and research.</li>
-            <li><strong>AMD</strong>: AMD produces the Radeon series of GPUs, which are popular for gaming and professional applications, often competing directly with NVIDIA's offerings. AMD also focuses on open-source technologies and energy-efficient designs.</li>
-            <li><strong>Intel</strong>: Intel has started entering the discrete GPU market with its Intel Arc series, aiming to compete in both gaming and professional markets. Intel is also integrating AI capabilities into its GPUs for enhanced performance.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🔗 Related Components</h2>
+    <div class="related-grid">
+      <a href="cpu.html" class="related-link">⚙️ CPU</a>
+      <a href="ram.html" class="related-link">💾 RAM</a>
+      <a href="monitor.html" class="related-link">🖥️ Monitor</a>
+      <a href="psu.html" class="related-link">🔌 PSU</a>
+      <a href="graphics-card.html" class="related-link">🖥️ Graphics Card</a>
+    </div>
+  </div>
 
-        <h2>Importance of GPU</h2>
-        <p>The GPU is crucial for rendering graphics and accelerating parallel computing tasks. In addition to gaming, modern GPUs are used for deep learning, artificial intelligence, scientific simulations, and even cryptocurrency mining. A powerful GPU can significantly improve a computer's performance, especially in graphics-intensive applications. With the rise of cloud gaming and AI-driven applications, GPUs are becoming more important than ever in shaping the future of technology.</p>
-    </section>
-<!-- Linking JavaScript -->
+</div>
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 </html>

@@ -1,129 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Router - Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/router.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Router — Networking Guide | Computer Parts Map</title>
+  <meta name="description" content="Wi-Fi generations, router buying guide, top routers, mesh networking explained.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="navbar-placeholder"></div>
 
-    <!-- Navigation Bar with Dropdown -->
-    <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Power</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<div class="component-hero">
+  <div class="badge">🌐 Networking</div>
+  <h1>Router — Network Gateway</h1>
+  <p class="hero-subtitle">Your internet's front door — routes data between your devices and the world.</p>
+  <img src="images/router.jpg" alt="Router" class="hero-img">
+</div>
 
-    <section>
-        <h1>Router</h1>
-        <img src="images/router.jpg" alt="Router - Networking Device" class="device-img">
-        <p>A router is a networking device that forwards data packets between computer networks. It routes data from a local network (such as a home or office) to other networks, including the internet, and manages traffic to ensure data reaches its destination. Modern routers also support advanced features like parental controls, guest networks, and integration with smart home devices, making them more versatile and user-friendly.</p>
+<div class="page-content">
 
-        <h2>History of Routers</h2>
-        <p>The first routers appeared in the 1980s, as computers began connecting to networks such as ARPANET. Initially, routers were large, expensive devices designed for enterprise-level use. Over time, routers became smaller, more affordable, and accessible for home networks, leading to the widespread use of Wi-Fi routers for internet access in homes today. Modern routers now support technologies like Wi-Fi 6, which offers faster speeds, better range, and improved performance in crowded environments.</p>
+  <div class="content-section">
+    <h2>📖 What is a Router?</h2>
+    <p>A <strong>router</strong> is a networking device that forwards data packets between computer networks. In a home context, it connects your local network (your phones, laptops, smart TVs) to the internet via your ISP. Modern routers also include built-in Wi-Fi, firewall, DHCP server, and often parental controls and VPN support.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Did You Know?</div>
+      <p>Wi-Fi 7 (802.11be), releasing in 2024–2025, can theoretically hit speeds of 46 Gbps — fast enough to transfer a full 4K movie in under a second on a local network.</p>
+    </div>
+  </div>
 
-        <h2>How Routers Work</h2>
-        <p>Routers use routing tables and protocols to determine the best path for data to travel across networks. When you connect a device (like a computer or smartphone) to a router, it assigns a unique IP address to the device and manages traffic between your device and the internet or other networks. Modern routers also support features like Quality of Service (QoS) to prioritize certain types of traffic, and they often include mobile apps for easy setup and management.</p>
+  <div class="content-section">
+    <h2>🆚 Wi-Fi Standards Comparison</h2>
+    <table class="spec-table">
+      <thead><tr><th>Standard</th><th>Name</th><th>Max Speed</th><th>Band</th><th>Range</th><th>Year</th></tr></thead>
+      <tbody>
+        <tr><td>802.11n</td><td>Wi-Fi 4</td><td>600 Mbps</td><td>2.4 / 5 GHz</td><td>Good</td><td>2009</td></tr>
+        <tr><td>802.11ac</td><td>Wi-Fi 5 <span class="tag tag-basic">Still Common</span></td><td>3.5 Gbps</td><td>5 GHz</td><td>Good</td><td>2013</td></tr>
+        <tr><td>802.11ax</td><td>Wi-Fi 6 <span class="tag tag-good">Current</span></td><td>9.6 Gbps</td><td>2.4/5 GHz</td><td>Excellent</td><td>2019</td></tr>
+        <tr><td>802.11ax</td><td>Wi-Fi 6E <span class="tag tag-good">Current</span></td><td>9.6 Gbps</td><td>2.4/5/6 GHz</td><td>Excellent</td><td>2021</td></tr>
+        <tr><td>802.11be</td><td>Wi-Fi 7 <span class="tag tag-best">Latest</span></td><td>46 Gbps</td><td>2.4/5/6 GHz</td><td>Excellent</td><td>2024</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>Types of Routers</h2>
-        <ul>
-            <li><strong>Wired Routers</strong>: Wired routers connect to the internet via Ethernet cables. These routers offer stable and high-speed connections but lack the flexibility of wireless connectivity. They are still widely used in businesses for secure and reliable connections.</li>
-            <li><strong>Wireless Routers</strong>: Wireless routers provide Wi-Fi connectivity, allowing devices to connect without physical cables. They are ideal for homes and offices with multiple wireless devices. Modern wireless routers often support dual-band or tri-band frequencies for better performance.</li>
-            <li><strong>Dual-Band Routers</strong>: These routers operate on two frequencies: 2.4 GHz and 5 GHz. Dual-band routers offer faster speeds and less interference, especially in environments with many devices connected simultaneously. Some newer models also support Wi-Fi 6E, which adds a 6 GHz band for even better performance.</li>
-            <li><strong>Mesh Routers</strong>: Mesh routers use multiple nodes (routers) to create a seamless Wi-Fi network that covers a larger area without losing signal strength. These are ideal for large homes or offices. They are easy to set up and often come with mobile apps for network management.</li>
-            <li><strong>Gaming Routers</strong>: Gaming routers are designed to provide low-latency, high-performance internet connections for online gaming. They often have advanced features like Quality of Service (QoS) to prioritize gaming traffic over other types of internet use. Some models also include RGB lighting and customizable settings for gamers.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🛒 Top Router Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/router.jpg" alt="TP-Link Archer AX73">
+        <h4>TP-Link Archer AX73</h4>
+        <p class="product-spec">Wi-Fi 6 · AX5400 · 6 Antennas · HomeCare Security · Great mid-range</p>
+        <p class="product-price">~₹7,500</p>
+        <a href="https://amzn.in/d/tplinkax73" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/router.jpg" alt="ASUS ROG Rapture GT-AX11000">
+        <h4>ASUS ROG Rapture GT-AX11000</h4>
+        <p class="product-spec">Wi-Fi 6 · Tri-band · 11000 Mbps · Gaming priority · VPN Fusion</p>
+        <p class="product-price">~₹28,000</p>
+        <a href="https://amzn.in/d/asusrog11000" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/router.jpg" alt="TP-Link Deco XE75">
+        <h4>TP-Link Deco XE75 Mesh</h4>
+        <p class="product-spec">Wi-Fi 6E · Tri-band Mesh · 4200 Mbps · Whole-home coverage</p>
+        <p class="product-price">~₹18,000 (2-pack)</p>
+        <a href="https://amzn.in/d/decoxe75" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/router.jpg" alt="Xiaomi AX3200">
+        <h4>Xiaomi AX3200 (Budget)</h4>
+        <p class="product-spec">Wi-Fi 6 · AX3200 · 4 antennas · Best budget Wi-Fi 6 router in India</p>
+        <p class="product-price">~₹3,500</p>
+        <a href="https://www.flipkart.com/search?q=xiaomi+ax3200" target="_blank" rel="noopener" class="buy-btn flipkart">🛒 Flipkart</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>Advantages of Routers</h2>
-        <ul>
-            <li><strong>Network Sharing</strong>: Routers allow multiple devices to share a single internet connection, making them essential for home and office networks. Modern routers also support multiple SSIDs for creating separate networks for guests or IoT devices.</li>
-            <li><strong>Security</strong>: Many routers come with built-in security features, including firewalls, encryption, and the ability to set up Virtual Private Networks (VPNs) to protect your data and privacy. Some routers also include automatic firmware updates and malware protection.</li>
-            <li><strong>Connectivity</strong>: Routers provide connectivity for devices such as computers, smartphones, tablets, and smart home devices, facilitating communication between them on a local network. They also support advanced features like MU-MIMO for better performance with multiple devices.</li>
-            <li><strong>Wireless Flexibility</strong>: Wireless routers allow devices to connect without physical cables, offering more flexibility in device placement and usage throughout a building. Modern routers also support beamforming technology to improve signal strength and range.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🔗 Related Components</h2>
+    <div class="related-grid">
+      <a href="nic.html" class="related-link">🌐 NIC</a>
+      <a href="wifi-adapter.html" class="related-link">📶 Wi-Fi Adapter</a>
+      <a href="cpu.html" class="related-link">⚙️ CPU</a>
+    </div>
+  </div>
 
-        <h2>Disadvantages of Routers</h2>
-        <ul>
-            <li><strong>Range Limitations</strong>: Wireless routers have a limited range, which can result in weak signals in larger areas or rooms far from the router. The use of mesh routers or additional access points can help alleviate this issue. However, these solutions can be more expensive.</li>
-            <li><strong>Interference</strong>: Wi-Fi routers can experience interference from other devices, walls, or electronics, leading to reduced speeds and connectivity issues. Modern routers with dual-band or tri-band support can help reduce interference.</li>
-            <li><strong>Complexity</strong>: Some routers, especially advanced models, can be difficult to configure and troubleshoot for non-technical users. However, many modern routers now include user-friendly apps and guided setup processes to simplify configuration.</li>
-        </ul>
-
-        <h2>Applications of Routers</h2>
-        <ul>
-            <li><strong>Home Networking</strong>: Routers are used in homes to provide Wi-Fi and wired internet connections for devices like computers, smartphones, smart TVs, and gaming consoles. They also support smart home devices like security cameras and smart speakers.</li>
-            <li><strong>Business Networking</strong>: In businesses, routers manage internal network traffic, provide secure connections to the internet, and facilitate communication between employees and remote offices. They also support VPNs for secure remote work.</li>
-            <li><strong>Internet Service Providers (ISPs)</strong>: ISPs use routers to manage traffic between users and the internet, directing data to and from local networks and global networks. Modern ISP routers often include advanced features like Wi-Fi 6 and mesh networking capabilities.</li>
-            <li><strong>Gaming</strong>: Gaming routers are used to provide stable, low-latency internet connections for online gaming, ensuring minimal lag and higher performance. They often include features like customizable QoS and dedicated gaming modes.</li>
-        </ul>
-
-        <h2>Popular Router Brands</h2>
-        <ul>
-            <li><strong>Netgear</strong>: Netgear produces a wide range of home and business routers with excellent performance and security features. Their routers are popular for both casual and advanced users. They also offer mesh systems and gaming routers.</li>
-            <li><strong>TP-Link</strong>: TP-Link is known for offering affordable, reliable routers with easy setup and user-friendly interfaces. They offer both wired and wireless routers for home and office use, including models with Wi-Fi 6 support.</li>
-            <li><strong>Asus</strong>: Asus routers are known for their high-performance capabilities, especially in gaming. They offer powerful routers with advanced features like dual-band connectivity, custom QoS, and RGB lighting for gamers.</li>
-            <li><strong>Cisco</strong>: Cisco is a leader in enterprise networking equipment, and their routers are commonly used in large-scale business and service provider networks. They also offer solutions for small businesses.</li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>Routers are essential networking devices that facilitate communication between devices and the internet. Whether you're using a wired or wireless router, selecting the right router for your home or business network can significantly impact performance, security, and connectivity. Modern routers offer advanced features like Wi-Fi 6, mesh networking, and mobile app management, making them more powerful and easier to use. With a wide range of options available, from basic routers to high-performance models for gaming or business, it's important to choose the one that best fits your needs and budget.</p>
-    </section>
-<!-- Linking JavaScript -->
+</div>
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 </html>

@@ -1,152 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Parts Map — Interactive Hardware Encyclopedia</title>
+  <meta name="description" content="Explore and learn about every major computer hardware component — CPUs, GPUs, RAM, storage, networking, peripherals and more.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <!-- Input Devices Section -->
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
+<!-- Navbar injected by JS -->
+<div id="navbar-placeholder"></div>
 
-            <!-- Output Devices Section -->
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
+<!-- HERO -->
+<section class="home-hero">
+  <div class="hero-eyebrow">🖥️ Computer Hardware Encyclopedia</div>
+  <h1>Your Complete Guide to<br><span>Computer Parts</span></h1>
+  <p class="hero-desc">Explore detailed pages on every major component — from the CPU that powers your system to the router that connects you to the world.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Components</div>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="stat-num">6</div>
+      <div class="stat-label">Categories</div>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="stat-num">45+</div>
+      <div class="stat-label">Images</div>
+    </div>
+    <div class="hero-stat-divider"></div>
+    <div class="hero-stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Free & Open</div>
+    </div>
+  </div>
+</section>
 
-            <!-- Main Components Section -->
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                </ul>
-            </li>
+<!-- CATEGORIES -->
+<div class="categories-section">
+  <h2>Browse by Category</h2>
+  <p class="section-sub">Click any component to dive deep into specs, history, types, and top products.</p>
 
-            <!-- Power Supply Section -->
-            <li class="nav-item">
-                <a href="#">Power Supply</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
+  <div class="category-cards">
 
-            <!-- Networking Section -->
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-
-            <!-- Audio Section -->
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <section class="intro">
-        <h1>Welcome to the Computer Parts Map</h1>
-        <p>Explore and learn about the major components of a computer by clicking on the links above. Whether you're building a new PC, upgrading your current setup, or just curious about the hardware, this guide will help you understand the essential parts that make up a modern computer system. Computers today are faster, more efficient, and more versatile than ever before, thanks to advancements in technology.</p>
-        
-        <h2>What Are Computer Parts?</h2>
-        <p>Computer parts refer to the hardware components that are essential for a computer to function. These parts can be categorized into several groups such as input devices, output devices, main components, power supply, networking, and audio systems. Modern computer parts are designed to be compact, energy-efficient, and highly reliable, making them suitable for a wide range of applications from gaming to professional work.</p>
-
-        <h2>Explore by Categories</h2>
-        <p>The sections above contain links to detailed pages about each computer part. Here’s a quick overview of what you can expect to find in each category. With the latest innovations, these components are becoming smarter and more user-friendly, ensuring better performance and ease of use:</p>
-
-        <div class="category-overview">
-            <h3>Input Devices</h3>
-            <p>Input devices are essential tools for user interaction with a computer. They allow users to provide data and control commands to the system. Modern input devices often come with wireless connectivity, ergonomic designs, and advanced features like touch sensitivity and voice recognition.</p>
-            <ul>
-                <li><strong>Keyboard:</strong> A device used to input text and commands. Available in various types, such as mechanical, membrane, and wireless keyboards with backlighting and programmable keys.</li>
-                <li><strong>Mouse:</strong> A pointing device that allows users to interact with the graphical interface on a computer screen. Modern mice include features like high DPI settings, customizable buttons, and wireless connectivity.</li>
-                <li><strong>Scanner:</strong> A device used to digitize physical documents, making them editable on a computer. Advanced scanners now support high-resolution scanning and direct cloud storage.</li>
-                <li><strong>Microphone:</strong> Used to capture sound input, typically used for voice recording, communication, and audio processing. Modern microphones often include noise-canceling features and are widely used for streaming and video conferencing.</li>
-            </ul>
-
-            <h3>Output Devices</h3>
-            <p>Output devices are components that allow users to receive information from the computer, such as visual, auditory, or physical feedback. Modern output devices are designed for high performance, offering features like 4K resolution, surround sound, and energy efficiency.</p>
-            <ul>
-                <li><strong>Monitor:</strong> A screen that displays visual output from the computer, including images, text, and videos. Modern monitors support high refresh rates, HDR, and ultra-wide displays for immersive experiences.</li>
-                <li><strong>Printer:</strong> Converts digital documents and images into physical copies of paper. Newer printers support wireless printing, scanning, and eco-friendly ink systems.</li>
-                <li><strong>Speakers:</strong> Audio output devices that allow users to hear sounds produced by the computer. Modern speakers often include Bluetooth connectivity and smart assistant integration.</li>
-                <li><strong>Projector:</strong> Projects the visual output from a computer onto a larger surface, such as a screen or wall, for presentations. Modern projectors are portable and support high-definition resolutions.</li>
-            </ul>
-
-            <h3>Main Components</h3>
-            <p>Main components are the fundamental hardware pieces required for a computer to run. These components include the brain of the computer and the parts that store and process data. Modern main components are faster, more efficient, and designed to handle complex tasks like AI processing and 3D rendering.</p>
-            <ul>
-                <li><strong>CPU:</strong> The central processing unit, or "brain" of the computer, is responsible for executing instructions and processing data. Modern CPUs have multiple cores and threads for multitasking.</li>
-                <li><strong>GPU:</strong> The graphics processing unit is responsible for rendering images, videos, and animations on the screen. High-end GPUs are essential for gaming, video editing, and AI applications.</li>
-                <li><strong>RAM:</strong> Random Access Memory is temporary storage used to store data that is actively being used or processed by the CPU. Modern RAM modules are faster and come with RGB lighting for aesthetics.</li>
-                <li><strong>HDD:</strong> A traditional hard disk drive used for long-term storage of data. While still in use, HDDs are being replaced by faster SSDs in many systems.</li>
-                <li><strong>SSD:</strong> A solid-state drive that uses flash memory for faster data storage and retrieval compared to an HDD. NVMe SSDs offer even higher speeds for demanding applications.</li>
-                <li><strong>USB Flash Drive:</strong> A portable storage device that uses flash memory to store data. Modern USB drives support high-speed data transfer and encryption for security.</li>
-                <li><strong>Graphics Card:</strong> An expansion card that enhances the performance of the GPU, especially for high-end graphics tasks like gaming or video editing. Modern graphics cards support ray tracing and AI-based rendering.</li>
-            </ul>
-
-            <h3>Power Supply</h3>
-            <p>The power supply unit (PSU) is responsible for converting electrical power from a wall outlet into usable power for the computer's internal components. Modern PSUs are more energy-efficient and come with modular designs for better cable management.</p>
-            <ul>
-                <li><strong>Power Supply Unit (PSU):</strong> The PSU is critical for supplying power to all the components of the computer system. Modern PSUs support higher wattages for powerful systems.</li>
-                <li><strong>Battery:</strong> A backup power source that ensures the computer can continue operating without interruption during power outages. Modern batteries are designed for longer life and faster charging.</li>
-            </ul>
-
-            <h3>Networking</h3>
-            <p>Networking components allow the computer to communicate with other systems, either locally or over the internet. Modern networking devices support faster speeds, better security, and wireless connectivity.</p>
-            <ul>
-                <li><strong>NIC:</strong> The network interface card enables the computer to connect to a network for internet access or local communication. Modern NICs support gigabit and multi-gigabit speeds.</li>
-                <li><strong>Wi-Fi Adapter:</strong> A device that allows the computer to connect to wireless networks. Modern Wi-Fi adapters support the latest Wi-Fi 6 standard for faster and more reliable connections.</li>
-                <li><strong>Router:</strong> A device that routes data between different networks, often providing internet access to connected devices. Modern routers include features like mesh networking and parental controls.</li>
-            </ul>
-
-            <h3>Audio</h3>
-            <p>Audio devices allow the computer to output sound and sometimes input sound through microphones or other devices. Modern audio devices offer high-definition sound quality and advanced features like spatial audio.</p>
-            <ul>
-                <li><strong>Graphics Card:</strong> While primarily used for visual output, some modern graphics cards also include integrated audio output features, such as HDMI audio pass-through.</li>
-                <li><strong>Sound Card:</strong> A dedicated audio processing unit that enhances sound quality and provides additional audio ports for input/output. Modern sound cards support surround sound and high-resolution audio.</li>
-            </ul>
+    <!-- Input Devices -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(16,185,129,0.12);color:#10b981">⌨️</div>
+        <div>
+          <h3>Input Devices</h3>
+          <p>How you talk to your computer — keyboards, mice, scanners, and microphones.</p>
         </div>
-    </section>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="keyboard.html" class="card-link">⌨️ Keyboard</a>
+          <a href="mouse.html" class="card-link">🖱️ Mouse</a>
+          <a href="scanner.html" class="card-link">📠 Scanner</a>
+          <a href="microphone.html" class="card-link">🎤 Microphone</a>
+        </div>
+      </div>
+    </div>
 
-    <!-- Linking JavaScript -->
-    <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <!-- Output Devices -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(37,99,235,0.12);color:#2563eb">🖥️</div>
+        <div>
+          <h3>Output Devices</h3>
+          <p>How your computer communicates back — monitors, printers, speakers, projectors.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="monitor.html" class="card-link">🖥️ Monitor</a>
+          <a href="printer.html" class="card-link">🖨️ Printer</a>
+          <a href="speakers.html" class="card-link">🔊 Speakers</a>
+          <a href="projector.html" class="card-link">📽️ Projector</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Core Components -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b">⚙️</div>
+        <div>
+          <h3>Core Components</h3>
+          <p>The brain and memory of a computer — CPUs, GPUs, RAM, and storage drives.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="cpu.html" class="card-link">⚙️ CPU</a>
+          <a href="gpu.html" class="card-link">🎮 GPU</a>
+          <a href="ram.html" class="card-link">💾 RAM</a>
+          <a href="hdd.html" class="card-link">📀 HDD</a>
+          <a href="ssd.html" class="card-link">⚡ SSD</a>
+          <a href="usb-flash.html" class="card-link">🔌 USB Flash</a>
+          <a href="graphics-card.html" class="card-link">🖥️ Graphics Card</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Power Supply -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(239,68,68,0.12);color:#ef4444">🔋</div>
+        <div>
+          <h3>Power Supply</h3>
+          <p>Keeping everything running — PSUs, batteries, and power management.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="psu.html" class="card-link">🔌 PSU</a>
+          <a href="battery.html" class="card-link">🪫 Battery</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Networking -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(99,102,241,0.12);color:#6366f1">🌐</div>
+        <div>
+          <h3>Networking</h3>
+          <p>Connecting to the world — NICs, Wi-Fi adapters, and routers explained.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="nic.html" class="card-link">🌐 NIC</a>
+          <a href="wifi-adapter.html" class="card-link">📶 Wi-Fi Adapter</a>
+          <a href="router.html" class="card-link">📡 Router</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio -->
+    <div class="category-card">
+      <div class="card-header">
+        <div class="cat-icon" style="background:rgba(168,85,247,0.12);color:#a855f7">🎵</div>
+        <div>
+          <h3>Audio</h3>
+          <p>High-fidelity sound — sound cards, speakers, and audio output systems.</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-links">
+          <a href="sound-card.html" class="card-link">🎵 Sound Card</a>
+          <a href="speakers.html" class="card-link">🔊 Speakers</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer injected by JS -->
+<div id="footer-placeholder"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

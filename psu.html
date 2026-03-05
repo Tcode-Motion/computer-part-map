@@ -1,129 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Supply Unit (PSU) - Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/psu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSU — Power Supply Unit | Computer Parts Map</title>
+  <meta name="description" content="PSU buying guide — wattage, 80 Plus efficiency ratings, modular vs non-modular, top picks.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="navbar-placeholder"></div>
+<div class="component-hero">
+  <div class="badge">🔋 Power Supply</div>
+  <h1>PSU — Power Supply Unit</h1>
+  <p class="hero-subtitle">Converts wall power to clean DC — the heart that keeps your system alive.</p>
+  <img src="images/psu.jpg" alt="PSU" class="hero-img">
+</div>
+<div class="page-content">
 
-    <!-- Navigation Bar with Dropdown -->
-    <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Power</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+  <div class="content-section">
+    <h2>📖 What is a PSU?</h2>
+    <p>The <strong>Power Supply Unit (PSU)</strong> converts AC power from your wall outlet into the DC voltages (3.3V, 5V, 12V) that your computer components require. A quality PSU provides stable, clean power, which directly impacts system stability and component longevity.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Did You Know?</div>
+      <p>A low-quality PSU is one of the most common causes of random crashes, data corruption, and even component damage. Spending ₹3,000 more on a good PSU can save you ₹30,000 in cooked components.</p>
+    </div>
+  </div>
 
-    <section>
-        <h1>Power Supply Unit (PSU)</h1>
-        <img src="images/psu.jpg" alt="Power Supply Unit (PSU)" class="device-img">
-        <p>The Power Supply Unit (PSU) is a crucial component in any computer system, responsible for converting electrical energy from an outlet into the required voltages to power the computer’s internal components. It provides the necessary energy to keep the computer running. Modern PSUs are designed to be highly efficient, compact, and reliable, ensuring stable power delivery even under heavy workloads. They also come with advanced features like smart fan control to reduce noise and improve cooling.</p>
+  <div class="content-section">
+    <h2>🏆 80 Plus Efficiency Ratings</h2>
+    <table class="spec-table">
+      <thead><tr><th>Certification</th><th>Efficiency at 50% Load</th><th>Quality Tier</th><th>Price Range (India)</th></tr></thead>
+      <tbody>
+        <tr><td>80 Plus</td><td>80%</td><td><span class="tag tag-basic">Entry Level</span></td><td>₹1,500–₹2,500</td></tr>
+        <tr><td>80 Plus Bronze</td><td>85%</td><td><span class="tag tag-basic">Budget</span></td><td>₹2,500–₹4,000</td></tr>
+        <tr><td>80 Plus Silver</td><td>88%</td><td><span class="tag tag-good">Mid-range</span></td><td>₹3,500–₹5,000</td></tr>
+        <tr><td>80 Plus Gold</td><td>92%</td><td><span class="tag tag-good">Recommended</span></td><td>₹4,500–₹9,000</td></tr>
+        <tr><td>80 Plus Platinum</td><td>94%</td><td><span class="tag tag-best">Premium</span></td><td>₹8,000–₹15,000</td></tr>
+        <tr><td>80 Plus Titanium</td><td>96%</td><td><span class="tag tag-best">Flagship</span></td><td>₹15,000+</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>History of the Power Supply Unit</h2>
-        <p>Early computers used simple power supplies, typically with a single voltage output. However, as computer technology advanced, so did the power supply requirements. Today, PSUs are designed to handle a wide range of voltages, support various connectors, and provide enhanced safety features. Modern PSUs also include digital monitoring systems that allow users to track power usage and efficiency in real-time, making them more user-friendly and adaptable to different systems.</p>
+  <div class="content-section">
+    <h2>🛒 Top PSU Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/psu.jpg" alt="Corsair RM750x">
+        <h4>Corsair RM750x (80+ Gold)</h4>
+        <p class="product-spec">750W · Fully Modular · 80+ Gold · Zero RPM fan mode · 10-year warranty</p>
+        <p class="product-price">~₹9,000</p>
+        <a href="https://amzn.in/d/corsairRM750" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/psu.jpg" alt="Seasonic Focus GX-850">
+        <h4>Seasonic Focus GX-850</h4>
+        <p class="product-spec">850W · Fully Modular · 80+ Gold · 10-year warranty · Ultra-quiet</p>
+        <p class="product-price">~₹11,500</p>
+        <a href="https://amzn.in/d/seasonicgx850" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/psu.jpg" alt="Cooler Master MWE 650">
+        <h4>Cooler Master MWE 650 Gold</h4>
+        <p class="product-spec">650W · Semi-Modular · 80+ Gold · Budget-friendly quality</p>
+        <p class="product-price">~₹5,500</p>
+        <a href="https://www.flipkart.com/search?q=coolermaster+650+gold" target="_blank" rel="noopener" class="buy-btn flipkart">🛒 Flipkart</a>
+      </div>
+      <div class="product-card">
+        <img src="images/psu.jpg" alt="DeepCool PX1000G">
+        <h4>DeepCool PX1000G</h4>
+        <p class="product-spec">1000W · Fully Modular · 80+ Gold · ATX 3.0 · PCIe 5.0 connector</p>
+        <p class="product-price">~₹13,000</p>
+        <a href="https://amzn.in/d/deepcoolpx1000" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>How Power Supply Units Work</h2>
-        <p>The PSU takes the alternating current (AC) from a power outlet and converts it into direct current (DC), which is used by the computer’s components. This conversion process involves a series of voltage regulation stages to ensure that the voltage output is consistent and safe for all the components, such as the motherboard, CPU, GPU, and storage devices. Modern PSUs also include active power factor correction (PFC) to improve efficiency and reduce energy waste, making them more environmentally friendly.</p>
+  <div class="content-section">
+    <h2>🔗 Related Components</h2>
+    <div class="related-grid">
+      <a href="battery.html" class="related-link">🪫 Battery</a>
+      <a href="cpu.html" class="related-link">⚙️ CPU</a>
+      <a href="gpu.html" class="related-link">🎮 GPU</a>
+    </div>
+  </div>
 
-        <h2>Types of Power Supply Units</h2>
-        <ul>
-            <li><strong>ATX Power Supply</strong>: The most common PSU form factor used in desktop computers. ATX PSUs are designed to fit in standard ATX cases and provide a range of power outputs, usually from 300W to 1200W or higher for gaming systems and workstations. Modern ATX PSUs often include modular cables and 80 PLUS certifications for better efficiency.</li>
-            <li><strong>SFX Power Supply</strong>: A smaller form factor PSU, often used in compact or mini-ITX builds. While smaller, they still provide ample power for compact systems. Newer SFX PSUs are designed to deliver high wattage in a small size, making them ideal for high-performance small form factor PCs.</li>
-            <li><strong>Modular Power Supply</strong>: Modular PSUs allow users to connect only the cables they need, which reduces clutter and improves airflow inside the case. This type of PSU is ideal for users who value a clean and organized build. Modern modular PSUs often include flat cables for easier cable management.</li>
-            <li><strong>Non-Modular Power Supply</strong>: Non-modular PSUs come with all cables permanently attached, which can result in excess cables in the case that aren’t necessary for the build. However, they are typically cheaper than modular PSUs. Recent non-modular PSUs are also being designed with better cable routing options to minimize clutter.</li>
-            <li><strong>Redundant Power Supply</strong>: Used in enterprise-level systems and servers, redundant PSUs provide backup power to ensure continuous operation in case one PSU fails. Modern redundant PSUs are hot-swappable, meaning they can be replaced without shutting down the system.</li>
-        </ul>
-
-        <h2>Advantages of Power Supply Units</h2>
-        <ul>
-            <li><strong>Stable Power</strong>: PSUs ensure that all internal components receive the correct voltage and are protected from power surges or fluctuations. Modern PSUs include advanced voltage regulation to handle sudden power spikes effectively.</li>
-            <li><strong>Safety Features</strong>: Modern PSUs include various safety features like overcurrent protection, overvoltage protection, short-circuit protection, and thermal shutdown, which protect the computer from damage. Some PSUs also include surge protection to safeguard against lightning strikes.</li>
-            <li><strong>Efficiency</strong>: High-efficiency PSUs help to reduce electricity consumption and heat generation. Many PSUs now feature an 80 PLUS certification, indicating efficiency levels of at least 80% at varying loads. The latest models even achieve Titanium-level efficiency, which exceeds 90% efficiency.</li>
-            <li><strong>Upgradeability</strong>: High-wattage PSUs provide the flexibility to upgrade or add additional components (like more storage or a second GPU) in the future without needing to replace the power supply. Modern PSUs also support newer standards like PCIe 5.0 for next-generation GPUs.</li>
-        </ul>
-
-        <h2>Disadvantages of Power Supply Units</h2>
-        <ul>
-            <li><strong>Size and Space</strong>: Larger PSUs can take up a significant amount of space in the computer case, especially for high-wattage or redundant PSUs. This can be a concern in smaller or compact builds. However, newer designs aim to reduce size while maintaining high power output.</li>
-            <li><strong>Noise</strong>: Some PSUs can produce noise, especially if the cooling fans are not sufficiently quiet. High-wattage PSUs in gaming or workstation setups can create more noise than lower-wattage units. Modern PSUs often include zero-RPM fan modes, where the fan only spins under heavy loads, reducing noise during idle or light use.</li>
-            <li><strong>Cost</strong>: High-quality PSUs, especially modular or high-wattage models, can be relatively expensive compared to standard or non-modular PSUs. However, the long-term benefits of efficiency and reliability often outweigh the initial cost.</li>
-        </ul>
-
-        <h2>Applications of Power Supply Units</h2>
-        <ul>
-            <li><strong>Personal Computers</strong>: Every personal computer, whether a desktop or workstation, requires a PSU to convert power from the outlet to usable electricity for the components. Modern PSUs are designed to support a wide range of personal computing needs, from basic office tasks to high-end gaming.</li>
-            <li><strong>Servers</strong>: Servers often require redundant PSUs to ensure continuous operation. In a server environment, power supply failure can result in significant downtime. Modern server PSUs are designed for high efficiency and reliability, often featuring remote monitoring capabilities.</li>
-            <li><strong>Gaming PCs</strong>: High-performance gaming computers demand PSUs with higher wattage to support multiple GPUs and other power-hungry components. Modern gaming PSUs often include RGB lighting and support for overclocking setups.</li>
-            <li><strong>Enterprise Systems</strong>: In large-scale enterprise environments, PSUs ensure that critical infrastructure, such as data centers, continues to run smoothly with backup power options for reliability. Modern enterprise PSUs are designed for scalability and energy efficiency to meet the demands of growing businesses.</li>
-        </ul>
-
-        <h2>Popular PSU Brands</h2>
-        <ul>
-            <li><strong>Corsair</strong>: Corsair is a well-known brand in the PC building community, offering a wide range of modular and non-modular PSUs that are known for their quality and reliability. Their latest models include smart PSUs with software for monitoring power usage.</li>
-            <li><strong>EVGA</strong>: EVGA provides high-efficiency PSUs with great warranty periods, making them a popular choice for gaming PCs and workstations. Their newer models include eco modes for quieter operation.</li>
-            <li><strong>Seasonic</strong>: Seasonic is renowned for producing high-quality, reliable PSUs that are used in many custom builds and pre-built systems. They are pioneers in creating fanless PSUs for silent operation.</li>
-            <li><strong>Cooler Master</strong>: Cooler Master offers PSUs that are both efficient and affordable, and they also provide modular options for a clean and customizable setup. Their latest PSUs include support for next-gen hardware standards.</li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>The Power Supply Unit (PSU) is an essential component in any computer, ensuring that all the internal parts receive the correct power to operate. From personal desktop computers to large enterprise servers, PSUs are critical to the stability and reliability of systems. When choosing a PSU, it's essential to consider factors such as wattage, efficiency, modularity, and safety features to ensure your system remains powered safely and efficiently. Modern PSUs also focus on sustainability, offering higher efficiency and lower energy consumption to reduce environmental impact.</p>
-    </section>
-<!-- Linking JavaScript -->
+</div>
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 </html>

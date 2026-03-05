@@ -1,116 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphics Card - Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/graphics-card.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphics Card — Guide | Computer Parts Map</title>
+  <meta name="description" content="Graphics card guide — discrete vs integrated, VRAM, ray tracing, and top picks.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="navbar-placeholder"></div>
+<div class="component-hero">
+  <div class="badge">⚙️ Core Component</div>
+  <h1>Graphics Card</h1>
+  <p class="hero-subtitle">Dedicated visual powerhouse — where gaming, creativity, and AI computing unite.</p>
+  <img src="images/graphics-card.jpg" alt="Graphics Card" class="hero-img">
+</div>
+<div class="page-content">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Power</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+  <div class="content-section">
+    <h2>📖 What is a Graphics Card?</h2>
+    <p>A <strong>graphics card</strong> (also called a discrete GPU or video card) is an expansion card that installs into a PCIe slot on the motherboard. It has its own dedicated GPU chip, VRAM, power delivery, and cooling — offloading all rendering tasks from the CPU and integrated graphics.</p>
+    <p>Modern graphics cards include hardware ray tracing units, dedicated AI tensor cores (NVIDIA) or matrix accelerators (AMD), and support technologies like DLSS 3 and FSR 3 for AI-powered upscaling.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Did You Know?</div>
+      <p>The NVIDIA RTX 4090 has 16,384 CUDA cores and 76 billion transistors. It's so powerful that it can render 60fps at 8K resolution in some games — a resolution most monitors don't even support yet.</p>
+    </div>
+  </div>
 
-    <!-- Content for Graphics Card Page -->
-    <section>
-        <h1>Graphics Card</h1>
-        <img src="images/graphics-card.jpg" alt="Graphics Card" class="device-img">
-        <p>A Graphics Card, also known as a GPU (Graphics Processing Unit), is a critical component in computers, responsible for rendering images, video, and animations for the display. It performs complex calculations to create visuals and is vital for gaming, video editing, and professional applications like 3D modeling, AI tasks, and even virtual reality. Modern GPUs are designed to handle high-resolution displays, ray tracing for realistic lighting, and advanced AI-based image enhancements.</p>
+  <div class="content-section">
+    <h2>🆚 Discrete vs Integrated Graphics</h2>
+    <table class="spec-table">
+      <thead><tr><th>Feature</th><th>Integrated GPU</th><th>Discrete GPU (Entry)</th><th>Discrete GPU (High-end)</th></tr></thead>
+      <tbody>
+        <tr><td>VRAM</td><td>Shared system RAM (0.5–4 GB)</td><td>4–8 GB dedicated</td><td>12–24 GB dedicated</td></tr>
+        <tr><td>Gaming Performance</td><td>1080p Low settings</td><td>1080p Medium–High</td><td>4K Ultra</td></tr>
+        <tr><td>Ray Tracing</td><td>None / Very weak</td><td>Basic</td><td>Excellent</td></tr>
+        <tr><td>Power</td><td>15–35W</td><td>75–150W</td><td>250–450W</td></tr>
+        <tr><td>Cost</td><td>Free (built-in)</td><td>₹10,000–₹25,000</td><td>₹50,000–₹1,65,000</td></tr>
+        <tr><td>Best For</td><td>Office, casual use</td><td><span class="tag tag-good">1080p Gaming</span></td><td><span class="tag tag-best">4K, VR, 3D, AI</span></td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>History of Graphics Cards</h2>
-        <p>Graphics cards have evolved from simple video output devices into highly advanced processors capable of parallel computation. The first true graphics cards were released in the early 1980s, with companies like ATI, NVIDIA, and 3Dfx leading the charge in the development of 3D rendering. Today, GPUs are used not only for gaming but also for scientific research, cryptocurrency mining, and powering AI models. Modern GPUs are smaller, faster, and more energy-efficient, making them suitable for a wide range of devices, from desktops to laptops and even smartphones.</p>
+  <div class="content-section">
+    <h2>🛒 Top Graphics Card Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/graphics-card.jpg" alt="NVIDIA RTX 4070 Ti Super">
+        <h4>NVIDIA RTX 4070 Ti Super</h4>
+        <p class="product-spec">16 GB GDDR6X · 285W · DLSS 3.5 · Great 4K value</p>
+        <p class="product-price">~₹75,000</p>
+        <a href="https://amzn.in/d/rtx4070tisuper" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/graphics-card.jpg" alt="AMD RX 7600 XT">
+        <h4>AMD RX 7600 XT</h4>
+        <p class="product-spec">16 GB GDDR6 · 190W · FSR 3 · Best 1080p budget GPU 2024</p>
+        <p class="product-price">~₹28,000</p>
+        <a href="https://www.flipkart.com/search?q=rx+7600+xt" target="_blank" rel="noopener" class="buy-btn flipkart">🛒 Flipkart</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>Types of Graphics Cards</h2>
-        <ul>
-            <li><strong>Discrete Graphics Cards</strong>: These cards are standalone units that connect to the motherboard via PCI Express slots. They are equipped with dedicated memory (VRAM) for high performance in rendering and processing visuals. Modern discrete GPUs support technologies like ray tracing, DLSS (Deep Learning Super Sampling), and 4K gaming.</li>
-            <li><strong>Integrated Graphics Cards</strong>: These are built into the CPU or motherboard and share the system’s RAM. While more cost-effective, integrated graphics cards are less powerful than discrete ones and not ideal for demanding tasks like gaming or 3D rendering. However, modern integrated GPUs, like Intel Iris Xe and AMD Radeon Vega, are capable of handling casual gaming and 4K video playback.</li>
-            <li><strong>External Graphics Cards</strong>: These GPUs are connected externally to laptops or other systems through high-speed interfaces like Thunderbolt. They offer enhanced graphics performance to portable devices without upgrading internal components. External GPUs are popular among content creators and gamers who need portability and power.</li>
-        </ul>
+  <div class="content-section">
+    <h2>🔗 Related Components</h2>
+    <div class="related-grid">
+      <a href="gpu.html" class="related-link">🎮 GPU</a>
+      <a href="monitor.html" class="related-link">🖥️ Monitor</a>
+      <a href="psu.html" class="related-link">🔌 PSU</a>
+      <a href="cpu.html" class="related-link">⚙️ CPU</a>
+    </div>
+  </div>
 
-        <h2>How a Graphics Card Works</h2>
-        <p>The graphics card is designed to handle the complex mathematics involved in image processing, including transformations, lighting effects, shading, and rendering. It works by receiving data from the CPU about what should be displayed on the screen, such as textures, geometry, and animations. Then, the GPU processes this data using its many cores to handle multiple calculations simultaneously, which results in the smooth rendering of images, videos, and games on the screen. Modern GPUs also support AI-based features like upscaling and noise reduction, making visuals sharper and more detailed.</p>
-        
-        <p>The core of a graphics card is its GPU, which is a massively parallel processor capable of performing thousands of simultaneous calculations. The GPU also uses VRAM (Video Random Access Memory), a high-speed memory used exclusively by the graphics card to store textures, frame buffers, and other data needed for rendering visuals quickly and efficiently. Modern GPUs come with GDDR6 or GDDR6X memory, which offers faster speeds and better performance for demanding applications.</p>
-
-        <h2>Applications of Graphics Cards</h2>
-        <ul>
-            <li><strong>Gaming</strong>: High-performance graphics cards are crucial for rendering high-quality graphics in video games, providing smoother gameplay, realistic visuals, and support for technologies like ray tracing and VR gaming.</li>
-            <li><strong>Video Editing</strong>: Graphics cards accelerate the process of rendering high-definition video, applying visual effects, and encoding videos, significantly speeding up editing workflows. Modern GPUs also support AI-based tools for color grading and motion tracking.</li>
-            <li><strong>3D Modeling and Rendering</strong>: For professionals in industries like architecture, animation, and game development, graphics cards are used to render 3D models and visual effects in real-time, enabling faster project iterations.</li>
-            <li><strong>Machine Learning and AI</strong>: With the rise of deep learning, GPUs are increasingly used to accelerate training algorithms for AI models, as they can perform thousands of operations at once. GPUs are essential for tasks like image recognition, natural language processing, and autonomous driving.</li>
-            <li><strong>Cryptocurrency Mining</strong>: The parallel processing power of graphics cards makes them ideal for cryptocurrency mining, where large-scale computations are necessary. Modern GPUs are optimized for energy efficiency to reduce mining costs.</li>
-            <li><strong>Streaming and Content Creation</strong>: GPUs are used to encode live streams, apply real-time effects, and enhance video quality, making them essential for content creators on platforms like YouTube and Twitch.</li>
-        </ul>
-
-        <h2>Popular Graphics Card Manufacturers</h2>
-        <ul>
-            <li><strong>NVIDIA</strong>: A leader in the GPU market, known for its GeForce, Quadro, and Tesla series of graphics cards. NVIDIA’s GPUs are widely used in gaming, AI, and professional workstations. Their latest RTX series supports ray tracing, DLSS, and AI-enhanced features.</li>
-            <li><strong>AMD</strong>: Another top player in the GPU market, AMD produces Radeon graphics cards, which are popular for gaming and high-performance computing. AMD is known for offering good value for money and supports technologies like FidelityFX Super Resolution (FSR) for enhanced visuals.</li>
-            <li><strong>Intel</strong>: While historically not a major player in the dedicated graphics card market, Intel has begun producing discrete GPUs with its Intel Arc series, aiming to compete with NVIDIA and AMD. Intel GPUs focus on gaming, AI, and content creation at competitive prices.</li>
-        </ul>
-
-        <h2>Importance of Graphics Cards</h2>
-        <p>Graphics cards are indispensable in today's computing world, particularly for tasks that require high visual performance. Whether for gaming, video editing, 3D rendering, or AI workloads, a high-quality GPU can make a significant difference in the speed and quality of the tasks you perform. Modern GPUs are also essential for emerging technologies like virtual reality, augmented reality, and real-time ray tracing. With the continuous improvement of GPU technology, these components are becoming even more powerful and versatile, serving a broader range of applications beyond just graphics rendering. They are also becoming more energy-efficient, making them suitable for both high-performance and eco-friendly computing.</p>
-    </section>
-<!-- Linking JavaScript -->
+</div>
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 </html>

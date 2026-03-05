@@ -1,128 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Card - Computer Parts Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sound-card.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Card — Audio Guide | Computer Parts Map</title>
+  <meta name="description" content="Sound cards explained — integrated vs dedicated, DAC, top audio cards for gaming and music production.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="navbar-placeholder"></div>
+<div class="component-hero">
+  <div class="badge">🎵 Audio</div>
+  <h1>Sound Card</h1>
+  <p class="hero-subtitle">From integrated realtek to dedicated DAC/amps — how your computer makes sound.</p>
+  <img src="images/sound-card.jpg" alt="Sound Card" class="hero-img">
+</div>
+<div class="page-content">
 
-    <!-- Navigation Bar with Dropdown -->
-    <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-                <a href="#">Input Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="keyboard.html">Keyboard</a></li>
-                    <li><a href="mouse.html">Mouse</a></li>
-                    <li><a href="scanner.html">Scanner</a></li>
-                    <li><a href="microphone.html">Microphone</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Output Devices</a>
-                <ul class="sub-nav">
-                    <li><a href="monitor.html">Monitor</a></li>
-                    <li><a href="printer.html">Printer</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="projector.html">Projector</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Main Components</a>
-                <ul class="sub-nav">
-                    <li><a href="cpu.html">CPU</a></li>
-                    <li><a href="gpu.html">GPU</a></li>
-                    <li><a href="ram.html">RAM</a></li>
-                    <li><a href="hdd.html">HDD</a></li>
-                    <li><a href="ssd.html">SSD</a></li>
-                    <li><a href="usb-flash.html">USB Flash Drive</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Power</a>
-                <ul class="sub-nav">
-                    <li><a href="psu.html">Power Supply Unit</a></li>
-                    <li><a href="battery.html">Battery</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Networking</a>
-                <ul class="sub-nav">
-                    <li><a href="nic.html">Network Interface Card</a></li>
-                    <li><a href="wifi-adapter.html">Wi-Fi Adapter</a></li>
-                    <li><a href="router.html">Router</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#">Audio</a>
-                <ul class="sub-nav">
-                    <li><a href="graphics-card.html">Graphics Card</a></li>
-                    <li><a href="sound-card.html">Sound Card</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+  <div class="content-section">
+    <h2>📖 What is a Sound Card?</h2>
+    <p>A <strong>sound card</strong> is a hardware component that processes audio signals — converting digital data into analog sound for speakers/headphones (DAC), and analog input from microphones into digital data (ADC). Modern CPUs include basic integrated audio (Realtek ALC codecs), but dedicated sound cards or external DACs offer dramatically better audio quality, lower noise floor, and more connectivity.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Did You Know?</div>
+      <p>Integrated motherboard audio typically has a Signal-to-Noise Ratio (SNR) of 90–100 dB. A quality dedicated DAC like the Schiit Modi 3+ achieves 120 dB SNR — that's 10,000× quieter background noise.</p>
+    </div>
+  </div>
 
-    <section>
-        <h1>Sound Card</h1>
-        <img src="images/sound-card.jpg" alt="Sound Card - Audio Device" class="device-img">
-        <p>A sound card, also called an audio interface, is a key part of a computer that handles audio signals. It lets the computer play music, system sounds, and game audio through speakers or headphones. Modern sound cards also support advanced features like noise cancellation, high-resolution audio, and virtual surround sound. They allow input from microphones and other devices for recording high-quality audio.</p>
+  <div class="content-section">
+    <h2>🆚 Integrated vs Dedicated Sound Card</h2>
+    <table class="spec-table">
+      <thead><tr><th>Feature</th><th>Integrated Audio</th><th>PCIe Sound Card</th><th>External USB DAC</th></tr></thead>
+      <tbody>
+        <tr><td>Audio Quality (SNR)</td><td>90–100 dB</td><td>110–124 dB</td><td>115–120 dB</td></tr>
+        <tr><td>Electrical Noise</td><td>High (near GPU/CPU)</td><td>Moderate</td><td>None (outside PC)</td></tr>
+        <tr><td>Headphone Amp</td><td>Weak (max 32Ω well)</td><td>Moderate–strong</td><td>Strong (drives 300Ω)</td></tr>
+        <tr><td>Surround Sound</td><td>Virtual only</td><td>7.1 hardware</td><td>Stereo focused</td></tr>
+        <tr><td>Cost</td><td>Free (on mobo)</td><td>₹2,000–₹15,000</td><td>₹3,000–₹25,000</td></tr>
+        <tr><td>Best For</td><td>Casual users</td><td><span class="tag tag-good">Gaming + Surround</span></td><td><span class="tag tag-best">Music, Studio</span></td></tr>
+      </tbody>
+    </table>
+  </div>
 
-        <h2>History of Sound Cards</h2>
-        <p>Sound cards were first introduced in the 1980s for basic sound effects in games and simple audio playback. Over the years, they have improved to support high-quality audio, surround sound, and 3D audio. Today, sound cards are used for gaming, music production, and professional audio editing. Brands like Creative Labs and Asus have been pioneers in making sound cards more accessible and feature-rich.</p>
+  <div class="content-section">
+    <h2>🛒 Top Sound Card Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/sound-card.jpg" alt="Creative Sound Blaster AE-9">
+        <h4>Creative Sound Blaster AE-9</h4>
+        <p class="product-spec">PCIe · 32-bit/384kHz · 127dB SNR · ESS ES9038 DAC · Flagship gaming card</p>
+        <p class="product-price">~₹22,000</p>
+        <a href="https://amzn.in/d/soundblasterae9" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/sound-card.jpg" alt="FiiO K7 USB DAC">
+        <h4>FiiO K7 USB DAC/Amp</h4>
+        <p class="product-spec">External USB · 121dB SNR · THX AAA amp · Drives all headphones · For audiophiles</p>
+        <p class="product-price">~₹18,000</p>
+        <a href="https://amzn.in/d/fiiok7" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/sound-card.jpg" alt="Creative Sound Blaster AE-5 Plus">
+        <h4>Creative Sound Blaster AE-5 Plus</h4>
+        <p class="product-spec">PCIe · 32-bit/384kHz · 122dB SNR · RGB · Headphone amp built-in</p>
+        <p class="product-price">~₹12,000</p>
+        <a href="https://amzn.in/d/soundblasterae5" target="_blank" rel="noopener" class="buy-btn">🛒 Amazon India</a>
+      </div>
+      <div class="product-card">
+        <img src="images/sound-card.jpg" alt="Behringer UMC22 Budget">
+        <h4>Behringer UMC22 (Budget Studio)</h4>
+        <p class="product-spec">USB Audio Interface · 2-in/2-out · 48kHz · Best budget entry for creators</p>
+        <p class="product-price">~₹4,500</p>
+        <a href="https://www.flipkart.com/search?q=behringer+umc22" target="_blank" rel="noopener" class="buy-btn flipkart">🛒 Flipkart</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>How Sound Cards Work</h2>
-        <p>Sound cards convert digital audio signals into analog signals for speakers or headphones using Digital-to-Analog Converters (DAC). They also convert analog signals from microphones into digital signals using Analog-to-Digital Converters (ADC). Modern sound cards often include features like built-in amplifiers, equalizers, and support for high-definition audio formats. They can be installed internally on the motherboard or used externally via USB for convenience.</p>
+  <div class="content-section">
+    <h2>🔗 Related Components</h2>
+    <div class="related-grid">
+      <a href="speakers.html" class="related-link">🔊 Speakers</a>
+      <a href="microphone.html" class="related-link">🎤 Microphone</a>
+      <a href="graphics-card.html" class="related-link">🖥️ Graphics Card</a>
+    </div>
+  </div>
 
-        <h2>Types of Sound Cards</h2>
-        <ul>
-            <li><strong>Internal Sound Cards</strong>: Installed inside the computer, these cards offer high-quality audio and are ideal for gaming and professional use.</li>
-            <li><strong>External Sound Cards</strong>: These connect via USB or Thunderbolt and are portable, making them great for laptops and mobile setups.</li>
-            <li><strong>Integrated Sound Cards</strong>: Built into the motherboard, these are suitable for basic tasks like watching videos or attending online meetings.</li>
-            <li><strong>USB Sound Cards</strong>: Compact and easy to use, these are perfect for upgrading laptop audio or for musicians needing portable solutions.</li>
-        </ul>
-
-        <h2>Advantages of Sound Cards</h2>
-        <ul>
-            <li><strong>Improved Audio Quality</strong>: Modern sound cards provide crystal-clear sound, making them perfect for gaming, music, and movies.</li>
-            <li><strong>Support for Advanced Audio Technologies</strong>: They support features like Dolby Atmos, DTS:X, and virtual surround sound for immersive experiences.</li>
-            <li><strong>Enhanced Recording Capabilities</strong>: Professional sound cards allow for studio-quality recording, ideal for podcasts, music production, and voiceovers.</li>
-        </ul>
-
-        <h2>Disadvantages of Sound Cards</h2>
-        <ul>
-            <li><strong>Cost</strong>: High-end sound cards can be expensive, especially those with advanced features like 3D audio and noise reduction.</li>
-            <li><strong>Compatibility Issues</strong>: Some sound cards may not work with all systems or software, so checking compatibility is important.</li>
-            <li><strong>Requires Additional Slots</strong>: Internal sound cards need space on the motherboard, which can be a problem for compact PCs or laptops.</li>
-        </ul>
-
-        <h2>Applications of Sound Cards</h2>
-        <ul>
-            <li><strong>Gaming</strong>: They provide realistic sound effects, 3D audio, and positional sound for a better gaming experience.</li>
-            <li><strong>Music Production</strong>: Used by musicians and producers for recording, mixing, and mastering high-quality audio tracks.</li>
-            <li><strong>Video Editing</strong>: Essential for editing audio in videos, ensuring precise sound effects and background music.</li>
-            <li><strong>Home Theater</strong>: Enhance the audio quality of home theater systems with support for surround sound and high-definition audio.</li>
-        </ul>
-
-        <h2>Popular Sound Card Brands</h2>
-        <ul>
-            <li><strong>Creative Labs (Sound Blaster)</strong>: Known for high-quality sound cards with advanced features for gamers and audiophiles.</li>
-            <li><strong>Asus</strong>: Offers a wide range of sound cards for gaming, music production, and home theaters.</li>
-            <li><strong>Focusrite</strong>: Popular among musicians and studios for professional-grade audio interfaces and sound cards.</li>
-            <li><strong>Realtek</strong>: Provides affordable and reliable integrated sound solutions for everyday use.</li>
-            <li><strong>Behringer</strong>: Known for budget-friendly audio interfaces and sound cards for beginners and professionals alike.</li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>Sound cards are vital for improving the audio experience on computers. They offer better sound quality, advanced features, and professional recording capabilities. Whether you're a gamer, musician, or casual user, a good sound card can make a big difference in your audio experience. With options ranging from affordable to high-end, there's a sound card for every need and budget.</p>
-    </section>
-<!-- Linking JavaScript -->
+</div>
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="js/script.js"></script>
-    <!-- Include Anime.js -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 </html>
