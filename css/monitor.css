@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #34495E;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-item {
+    margin: 0 20px;
+}
+
+.navbar .nav-item a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-item a:hover {
+    color: #f39c12;
+}
+
+.device-img {
+    width: 60%;  /* Make the image smaller */
+    max-width: 350px;  /* Limit the max size of the image */
+    height: auto;
+    object-fit: contain;  /* Ensure aspect ratio is maintained */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 30px auto;
+    transition: transform 0.5s ease, filter 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Hover Effects for Image */
+.device-img:hover {
+    transform: scale(1.1);  /* Zoom in the image */
+    filter: brightness(1.1);  /* Slightly brighten the image */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2C2C2C;
+    color: #F0F0F0;
+}
+
+body.dark-mode section {
+    background-color: #2C2C2C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .device-img {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+}
+
+body.dark-mode .navbar .nav-item a {
+    color: #ecf0f1;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode Hover Effects */
+body.dark-mode .device-img:hover {
+    transform: scale(1.1); /* Zoom in the image */
+    filter: brightness(1.1);
+}
+
+/* Button Hover Effects */
+#darkModeToggle:hover {
+    background-color: #34495E; /* Darker shade of blue-gray */
+}
+
+

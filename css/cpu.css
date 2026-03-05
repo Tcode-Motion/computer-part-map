@@ -1,0 +1,99 @@
+/* CPU Page Specific Styles */
+
+/* Section Layout */
+section {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* Headings */
+h1 {
+    font-size: 40px;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    color: #34495E;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 4px solid #F39C12;
+    padding-left: 12px;
+}
+
+/* Paragraphs and Lists */
+p, ul, ol {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #34495E;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Emphasized text inside list */
+li strong {
+    color: #2C3E50;
+}
+
+/* Image Styling */
+.device-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 30px auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.device-img:hover {
+    transform: scale(0.85);
+    filter: brightness(0.85);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode section {
+    background-color: #2C2C2C;
+    color: #F0F0F0;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode ul,
+body.dark-mode ol,
+body.dark-mode li strong {
+    color: #F0F0F0;
+}
+
+body.dark-mode .device-img {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

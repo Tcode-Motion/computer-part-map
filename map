@@ -1,0 +1,48 @@
+/images/
+    keyboard.jpg
+    mouse.jpg
+    scanner.jpg
+    microphone.jpg
+    monitor.jpg
+    printer.jpg
+    speakers.jpg
+    projector.jpg
+    cpu.jpg
+    gpu.jpg
+    ram.jpg
+    hdd.jpg
+    ssd.jpg
+    usb-flash.jpg
+    psu.jpg
+    battery.jpg
+    nic.jpg
+    wifi-adapter.jpg
+    router.jpg
+    graphics-card.jpg
+    sound-card.jpg
+/css/
+    styles.css
+/js/
+    script.js
+index.html
+keyboard.html
+mouse.html
+scanner.html
+microphone.html
+monitor.html
+printer.html
+speakers.html
+projector.html
+cpu.html
+gpu.html
+ram.html
+hdd.html
+ssd.html
+usb-flash.html
+psu.html
+battery.html
+nic.html
+wifi-adapter.html
+router.html
+graphics-card.html
+sound-card.html

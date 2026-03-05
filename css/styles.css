@@ -1,0 +1,357 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/bk.jpg') no-repeat center center fixed; /* Adjusted relative path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #333; /* Original text color */
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: url('../images/bk.jpg') no-repeat center center fixed; /* Retain background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(33, 33, 33, 0.95); /* Darker navbar background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+body.dark-mode .nav-item a {
+    color: #e0e0e0; /* Light text color for links */
+}
+
+body.dark-mode .nav-item a:hover {
+    color: #FFB74D; /* Softer hover color */
+}
+
+body.dark-mode .sub-nav {
+    background-color: rgba(33, 33, 33, 0.95); /* Darker sub-nav background */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+body.dark-mode .sub-nav li {
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .sub-nav li:hover {
+    background-color: #424242; /* Darker hover background */
+}
+
+body.dark-mode .intro h1,
+body.dark-mode .intro h2,
+body.dark-mode .category-overview h3 {
+    color: #e0e0e0; /* Light heading colors */
+}
+
+body.dark-mode .intro p,
+body.dark-mode .category-overview p,
+body.dark-mode .category-overview ul {
+    color: #bdbdbd; /* Softer text color */
+}
+
+body.dark-mode .category-overview ul li {
+    background-color: #1e1e1e; /* Darker background for list items */
+    border-color: #424242; /* Darker border */
+}
+
+body.dark-mode .category-overview ul li:hover {
+    background-color: #333333; /* Slightly lighter hover background */
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e; /* Darker section background */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode p {
+    background-color: #1e1e1e; /* Darker background for paragraphs */
+    color: #bdbdbd; /* Softer text color */
+}
+
+body.dark-mode .pointed-paragraph {
+    background-color: #1e1e1e; /* Darker background */
+    border-color: #424242; /* Darker border */
+}
+
+body.dark-mode .bullet-box {
+    background-color: #1e1e1e; /* Darker background */
+    border-color: #424242; /* Darker border */
+}
+
+body.dark-mode .bullet-box:hover {
+    background-color: #333333; /* Slightly lighter hover background */
+}
+
+/* Full-screen Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(44, 62, 80, 0.95); /* Semi-transparent dark blue */
+    padding: 16px 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+/* Logo Section */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Navigation List */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Items */
+.nav-item {
+    position: relative;
+    margin: 0 20px;
+    transition: transform 0.4s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+/* Navigation Links */
+.nav-item a {
+    color: #fff; /* White text color for links */
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.nav-item a:hover {
+    color: #F39C12; /* Golden yellow hover color */
+    transform: translateY(-3px);
+}
+
+/* Sub-navigation Menu */
+.sub-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(44, 62, 80, 0.95);
+    padding: 8px; /* Reduced padding for better fit */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: auto; /* Adjust width to fit content */
+    min-width: 150px; /* Ensure a minimum width */
+    max-width: 200px; /* Prevent it from being too wide */
+    overflow: hidden; /* Prevent content from overflowing */
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1200;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+}
+
+.nav-item:hover .sub-nav {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%);
+}
+
+/* Dropdown Items */
+.sub-nav li {
+    padding: 8px 10px; /* Adjust padding for better fit */
+    text-align: left;
+    font-size: 16px;
+    color: #ecf0f1;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.sub-nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.sub-nav li:hover {
+    background-color: #2980B9;
+    transform: translateX(5px);
+}
+
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #2C3E50; /* Original heading color */
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #2C3E50; /* Original subheading color */
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #34495E; /* Original paragraph color */
+    animation: fadeIn 1.5s ease-out 0.5s;
+}
+
+/* Category Overview Section */
+.category-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.category-overview h3 {
+    font-size: 24px;
+    color: #2C3E50; /* Original heading color */
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.category-overview p, .category-overview ul {
+    font-size: 18px;
+    color: #34495E; /* Original text color */
+    animation: fadeIn 1.5s ease-out 0.5s;
+}
+
+/* Zoom Box Animation for List Items */
+.category-overview ul li {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #2C3E50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-overview ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Center-align Headings */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animated Box for Paragraphs */
+p {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Box for Pointed Paragraphs */
+.pointed-paragraph {
+    border: 2px solid #2C3E50;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 15px 0;
+}
+
+/* Zoom Effect on Hover */
+p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated Zoom Effect for Bullet List Boxes */
+.bullet-box {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #2C3E50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bullet-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Unified Box Style for Sections */
+section {
+    padding: 40px 30px;
+    background-color: #ffffff; /* Original white background for sections */
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Original subtle shadow */
+    animation: fadeIn 1s ease;
+    color: #333; /* Original text color */
+}

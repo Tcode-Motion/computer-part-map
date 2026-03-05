@@ -1,0 +1,293 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Full-screen Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2C3E50;
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+/* Change navbar background on scroll */
+.navbar.scrolled {
+    background-color: #1A242F;
+    transform: translateY(-4px);
+}
+
+/* Main Navigation List */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Hover Effects on Navigation Items */
+.nav-item {
+    position: relative;
+    margin: 0 20px;
+    transition: transform 0.4s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+/* Navigation Links */
+.nav-item a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.nav-item a:hover {
+    color: #F39C12;
+    transform: translateY(-3px);
+}
+
+/* Sub-Nav Dropdown Menu */
+.sub-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9) rotateX(-15deg);
+    background-color: #34495E;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+}
+
+.nav-item:hover .sub-nav {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1) rotateX(0deg);
+}
+
+.sub-nav li {
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #ecf0f1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInStaggered 0.5s ease forwards;
+    animation-delay: calc(var(--stagger-index) * 0.1s);
+}
+
+.sub-nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.sub-nav li:hover {
+    background-color: #2980B9;
+    transform: translateX(5px);
+}
+
+/* Staggered Animation for Sub-Nav Items */
+@keyframes fadeInStaggered {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying Stagger Index Dynamically */
+.sub-nav li:nth-child(1) { --stagger-index: 0; }
+.sub-nav li:nth-child(2) { --stagger-index: 1; }
+.sub-nav li:nth-child(3) { --stagger-index: 2; }
+.sub-nav li:nth-child(4) { --stagger-index: 3; }
+
+/* Section Styling */
+section {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* Headings */
+h1 {
+    font-size: 36px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2C3E50;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 18px;
+    color: #34495E;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Device Image Styling */
+.device-img {
+    width: 60%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 30px auto;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.device-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1A1A1A;
+    color: #F0F0F0;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .nav-item a {
+    color: #F0F0F0;
+}
+
+body.dark-mode .sub-nav {
+    background-color: #444;
+    border-color: #555;
+}
+
+body.dark-mode section {
+    background-color: #2C2C2C;
+    color: #F0F0F0;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .device-img {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .device-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* Button Styling for Dark Mode Toggle */
+#darkModeToggle {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+}
+
+#darkModeToggle:hover {
+    background-color: #34495E;
+}
+
+#darkModeToggle:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar .sub-nav {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .device-img {
+        width: 80%;
+    }
+}
