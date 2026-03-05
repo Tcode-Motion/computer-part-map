@@ -1,5 +1,23 @@
 [
   {
+    "id": "android-architecture.html",
+    "title": "Android Architecture Layers",
+    "body": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi. Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework. Uses a sandboxed environment for apps. Each app runs in its own process with a unique user ID. Uses Intents for inter-process communication.",
+    "url": "android-architecture.html"
+  },
+  {
+    "id": "android-history.html",
+    "title": "History of Android Versions",
+    "body": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi. Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework. Uses a sandboxed environment for apps. Each app runs in its own process with a unique user ID. Uses Intents for inter-process communication.",
+    "url": "android-history.html"
+  },
+  {
+    "id": "android.html",
+    "title": "Android OS \u2014 Mobile Freedom",
+    "body": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi. Developed by Android Inc. and bought by Google in 2005. The first commercial device was the T-Mobile G1 (2008). It has evolved from simple smartphone use to tablets, TVs, and cars. Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework.",
+    "url": "android.html"
+  },
+  {
     "id": "battery.html",
     "title": "Battery \u2014 Laptop & UPS Guide",
     "body": "In computing, batteries serve two major roles: the rechargeable pack in laptops and tablets that enables portability, and the UPS (Uninterruptible Power Supply) battery that protects desktop systems from power outages, protecting data and hardware from power surges. Lithium-ion batteries degrade with charge cycles. Keeping a laptop battery between 20\u201380% charge can double its lifespan from ~500 cycles to ~1000 cycles. Li-Ion (Lithium-Ion) 150\u2013265 Wh/kg 500\u20131000 cycles Laptops, UPS, phones LiPo (Lithium Polymer) 100\u2013265 Wh/kg 300\u2013500 cycles Thin laptops, tablets Lead-Acid (SLA) 30\u201350 Wh/kg 200\u2013300 cycles UPS backup systems CMOS Battery (CR2032) N/A 5\u201310 years BIOS clock, settings 1100VA / 660W \u00b7 8 outlets \u00b7 1-hour runtime for basic PC \u00b7 USB charging \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) 1000VA \u00b7 Pure sine wave \u00b7 LCD display \u00b7 Best Indian brand UPS pick \u20b94,025 \u2013 \u20b95,575 (Avg: \u20b94,800) To elevate your understanding of Battery to an academic and engineering level, explore the curated resources below",
@@ -44,7 +62,7 @@
   {
     "id": "cpu.html",
     "title": "CPU \u2014 Central Processing Unit",
-    "body": "\n     The\n     \n      Central Processing Unit (CPU)\n     \n     is the primary component responsible for executing instructions in a computer program. It performs arithmetic, logic, control, and input/output operations as specified by the program. Modern CPUs can execute billions of operations per second and are built using transistors just a few nanometers in size.\n     \n     Every action you take on a computer \u2014 opening a browser, playing a game, running AI models \u2014 is ultimately processed by the CPU. It fetches instructions from RAM, decodes them, executes them, and writes results back.\n     \n      The Intel 4004, launched in 1971, was the world's first commercial microprocessor. It ran at 740 kHz and had just 2,300 transistors. Today's CPUs have over 50 billion transistors and run at 5+ GHz.\n      \n        Architecture\n        \n        Raptor Lake / Meteor Lake\n        \n        Zen 4 / Zen 5\n        \n        Top Consumer CPU\n        \n        Core i9-14900K\n        \n        Ryzen 9 7",
+    "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. \n     Every action you take on a computer \u2014 opening a browser, playing a game, running AI models \u2014 is ultimately processed by the CPU. It fetches instructions from RAM, decodes them, executes them, and writes results back.\n     \n      The Intel 4004, launched in 1971, was the world's first commercial microprocessor. It ran at 740 kHz and had just 2,300 transistors. Today's CPUs have over 50 billion transistors and run at 5+ GHz.\n      \n        Architecture\n        \n        Raptor Lake / Meteor Lake\n        \n        Zen 4 / Zen 5\n        \n        Top Consumer CPU\n        \n        Core i9-14900K\n        \n        Ryzen 9 7950X\n        \n        Max Boost Clock\n        \n        6.0 GHz\n        \n        5.7 GHz\n        \n        Max Core Count (Desktop)\n        \n        24 (8P + 16E)\n        \n        16 (al",
     "url": "cpu.html"
   },
   {
@@ -62,7 +80,7 @@
   {
     "id": "gpu.html",
     "title": "GPU \u2014 Graphics Processing Unit",
-    "body": "\n     A\n     \n      Graphics Processing Unit (GPU)\n     \n     is a specialized processor designed to handle parallel computations at massive scale. Originally built to render graphics, GPUs are now central to gaming, video editing, scientific simulation, machine learning, and cryptocurrency mining.\n     \n     While a CPU has 8\u201324 powerful cores for sequential tasks, a GPU has thousands of smaller cores optimized for doing many things simultaneously \u2014 perfect for rendering millions of pixels or training neural networks.\n     \n      NVIDIA's H100 GPU, used for AI training, contains 80 billion transistors and costs over $30,000. A single H100 can train a large language model 30x faster than the previous generation.\n      \n        Architecture\n        \n        Ada Lovelace\n        \n        RDNA 3\n        \n        Xe-HPG\n        \n        VRAM\n        \n        16 GB GDDR6X\n        \n        24 GB GDDR6\n        \n        16 GB GDDR6\n        \n        Ray Tracing\n        \n        Excellent\n      ",
+    "body": "GPUs are highly parallel processors originally designed for rendering graphics, now widely used for AI, machine learning, and scientific simulations. \n     While a CPU has 8\u201324 powerful cores for sequential tasks, a GPU has thousands of smaller cores optimized for doing many things simultaneously \u2014 perfect for rendering millions of pixels or training neural networks.\n     \n      NVIDIA's H100 GPU, used for AI training, contains 80 billion transistors and costs over $30,000. A single H100 can train a large language model 30x faster than the previous generation.\n      \n        Architecture\n        \n        Ada Lovelace\n        \n        RDNA 3\n        \n        Xe-HPG\n        \n        VRAM\n        \n        16 GB GDDR6X\n        \n        24 GB GDDR6\n        \n        16 GB GDDR6\n        \n        Ray Tracing\n        \n        Excellent\n        \n         Best\n        \n \n        Good\n        \n         Good\n        \n \n        Average\n        \n         Basic\n        \n \n        AI / DLSS\n        \n  ",
     "url": "gpu.html"
   },
   {
@@ -78,21 +96,63 @@
     "url": "hdd.html"
   },
   {
+    "id": "ios-appstore.html",
+    "title": "App Store Ecosystem",
+    "body": "iOS is known for its smooth performance, strict security model, and seamless integration with other Apple devices. It powers the iPhone and serves as the basis for iPadOS. Derived from the Darwin (Unix) foundation of macOS. Layers include Core OS, Core Services, Media Layer, and Cocoa Touch. Highly optimized for specific Apple hardware. Uses strict app sandboxing and code signing. Managed by the XNU kernel with high energy efficiency.",
+    "url": "ios-appstore.html"
+  },
+  {
+    "id": "ios-security.html",
+    "title": "iOS Security Architecture",
+    "body": "iOS is known for its smooth performance, strict security model, and seamless integration with other Apple devices. It powers the iPhone and serves as the basis for iPadOS. Derived from the Darwin (Unix) foundation of macOS. Layers include Core OS, Core Services, Media Layer, and Cocoa Touch. Highly optimized for specific Apple hardware. Uses strict app sandboxing and code signing. Managed by the XNU kernel with high energy efficiency.",
+    "url": "ios-security.html"
+  },
+  {
+    "id": "ios.html",
+    "title": "iOS \u2014 Apple Mobile Ecosystem",
+    "body": "iOS is known for its smooth performance, strict security model, and seamless integration with other Apple devices. It powers the iPhone and serves as the basis for iPadOS. Unveiled with the original iPhone in 2007. Originally called \"iPhone OS\", it shared much of its foundation with macOS. It revolutionized mobile computing with the App Store in 2008. Derived from the Darwin (Unix) foundation of macOS. Layers include Core OS, Core Services, Media Layer, and Cocoa Touch.",
+    "url": "ios.html"
+  },
+  {
     "id": "keyboard.html",
     "title": "Keyboard \u2014 Complete Guide",
     "body": "A keyboard is an input device that lets you type characters, execute commands, and interact with your computer. Modern keyboards come in an enormous variety of form factors, switch types, layouts, and connectivity options \u2014 from ultra-portable 60% layouts to full-size numpad keyboards. The QWERTY layout was designed in the 1870s for typewriters \u2014 partly to slow typists down to prevent mechanical key jams. Yet it remains the global standard 150 years later. Cherry MX Red / Speed Silver Linear (smooth) Quiet 45g Gaming Cherry MX Brown / Gateron Brown Tactile (bump) Moderate 55g Typing + Gaming Cherry MX Blue / Kailh Box White Clicky tactile Loud 60g Typing / Enthusiast Topre Electrostatic capacitive Thocky 45g Premium Typing Membrane Mushy, flat Very quiet Variable Office / Budget 75% layout \u00b7 Hot-swap \u00b7 Gateron switches \u00b7 Wireless / Wired \u00b7 Aluminum frame \u20b97,225 \u2013 \u20b99,775 (Avg: \u20b98,500) TKL \u00b7 Hot-swap \u00b7 GX switches (Red/Blue/Brown) \u00b7 USB \u00b7 Pro gaming \u20b98,025 \u2013 \u20b910,975 (Avg: \u20b99,500) Full si",
     "url": "keyboard.html"
   },
   {
+    "id": "linux-distros.html",
+    "title": "Top 15 Linux Distributions",
+    "body": "Linux is the backbone of the internet, powering millions of servers, supercomputers, and embedded devices. It is known for its stability, security, and the concept of \"Distributions\" (Distros) which package the kernel with different software. Monolithic Kernel. Highly modular, allowing drivers to be loaded/unloaded at runtime. Everything is treated as a file. Uses the root user model for security. The kernel manages hardware resources. System calls provide the interface for user-space applications (like the shell or desktop environment) to interact with hardware.",
+    "url": "linux-distros.html"
+  },
+  {
+    "id": "linux-kernel.html",
+    "title": "Linux Kernel Architecture",
+    "body": "Linux is the backbone of the internet, powering millions of servers, supercomputers, and embedded devices. It is known for its stability, security, and the concept of \"Distributions\" (Distros) which package the kernel with different software. Monolithic Kernel. Highly modular, allowing drivers to be loaded/unloaded at runtime. Everything is treated as a file. Uses the root user model for security. The kernel manages hardware resources. System calls provide the interface for user-space applications (like the shell or desktop environment) to interact with hardware.",
+    "url": "linux-kernel.html"
+  },
+  {
     "id": "linux.html",
     "title": "Linux \u2014 Open Source OS",
-    "body": "Linux is an open-source, Unix-like operating system kernel first released by Linus Torvalds in 1991. It is the core of Android and most servers worldwide. Ubuntu Debian Beginners Fedora RPM Developers Arch Linux Independent Power Users Debian Independent Servers To elevate your understanding of Linux to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Linux Google Scholar: Recent Papers on Linux IEEE Xplore: Engineering Specifications",
+    "body": "Linux is the backbone of the internet, powering millions of servers, supercomputers, and embedded devices. It is known for its stability, security, and the concept of \"Distributions\" (Distros) which package the kernel with different software. Ubuntu Debian Beginners Fedora RPM Developers Arch Linux Independent Power Users Debian Independent Servers To elevate your understanding of Linux to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Linux Google Scholar: Recent Papers on Linux IEEE Xplore: Engineering Specifications Linus Torvalds released the first kernel in 1991. It combined with the GNU project tools to create a functional free OS. Today, it has thousands of variants catering to different needs. Monolithic Kernel. Highly modular, allowing drivers to be loaded/unloaded at runtime. Everythin",
     "url": "linux.html"
+  },
+  {
+    "id": "macos-darwin.html",
+    "title": "Darwin Kernel Explained",
+    "body": "macOS is designed specifically for Apple hardware (Macintosh). It is famous for its elegant user interface (Aqua), tight integration with the Apple ecosystem, and high performance for creative professionals. XNU Kernel (Hybrid). Combines the Mach microkernel and components from FreeBSD. Uses the APFS file system and Metal API for graphics acceleration. Built on a Unix foundation (Darwin). Uses the Cocoa framework for applications. Employs \"Rosetta 2\" to translate Intel apps for Apple Silicon hardware.",
+    "url": "macos-darwin.html"
+  },
+  {
+    "id": "macos-hardware.html",
+    "title": "macOS Hardware Integration",
+    "body": "macOS is designed specifically for Apple hardware (Macintosh). It is famous for its elegant user interface (Aqua), tight integration with the Apple ecosystem, and high performance for creative professionals. XNU Kernel (Hybrid). Combines the Mach microkernel and components from FreeBSD. Uses the APFS file system and Metal API for graphics acceleration. Built on a Unix foundation (Darwin). Uses the Cocoa framework for applications. Employs \"Rosetta 2\" to translate Intel apps for Apple Silicon hardware.",
+    "url": "macos-hardware.html"
   },
   {
     "id": "macos.html",
     "title": "macOS \u2014 Apple's Desktop OS",
-    "body": "macOS is Apple's proprietary desktop operating system. Built on a UNIX base, it is renowned for its stability, security, and tight ecosystem integration. Mac OS X 10.0 2001 Cheetah macOS 11 2020 Big Sur (M1 support) macOS 15 2024 Sequoia Latest To elevate your understanding of Macos to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Macos Google Scholar: Recent Papers on Macos IEEE Xplore: Engineering Specifications",
+    "body": "macOS is designed specifically for Apple hardware (Macintosh). It is famous for its elegant user interface (Aqua), tight integration with the Apple ecosystem, and high performance for creative professionals. Mac OS X 10.0 2001 Cheetah macOS 11 2020 Big Sur (M1 support) macOS 15 2024 Sequoia Latest To elevate your understanding of Macos to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Macos Google Scholar: Recent Papers on Macos IEEE Xplore: Engineering Specifications XNU Kernel (Hybrid). Combines the Mach microkernel and components from FreeBSD. Uses the APFS file system and Metal API for graphics acceleration.",
     "url": "macos.html"
   },
   {
@@ -122,7 +182,7 @@
   {
     "id": "motherboard.html",
     "title": "Motherboard \u2014 The Component Backbone",
-    "body": "The motherboard (or mobo) is the main printed circuit board (PCB) in a computer. It holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. The first motherboard is often considered to be the \"Planar\" board used in the IBM Personal Computer released in 1981. It held the CPU and RAM but had very few built-in ports compared to modern boards. E-ATX 12\" x 13\" 4+ slots High-end workstations ATX 12\" x 9.6\" 3-4 slots Standard / Gaming Micro-ATX (mATX) 9.6\" x 9.6\" 2-3 slots Budget / Compact builds Mini-ITX (ITX) 6.7\" x 6.7\" 1 slot SFF (Small Form Factor) Intel Z790 \u00b7 LGA 1700 \u00b7 DDR5 \u00b7 PCIe 5.0 \u00b7 5x M.2 slots \u00b7 WiFi 6E \u20b945,000 \u2013 \u20b955,000 (Avg: \u20b950,000) AMD B650 \u00b7 AM5 \u00b7 DDR5 \u00b7 PCIe 4.0 \u00b7 3x M.2 slots \u00b7 WiFi 6E \u20b921,000 \u2013 \u20b928,000 (Avg: \u20b924,000) To elevate your understanding of Motherboard to an academic and engineering level, explore the curated resources below. These materials cover the",
+    "body": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. The first motherboard is often considered to be the \"Planar\" board used in the IBM Personal Computer released in 1981. It held the CPU and RAM but had very few built-in ports compared to modern boards. E-ATX 12\" x 13\" 4+ slots High-end workstations ATX 12\" x 9.6\" 3-4 slots Standard / Gaming Micro-ATX (mATX) 9.6\" x 9.6\" 2-3 slots Budget / Compact builds Mini-ITX (ITX) 6.7\" x 6.7\" 1 slot SFF (Small Form Factor) Intel Z790 \u00b7 LGA 1700 \u00b7 DDR5 \u00b7 PCIe 5.0 \u00b7 5x M.2 slots \u00b7 WiFi 6E \u20b945,000 \u2013 \u20b955,000 (Avg: \u20b950,000) AMD B650 \u00b7 AM5 \u00b7 DDR5 \u00b7 PCIe 4.0 \u00b7 3x M.2 slots \u00b7 WiFi 6E \u20b921,000 \u2013 \u20b928,000 (Avg: \u20b924,000) To elevate your understanding of Motherboard to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implemen",
     "url": "motherboard.html"
   },
   {
@@ -146,14 +206,26 @@
   {
     "id": "operating-systems.html",
     "title": "Operating Systems \u2014 Complete Guide",
-    "body": "An Operating System (OS) is system software that manages computer hardware, software resources, and provides common services for application programs. It acts as an intermediary between the user and the hardware. Desktop OS Personal computing Windows 11, macOS, Ubuntu Mobile OS Phones/Tablets Android, iOS Server OS Network services Windows Server, Red Hat Embedded OS IoT / Appliances FreeRTOS, Embedded Linux To elevate your understanding of Operating Systems to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Operating Systems Google Scholar: Recent Papers on Operating Systems IEEE Xplore: Engineering Specifications",
+    "body": "The Operating System (OS) is the most critical software in a computer. It bridges the gap between hardware and user applications, handling memory management, process scheduling, file systems, and hardware abstraction. Desktop OS Personal computing Windows 11, macOS, Ubuntu Mobile OS Phones/Tablets Android, iOS Server OS Network services Windows Server, Red Hat Embedded OS IoT / Appliances FreeRTOS, Embedded Linux To elevate your understanding of Operating Systems to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Operating Systems Google Scholar: Recent Papers on Operating Systems IEEE Xplore: Engineering Specifications Early computers lacked OSs, requiring manual batch processing. Key milestones include GM-NAA I (1956), Unix (1969), MS-DOS (1981), and Windows 1.0 (1985). Modern OS architecture c",
     "url": "operating-systems.html"
   },
   {
     "id": "optical-drive.html",
     "title": "Optical Drive \u2014 CD/DVD/Blu-ray Guide",
-    "body": "An optical drive reads (and sometimes writes) data from optical discs \u2014 CDs, DVDs, and Blu-ray discs \u2014 using a laser. While largely replaced by USB drives and streaming for consumer use, optical drives remain important for legacy software, physical media collectors, and archival backup. A single-layer Blu-ray disc holds 25 GB, while a 4K Ultra HD Blu-ray disc can hold 100 GB \u2014 enough for a full 4K movie with Dolby Atmos audio, something streaming often can't match in quality. CD 700 MB Infrared (780nm) Music, small data Legacy DVD 4.7 GB (SL) / 8.5 GB (DL) Red (650nm) Movies, software installs Blu-ray 25 GB (SL) / 50 GB (DL) Blue (405nm) HD/4K movies, archival Current 4K UHD Blu-ray 66\u2013100 GB Blue (405nm) Premium 4K/HDR content Premium To elevate your understanding of Optical Drive to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent",
+    "body": "While now a legacy component for mainstream users, optical drives use precise laser technology to access data encoded as microscopic pits and lands on a polycarbonate disc. A single-layer Blu-ray disc holds 25 GB, while a 4K Ultra HD Blu-ray disc can hold 100 GB \u2014 enough for a full 4K movie with Dolby Atmos audio, something streaming often can't match in quality. CD 700 MB Infrared (780nm) Music, small data Legacy DVD 4.7 GB (SL) / 8.5 GB (DL) Red (650nm) Movies, software installs Blu-ray 25 GB (SL) / 50 GB (DL) Blue (405nm) HD/4K movies, archival Current 4K UHD Blu-ray 66\u2013100 GB Blue (405nm) Premium 4K/HDR content Premium To elevate your understanding of Optical Drive to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Optical Drive Google Scholar: Recent Papers on Optical Drive IEEE Xplore: Engi",
     "url": "optical-drive.html"
+  },
+  {
+    "id": "optical-laser.html",
+    "title": "Optical Laser Technology",
+    "body": "While now a legacy component for mainstream users, optical drives use precise laser technology to access data encoded as microscopic pits and lands on a polycarbonate disc. Consists of a spindle motor, a tracking mechanism, and an optical pickup head containing a semiconductor laser diode and photodiode sensor. A laser beam is focused onto the spinning disc. Changes in reflection from pits (indentations) and lands (flat areas) are detected by the photodiode and translated into binary data.",
+    "url": "optical-laser.html"
+  },
+  {
+    "id": "os-kernel-architecture.html",
+    "title": "OS Kernel Architecture",
+    "body": "The Operating System (OS) is the most critical software in a computer. It bridges the gap between hardware and user applications, handling memory management, process scheduling, file systems, and hardware abstraction. Modern OS architecture centers around the Kernel (Monolithic, Microkernel, or Hybrid). It includes the hardware abstraction layer (HAL), system call interface, and user space applications. The OS kernel operates in privileged mode (Ring 0), directly controlling CPU scheduling, memory allocation (paging/segmentation), and hardware interrupts via device drivers.",
+    "url": "os-kernel-architecture.html"
   },
   {
     "id": "printer.html",
@@ -194,7 +266,7 @@
   {
     "id": "ram.html",
     "title": "RAM \u2014 Random Access Memory",
-    "body": "Random Access Memory (RAM) is your computer's working memory. Unlike storage (HDD/SSD), RAM is volatile \u2014 it loses its data when powered off. But it's extremely fast, allowing the CPU to instantly access data it's actively working with. When you open Chrome with 30 tabs, edit a video, or run a game, all that active data lives in RAM. More RAM means you can do more things simultaneously without slowdowns. Modern systems typically need 16\u201332 GB for smooth multitasking. RAM is about 100,000x faster than a traditional HDD and ~10\u201320x faster than even the fastest NVMe SSD. This is why your OS loads frequently-used files into RAM automatically. DDR3 800 \u2013 2133 MHz 1.5V Up to 17 GB/s Legacy DDR4 2133 \u2013 5000 MHz 1.2V Up to 40 GB/s Current \u2014 Most Common DDR5 4800 \u2013 8400+ MHz 1.1V Up to 67 GB/s Latest Standard 4 GB Very basic computing, older laptops Insufficient today 8 GB Light browsing, office work Minimum 16 GB Gaming, coding, everyday use Sweet spot 32 GB Video editing, Photoshop, heavy mul",
+    "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. When you open Chrome with 30 tabs, edit a video, or run a game, all that active data lives in RAM. More RAM means you can do more things simultaneously without slowdowns. Modern systems typically need 16\u201332 GB for smooth multitasking. RAM is about 100,000x faster than a traditional HDD and ~10\u201320x faster than even the fastest NVMe SSD. This is why your OS loads frequently-used files into RAM automatically. DDR3 800 \u2013 2133 MHz 1.5V Up to 17 GB/s Legacy DDR4 2133 \u2013 5000 MHz 1.2V Up to 40 GB/s Current \u2014 Most Common DDR5 4800 \u2013 8400+ MHz 1.1V Up to 67 GB/s Latest Standard 4 GB Very basic computing, older laptops Insufficient today 8 GB Light browsing, office work Minimum 16 GB Gaming, coding, everyday use Sweet spot 32 GB Video editing, Photoshop, heavy multitasking Recommended for creators 64 GB+ 3D rendering, servers, data science, AI training Wo",
     "url": "ram.html"
   },
   {
@@ -218,8 +290,14 @@
   {
     "id": "server-guide.html",
     "title": "Server Guide \u2014 Data Centers & Cloud",
-    "body": "CPU Consumer (Core/Ryzen) Enterprise (Xeon/EPYC) RAM Non-ECC ECC (Error Correcting) Uptime Personal use 24/7 (99.99%) To elevate your understanding of Server Guide to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Server Guide Google Scholar: Recent Papers on Server Guide IEEE Xplore: Engineering Specifications",
+    "body": "CPU Consumer (Core/Ryzen) Enterprise (Xeon/EPYC) RAM Non-ECC ECC (Error Correcting) Uptime Personal use 24/7 (99.99%) To elevate your understanding of Server Guide to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Server Guide Google Scholar: Recent Papers on Server Guide IEEE Xplore: Engineering Specifications Evolved from massive mainframe computers to rack-mounted x86 servers in the 1990s, and now to ultra-dense blade servers and hyper-converged infrastructure in modern data centers. Features multi-socket motherboards, ECC (Error-Correcting Code) RAM, redundant power supplies (PSUs), hardware RAID controllers, and baseboard management controllers (BMCs) for out-of-band management.",
     "url": "server-guide.html"
+  },
+  {
+    "id": "server-infrastructure.html",
+    "title": "Server Infrastructure",
+    "body": "Servers are the backbone of the internet and enterprise computing. They are engineered for 24/7 reliability, massive I/O throughput, and high-density compute. Features multi-socket motherboards, ECC (Error-Correcting Code) RAM, redundant power supplies (PSUs), hardware RAID controllers, and baseboard management controllers (BMCs) for out-of-band management. Servers run specialized OSs (Linux, Windows Server) to host hypervisors (ESXi, Proxmox) or container engines (Docker, Kubernetes) to maximize hardware utilization across multiple virtual instances.",
+    "url": "server-infrastructure.html"
   },
   {
     "id": "software-types.html",
@@ -240,9 +318,15 @@
     "url": "speakers.html"
   },
   {
+    "id": "ssd-architecture.html",
+    "title": "SSD Architecture",
+    "body": "SSDs have revolutionized storage by replacing moving magnetic platters with NAND flash memory, offering exponentially faster read/write speeds, lower latency, and greater physical durability. Consists of a controller, NAND flash memory chips (SLC, MLC, TLC, QLC), and often DRAM cache. Interfaces evolved from SATA to high-bandwidth NVMe over PCIe. Data is written by applying voltage to floating-gate or charge-trap transistors within memory cells, trapping electrons to represent bits of data.",
+    "url": "ssd-architecture.html"
+  },
+  {
     "id": "ssd.html",
     "title": "SSD \u2014 Solid State Drive",
-    "body": "A Solid State Drive (SSD) stores data on NAND flash memory chips \u2014 no moving parts, no spinning platters. This makes SSDs dramatically faster, quieter, more durable, and more energy-efficient than traditional HDDs. SSDs are now standard in all modern laptops and desktops. Your operating system, games, and frequently-used applications should always be on an SSD for the best experience. An NVMe SSD can read data at 7,000 MB/s \u2014 fast enough to copy an entire Blu-ray disc in under 7 seconds. A classic HDD manages only around 120 MB/s for the same task. NVMe Gen 4 PCIe 4.0 x4 5,000\u20137,000 MB/s M.2 2280 ~\u20b96,000 OS, Gaming, Creative NVMe Gen 3 PCIe 3.0 x4 3,000\u20133,500 MB/s M.2 2280 ~\u20b94,500 Great all-rounder SATA SSD SATA III 550 MB/s 2.5\" / M.2 ~\u20b93,500 Budget OS drive HDD SATA III 80\u2013150 MB/s 3.5\" / 2.5\" ~\u20b91,500 Mass storage / Backup 1 TB \u00b7 PCIe 4.0 \u00b7 7,450 MB/s read \u00b7 Excellent reliability \u00b7 PS5 compatible \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) 1 TB \u00b7 PCIe 4.0 \u00b7 7,300 MB/s read \u00b7 Gaming optimized with ",
+    "body": "SSDs have revolutionized storage by replacing moving magnetic platters with NAND flash memory, offering exponentially faster read/write speeds, lower latency, and greater physical durability. SSDs are now standard in all modern laptops and desktops. Your operating system, games, and frequently-used applications should always be on an SSD for the best experience. An NVMe SSD can read data at 7,000 MB/s \u2014 fast enough to copy an entire Blu-ray disc in under 7 seconds. A classic HDD manages only around 120 MB/s for the same task. NVMe Gen 4 PCIe 4.0 x4 5,000\u20137,000 MB/s M.2 2280 ~\u20b96,000 OS, Gaming, Creative NVMe Gen 3 PCIe 3.0 x4 3,000\u20133,500 MB/s M.2 2280 ~\u20b94,500 Great all-rounder SATA SSD SATA III 550 MB/s 2.5\" / M.2 ~\u20b93,500 Budget OS drive HDD SATA III 80\u2013150 MB/s 3.5\" / 2.5\" ~\u20b91,500 Mass storage / Backup 1 TB \u00b7 PCIe 4.0 \u00b7 7,450 MB/s read \u00b7 Excellent reliability \u00b7 PS5 compatible \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) 1 TB \u00b7 PCIe 4.0 \u00b7 7,300 MB/s read \u00b7 Gaming optimized with PS5 heatsink \u20b96,825 \u2013 \u20b9",
     "url": "ssd.html"
   },
   {
@@ -276,10 +360,28 @@
     "url": "wifi-adapter.html"
   },
   {
+    "id": "windows-nt-architecture.html",
+    "title": "Windows NT Kernel Deep Dive",
+    "body": "Windows is the most widely used desktop operating system globally. It provides a user-friendly interface, vast software compatibility, and support for a huge range of hardware peripherals. Hybrid Kernel (Windows NT). Uses subsystems (Win32, POSIX, OS/2 historically) and a Hardware Abstraction Layer (HAL). It employs the NTFS file system and the Windows Registry for system-wide configuration. Interrupt-driven architecture. The executive layer handles memory management, process management, and I/O. The user-mode environment facilitates application execution via APIs.",
+    "url": "windows-nt-architecture.html"
+  },
+  {
+    "id": "windows-versions.html",
+    "title": "Windows 7, 10, 11 Comparison",
+    "body": "Windows is the most widely used desktop operating system globally. It provides a user-friendly interface, vast software compatibility, and support for a huge range of hardware peripherals. Hybrid Kernel (Windows NT). Uses subsystems (Win32, POSIX, OS/2 historically) and a Hardware Abstraction Layer (HAL). It employs the NTFS file system and the Windows Registry for system-wide configuration. Interrupt-driven architecture. The executive layer handles memory management, process management, and I/O. The user-mode environment facilitates application execution via APIs.",
+    "url": "windows-versions.html"
+  },
+  {
     "id": "windows.html",
     "title": "Windows \u2014 History & Architecture",
-    "body": "Microsoft Windows is a family of proprietary graphical operating systems developed by Microsoft. It dominates the desktop market with ~72% share. Windows 95 1995 Start Menu, Taskbar Windows XP 2001 Stability Classic Windows 7 2009 Perfected UI Legendary Windows 10 2015 WSL, DirectX 12 Windows 11 2021 Centered Taskbar Latest To elevate your understanding of Windows to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Windows Google Scholar: Recent Papers on Windows IEEE Xplore: Engineering Specifications",
+    "body": "Windows is the most widely used desktop operating system globally. It provides a user-friendly interface, vast software compatibility, and support for a huge range of hardware peripherals. Windows 95 1995 Start Menu, Taskbar Windows XP 2001 Stability Classic Windows 7 2009 Perfected UI Legendary Windows 10 2015 WSL, DirectX 12 Windows 11 2021 Centered Taskbar Latest To elevate your understanding of Windows to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Windows Google Scholar: Recent Papers on Windows IEEE Xplore: Engineering Specifications Launched in 1985 as a GUI for MS-DOS. Windows NT (1993) introduced the modern 32-bit/64-bit architecture. Key versions include Windows 95, XP, 7 (beloved for stability), 10 (universal OS), and 11 (modern overhaul). Note: Windows 9 was skipped to avoid confu",
     "url": "windows.html"
+  },
+  {
+    "id": "data-android",
+    "title": "Android OS Deep Data",
+    "body": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi. Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework. Developed by Android Inc. and bought by Google in 2005. The first commercial device was the T-Mobile G1 (2008). It has evolved from simple smartphone use to tablets, TVs, and cars. Uses a sandboxed environment for apps. Each app runs in its own process with a unique user ID. Uses Intents for inter-process communication. Smartphones Tablets Android Auto Wearables (Wear OS) Smart TVs AnTuTu Geekbench (Mobile) GFXBench Android Open Source Project Android Developer Portal",
+    "url": "android.html"
   },
   {
     "id": "data-cpu",
@@ -294,15 +396,63 @@
     "url": "gpu.html"
   },
   {
+    "id": "data-ios",
+    "title": "iOS Deep Data",
+    "body": "iOS is known for its smooth performance, strict security model, and seamless integration with other Apple devices. It powers the iPhone and serves as the basis for iPadOS. Derived from the Darwin (Unix) foundation of macOS. Layers include Core OS, Core Services, Media Layer, and Cocoa Touch. Unveiled with the original iPhone in 2007. Originally called \"iPhone OS\", it shared much of its foundation with macOS. It revolutionized mobile computing with the App Store in 2008. Highly optimized for specific Apple hardware. Uses strict app sandboxing and code signing. Managed by the XNU kernel with high energy efficiency. iPhone iPad (via iPadOS variant) Apple TV (via tvOS variant) Geekbench (iOS) JetStream 2 3DMark Mobile Apple iOS Security Guide iOS Developer Center",
+    "url": "ios.html"
+  },
+  {
+    "id": "data-linux",
+    "title": "Linux Operating System Deep Data",
+    "body": "Linux is the backbone of the internet, powering millions of servers, supercomputers, and embedded devices. It is known for its stability, security, and the concept of \"Distributions\" (Distros) which package the kernel with different software. Monolithic Kernel. Highly modular, allowing drivers to be loaded/unloaded at runtime. Everything is treated as a file. Uses the root user model for security. Linus Torvalds released the first kernel in 1991. It combined with the GNU project tools to create a functional free OS. Today, it has thousands of variants catering to different needs. The kernel manages hardware resources. System calls provide the interface for user-space applications (like the shell or desktop environment) to interact with hardware. Web Servers (Apache/Nginx) Cybersecurity (Kali Linux) Software Development Scientific Computing (Supercomputers) IoT Devices Phoronix Test Suite UnixBench Sysbench The Linux Foundation Kernel.org",
+    "url": "linux.html"
+  },
+  {
+    "id": "data-macos",
+    "title": "macOS Deep Data",
+    "body": "macOS is designed specifically for Apple hardware (Macintosh). It is famous for its elegant user interface (Aqua), tight integration with the Apple ecosystem, and high performance for creative professionals. XNU Kernel (Hybrid). Combines the Mach microkernel and components from FreeBSD. Uses the APFS file system and Metal API for graphics acceleration. Evolved from NeXTSTEP and the classic Mac OS. Shifted from PowerPC to Intel in 2006, and recently to Apple Silicon (M1/M2/M3) in 2020, significantly boosting efficiency. Built on a Unix foundation (Darwin). Uses the Cocoa framework for applications. Employs \"Rosetta 2\" to translate Intel apps for Apple Silicon hardware. Graphic Design Video Editing (Final Cut Pro) Software Development (Xcode) Music Production (Logic Pro) Geekbench 6 Speedometer 3.0 Final Cut Render Times Apple Developer Documentation macOS History on Wikipedia",
+    "url": "macos.html"
+  },
+  {
     "id": "data-motherboard",
     "title": "Motherboard Deep Data",
     "body": "The motherboard holds and allows communication between many of the crucial electronic components of a system, such as the CPU and memory, and provides connectors for other peripherals. Includes the CPU socket, RAM slots, PCIe slots, chipset (Northbridge/Southbridge historically, now highly integrated PCH), VRMs (Voltage Regulator Modules), and I/O ports. Before motherboards, computers consisted of multiple printed circuit boards plugged into a backplane. The original IBM PC motherboard (the planar) established the standard. Traces on the PCB act as buses, routing data and power. The chipset manages data flow between the CPU, memory, and peripherals using protocols like PCIe, SATA, and USB. Desktop PCs Servers Laptops Embedded computing DPC Latency Checker PassMark System Test ATX Specification PCI Express Standard",
     "url": "motherboard.html"
   },
   {
+    "id": "data-operating-systems",
+    "title": "Operating Systems Deep Data",
+    "body": "The Operating System (OS) is the most critical software in a computer. It bridges the gap between hardware and user applications, handling memory management, process scheduling, file systems, and hardware abstraction. Modern OS architecture centers around the Kernel (Monolithic, Microkernel, or Hybrid). It includes the hardware abstraction layer (HAL), system call interface, and user space applications. Early computers lacked OSs, requiring manual batch processing. Key milestones include GM-NAA I (1956), Unix (1969), MS-DOS (1981), and Windows 1.0 (1985). The OS kernel operates in privileged mode (Ring 0), directly controlling CPU scheduling, memory allocation (paging/segmentation), and hardware interrupts via device drivers. Personal computing Server management Embedded systems Mobile devices Phoronix Test Suite UnixBench Sysbench Operating Systems: Three Easy Pieces The Linux Kernel Archives",
+    "url": "operating-systems.html"
+  },
+  {
+    "id": "data-optical-drive",
+    "title": "Optical Drive Deep Data",
+    "body": "While now a legacy component for mainstream users, optical drives use precise laser technology to access data encoded as microscopic pits and lands on a polycarbonate disc. Consists of a spindle motor, a tracking mechanism, and an optical pickup head containing a semiconductor laser diode and photodiode sensor. CD-ROMs revolutionized software distribution in the 1990s, replacing floppy disks. DVDs introduced movie-quality video, followed by Blu-ray for HD and 4K content. A laser beam is focused onto the spinning disc. Changes in reflection from pits (indentations) and lands (flat areas) are detected by the photodiode and translated into binary data. Archival data backup Legacy software installation High-fidelity audio/video playback (Blu-ray) Nero DiscSpeed Opti Drive Control Optical Disc Drive Mechanism Blu-ray Disc Association",
+    "url": "optical-drive.html"
+  },
+  {
     "id": "data-ram",
     "title": "Random Access Memory Deep Data",
     "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers. Early RAM included magnetic-core memory. Dynamic RAM (DRAM) was invented in 1968. SDRAM became the standard in the 1990s, evolving through DDR to today's DDR5. The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU. System working memory VRAM in graphics cards Cache systems In-memory databases AIDA64 Memory Benchmark MemTest86 MaxxMem2 JEDEC DDR5 Standard Dynamic Random-Access Memory",
     "url": "ram.html"
+  },
+  {
+    "id": "data-server-guide",
+    "title": "Server Hardware & Architecture Deep Data",
+    "body": "Servers are the backbone of the internet and enterprise computing. They are engineered for 24/7 reliability, massive I/O throughput, and high-density compute. Features multi-socket motherboards, ECC (Error-Correcting Code) RAM, redundant power supplies (PSUs), hardware RAID controllers, and baseboard management controllers (BMCs) for out-of-band management. Evolved from massive mainframe computers to rack-mounted x86 servers in the 1990s, and now to ultra-dense blade servers and hyper-converged infrastructure in modern data centers. Servers run specialized OSs (Linux, Windows Server) to host hypervisors (ESXi, Proxmox) or container engines (Docker, Kubernetes) to maximize hardware utilization across multiple virtual instances. Web hosting Database management Cloud computing (AWS, Azure) High-Performance Computing (HPC) SPECjbb Sysbench VMmark Open Compute Project (OCP) Data Center Architecture",
+    "url": "server-guide.html"
+  },
+  {
+    "id": "data-ssd",
+    "title": "Solid State Drive Deep Data",
+    "body": "SSDs have revolutionized storage by replacing moving magnetic platters with NAND flash memory, offering exponentially faster read/write speeds, lower latency, and greater physical durability. Consists of a controller, NAND flash memory chips (SLC, MLC, TLC, QLC), and often DRAM cache. Interfaces evolved from SATA to high-bandwidth NVMe over PCIe. Early SSDs using RAM appeared in the 1970s and 1980s, but modern flash-based SSDs gained commercial traction in the late 2000s, rapidly overtaking HDDs as the primary boot drive. Data is written by applying voltage to floating-gate or charge-trap transistors within memory cells, trapping electrons to represent bits of data. Primary OS boot drive High-performance gaming Enterprise database storage Thin laptops CrystalDiskMark AS SSD Benchmark ATTO Disk Benchmark NVM Express Base Specification 3D NAND Flash Memory Architecture",
+    "url": "ssd.html"
+  },
+  {
+    "id": "data-windows",
+    "title": "Microsoft Windows Deep Data",
+    "body": "Windows is the most widely used desktop operating system globally. It provides a user-friendly interface, vast software compatibility, and support for a huge range of hardware peripherals. Hybrid Kernel (Windows NT). Uses subsystems (Win32, POSIX, OS/2 historically) and a Hardware Abstraction Layer (HAL). It employs the NTFS file system and the Windows Registry for system-wide configuration. Launched in 1985 as a GUI for MS-DOS. Windows NT (1993) introduced the modern 32-bit/64-bit architecture. Key versions include Windows 95, XP, 7 (beloved for stability), 10 (universal OS), and 11 (modern overhaul). Note: Windows 9 was skipped to avoid confusion with Windows 95/98 legacy code checks. Interrupt-driven architecture. The executive layer handles memory management, process management, and I/O. The user-mode environment facilitates application execution via APIs. PC Gaming (DirectX) Enterprise Infrastructure (Active Directory) Creative Workstations General Consumer Computing PCMark 10 Cinebench UserBenchmark OS Latency Windows Internals Documentation Microsoft History Museum",
+    "url": "windows.html"
   }
 ]
