@@ -1,0 +1,89 @@
+{
+  "name": "Android OS",
+  "definition": "A mobile operating system based on a modified version of the Linux kernel and other open-source software.",
+  "overview": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi.",
+  "history": "Developed by Android Inc. and bought by Google in 2005. The first commercial device was the T-Mobile G1 (2008). It has evolved from simple smartphone use to tablets, TVs, and cars.",
+  "architecture": "Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework.",
+  "working_principle": "Uses a sandboxed environment for apps. Each app runs in its own process with a unique user ID. Uses Intents for inter-process communication.",
+  "applications": [
+    "Smartphones",
+    "Tablets",
+    "Android Auto",
+    "Wearables (Wear OS)",
+    "Smart TVs"
+  ],
+  "manufacturing": "Managed by Google via the Open Handset Alliance. Source code released as Android Open Source Project (AOSP).",
+  "benchmarks": [
+    "AnTuTu",
+    "Geekbench (Mobile)",
+    "GFXBench"
+  ],
+  "future_research": "Project Mainline for modular updates, improved privacy sandboxing, and Foldable/Multi-screen optimization.",
+  "references": [
+    {
+      "text": "Android Open Source Project",
+      "url": "https://source.android.com/"
+    },
+    {
+      "text": "Android Developer Portal",
+      "url": "https://developer.android.com/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Android Architecture Layers",
+      "slug": "android-architecture.html"
+    },
+    {
+      "title": "History of Android Versions",
+      "slug": "android-history.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/android/android-0-2023_Android_Bot.png",
+        "alt_text": "Image from Android (operating system)",
+        "caption": "Android (operating system) screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/f/f7/2023_Android_Bot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/android/android-1-Front_view_of_Nexus_7_%28cropped%29.png",
+        "alt_text": "Image from Android (operating system)",
+        "caption": "Android (operating system) screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/83/Front_view_of_Nexus_7_%28cropped%29.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/android/android-2-HTC_Android_T-Mobile_G1.jpg",
+        "alt_text": "Image from Android (operating system)",
+        "caption": "Android (operating system) screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/1/1f/HTC_Android_T-Mobile_G1.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/android/android-3-HTC_Desire_-_optic_navigation.jpeg",
+        "alt_text": "Image from Android (operating system)",
+        "caption": "Android (operating system) screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/HTC_Desire_-_optic_navigation.jpeg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/android/android-4-Material_you_light.png",
+        "alt_text": "Image from Material You",
+        "caption": "Material You screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Material_you_light.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/android/android-overview.mp3",
+        "caption": "Audio Overview of Android OS",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

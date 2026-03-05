@@ -1,0 +1,51 @@
+{
+  "name": "iOS",
+  "definition": "A mobile operating system created and developed by Apple Inc. exclusively for its hardware.",
+  "overview": "iOS is known for its smooth performance, strict security model, and seamless integration with other Apple devices. It powers the iPhone and serves as the basis for iPadOS.",
+  "history": "Unveiled with the original iPhone in 2007. Originally called \"iPhone OS\", it shared much of its foundation with macOS. It revolutionized mobile computing with the App Store in 2008.",
+  "architecture": "Derived from the Darwin (Unix) foundation of macOS. Layers include Core OS, Core Services, Media Layer, and Cocoa Touch.",
+  "working_principle": "Highly optimized for specific Apple hardware. Uses strict app sandboxing and code signing. Managed by the XNU kernel with high energy efficiency.",
+  "applications": [
+    "iPhone",
+    "iPad (via iPadOS variant)",
+    "Apple TV (via tvOS variant)"
+  ],
+  "manufacturing": "Proprietary development by Apple Inc. tightly coupled with custom SoC (System on a Chip) designs.",
+  "benchmarks": [
+    "Geekbench (iOS)",
+    "JetStream 2",
+    "3DMark Mobile"
+  ],
+  "future_research": "Apple Intelligence integration, advanced biometric security (FaceID evolutions), and satellite-based communication systems.",
+  "references": [
+    {
+      "text": "Apple iOS Security Guide",
+      "url": "https://support.apple.com/guide/security/welcome/web"
+    },
+    {
+      "text": "iOS Developer Center",
+      "url": "https://developer.apple.com/ios/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "iOS Security Architecture",
+      "slug": "ios-security.html"
+    },
+    {
+      "title": "App Store Ecosystem",
+      "slug": "ios-appstore.html"
+    }
+  ],
+  "media": {
+    "images": [],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/ios/ios-overview.mp3",
+        "caption": "Audio Overview of iOS",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

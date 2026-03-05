@@ -1,35 +1,41 @@
 {
   "name": "Linux Operating System",
-  "definition": "A family of open-source Unix-like operating systems based on the Linux kernel.",
-  "overview": "Linux dominates the server, supercomputer, and smartphone (Android) markets. Its open-source nature allows for unparalleled customization, security auditing, and lightweight performance.",
-  "history": "Created by Linus Torvalds in 1991 as a free alternative to MINIX. It rapidly gained adoption in enterprise environments and is now maintained by thousands of contributors globally.",
-  "architecture": "Features a monolithic kernel that handles CPU, memory, and IPC. It interfaces with GNU core utilities and various desktop environments (GNOME, KDE) running on display servers (X11, Wayland).",
-  "working_principle": "Everything in Linux is considered a file. It uses POSIX standards for system calls, robust permission models (rwx), and advanced file systems like ext4, Btrfs, and ZFS.",
+  "definition": "An open-source, Unix-like operating system kernel created by Linus Torvalds.",
+  "overview": "Linux is the backbone of the internet, powering millions of servers, supercomputers, and embedded devices. It is known for its stability, security, and the concept of \"Distributions\" (Distros) which package the kernel with different software.",
+  "history": "Linus Torvalds released the first kernel in 1991. It combined with the GNU project tools to create a functional free OS. Today, it has thousands of variants catering to different needs.",
+  "architecture": "Monolithic Kernel. Highly modular, allowing drivers to be loaded/unloaded at runtime. Everything is treated as a file. Uses the root user model for security.",
+  "working_principle": "The kernel manages hardware resources. System calls provide the interface for user-space applications (like the shell or desktop environment) to interact with hardware.",
   "applications": [
-    "Cloud computing infrastructure",
-    "Web servers",
-    "Android mobile OS",
-    "IoT and embedded systems"
+    "Web Servers (Apache/Nginx)",
+    "Cybersecurity (Kali Linux)",
+    "Software Development",
+    "Scientific Computing (Supercomputers)",
+    "IoT Devices"
   ],
-  "manufacturing": "Developed collaboratively across the globe. Managed via Git (which Torvalds also created) and hosted/reviewed on platforms like the Linux Kernel Mailing List.",
+  "manufacturing": "Open-source development managed via Git. Maintained by the Linux Foundation and a global community of volunteers and companies.",
   "benchmarks": [
     "Phoronix Test Suite",
-    "Geekbench (Linux)"
+    "UnixBench",
+    "Sysbench"
   ],
-  "future_research": "Integration of Rust into the kernel for memory safety, eBPF for advanced observability and networking, and real-time kernel preemptions.",
+  "future_research": "Real-time kernel improvements, Rust integration for memory safety, and eBPF for advanced networking/observability.",
   "references": [
     {
-      "text": "The Linux Kernel Documentation",
-      "url": "https://www.kernel.org/doc/html/latest/"
+      "text": "The Linux Foundation",
+      "url": "https://www.linuxfoundation.org/"
     },
     {
-      "text": "Linux Foundation",
-      "url": "https://www.linuxfoundation.org/"
+      "text": "Kernel.org",
+      "url": "https://www.kernel.org/"
     }
   ],
   "subpages": [
     {
-      "title": "Linux Kernel Deep Dive",
+      "title": "Top 15 Linux Distributions",
+      "slug": "linux-distros.html"
+    },
+    {
+      "title": "Linux Kernel Architecture",
       "slug": "linux-kernel.html"
     }
   ],
@@ -40,6 +46,132 @@
         "alt_text": "Image of Linux Operating System",
         "caption": "Technical diagram or image related to Linux Operating System",
         "source_link": "https://upload.wikimedia.org/wikipedia/commons/f/f2/ChromebookStaplesStore.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-0-Parrot_OS_Desktop.png",
+        "alt_text": "Image from Parrot Security OS",
+        "caption": "Parrot Security OS screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/36/Parrot_OS_Desktop.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-1-Fedora_15_Lovelock_Gnome3.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/2/21/Fedora_15_Lovelock_Gnome3.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-2-Fedora_21_desktop_screenshot.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Fedora_21_desktop_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-3-Fedora_42_KDE_Plasma_Desktop_English.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/86/Fedora_42_KDE_Plasma_Desktop_English.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-4-Fedora_43_Workstation.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Fedora_43_Workstation.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-5-Fedora_Foundations.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Fedora_Foundations.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-6-Fedora_Workstation_41_%E2%80%94_default_applications_%281%29.png",
+        "alt_text": "Image from Fedora Linux",
+        "caption": "Fedora Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/d/da/Fedora_Workstation_41_%E2%80%94_default_applications_%281%29.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-7-RHEL_10.0_showing_GNOME_47%2C_12.22.2024.png",
+        "alt_text": "Image from Red Hat Enterprise Linux",
+        "caption": "Red Hat Enterprise Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/39/RHEL_10.0_showing_GNOME_47%2C_12.22.2024.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-8-Gentoo-portage-installing-darktable.png",
+        "alt_text": "Image from Gentoo Linux",
+        "caption": "Gentoo Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/4/46/Gentoo-portage-installing-darktable.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-9-Gentoo_Live_GUI_USB_running_KDE.png",
+        "alt_text": "Image from Gentoo Linux",
+        "caption": "Gentoo Linux screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/05/Gentoo_Live_GUI_USB_running_KDE.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-10-Slackware_1.01_screenshot.png",
+        "alt_text": "Image from Slackware",
+        "caption": "Slackware screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Slackware_1.01_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-11-Slackware_15.0_screenshot.png",
+        "alt_text": "Image from Slackware",
+        "caption": "Slackware screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Slackware_15.0_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-12-Kali.png",
+        "alt_text": "Kali Linux Desktop",
+        "caption": "Kali Linux \u2014 The standard for penetration testing",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/2/22/Kali-linux-2023.1-desktop.png",
+        "license": "GPL via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-13-Ubuntu.png",
+        "alt_text": "Ubuntu Desktop",
+        "caption": "Ubuntu 24.04 LTS \u2014 User friendly Linux",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Ubuntu_24.04_LTS_Desktop.png",
+        "license": "GPL via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-14-Arch.png",
+        "alt_text": "Arch Linux Desktop",
+        "caption": "Arch Linux with KDE Plasma",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Arch_Linux_KDE_Plasma.png",
+        "license": "GPL via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-extra-20-Eucalyptus_full.jpg",
+        "alt_text": "Image from Ubuntu (operating system)",
+        "caption": "Ubuntu (operating system) - Hardware/Software view",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Eucalyptus_full.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-extra-21-UbuntuDDE_Icon.png",
+        "alt_text": "Image from Ubuntu (operating system)",
+        "caption": "Ubuntu (operating system) - Hardware/Software view",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/5/5e/UbuntuDDE_Icon.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/linux/linux-extra-22-Ubuntu_25.10_default_desktop_-_English.png",
+        "alt_text": "Image from Ubuntu (operating system)",
+        "caption": "Ubuntu (operating system) - Hardware/Software view",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Ubuntu_25.10_default_desktop_-_English.png",
         "license": "Public Domain / Creative Commons via Wikimedia"
       }
     ],

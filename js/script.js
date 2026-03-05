@@ -47,6 +47,8 @@ const SITE_PAGES = [
     { name: "Linux", url: "linux.html", cat: "Software" },
     { name: "Linux Kernel Deep Dive", url: "linux-kernel.html", cat: "Software" },
     { name: "macOS", url: "macos.html", cat: "Software" },
+    { name: "Android", url: "android.html", cat: "Software" },
+    { name: "iOS", url: "ios.html", cat: "Software" },
     { name: "Software Types", url: "software-types.html", cat: "Software" },
     { name: "Computer Types", url: "computer-types.html", cat: "History" },
     { name: "History of Computing", url: "computer-history.html", cat: "History" },
@@ -114,6 +116,8 @@ const injectCommonElements = () => {
               <li><a href="windows.html">Windows</a></li>
               <li><a href="linux.html">Linux</a></li>
               <li><a href="macos.html">macOS</a></li>
+              <li><a href="android.html">Android</a></li>
+              <li><a href="ios.html">iOS</a></li>
               <li class="dropdown-divider"></li>
               <li class="dropdown-header">Categories</li>
               <li><a href="software-types.html">Software Types</a></li>

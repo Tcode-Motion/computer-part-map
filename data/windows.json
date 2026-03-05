@@ -1,41 +1,116 @@
 {
   "name": "Microsoft Windows",
   "definition": "A group of several proprietary graphical operating system families developed and marketed by Microsoft.",
-  "overview": "Windows is the dominant OS for personal computers. It offers vast software compatibility, extensive hardware support, and a user-friendly graphical interface.",
-  "history": "Introduced in 1985 as a graphical shell for MS-DOS. The shift to the robust Windows NT kernel with Windows XP (and later Windows 2000, 7, 10, 11) marked its modern era.",
-  "architecture": "Uses a hybrid kernel architecture (Windows NT kernel). It separates user mode (applications, subsystems) from kernel mode (executive, microkernel, HAL, device drivers).",
-  "working_principle": "Employs a heavily API-driven environment (Win32 API). It uses the NTFS file system, the Windows Registry for configuration, and highly complex driver models (WDDM/WDF).",
+  "overview": "Windows is the most widely used desktop operating system globally. It provides a user-friendly interface, vast software compatibility, and support for a huge range of hardware peripherals.",
+  "history": "Launched in 1985 as a GUI for MS-DOS. Windows NT (1993) introduced the modern 32-bit/64-bit architecture. Key versions include Windows 95, XP, 7 (beloved for stability), 10 (universal OS), and 11 (modern overhaul). Note: Windows 9 was skipped to avoid confusion with Windows 95/98 legacy code checks.",
+  "architecture": "Hybrid Kernel (Windows NT). Uses subsystems (Win32, POSIX, OS/2 historically) and a Hardware Abstraction Layer (HAL). It employs the NTFS file system and the Windows Registry for system-wide configuration.",
+  "working_principle": "Interrupt-driven architecture. The executive layer handles memory management, process management, and I/O. The user-mode environment facilitates application execution via APIs.",
   "applications": [
-    "PC Gaming",
-    "Enterprise workstations",
-    "Creative professional software",
-    "General consumer use"
+    "PC Gaming (DirectX)",
+    "Enterprise Infrastructure (Active Directory)",
+    "Creative Workstations",
+    "General Consumer Computing"
   ],
-  "manufacturing": "Developed internally at Microsoft using massive codebases (C, C++, C#). Released via rings (Windows Insider) for telemetry and telemetry-driven stability testing.",
+  "manufacturing": "Proprietary source code maintained by Microsoft. Developed using C, C++, and C#.",
   "benchmarks": [
     "PCMark 10",
     "Cinebench",
-    "3DMark"
+    "UserBenchmark OS Latency"
   ],
-  "future_research": "Integration of AI directly into the OS shell (Windows Copilot), ARM architecture transition (Windows on ARM), and cloud-streamed OS capabilities (Windows 365).",
+  "future_research": "Cloud-integrated OS (Windows 365), AI-first shell (Copilot), and transition to ARM-based high-performance computing.",
   "references": [
     {
-      "text": "Windows Internals",
-      "url": "https://learn.microsoft.com/en-us/sysinternals/"
+      "text": "Windows Internals Documentation",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals"
     },
     {
-      "text": "Microsoft Developer Network (MSDN)",
-      "url": "https://developer.microsoft.com/"
+      "text": "Microsoft History Museum",
+      "url": "https://www.microsoft.com/en-us/museum"
     }
   ],
   "subpages": [
     {
-      "title": "Windows NT Architecture",
+      "title": "Windows 7, 10, 11 Comparison",
+      "slug": "windows-versions.html"
+    },
+    {
+      "title": "Windows NT Kernel Deep Dive",
       "slug": "windows-nt-architecture.html"
     }
   ],
   "media": {
-    "images": [],
+    "images": [
+      {
+        "local_path": "assets/images/windows/windows-0-MS-DOS_Executive%2C_Windows_1.04.png",
+        "alt_text": "Image from Windows 10",
+        "caption": "Windows 10 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/4/47/MS-DOS_Executive%2C_Windows_1.04.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-1-Microsoft_Windows_1.0_page1.jpg",
+        "alt_text": "Image from Windows 10",
+        "caption": "Windows 10 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Microsoft_Windows_1.0_page1.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-2-Windows1.0.png",
+        "alt_text": "Image from Windows 10",
+        "caption": "Windows 10 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/en/4/4e/Windows1.0.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-3-Screenshot_of_%E2%80%98Bash_on_Ubuntu_on_Windows%E2%80%99.png",
+        "alt_text": "Image from Windows 11",
+        "caption": "Windows 11 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Screenshot_of_%E2%80%98Bash_on_Ubuntu_on_Windows%E2%80%99.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-4-Windows_Hello_in_Enpass.png",
+        "alt_text": "Image from Windows 11",
+        "caption": "Windows 11 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/09/Windows_Hello_in_Enpass.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-5-Virtual_Desktops_in_Windows_10.png",
+        "alt_text": "Image from Windows 11",
+        "caption": "Windows 11 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/en/1/1f/Virtual_Desktops_in_Windows_10.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/windows/windows-6-Windows_10_desktop.png",
+        "alt_text": "Image from Windows 11",
+        "caption": "Windows 11 screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/en/8/89/Windows_10_desktop.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "images/windows operating system.jpg",
+        "alt_text": "Windows 7 Desktop",
+        "caption": "Classic Windows 7 Interface",
+        "source_link": "local",
+        "license": "Proprietary / Educational Use"
+      },
+      {
+        "local_path": "images/windows operating system.jpg",
+        "alt_text": "Windows 10 Desktop",
+        "caption": "Modern Windows 10 Start Menu",
+        "source_link": "local",
+        "license": "Proprietary / Educational Use"
+      },
+      {
+        "local_path": "images/windows operating system.jpg",
+        "alt_text": "Windows 11 Desktop",
+        "caption": "Centered Taskbar in Windows 11",
+        "source_link": "local",
+        "license": "Proprietary / Educational Use"
+      }
+    ],
     "videos": [],
     "audio": [
       {

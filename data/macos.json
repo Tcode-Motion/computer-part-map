@@ -1,0 +1,88 @@
+{
+  "name": "macOS",
+  "definition": "A Unix-based operating system developed and marketed by Apple Inc. since 2001.",
+  "overview": "macOS is designed specifically for Apple hardware (Macintosh). It is famous for its elegant user interface (Aqua), tight integration with the Apple ecosystem, and high performance for creative professionals.",
+  "history": "Evolved from NeXTSTEP and the classic Mac OS. Shifted from PowerPC to Intel in 2006, and recently to Apple Silicon (M1/M2/M3) in 2020, significantly boosting efficiency.",
+  "architecture": "XNU Kernel (Hybrid). Combines the Mach microkernel and components from FreeBSD. Uses the APFS file system and Metal API for graphics acceleration.",
+  "working_principle": "Built on a Unix foundation (Darwin). Uses the Cocoa framework for applications. Employs \"Rosetta 2\" to translate Intel apps for Apple Silicon hardware.",
+  "applications": [
+    "Graphic Design",
+    "Video Editing (Final Cut Pro)",
+    "Software Development (Xcode)",
+    "Music Production (Logic Pro)"
+  ],
+  "manufacturing": "Proprietary development by Apple Inc. High vertical integration between software and hardware.",
+  "benchmarks": [
+    "Geekbench 6",
+    "Speedometer 3.0",
+    "Final Cut Render Times"
+  ],
+  "future_research": "Deeper AI integration (Apple Intelligence), unified architecture with iPadOS/iOS, and advanced neural engine utilization.",
+  "references": [
+    {
+      "text": "Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/"
+    },
+    {
+      "text": "macOS History on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MacOS"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "macOS Hardware Integration",
+      "slug": "macos-hardware.html"
+    },
+    {
+      "title": "Darwin Kernel Explained",
+      "slug": "macos-darwin.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/macos/macos-0-2019_16-inch_MacBook_Pro_%2849183242933%29.jpg",
+        "alt_text": "Image from MacBook Pro",
+        "caption": "MacBook Pro screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/85/2019_16-inch_MacBook_Pro_%2849183242933%29.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/macos/macos-1-MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+        "alt_text": "Image from MacBook Pro",
+        "caption": "MacBook Pro screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/macos/macos-2-MacBook_Pro_17.jpg",
+        "alt_text": "Image from MacBook Pro",
+        "caption": "MacBook Pro screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/7/7c/MacBook_Pro_17.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/macos/macos-3-MacOS_Sonoma_Desktop.png",
+        "alt_text": "Image from macOS Sonoma",
+        "caption": "macOS Sonoma screenshot or diagram",
+        "source_link": "https://upload.wikimedia.org/wikipedia/en/f/f6/MacOS_Sonoma_Desktop.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "images/computer.jpg",
+        "alt_text": "MacBook Pro with macOS",
+        "caption": "Mac hardware and software integration",
+        "source_link": "local",
+        "license": "Proprietary / Educational Use"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/macos/macos-overview.mp3",
+        "caption": "Audio Overview of macOS",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}
