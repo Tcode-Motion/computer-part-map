@@ -1,0 +1,94 @@
+{
+  "name": "Quantum Computing",
+  "definition": "A type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement.",
+  "overview": "Quantum computers use qubits instead of bits. This allows them to solve specific complex problems\u2014like molecular simulation or breaking RSA encryption\u2014exponentially faster than any classical supercomputer.",
+  "history": "Theoretical foundations laid in the 1980s by Richard Feynman and David Deutsch. Google claimed \"Quantum Supremacy\" in 2019 with its 53-qubit Sycamore processor.",
+  "architecture": "Built using superconducting loops, trapped ions, or photonic circuits. Requires extreme environments, often cooled to near absolute zero (-273\u00b0C).",
+  "working_principle": "Leverages superposition (being in multiple states at once) and entanglement (instant correlation) to perform multi-dimensional calculations via quantum gates.",
+  "applications": [
+    "Drug Discovery",
+    "Financial Modeling",
+    "Cybersecurity",
+    "Logistics Optimization"
+  ],
+  "manufacturing": "Highly specialized fabrication involving dilution refrigerators and precision microwave control systems.",
+  "benchmarks": [
+    "CLOPS (Circuit Layer Operations Per Second)",
+    "Quantum Volume"
+  ],
+  "future_research": "Error correction (NISQ era), room-temperature quantum dots, and topological qubits.",
+  "references": [
+    {
+      "text": "IBM Quantum",
+      "url": "https://www.ibm.com/quantum"
+    },
+    {
+      "text": "Quantum Computing on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quantum_computing"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Qubits & Gates",
+      "slug": "quantum-logic.html"
+    },
+    {
+      "title": "Quantum Error Correction",
+      "slug": "quantum-errors.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-0-4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/a4/4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-1-Cooper_pair_box_circuit.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cooper_pair_box_circuit.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-2-4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/a4/4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-3-Cooper_pair_box_circuit.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cooper_pair_box_circuit.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-4-4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/a4/4_Qubit%2C_4_Bus%2C_4_Resonator_IBM_Device_%28Jay_M._Gambetta%2C_Jerry_M._Chow%2C_and_Matthias_Steffen%2C_2017%29.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/quantum-computing/quantum-computing-comp-5-Cooper_pair_box_circuit.png",
+        "alt_text": "Image from Superconducting quantum computing",
+        "caption": "Superconducting quantum computing technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cooper_pair_box_circuit.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/quantum-computing/quantum-computing-overview.mp3",
+        "caption": "Audio Overview of Quantum Computing",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

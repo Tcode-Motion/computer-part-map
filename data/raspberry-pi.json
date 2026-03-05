@@ -1,0 +1,124 @@
+{
+  "name": "Raspberry Pi & Single Board Computers",
+  "definition": "A series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation.",
+  "overview": "Single Board Computers (SBCs) like the Raspberry Pi pack a CPU, GPU, RAM, and I/O onto one credit-card-sized board. They are revolutionary for education, DIY electronics, and edge computing due to their low cost and GPIO accessibility.",
+  "history": "The first Raspberry Pi launched in 2012. It was intended to promote basic computer science in schools. Since then, it has evolved from the Model B to the powerful Raspberry Pi 5, spawning a massive ecosystem of HATs and clones.",
+  "architecture": "Typically based on ARM architecture (System-on-a-Chip). Includes GPIO pins for physical computing, microSD or NVMe storage, and various connectivity options like HDMI, USB, and Ethernet.",
+  "working_principle": "Operates like a standard computer but with highly integrated components. The SoC handles most logic, while the user interacts via Linux-based OSs like Raspberry Pi OS (formerly Raspbian).",
+  "applications": [
+    "IoT Gateways",
+    "Media Centers",
+    "Retro Gaming",
+    "Robotics",
+    "Industrial Controllers"
+  ],
+  "manufacturing": "Designed by Raspberry Pi Ltd and manufactured primarily in the UK (Sony UK Technology Centre) using advanced SMT lines.",
+  "benchmarks": [
+    "Sysbench",
+    "UnixBench",
+    "IOzone"
+  ],
+  "future_research": "Integration of dedicated NPUs for edge AI, transition to more efficient ARM designs, and improved PCIe support for high-speed peripherals.",
+  "references": [
+    {
+      "text": "Raspberry Pi Foundation",
+      "url": "https://www.raspberrypi.org/"
+    },
+    {
+      "text": "MagPi Magazine",
+      "url": "https://magpi.raspberrypi.com/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "SBC Architecture Deep Dive",
+      "slug": "sbc-architecture.html"
+    },
+    {
+      "title": "GPIO & Physical Computing",
+      "slug": "gpio-guide.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/raspberry-pi/18346-Raspberry_Pi_PoE_HAT-01_%28cropped%29.jpg",
+        "alt_text": "Image of Raspberry Pi & Single Board Computers",
+        "caption": "Technical diagram or image related to Raspberry Pi & Single Board Computers",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/a7/18346-Raspberry_Pi_PoE_HAT-01_%28cropped%29.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-1-18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b5/18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-2-Nuvola_apps_ksim.png",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nuvola_apps_ksim.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-3-PIC18F8720.jpg",
+        "alt_text": "Image from GPIO pins",
+        "caption": "GPIO pins technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/1/18/PIC18F8720.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-4-18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b5/18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-5-Nuvola_apps_ksim.png",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nuvola_apps_ksim.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-6-PIC18F8720.jpg",
+        "alt_text": "Image from GPIO pins",
+        "caption": "GPIO pins technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/1/18/PIC18F8720.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-7-18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b5/18713-Raspberry_Pi_Zero_2_W-04_%28cropped%29.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-8-Nuvola_apps_ksim.png",
+        "alt_text": "Image from Raspberry Pi 4",
+        "caption": "Raspberry Pi 4 technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nuvola_apps_ksim.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/raspberry-pi/raspberry-pi-comp-9-PIC18F8720.jpg",
+        "alt_text": "Image from GPIO pins",
+        "caption": "GPIO pins technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/1/18/PIC18F8720.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/raspberry-pi/raspberry-pi-overview.mp3",
+        "caption": "Audio Overview of Raspberry Pi & Single Board Computers",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

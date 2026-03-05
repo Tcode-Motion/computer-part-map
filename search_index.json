@@ -24,15 +24,21 @@
     "url": "battery.html"
   },
   {
+    "id": "computer-generations.html",
+    "title": "The Five Generations of Computers",
+    "body": "Computing history spans from ancient counting tools to modern quantum processors. It is defined by the transition from mechanical systems to vacuum tubes, then transistors, integrated circuits, and finally microprocessors. Evolved from fixed-function mechanical gears to Von Neumann stored-program architecture, which remains the standard for modern digital computers. The shift from decimal/analog logic to binary (0 and 1) logic allowed for the creation of stable, programmable electronic systems.",
+    "url": "computer-generations.html"
+  },
+  {
     "id": "computer-history.html",
     "title": "Computer History \u2014 Full Timeline",
-    "body": "1837: Analytical Engine concept (Charles Babbage) 1945: ENIAC \u2014 First Electronic Computer 1947: Transistor Invented (Bell Labs) 1971: First Microprocessor (Intel 4004) 2022-2024: Generative AI Revolution (LLMs) To elevate your understanding of Computer History to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer History Google Scholar: Recent Papers on Computer History IEEE Xplore: Engineering Specifications",
+    "body": "1837: Analytical Engine concept (Charles Babbage) 1945: ENIAC \u2014 First Electronic Computer 1947: Transistor Invented (Bell Labs) 1971: First Microprocessor (Intel 4004) 2022-2024: Generative AI Revolution (LLMs) To elevate your understanding of Computer History to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer History Google Scholar: Recent Papers on Computer History IEEE Xplore: Engineering Specifications Early milestones include the Abacus, Babbage's Analytical Engine, and the ENIAC (1945). The invention of the transistor at Bell Labs in 1947 is the single most important event, leading to the Silicon Age. Evolved from fixed-function mechanical gears to Von Neumann stored-program architecture, which remains the standard for modern digital computers.",
     "url": "computer-history.html"
   },
   {
     "id": "computer-types.html",
     "title": "Computer Types \u2014 Desktop, Laptop, Server, Mainframe",
-    "body": "Supercomputer Room-sized Scientific research Server Rack/Tower Data services Desktop Tower Home / Gaming Embedded Chip-sized IoT / Appliances To elevate your understanding of Computer Types to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer Types Google Scholar: Recent Papers on Computer Types IEEE Xplore: Engineering Specifications",
+    "body": "Supercomputer Room-sized Scientific research Server Rack/Tower Data services Desktop Tower Home / Gaming Embedded Chip-sized IoT / Appliances To elevate your understanding of Computer Types to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and advanced implementation details required for independent research. Wikipedia: Deep Dive into Computer Types Google Scholar: Recent Papers on Computer Types IEEE Xplore: Engineering Specifications Classification emerged as computers specialized for different tasks\u2014mainframe for big data, workstations for engineering, and personal computers for individuals. Varies greatly: Supercomputers use massively parallel clusters; Mainframes use high-reliability redundant logic; Microcontrollers use ultra-low-power integrated designs.",
     "url": "computer-types.html"
   },
   {
@@ -64,6 +70,12 @@
     "title": "CPU \u2014 Central Processing Unit",
     "body": "The CPU performs most of the processing inside the computer. It executes instructions of a computer program by performing basic arithmetic, logic, controlling, and input/output operations. \n     Every action you take on a computer \u2014 opening a browser, playing a game, running AI models \u2014 is ultimately processed by the CPU. It fetches instructions from RAM, decodes them, executes them, and writes results back.\n     \n      The Intel 4004, launched in 1971, was the world's first commercial microprocessor. It ran at 740 kHz and had just 2,300 transistors. Today's CPUs have over 50 billion transistors and run at 5+ GHz.\n      \n        Architecture\n        \n        Raptor Lake / Meteor Lake\n        \n        Zen 4 / Zen 5\n        \n        Top Consumer CPU\n        \n        Core i9-14900K\n        \n        Ryzen 9 7950X\n        \n        Max Boost Clock\n        \n        6.0 GHz\n        \n        5.7 GHz\n        \n        Max Core Count (Desktop)\n        \n        24 (8P + 16E)\n        \n        16 (al",
     "url": "cpu.html"
+  },
+  {
+    "id": "gpio-guide.html",
+    "title": "GPIO & Physical Computing",
+    "body": "Single Board Computers (SBCs) like the Raspberry Pi pack a CPU, GPU, RAM, and I/O onto one credit-card-sized board. They are revolutionary for education, DIY electronics, and edge computing due to their low cost and GPIO accessibility. Typically based on ARM architecture (System-on-a-Chip). Includes GPIO pins for physical computing, microSD or NVMe storage, and various connectivity options like HDMI, USB, and Ethernet. Operates like a standard computer but with highly integrated components. The SoC handles most logic, while the user interacts via Linux-based OSs like Raspberry Pi OS (formerly Raspbian).",
+    "url": "gpio-guide.html"
   },
   {
     "id": "gpu-architecture.html",
@@ -114,6 +126,12 @@
     "url": "ios.html"
   },
   {
+    "id": "iot-types.html",
+    "title": "The Rise of IoT Devices",
+    "body": "Computers are not just PCs. They range from tiny microcontrollers in appliances to massive supercomputers that occupy entire buildings and perform trillions of calculations per second. Varies greatly: Supercomputers use massively parallel clusters; Mainframes use high-reliability redundant logic; Microcontrollers use ultra-low-power integrated designs. All use basic logic gates but differ in throughput, parallelization, and fault tolerance requirements.",
+    "url": "iot-types.html"
+  },
+  {
     "id": "keyboard.html",
     "title": "Keyboard \u2014 Complete Guide",
     "body": "A keyboard is an input device that lets you type characters, execute commands, and interact with your computer. Modern keyboards come in an enormous variety of form factors, switch types, layouts, and connectivity options \u2014 from ultra-portable 60% layouts to full-size numpad keyboards. The QWERTY layout was designed in the 1870s for typewriters \u2014 partly to slow typists down to prevent mechanical key jams. Yet it remains the global standard 150 years later. Cherry MX Red / Speed Silver Linear (smooth) Quiet 45g Gaming Cherry MX Brown / Gateron Brown Tactile (bump) Moderate 55g Typing + Gaming Cherry MX Blue / Kailh Box White Clicky tactile Loud 60g Typing / Enthusiast Topre Electrostatic capacitive Thocky 45g Premium Typing Membrane Mushy, flat Very quiet Variable Office / Budget 75% layout \u00b7 Hot-swap \u00b7 Gateron switches \u00b7 Wireless / Wired \u00b7 Aluminum frame \u20b97,225 \u2013 \u20b99,775 (Avg: \u20b98,500) TKL \u00b7 Hot-swap \u00b7 GX switches (Red/Blue/Brown) \u00b7 USB \u00b7 Pro gaming \u20b98,025 \u2013 \u20b910,975 (Avg: \u20b99,500) Full si",
@@ -162,6 +180,12 @@
     "url": "microphone.html"
   },
   {
+    "id": "mobile-ai.html",
+    "title": "AI Accelerators in Mobile",
+    "body": "NPUs are dedicated AI accelerators. Unlike general-purpose CPUs or graphics-focused GPUs, NPUs are designed specifically for the matrix math required for deep learning and neural network inference. Consists of massive arrays of Multiply-Accumulate (MAC) units, local memory buffers, and specialized controllers for tensor operations. Optimized for high-throughput, low-precision arithmetic (INT8, FP16). They process large blocks of data (tensors) simultaneously rather than individual values.",
+    "url": "mobile-ai.html"
+  },
+  {
     "id": "monitor.html",
     "title": "Monitor \u2014 Display Guide",
     "body": "A monitor is the primary output device of a computer \u2014 it displays visual information by converting electrical signals into light. Modern monitors come in a variety of resolutions, panel types, refresh rates, and sizes, tailored for everything from competitive gaming to professional color work. The human eye can detect motion differences up to roughly 1000 fps in ideal conditions, but the perceptible benefit of going above 240Hz diminishes drastically. Most pro gamers use 240Hz or 360Hz monitors. IPS Excellent wide gamut 1\u20135ms 178\u00b0 all sides Design, Creative, General VA Good, high contrast 4\u20138ms Good but limited Movies, Dark content TN Limited, washed out 0.5\u20131ms Poor off-axis Competitive gaming OLED Perfect blacks, infinite contrast 0.1ms Perfect Premium gaming & media 1920\u00d71080 Full HD (1080p) 24\" RTX 3060, RX 6600 2560\u00d71440 Quad HD (1440p) Sweet Spot 27\" RTX 4070, RX 7700 XT 3840\u00d72160 4K UHD 32\"\u201340\" RTX 4080/4090, RX 7900 XTX 2560\u00d71080 Ultra-Wide 21:9 29\"\u201334\" RTX 4070 Ti 3440\u00d71440 U",
@@ -194,13 +218,19 @@
   {
     "id": "nic.html",
     "title": "NIC \u2014 Network Interface Card",
-    "body": "A Network Interface Card (NIC) is a hardware component that allows a computer to connect to a network \u2014 either via Ethernet (wired) or Wi-Fi (wireless). Every modern motherboard includes a built-in NIC, but dedicated add-in NICs offer higher speeds (2.5G, 10G) and better reliability for servers, NAS, and enthusiast builds. A 10 Gigabit Ethernet (10GbE) NIC can transfer data at 1,250 MB/s \u2014 fast enough to completely fill a 1 TB SSD in under 15 minutes over a local network. Fast Ethernet 100 Mbps Basic networking (obsolete) Cat5 Gigabit Ethernet 1 Gbps Common Home / Office standard Cat5e/Cat6 2.5G Ethernet 2.5 Gbps Growing Gaming, NAS, enthusiasts Cat5e/Cat6 5G Ethernet 5 Gbps High-speed workstations Cat6 10G Ethernet 10 Gbps Pro/Server Data centers, NAS Cat6a/Cat7 2.5 Gbps \u00b7 PCIe x1 \u00b7 Low power \u00b7 Most reliable 2.5G controller \u20b92,125 \u2013 \u20b92,875 (Avg: \u20b92,500) 10 Gbps \u00b7 PCIe 3.0 x4 \u00b7 Aquantia AQC107 chip \u00b7 For NAS/servers \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) To elevate your understanding of Nic to ",
+    "body": "The NIC (or LAN Card) is the physical interface between your computer and the network. It handles data framing, MAC addressing, and signal conversion for Ethernet or Fiber. A 10 Gigabit Ethernet (10GbE) NIC can transfer data at 1,250 MB/s \u2014 fast enough to completely fill a 1 TB SSD in under 15 minutes over a local network. Fast Ethernet 100 Mbps Basic networking (obsolete) Cat5 Gigabit Ethernet 1 Gbps Common Home / Office standard Cat5e/Cat6 2.5G Ethernet 2.5 Gbps Growing Gaming, NAS, enthusiasts Cat5e/Cat6 5G Ethernet 5 Gbps High-speed workstations Cat6 10G Ethernet 10 Gbps Pro/Server Data centers, NAS Cat6a/Cat7 2.5 Gbps \u00b7 PCIe x1 \u00b7 Low power \u00b7 Most reliable 2.5G controller \u20b92,125 \u2013 \u20b92,875 (Avg: \u20b92,500) 10 Gbps \u00b7 PCIe 3.0 x4 \u00b7 Aquantia AQC107 chip \u00b7 For NAS/servers \u20b95,525 \u2013 \u20b97,475 (Avg: \u20b96,500) To elevate your understanding of Nic to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and adva",
     "url": "nic.html"
+  },
+  {
+    "id": "npu-math.html",
+    "title": "NPU vs GPU Math",
+    "body": "NPUs are dedicated AI accelerators. Unlike general-purpose CPUs or graphics-focused GPUs, NPUs are designed specifically for the matrix math required for deep learning and neural network inference. Consists of massive arrays of Multiply-Accumulate (MAC) units, local memory buffers, and specialized controllers for tensor operations. Optimized for high-throughput, low-precision arithmetic (INT8, FP16). They process large blocks of data (tensors) simultaneously rather than individual values.",
+    "url": "npu-math.html"
   },
   {
     "id": "npu.html",
     "title": "NPU \u2014 Neural Processing Unit",
-    "body": "A Neural Processing Unit (NPU), also known as an AI Accelerator or Tensor Processing Unit (TPU), is a specialized microprocessor designed specifically to accelerate the math required for machine learning algorithms, particularly artificial neural networks. While CPUs are optimized for low-latency serial processing, and GPUs for highly parallel graphical pixel rendering, NPUs are optimized for dense matrix multiplication and convolution operations. They execute low-precision math (like INT8, FP16, BF16) at staggering speeds, dramatically reducing the time and power required to train or infer with large AI models. Modern NPUs use systolic arrays, a hardware architecture where data flows through a grid of arithmetic logic units (ALUs) in a pipelined fashion, minimizing the need to fetch data from memory repeatedly. This makes them up to 100x more efficient per watt than CPUs for AI workloads. Primary Math General Purpose (Scalar) Vector Operations (1D) Matrix / Tensor (2D/3D) Core Count F",
+    "body": "NPUs are dedicated AI accelerators. Unlike general-purpose CPUs or graphics-focused GPUs, NPUs are designed specifically for the matrix math required for deep learning and neural network inference. While CPUs are optimized for low-latency serial processing, and GPUs for highly parallel graphical pixel rendering, NPUs are optimized for dense matrix multiplication and convolution operations. They execute low-precision math (like INT8, FP16, BF16) at staggering speeds, dramatically reducing the time and power required to train or infer with large AI models. Modern NPUs use systolic arrays, a hardware architecture where data flows through a grid of arithmetic logic units (ALUs) in a pipelined fashion, minimizing the need to fetch data from memory repeatedly. This makes them up to 100x more efficient per watt than CPUs for AI workloads. Primary Math General Purpose (Scalar) Vector Operations (1D) Matrix / Tensor (2D/3D) Core Count Few, extremely complex (8-64) Thousands, simpler (5,000+) Ma",
     "url": "npu.html"
   },
   {
@@ -248,8 +278,20 @@
   {
     "id": "quantum-computing.html",
     "title": "Quantum Computing",
-    "body": "Classical computers encode information in Bits, which strictly hold a value of 0 or 1. A Quantum Computer encodes information in Qubits (Quantum Bits), which operate based on the principles of quantum mechanics. Due to phenomena like superposition and entanglement, qubits can represent 0, 1, or any quantum superposition of these states simultaneously. This allows quantum computers to perform massive multi-dimensional computations at once, scaling exponentially. While a classical 100-bit state represents exactly one of $2^{100}$ possible states, a 100-qubit state represents a probability distribution across all $2^{100}$ states simultaneously. In 1994, Peter Shor formulated an algorithm that can theoretically factor large prime numbers exponentially faster than any known classical algorithm. If a large enough stable quantum computer is built, it will break modern RSA encryption overnight. Superposition A quantum system remains in a linear combination of multiple states until measured. A",
+    "body": "Quantum computers use qubits instead of bits. This allows them to solve specific complex problems\u2014like molecular simulation or breaking RSA encryption\u2014exponentially faster than any classical supercomputer. This allows quantum computers to perform massive multi-dimensional computations at once, scaling exponentially. While a classical 100-bit state represents exactly one of $2^{100}$ possible states, a 100-qubit state represents a probability distribution across all $2^{100}$ states simultaneously. In 1994, Peter Shor formulated an algorithm that can theoretically factor large prime numbers exponentially faster than any known classical algorithm. If a large enough stable quantum computer is built, it will break modern RSA encryption overnight. Superposition A quantum system remains in a linear combination of multiple states until measured. Allows processing of a vast number of possibilities simultaneously without extra time. Entanglement Particles become inextricably linked; the state o",
     "url": "quantum-computing.html"
+  },
+  {
+    "id": "quantum-errors.html",
+    "title": "Quantum Error Correction",
+    "body": "Quantum computers use qubits instead of bits. This allows them to solve specific complex problems\u2014like molecular simulation or breaking RSA encryption\u2014exponentially faster than any classical supercomputer. Built using superconducting loops, trapped ions, or photonic circuits. Requires extreme environments, often cooled to near absolute zero (-273\u00b0C). Leverages superposition (being in multiple states at once) and entanglement (instant correlation) to perform multi-dimensional calculations via quantum gates.",
+    "url": "quantum-errors.html"
+  },
+  {
+    "id": "quantum-logic.html",
+    "title": "Qubits & Gates",
+    "body": "Quantum computers use qubits instead of bits. This allows them to solve specific complex problems\u2014like molecular simulation or breaking RSA encryption\u2014exponentially faster than any classical supercomputer. Built using superconducting loops, trapped ions, or photonic circuits. Requires extreme environments, often cooled to near absolute zero (-273\u00b0C). Leverages superposition (being in multiple states at once) and entanglement (instant correlation) to perform multi-dimensional calculations via quantum gates.",
+    "url": "quantum-logic.html"
   },
   {
     "id": "ram-architecture.html",
@@ -272,14 +314,20 @@
   {
     "id": "raspberry-pi.html",
     "title": "Raspberry Pi & SBCs",
-    "body": "A Single Board Computer (SBC) is a complete computer built on a single circuit board, with microprocessor, memory, input/output (I/O), and other features required of a functional computer. Unlike traditional motherboards, SBCs do not rely on expansion slots for peripheral functions. The Raspberry Pi, launched in 2012, is the most famous SBC. It uses an ARM-based System-on-a-Chip (SoC) similar to smartphones, making it highly power-efficient and cheap to produce. It bridges the gap between software programming and physical hardware interaction. The defining feature of SBCs is the GPIO (General Purpose Input/Output) header. These pins allow the computer to directly read sensors (temperature, light) and control physical components (motors, LEDs) using code like Python. SoC Broadcom BCM2712 Custom silicon, 16nm process CPU Quad-core ARM Cortex-A76 @ 2.4GHz 3x faster than Pi 4, approaches desktop speed GPU VideoCore VII, 800MHz Supports dual 4K60 displays, Vulkan 1.2 I/O Controller RP1 \"Sou",
+    "body": "Single Board Computers (SBCs) like the Raspberry Pi pack a CPU, GPU, RAM, and I/O onto one credit-card-sized board. They are revolutionary for education, DIY electronics, and edge computing due to their low cost and GPIO accessibility. The Raspberry Pi, launched in 2012, is the most famous SBC. It uses an ARM-based System-on-a-Chip (SoC) similar to smartphones, making it highly power-efficient and cheap to produce. It bridges the gap between software programming and physical hardware interaction. The defining feature of SBCs is the GPIO (General Purpose Input/Output) header. These pins allow the computer to directly read sensors (temperature, light) and control physical components (motors, LEDs) using code like Python. SoC Broadcom BCM2712 Custom silicon, 16nm process CPU Quad-core ARM Cortex-A76 @ 2.4GHz 3x faster than Pi 4, approaches desktop speed GPU VideoCore VII, 800MHz Supports dual 4K60 displays, Vulkan 1.2 I/O Controller RP1 \"Southbridge\" First in-house silicon by Raspberry Pi",
     "url": "raspberry-pi.html"
   },
   {
     "id": "router.html",
     "title": "Router \u2014 Networking Guide",
-    "body": "A router is a networking device that forwards data packets between computer networks. In a home context, it connects your local network (your phones, laptops, smart TVs) to the internet via your ISP. Modern routers also include built-in Wi-Fi, firewall, DHCP server, and often parental controls and VPN support. Wi-Fi 7 (802.11be), releasing in 2024\u20132025, can theoretically hit speeds of 46 Gbps \u2014 fast enough to transfer a full 4K movie in under a second on a local network. 802.11n Wi-Fi 4 600 Mbps 2.4 / 5 GHz Good 2009 802.11ac Wi-Fi 5 Still Common 3.5 Gbps 5 GHz Good 2013 802.11ax Wi-Fi 6 Current 9.6 Gbps 2.4/5 GHz Excellent 2019 802.11ax Wi-Fi 6E Current 9.6 Gbps 2.4/5/6 GHz Excellent 2021 802.11be Wi-Fi 7 Latest 46 Gbps 2.4/5/6 GHz Excellent 2024 Wi-Fi 6 \u00b7 AX5400 \u00b7 6 Antennas \u00b7 HomeCare Security \u00b7 Great mid-range \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) Wi-Fi 6 \u00b7 Tri-band \u00b7 11000 Mbps \u00b7 Gaming priority \u00b7 VPN Fusion \u20b923,825 \u2013 \u20b932,175 (Avg: \u20b928,000) Wi-Fi 6E \u00b7 Tri-band Mesh \u00b7 4200 Mbps \u00b7 Whole-hom",
+    "body": "Routers act as traffic police for the internet. They connect multiple networks together and use routing tables to decide the best path for data to reach its destination. Wi-Fi 7 (802.11be), releasing in 2024\u20132025, can theoretically hit speeds of 46 Gbps \u2014 fast enough to transfer a full 4K movie in under a second on a local network. 802.11n Wi-Fi 4 600 Mbps 2.4 / 5 GHz Good 2009 802.11ac Wi-Fi 5 Still Common 3.5 Gbps 5 GHz Good 2013 802.11ax Wi-Fi 6 Current 9.6 Gbps 2.4/5 GHz Excellent 2019 802.11ax Wi-Fi 6E Current 9.6 Gbps 2.4/5/6 GHz Excellent 2021 802.11be Wi-Fi 7 Latest 46 Gbps 2.4/5/6 GHz Excellent 2024 Wi-Fi 6 \u00b7 AX5400 \u00b7 6 Antennas \u00b7 HomeCare Security \u00b7 Great mid-range \u20b96,325 \u2013 \u20b98,675 (Avg: \u20b97,500) Wi-Fi 6 \u00b7 Tri-band \u00b7 11000 Mbps \u00b7 Gaming priority \u00b7 VPN Fusion \u20b923,825 \u2013 \u20b932,175 (Avg: \u20b928,000) Wi-Fi 6E \u00b7 Tri-band Mesh \u00b7 4200 Mbps \u00b7 Whole-home coverage ~\u20b918,000 (2-pack) Wi-Fi 6 \u00b7 AX3200 \u00b7 4 antennas \u00b7 Best budget Wi-Fi 6 router in India \u20b92,925 \u2013 \u20b94,075 (Avg: \u20b93,500) To elevate your",
     "url": "router.html"
+  },
+  {
+    "id": "sbc-architecture.html",
+    "title": "SBC Architecture Deep Dive",
+    "body": "Single Board Computers (SBCs) like the Raspberry Pi pack a CPU, GPU, RAM, and I/O onto one credit-card-sized board. They are revolutionary for education, DIY electronics, and edge computing due to their low cost and GPIO accessibility. Typically based on ARM architecture (System-on-a-Chip). Includes GPIO pins for physical computing, microSD or NVMe storage, and various connectivity options like HDMI, USB, and Ethernet. Operates like a standard computer but with highly integrated components. The SoC handles most logic, while the user interacts via Linux-based OSs like Raspberry Pi OS (formerly Raspbian).",
+    "url": "sbc-architecture.html"
   },
   {
     "id": "scanner.html",
@@ -330,10 +378,22 @@
     "url": "ssd.html"
   },
   {
+    "id": "supercomputing.html",
+    "title": "Supercomputer Architectures",
+    "body": "Computers are not just PCs. They range from tiny microcontrollers in appliances to massive supercomputers that occupy entire buildings and perform trillions of calculations per second. Varies greatly: Supercomputers use massively parallel clusters; Mainframes use high-reliability redundant logic; Microcontrollers use ultra-low-power integrated designs. All use basic logic gates but differ in throughput, parallelization, and fault tolerance requirements.",
+    "url": "supercomputing.html"
+  },
+  {
     "id": "touchpad.html",
     "title": "Touchpad \u2014 Laptop Input Guide",
     "body": "A touchpad (or trackpad) is a flat, touch-sensitive surface built into laptops that replaces a mouse. It detects finger position, pressure, and gestures (pinch-to-zoom, two-finger scroll, three-finger swipe). Modern precision touchpads use Microsoft's Precision Touchpad drivers for superior accuracy and gesture support. Apple's Force Touch trackpad uses a linear actuator (Taptic Engine) to simulate click feel, despite the surface not actually moving at all. It's an illusion created by vibration patterns. Generic (Synaptics) Moderate Basic (2-finger scroll) Budget laptops Microsoft Precision Touchpad Excellent Standard Full (3/4-finger gestures) Most modern Windows laptops Apple Force Touch Trackpad Best-in-class Premium Force Touch + all gestures MacBooks Haptic Touchpad Excellent Simulated click via haptics Premium Windows laptops To elevate your understanding of Touchpad to an academic and engineering level, explore the curated resources below. These materials cover the fundamental p",
     "url": "touchpad.html"
+  },
+  {
+    "id": "turing-logic.html",
+    "title": "Alan Turing & Foundational Logic",
+    "body": "Computing history spans from ancient counting tools to modern quantum processors. It is defined by the transition from mechanical systems to vacuum tubes, then transistors, integrated circuits, and finally microprocessors. Evolved from fixed-function mechanical gears to Von Neumann stored-program architecture, which remains the standard for modern digital computers. The shift from decimal/analog logic to binary (0 and 1) logic allowed for the creation of stable, programmable electronic systems.",
+    "url": "turing-logic.html"
   },
   {
     "id": "ups.html",
@@ -356,7 +416,7 @@
   {
     "id": "wifi-adapter.html",
     "title": "Wi-Fi Adapter \u2014 Wireless Guide",
-    "body": "A Wi-Fi adapter adds wireless connectivity to a desktop PC or any device without built-in Wi-Fi. They come as USB dongles (plug-and-play, portable) or PCIe cards (faster, more stable, with antenna). Modern Wi-Fi 6 and 6E adapters support OFDMA and MU-MIMO for much lower latency in congested environments. Wi-Fi 6E adds the 6 GHz band \u2014 a completely new, less congested spectrum. In a crowded apartment building, switching from Wi-Fi 5 to Wi-Fi 6E can cut latency by 75%. USB Nano (Wi-Fi 5) 150\u2013433 Mbps Poor Plug & Play Temporary / Travel USB Dual-Band (Wi-Fi 6) 600\u20131800 Mbps Moderate Plug & Play Casual desktop use PCIe (Wi-Fi 6) Up to 3000 Mbps Excellent Internal card Desktop gaming / work PCIe (Wi-Fi 6E) Up to 9600 Mbps Excellent Internal card Future-proof desktop PCIe \u00b7 Wi-Fi 6E \u00b7 AXE5400 \u00b7 Bluetooth 5.2 \u00b7 2\u00d7Antenna \u00b7 Best PCIe pick \u20b93,825 \u2013 \u20b95,175 (Avg: \u20b94,500) USB 3.0 \u00b7 AC1300 (Wi-Fi 5) \u00b7 Dual-band \u00b7 High-gain antenna \u00b7 Budget pick \u20b91,025 \u2013 \u20b91,375 (Avg: \u20b91,200) To elevate your understa",
+    "body": "WiFi adapters translate radio waves into data. They come as internal PCIe cards, M.2 modules in laptops, or portable USB dongles. Wi-Fi 6E adds the 6 GHz band \u2014 a completely new, less congested spectrum. In a crowded apartment building, switching from Wi-Fi 5 to Wi-Fi 6E can cut latency by 75%. USB Nano (Wi-Fi 5) 150\u2013433 Mbps Poor Plug & Play Temporary / Travel USB Dual-Band (Wi-Fi 6) 600\u20131800 Mbps Moderate Plug & Play Casual desktop use PCIe (Wi-Fi 6) Up to 3000 Mbps Excellent Internal card Desktop gaming / work PCIe (Wi-Fi 6E) Up to 9600 Mbps Excellent Internal card Future-proof desktop PCIe \u00b7 Wi-Fi 6E \u00b7 AXE5400 \u00b7 Bluetooth 5.2 \u00b7 2\u00d7Antenna \u00b7 Best PCIe pick \u20b93,825 \u2013 \u20b95,175 (Avg: \u20b94,500) USB 3.0 \u00b7 AC1300 (Wi-Fi 5) \u00b7 Dual-band \u00b7 High-gain antenna \u00b7 Budget pick \u20b91,025 \u2013 \u20b91,375 (Avg: \u20b91,200) To elevate your understanding of Wifi Adapter to an academic and engineering level, explore the curated resources below. These materials cover the fundamental physics, architectural evolution, and adv",
     "url": "wifi-adapter.html"
   },
   {
@@ -382,6 +442,18 @@
     "title": "Android OS Deep Data",
     "body": "Android is the world's most popular mobile OS. It is open-source (AOSP) and highly customizable, used by manufacturers like Samsung, Google, and Xiaomi. Layered architecture: Linux Kernel at the bottom, followed by Hardware Abstraction Layer (HAL), Android Runtime (ART/Dalvik), Native C++ libraries, and the Java/Kotlin Application Framework. Developed by Android Inc. and bought by Google in 2005. The first commercial device was the T-Mobile G1 (2008). It has evolved from simple smartphone use to tablets, TVs, and cars. Uses a sandboxed environment for apps. Each app runs in its own process with a unique user ID. Uses Intents for inter-process communication. Smartphones Tablets Android Auto Wearables (Wear OS) Smart TVs AnTuTu Geekbench (Mobile) GFXBench Android Open Source Project Android Developer Portal",
     "url": "android.html"
+  },
+  {
+    "id": "data-computer-history",
+    "title": "History of Computing Deep Data",
+    "body": "Computing history spans from ancient counting tools to modern quantum processors. It is defined by the transition from mechanical systems to vacuum tubes, then transistors, integrated circuits, and finally microprocessors. Evolved from fixed-function mechanical gears to Von Neumann stored-program architecture, which remains the standard for modern digital computers. Early milestones include the Abacus, Babbage's Analytical Engine, and the ENIAC (1945). The invention of the transistor at Bell Labs in 1947 is the single most important event, leading to the Silicon Age. The shift from decimal/analog logic to binary (0 and 1) logic allowed for the creation of stable, programmable electronic systems. Military ballistic calculations (Early) Business automation Global telecommunications Scientific discovery FLOPS (Floating Point Operations Per Second) Instruction throughput Computer History Museum The Silicon Engine (CHM)",
+    "url": "computer-history.html"
+  },
+  {
+    "id": "data-computer-types",
+    "title": "Types of Computers Deep Data",
+    "body": "Computers are not just PCs. They range from tiny microcontrollers in appliances to massive supercomputers that occupy entire buildings and perform trillions of calculations per second. Varies greatly: Supercomputers use massively parallel clusters; Mainframes use high-reliability redundant logic; Microcontrollers use ultra-low-power integrated designs. Classification emerged as computers specialized for different tasks\u2014mainframe for big data, workstations for engineering, and personal computers for individuals. All use basic logic gates but differ in throughput, parallelization, and fault tolerance requirements. Weather forecasting (Supercomputer) Banking transactions (Mainframe) Smart home devices (Microcontroller) TOP500 List (Supercomputers) SPECint TOP500 Supercomputer Sites Embedded Systems Overview",
+    "url": "computer-types.html"
   },
   {
     "id": "data-cpu",
@@ -420,6 +492,18 @@
     "url": "motherboard.html"
   },
   {
+    "id": "data-nic",
+    "title": "Network Interface Card (NIC) Deep Data",
+    "body": "The NIC (or LAN Card) is the physical interface between your computer and the network. It handles data framing, MAC addressing, and signal conversion for Ethernet or Fiber. Includes a controller chip (ASIC), specialized buffer memory, and physical ports (RJ45, SFP+). Evolved from expensive add-in cards in the 1980s to being integrated into every motherboard by the early 2000s. The NIC receives data from the OS, encapsulates it into frames, and transmits it over the physical medium using CSMA/CD or full-duplex protocols. Internet access Local area networks Data center interconnects Iperf3 Netperf IEEE 802.3 Standard",
+    "url": "nic.html"
+  },
+  {
+    "id": "data-npu",
+    "title": "Neural Processing Unit Deep Data",
+    "body": "NPUs are dedicated AI accelerators. Unlike general-purpose CPUs or graphics-focused GPUs, NPUs are designed specifically for the matrix math required for deep learning and neural network inference. Consists of massive arrays of Multiply-Accumulate (MAC) units, local memory buffers, and specialized controllers for tensor operations. AI acceleration started with GPUs, but Google's TPU (2016) and Apple's Neural Engine (2017) proved that dedicated silicon could perform AI tasks much faster and with less power. Optimized for high-throughput, low-precision arithmetic (INT8, FP16). They process large blocks of data (tensors) simultaneously rather than individual values. Facial Recognition Voice Assistants Generative AI (LLMs) Real-time Video Enhancement MLPerf Geekbench AI AI Benchmark (Android) Tensor Processing Units (Google Cloud) Apple Neural Engine Overview",
+    "url": "npu.html"
+  },
+  {
     "id": "data-operating-systems",
     "title": "Operating Systems Deep Data",
     "body": "The Operating System (OS) is the most critical software in a computer. It bridges the gap between hardware and user applications, handling memory management, process scheduling, file systems, and hardware abstraction. Modern OS architecture centers around the Kernel (Monolithic, Microkernel, or Hybrid). It includes the hardware abstraction layer (HAL), system call interface, and user space applications. Early computers lacked OSs, requiring manual batch processing. Key milestones include GM-NAA I (1956), Unix (1969), MS-DOS (1981), and Windows 1.0 (1985). The OS kernel operates in privileged mode (Ring 0), directly controlling CPU scheduling, memory allocation (paging/segmentation), and hardware interrupts via device drivers. Personal computing Server management Embedded systems Mobile devices Phoronix Test Suite UnixBench Sysbench Operating Systems: Three Easy Pieces The Linux Kernel Archives",
@@ -432,10 +516,28 @@
     "url": "optical-drive.html"
   },
   {
+    "id": "data-quantum-computing",
+    "title": "Quantum Computing Deep Data",
+    "body": "Quantum computers use qubits instead of bits. This allows them to solve specific complex problems\u2014like molecular simulation or breaking RSA encryption\u2014exponentially faster than any classical supercomputer. Built using superconducting loops, trapped ions, or photonic circuits. Requires extreme environments, often cooled to near absolute zero (-273\u00b0C). Theoretical foundations laid in the 1980s by Richard Feynman and David Deutsch. Google claimed \"Quantum Supremacy\" in 2019 with its 53-qubit Sycamore processor. Leverages superposition (being in multiple states at once) and entanglement (instant correlation) to perform multi-dimensional calculations via quantum gates. Drug Discovery Financial Modeling Cybersecurity Logistics Optimization CLOPS (Circuit Layer Operations Per Second) Quantum Volume IBM Quantum Quantum Computing on Wikipedia",
+    "url": "quantum-computing.html"
+  },
+  {
     "id": "data-ram",
     "title": "Random Access Memory Deep Data",
     "body": "RAM provides high-speed, volatile data storage for the CPU. It is essential for multitasking and quick data retrieval during program execution. RAM consists of memory cells built from a capacitor and a transistor. Cells are organized into arrays (banks), accessed via rows and columns by memory controllers. Early RAM included magnetic-core memory. Dynamic RAM (DRAM) was invented in 1968. SDRAM became the standard in the 1990s, evolving through DDR to today's DDR5. The CPU sends a memory address to the memory controller, which activates the corresponding row and column. The data is read by sense amplifiers and sent to the CPU. System working memory VRAM in graphics cards Cache systems In-memory databases AIDA64 Memory Benchmark MemTest86 MaxxMem2 JEDEC DDR5 Standard Dynamic Random-Access Memory",
     "url": "ram.html"
+  },
+  {
+    "id": "data-raspberry-pi",
+    "title": "Raspberry Pi & Single Board Computers Deep Data",
+    "body": "Single Board Computers (SBCs) like the Raspberry Pi pack a CPU, GPU, RAM, and I/O onto one credit-card-sized board. They are revolutionary for education, DIY electronics, and edge computing due to their low cost and GPIO accessibility. Typically based on ARM architecture (System-on-a-Chip). Includes GPIO pins for physical computing, microSD or NVMe storage, and various connectivity options like HDMI, USB, and Ethernet. The first Raspberry Pi launched in 2012. It was intended to promote basic computer science in schools. Since then, it has evolved from the Model B to the powerful Raspberry Pi 5, spawning a massive ecosystem of HATs and clones. Operates like a standard computer but with highly integrated components. The SoC handles most logic, while the user interacts via Linux-based OSs like Raspberry Pi OS (formerly Raspbian). IoT Gateways Media Centers Retro Gaming Robotics Industrial Controllers Sysbench UnixBench IOzone Raspberry Pi Foundation MagPi Magazine",
+    "url": "raspberry-pi.html"
+  },
+  {
+    "id": "data-router",
+    "title": "Router Deep Data",
+    "body": "Routers act as traffic police for the internet. They connect multiple networks together and use routing tables to decide the best path for data to reach its destination. Features a CPU, specialized NPU for packet forwarding, RAM for routing tables, and multiple LAN/WAN ports. The first modern routers were developed at Stanford in the 1980s. Today, they range from small home WiFi units to massive core routers used by ISPs. Operates at Layer 3 of the OSI model. It examines IP addresses, checks its routing table, and forwards packets across different network segments. Home WiFi Enterprise Networking ISP Backbone Throughput (Mbps) Latency (ms) NAT Sessions How Routers Work",
+    "url": "router.html"
   },
   {
     "id": "data-server-guide",
@@ -448,6 +550,12 @@
     "title": "Solid State Drive Deep Data",
     "body": "SSDs have revolutionized storage by replacing moving magnetic platters with NAND flash memory, offering exponentially faster read/write speeds, lower latency, and greater physical durability. Consists of a controller, NAND flash memory chips (SLC, MLC, TLC, QLC), and often DRAM cache. Interfaces evolved from SATA to high-bandwidth NVMe over PCIe. Early SSDs using RAM appeared in the 1970s and 1980s, but modern flash-based SSDs gained commercial traction in the late 2000s, rapidly overtaking HDDs as the primary boot drive. Data is written by applying voltage to floating-gate or charge-trap transistors within memory cells, trapping electrons to represent bits of data. Primary OS boot drive High-performance gaming Enterprise database storage Thin laptops CrystalDiskMark AS SSD Benchmark ATTO Disk Benchmark NVM Express Base Specification 3D NAND Flash Memory Architecture",
     "url": "ssd.html"
+  },
+  {
+    "id": "data-wifi-adapter",
+    "title": "WiFi Adapter Deep Data",
+    "body": "WiFi adapters translate radio waves into data. They come as internal PCIe cards, M.2 modules in laptops, or portable USB dongles. Includes a radio transceiver, an antenna system (MIMO), and a baseband processor. WiFi (802.11) launched in 1997 with 2Mbps speeds. It has evolved through 802.11n (WiFi 4), ac (WiFi 5), ax (WiFi 6/6E), and now be (WiFi 7). Modulates data onto carrier waves in the 2.4GHz, 5GHz, or 6GHz bands using OFDM/OFDMA techniques. Laptop mobility Smartphones Desktop wireless connectivity Throughput tests Signal-to-Noise Ratio (SNR) WiFi Alliance",
+    "url": "wifi-adapter.html"
   },
   {
     "id": "data-windows",

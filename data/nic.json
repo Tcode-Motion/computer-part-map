@@ -1,0 +1,86 @@
+{
+  "name": "Network Interface Card (NIC)",
+  "definition": "A computer hardware component that connects a computer to a computer network.",
+  "overview": "The NIC (or LAN Card) is the physical interface between your computer and the network. It handles data framing, MAC addressing, and signal conversion for Ethernet or Fiber.",
+  "history": "Evolved from expensive add-in cards in the 1980s to being integrated into every motherboard by the early 2000s.",
+  "architecture": "Includes a controller chip (ASIC), specialized buffer memory, and physical ports (RJ45, SFP+).",
+  "working_principle": "The NIC receives data from the OS, encapsulates it into frames, and transmits it over the physical medium using CSMA/CD or full-duplex protocols.",
+  "applications": [
+    "Internet access",
+    "Local area networks",
+    "Data center interconnects"
+  ],
+  "manufacturing": "Produced by companies like Intel, Realtek, and Mellanox using standard semiconductor processes.",
+  "benchmarks": [
+    "Iperf3",
+    "Netperf"
+  ],
+  "future_research": "SmartNICs (DPUs) that offload CPU tasks, and 400Gbps/800Gbps Ethernet standards.",
+  "references": [
+    {
+      "text": "IEEE 802.3 Standard",
+      "url": "https://en.wikipedia.org/wiki/IEEE_802.3"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/nic/12_early_PC_network_cards.jpg",
+        "alt_text": "Image of Network Interface Card (NIC)",
+        "caption": "Technical diagram or image related to Network Interface Card (NIC)",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/aa/12_early_PC_network_cards.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-1-Network_card.jpg",
+        "alt_text": "Image from Network interface controller",
+        "caption": "Network interface controller technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-2-Network_card.jpg",
+        "alt_text": "Image from Ethernet card",
+        "caption": "Ethernet card technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-3-Network_card.jpg",
+        "alt_text": "Image from Network interface controller",
+        "caption": "Network interface controller technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-4-Network_card.jpg",
+        "alt_text": "Image from Ethernet card",
+        "caption": "Ethernet card technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-5-Network_card.jpg",
+        "alt_text": "Image from Network interface controller",
+        "caption": "Network interface controller technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/nic/nic-comp-6-Network_card.jpg",
+        "alt_text": "Image from Ethernet card",
+        "caption": "Ethernet card technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Network_card.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/nic/nic-overview.mp3",
+        "caption": "Audio Overview of Network Interface Card (NIC)",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "WiFi Adapter",
+  "definition": "A device that allows a computer to connect to a wireless network.",
+  "overview": "WiFi adapters translate radio waves into data. They come as internal PCIe cards, M.2 modules in laptops, or portable USB dongles.",
+  "history": "WiFi (802.11) launched in 1997 with 2Mbps speeds. It has evolved through 802.11n (WiFi 4), ac (WiFi 5), ax (WiFi 6/6E), and now be (WiFi 7).",
+  "architecture": "Includes a radio transceiver, an antenna system (MIMO), and a baseband processor.",
+  "working_principle": "Modulates data onto carrier waves in the 2.4GHz, 5GHz, or 6GHz bands using OFDM/OFDMA techniques.",
+  "applications": [
+    "Laptop mobility",
+    "Smartphones",
+    "Desktop wireless connectivity"
+  ],
+  "manufacturing": "Dominated by Intel, Broadcom, and Qualcomm.",
+  "benchmarks": [
+    "Throughput tests",
+    "Signal-to-Noise Ratio (SNR)"
+  ],
+  "future_research": "Millimeter-wave frequencies and ultra-reliable low-latency communication (URLLC).",
+  "references": [
+    {
+      "text": "WiFi Alliance",
+      "url": "https://www.wi-fi.org/"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-0-2.4_GHz_spectrum_example_Screenshot.png",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/be/2.4_GHz_spectrum_example_Screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-1-5_GHz_Wi-Fi_spectrum_screenshot.png",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/35/5_GHz_Wi-Fi_spectrum_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-2-Ezurio_wism2_small.jpg",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Ezurio_wism2_small.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-3-Maszt_radiowy_w_Konstantynowie.jpg",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/2/20/Maszt_radiowy_w_Konstantynowie.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-4-2.4_GHz_spectrum_example_Screenshot.png",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/be/2.4_GHz_spectrum_example_Screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-5-5_GHz_Wi-Fi_spectrum_screenshot.png",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/35/5_GHz_Wi-Fi_spectrum_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-6-Ezurio_wism2_small.jpg",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Ezurio_wism2_small.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/wifi-adapter/wifi-adapter-comp-7-Maszt_radiowy_w_Konstantynowie.jpg",
+        "alt_text": "Image from WiFi adapter",
+        "caption": "WiFi adapter technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/2/20/Maszt_radiowy_w_Konstantynowie.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/wifi-adapter/wifi-adapter-overview.mp3",
+        "caption": "Audio Overview of WiFi Adapter",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

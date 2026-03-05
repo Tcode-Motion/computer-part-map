@@ -1,0 +1,94 @@
+{
+  "name": "Router",
+  "definition": "A networking device that forwards data packets between computer networks.",
+  "overview": "Routers act as traffic police for the internet. They connect multiple networks together and use routing tables to decide the best path for data to reach its destination.",
+  "history": "The first modern routers were developed at Stanford in the 1980s. Today, they range from small home WiFi units to massive core routers used by ISPs.",
+  "architecture": "Features a CPU, specialized NPU for packet forwarding, RAM for routing tables, and multiple LAN/WAN ports.",
+  "working_principle": "Operates at Layer 3 of the OSI model. It examines IP addresses, checks its routing table, and forwards packets across different network segments.",
+  "applications": [
+    "Home WiFi",
+    "Enterprise Networking",
+    "ISP Backbone"
+  ],
+  "manufacturing": "Built by Cisco, TP-Link, ASUS, and Juniper focusing on thermal management and signal integrity.",
+  "benchmarks": [
+    "Throughput (Mbps)",
+    "Latency (ms)",
+    "NAT Sessions"
+  ],
+  "future_research": "WiFi 7 (802.11be), AI-driven traffic shaping, and SD-WAN (Software-Defined WAN).",
+  "references": [
+    {
+      "text": "How Routers Work",
+      "url": "https://en.wikipedia.org/wiki/Router_(computing)"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/router/router-comp-0-Linksys-Wireless-G-Router.jpg",
+        "alt_text": "Image from Wireless router",
+        "caption": "Wireless router technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/34/Linksys-Wireless-G-Router.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-1-24-port_3Com_switch.JPG",
+        "alt_text": "Image from Network switch",
+        "caption": "Network switch technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/e/e4/24-port_3Com_switch.JPG",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-2-2550T-PWR-Front.jpg",
+        "alt_text": "Image from Network switch",
+        "caption": "Network switch technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b9/2550T-PWR-Front.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-3-Smartswitch6000.jpg",
+        "alt_text": "Image from Network switch",
+        "caption": "Network switch technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Smartswitch6000.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-4-OpenWRT_8.09.1_LuCI_screenshot.png",
+        "alt_text": "Image from Router (computing)",
+        "caption": "Router (computing) technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/a/ad/OpenWRT_8.09.1_LuCI_screenshot.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-5-Linksys-Wireless-G-Router.jpg",
+        "alt_text": "Image from Wireless router",
+        "caption": "Wireless router technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/3/34/Linksys-Wireless-G-Router.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-6-24-port_3Com_switch.JPG",
+        "alt_text": "Image from Network switch",
+        "caption": "Network switch technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/e/e4/24-port_3Com_switch.JPG",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      },
+      {
+        "local_path": "assets/images/router/router-comp-7-2550T-PWR-Front.jpg",
+        "alt_text": "Image from Network switch",
+        "caption": "Network switch technical image",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/b/b9/2550T-PWR-Front.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/router/router-overview.mp3",
+        "caption": "Audio Overview of Router",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

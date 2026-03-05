@@ -1,0 +1,45 @@
+{
+  "name": "History of Computing",
+  "definition": "The chronological development of mechanical and electronic devices used for automated calculation and data processing.",
+  "overview": "Computing history spans from ancient counting tools to modern quantum processors. It is defined by the transition from mechanical systems to vacuum tubes, then transistors, integrated circuits, and finally microprocessors.",
+  "history": "Early milestones include the Abacus, Babbage's Analytical Engine, and the ENIAC (1945). The invention of the transistor at Bell Labs in 1947 is the single most important event, leading to the Silicon Age.",
+  "architecture": "Evolved from fixed-function mechanical gears to Von Neumann stored-program architecture, which remains the standard for modern digital computers.",
+  "working_principle": "The shift from decimal/analog logic to binary (0 and 1) logic allowed for the creation of stable, programmable electronic systems.",
+  "applications": [
+    "Military ballistic calculations (Early)",
+    "Business automation",
+    "Global telecommunications",
+    "Scientific discovery"
+  ],
+  "manufacturing": "Started with hand-soldered vacuum tubes, moving to automated photolithography on silicon wafers.",
+  "benchmarks": [
+    "FLOPS (Floating Point Operations Per Second)",
+    "Instruction throughput"
+  ],
+  "future_research": "DNA computing, light-based (photonic) computing, and bio-electronic integration.",
+  "references": [
+    {
+      "text": "Computer History Museum",
+      "url": "https://computerhistory.org/"
+    },
+    {
+      "text": "The Silicon Engine (CHM)",
+      "url": "https://www.computerhistory.org/siliconengine/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "The Five Generations of Computers",
+      "slug": "computer-generations.html"
+    },
+    {
+      "title": "Alan Turing & Foundational Logic",
+      "slug": "turing-logic.html"
+    }
+  ],
+  "media": {
+    "images": [],
+    "videos": [],
+    "audio": []
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Neural Processing Unit",
+  "definition": "A specialized circuit that implements all the necessary control and arithmetic logic necessary to execute machine learning algorithms.",
+  "overview": "NPUs are dedicated AI accelerators. Unlike general-purpose CPUs or graphics-focused GPUs, NPUs are designed specifically for the matrix math required for deep learning and neural network inference.",
+  "history": "AI acceleration started with GPUs, but Google's TPU (2016) and Apple's Neural Engine (2017) proved that dedicated silicon could perform AI tasks much faster and with less power.",
+  "architecture": "Consists of massive arrays of Multiply-Accumulate (MAC) units, local memory buffers, and specialized controllers for tensor operations.",
+  "working_principle": "Optimized for high-throughput, low-precision arithmetic (INT8, FP16). They process large blocks of data (tensors) simultaneously rather than individual values.",
+  "applications": [
+    "Facial Recognition",
+    "Voice Assistants",
+    "Generative AI (LLMs)",
+    "Real-time Video Enhancement"
+  ],
+  "manufacturing": "Fabricated on cutting-edge nodes (3nm, 5nm) to maximize efficiency. Often integrated into SoCs (like Snapdragon, Apple Silicon, or Intel Core Ultra).",
+  "benchmarks": [
+    "MLPerf",
+    "Geekbench AI",
+    "AI Benchmark (Android)"
+  ],
+  "future_research": "Neuromorphic computing (mimicking brain neurons), in-memory computing, and quantized model acceleration.",
+  "references": [
+    {
+      "text": "Tensor Processing Units (Google Cloud)",
+      "url": "https://cloud.google.com/tpu"
+    },
+    {
+      "text": "Apple Neural Engine Overview",
+      "url": "https://developer.apple.com/machine-learning/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "NPU vs GPU Math",
+      "slug": "npu-math.html"
+    },
+    {
+      "title": "AI Accelerators in Mobile",
+      "slug": "mobile-ai.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/npu/Raspberry_Pi_5_Hailo_AI_Accelerator_Module.jpg",
+        "alt_text": "Image of Neural Processing Unit",
+        "caption": "Technical diagram or image related to Neural Processing Unit",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/7/77/Raspberry_Pi_5_Hailo_AI_Accelerator_Module.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/npu/npu-overview.mp3",
+        "caption": "Audio Overview of Neural Processing Unit",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}
