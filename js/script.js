@@ -7,6 +7,7 @@
 const SITE_PAGES = [
     { name: "CPU (Processor)", url: "cpu.html", cat: "Core" },
     { name: "GPU (Graphics Card)", url: "gpu.html", cat: "Core" },
+    { name: "NPU (AI Processor)", url: "npu.html", cat: "Core" },
     { name: "RAM (Memory)", url: "ram.html", cat: "Core" },
     { name: "Motherboard", url: "motherboard.html", cat: "Core" },
     { name: "SSD (Solid State)", url: "ssd.html", cat: "Core" },
@@ -36,6 +37,8 @@ const SITE_PAGES = [
     { name: "Computer Types", url: "computer-types.html", cat: "History" },
     { name: "History of Computing", url: "computer-history.html", cat: "History" },
     { name: "Server Guide", url: "server-guide.html", cat: "History" },
+    { name: "Raspberry Pi & SBCs", url: "raspberry-pi.html", cat: "Computing" },
+    { name: "Quantum Computing", url: "quantum-computing.html", cat: "Computing" },
     { name: "About Us", url: "about.html", cat: "Misc" }
 ];
 
@@ -48,57 +51,91 @@ const injectCommonElements = () => {
         
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
+          
+          <li class="has-dropdown mega-dropdown">
             <a href="#">Hardware ▾</a>
-            <ul class="sub-nav">
-              <li><a href="cpu.html">CPU</a></li>
-              <li><a href="gpu.html">GPU</a></li>
-              <li><a href="ram.html">RAM</a></li>
-              <li><a href="ssd.html">SSD / Storage</a></li>
-              <li><a href="motherboard.html">Motherboard</a></li>
-              <li><a href="psu.html">Power Supply (PSU)</a></li>
-              <li><a href="cooling.html">Cooling</a></li>
-            </ul>
+            <div class="sub-nav mega-content">
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">⚙️ Core Hardware</h4>
+                <a href="cpu.html">CPU (Processor)</a>
+                <a href="gpu.html">GPU (Graphics)</a>
+                <a href="npu.html">NPU (AI Processor)</a>
+                <a href="motherboard.html">Motherboard</a>
+                <a href="ram.html">RAM (Memory)</a>
+                <a href="psu.html">Power Supply</a>
+                <a href="cooling.html">Cooling Systems</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">⌨️ Input Devices</h4>
+                <a href="keyboard.html">Keyboard</a>
+                <a href="mouse.html">Mouse</a>
+                <a href="webcam.html">Webcam</a>
+                <a href="microphone.html">Microphone</a>
+                <a href="scanner.html">Scanner</a>
+                <a href="touchpad.html">Touchpad</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🖥️ Output & Storage</h4>
+                <a href="monitor.html">Monitor</a>
+                <a href="printer.html">Printer</a>
+                <a href="projector.html">Projector</a>
+                <a href="ssd.html">SSD Storage</a>
+                <a href="hdd.html">HDD Storage</a>
+                <a href="optical-drive.html">Optical Drive</a>
+              </div>
+            </div>
           </li>
+
           <li class="has-dropdown">
-            <a href="#">Input/Output ▾</a>
+            <a href="#">Software ▾</a>
             <ul class="sub-nav">
-              <li><a href="monitor.html">Monitor</a></li>
-              <li><a href="keyboard.html">Keyboard</a></li>
-              <li><a href="mouse.html">Mouse</a></li>
-              <li><a href="printer.html">Printer</a></li>
-              <li><a href="webcam.html">Webcam</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#">Software & OS ▾</a>
-            <ul class="sub-nav">
+              <li class="dropdown-header">Operating Systems</li>
               <li><a href="operating-systems.html">What is OS?</a></li>
               <li><a href="windows.html">Windows</a></li>
               <li><a href="linux.html">Linux</a></li>
               <li><a href="macos.html">macOS</a></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-header">Categories</li>
               <li><a href="software-types.html">Software Types</a></li>
             </ul>
           </li>
+
           <li class="has-dropdown">
-            <a href="#">More ▾</a>
+            <a href="#">Computing ▾</a>
             <ul class="sub-nav">
+              <li class="dropdown-header">Modern & Future</li>
+              <li><a href="raspberry-pi.html">Raspberry Pi & SBCs</a></li>
+              <li><a href="npu.html">Neural Processing Units</a></li>
+              <li><a href="quantum-computing.html">Quantum Computing</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="computer-history.html">History of Computing</a></li>
               <li><a href="computer-types.html">Types of Computers</a></li>
-              <li><a href="computer-history.html">Computing History</a></li>
               <li><a href="server-guide.html">Server Guide</a></li>
-              <li><a href="ups.html">UPS</a></li>
-              <li><a href="optical-drive.html">Optical Drives</a></li>
-              <li><a href="about.html">About project</a></li>
+              <li><a href="ups.html">UPS Systems</a></li>
+              <li><a href="battery.html">Battery Guide</a></li>
+              <li><a href="nic.html">Networking (NIC)</a></li>
+              <li><a href="router.html">Routers</a></li>
+              <li><a href="wifi-adapter.html">WiFi Adapters</a></li>
             </ul>
           </li>
+
+          <li class="has-dropdown">
+            <a href="#">Audio ▾</a>
+            <ul class="sub-nav">
+              <li><a href="speakers.html">Speakers</a></li>
+              <li><a href="sound-card.html">Sound Cards</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About</a></li>
         </ul>
 
         <div class="nav-actions">
           <div class="search-box">
-            <input type="text" id="nav-search-input" placeholder="Search components...">
+            <input type="text" id="nav-search-input" placeholder="Search...">
             <div id="nav-search-results" class="search-dropdown"></div>
           </div>
-          <button id="theme-toggle" title="Toggle Dark/Light Mode">🌓</button>
+          <button id="theme-toggle" title="Toggle Mode">🌓</button>
         </div>
       </div>
     </nav>`;
@@ -110,9 +147,9 @@ const injectCommonElements = () => {
           <h3>⚡ Computer<span>Map</span></h3>
           <p>The world's most detailed open library for computer hardware and software enthusiasts.</p>
           <div class="footer-social">
-            <a href="#">🌐</a>
-            <a href="#">📧</a>
-            <a href="https://github.com/Tcode-Motion/computer-part-map/" target="_blank">🐙</a>
+            <a href="https://tcode-motion.github.io/computer-part-map/" title="Website">🌐</a>
+            <a href="mailto:contact@tcodemotion.com" title="Email">📧</a>
+            <a href="https://github.com/Tcode-Motion/computer-part-map/" target="_blank" title="GitHub">🐙</a>
           </div>
         </div>
         <div class="footer-links">
@@ -126,11 +163,11 @@ const injectCommonElements = () => {
           <h4>Resources</h4>
           <a href="about.html">About Us</a>
           <a href="https://github.com/Tcode-Motion/computer-part-map/blob/main/README.md">Documentation</a>
-          <a href="https://tcode-motion.github.io/computer-part-map/">Live Demo</a>
+          <a href="index.html">Home</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Computer Parts Map. Built for the community. "Apni Okat Main Rah Karo 😈"</p>
+        <p>&copy; 2026 Computer Parts Map. Made by <strong>Tcode Motion</strong>.</p>
       </div>
     </footer>`;
 
@@ -139,17 +176,6 @@ const injectCommonElements = () => {
     
     if (navElement) navElement.innerHTML = navbarHTML;
     if (footerElement) footerElement.innerHTML = footerHTML;
-};
-
-// --- Copy Protection ---
-const initCopyBlocker = () => {
-    document.addEventListener('copy', (e) => {
-        const selectedText = window.getSelection().toString();
-        if (selectedText) {
-            e.clipboardData.setData('text/plain', "Apni Okat Main Rah Karo 😈");
-            e.preventDefault();
-        }
-    });
 };
 
 // --- Search Logic ---
@@ -211,24 +237,61 @@ const animateStats = () => {
     const stats = document.querySelectorAll('.stat-num');
     stats.forEach(stat => {
         const target = +stat.getAttribute('data-val');
-        anime({
-            targets: stat,
-            innerHTML: [0, target],
-            round: 1,
-            easing: 'easeOutExpo',
-            duration: 2000,
-            delay: 500
-        });
+        if (typeof anime !== 'undefined') {
+            anime({
+                targets: stat,
+                innerHTML: [0, target],
+                round: 1,
+                easing: 'easeOutExpo',
+                duration: 2000,
+                delay: 500
+            });
+        }
     });
+};
+
+// --- Category Sections Generator ---
+const populateCategorySections = () => {
+    const anchor = document.getElementById('category-sections-anchor');
+    if (!anchor) return;
+
+    const categories = [
+        { id: 'core', title: '⚙️ Core Components', filter: 'Core' },
+        { id: 'software', title: '💻 Software & OS', filter: 'Software' },
+        { id: 'input', title: '⌨️ Input Devices', filter: 'Input' },
+        { id: 'output', title: '🖥️ Output Devices', filter: 'Output' }
+    ];
+
+    let html = '';
+    categories.forEach(cat => {
+        const pages = SITE_PAGES.filter(p => p.cat === cat.filter);
+        html += `
+        <section id="${cat.id}" class="category-detail-section">
+            <h2 class="section-title">${cat.title}</h2>
+            <div class="pages-grid">
+                ${pages.map(p => `
+                    <a href="${p.url}" class="page-mini-card">
+                        <div class="page-card-icon">${cat.title.split(' ')[0]}</div>
+                        <div class="page-card-info">
+                            <h4>${p.name}</h4>
+                            <p>Technical specifications & guides</p>
+                        </div>
+                    </a>
+                `).join('')}
+            </div>
+        </section>`;
+    });
+
+    anchor.innerHTML = html;
 };
 
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
     injectCommonElements();
     initTheme();
-    initCopyBlocker();
     initSearch('nav-search-input', 'nav-search-results');
     initSearch('hero-search-input', 'hero-search-results');
+    populateCategorySections();
     
     // Hide loader
     const loader = document.getElementById('loader');

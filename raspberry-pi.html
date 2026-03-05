@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raspberry Pi & SBCs | Computer Parts Map</title>
+  <meta name="description" content="Single Board Computers, Raspberry Pi architecture, GPIO pins, and DIY electronics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-mode">
+<div id="navbar-placeholder"></div>
+
+<div class="component-hero">
+  <div class="badge">🍓 Microcomputing</div>
+  <h1>Raspberry Pi & SBCs</h1>
+  <p class="hero-subtitle">Credit-card sized computers powering IoT, education, and DIY engineering.</p>
+</div>
+
+<div class="page-content">
+
+  <div class="content-section">
+    <h2>📖 What is a Single Board Computer (SBC)?</h2>
+    <p>A <strong>Single Board Computer (SBC)</strong> is a complete computer built on a single circuit board, with microprocessor, memory, input/output (I/O), and other features required of a functional computer. Unlike traditional motherboards, SBCs do not rely on expansion slots for peripheral functions.</p>
+    <p>The <strong>Raspberry Pi</strong>, launched in 2012, is the most famous SBC. It uses an ARM-based System-on-a-Chip (SoC) similar to smartphones, making it highly power-efficient and cheap to produce. It bridges the gap between software programming and physical hardware interaction.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 GPIO Magic</div>
+      <p>The defining feature of SBCs is the <strong>GPIO (General Purpose Input/Output)</strong> header. These pins allow the computer to directly read sensors (temperature, light) and control physical components (motors, LEDs) using code like Python.</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>🔬 Raspberry Pi 5 Architecture Deep Dive</h2>
+    <table class="spec-table">
+      <thead><tr><th>Component</th><th>Details (Raspberry Pi 5)</th><th>Significance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SoC</strong></td><td>Broadcom BCM2712</td><td>Custom silicon, 16nm process</td></tr>
+        <tr><td><strong>CPU</strong></td><td>Quad-core ARM Cortex-A76 @ 2.4GHz</td><td>3x faster than Pi 4, approaches desktop speed</td></tr>
+        <tr><td><strong>GPU</strong></td><td>VideoCore VII, 800MHz</td><td>Supports dual 4K60 displays, Vulkan 1.2</td></tr>
+        <tr><td><strong>I/O Controller</strong></td><td>RP1 "Southbridge"</td><td>First in-house silicon by Raspberry Pi for I/O</td></tr>
+        <tr><td><strong>PCIe</strong></td><td>PCIe 2.0 x1 interface</td><td>Allows connecting NVMe M.2 SSDs for massive storage speed</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content-section">
+    <h2>📊 Educational & Research Applications</h2>
+    <p>SBCs are heavily utilized in academic and industrial research for:</p>
+    <ul>
+      <li><strong>Edge Computing:</strong> Processing IoT sensor data locally rather than sending it to the cloud.</li>
+      <li><strong>Cluster Computing:</strong> Building "Bramble" clusters to teach supercomputing concepts on a budget.</li>
+      <li><strong>Robotics & Automation:</strong> Acting as the "brain" for ROS (Robot Operating System) deployments.</li>
+    </ul>
+    <div class="related-grid" style="margin-top: 15px;">
+      <a href="https://www.raspberrypi.com/documentation/" target="_blank" class="buy-btn">📄 Official Documentation</a>
+      <a href="https://ubuntu.com/raspberry-pi" target="_blank" class="buy-btn">🐧 Ubuntu for Pi</a>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>🛒 Notable SBC Alternatives</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <h4>Raspberry Pi 5 (8GB)</h4>
+        <p class="product-spec">The standard for DIY. Huge community, best software support.</p>
+        <p class="product-price">~₹8,500</p>
+      </div>
+      <div class="product-card">
+        <h4>Orange Pi 5 Plus</h4>
+        <p class="product-spec">Rockchip RK3588. Includes a 6 TOPS NPU for hardware AI.</p>
+        <p class="product-price">~₹14,000</p>
+      </div>
+      <div class="product-card">
+        <h4>NVIDIA Jetson Nano</h4>
+        <p class="product-spec">128-core Maxwell GPU. Specifically designed for edge AI & vision.</p>
+        <p class="product-price">~₹16,000</p>
+      </div>
+      <div class="product-card">
+        <h4>Arduino Uno R4 (Microcontroller)</h4>
+        <p class="product-spec">Not a full OS, but a 32-bit ARM Cortex-M4 for real-time control.</p>
+        <p class="product-price">~₹2,500</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

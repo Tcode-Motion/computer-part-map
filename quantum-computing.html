@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Computing | Computer Parts Map</title>
+  <meta name="description" content="Research-level guide to Quantum Computing, Qubits, Superposition, Entanglement, and the future of cryptography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-mode">
+<div id="navbar-placeholder"></div>
+
+<div class="component-hero">
+  <div class="badge">⚛️ Future Tech</div>
+  <h1>Quantum Computing</h1>
+  <p class="hero-subtitle">Harnessing quantum mechanics to solve problems classical computers never could.</p>
+</div>
+
+<div class="page-content">
+
+  <div class="content-section">
+    <h2>📖 What is Quantum Computing?</h2>
+    <p>Classical computers encode information in <strong>Bits</strong>, which strictly hold a value of 0 or 1. A <strong>Quantum Computer</strong> encodes information in <strong>Qubits (Quantum Bits)</strong>, which operate based on the principles of quantum mechanics. Due to phenomena like superposition and entanglement, qubits can represent 0, 1, or any quantum superposition of these states simultaneously.</p>
+    <p>This allows quantum computers to perform massive multi-dimensional computations at once, scaling exponentially. While a classical 100-bit state represents exactly one of $2^{100}$ possible states, a 100-qubit state represents a probability distribution across <em>all</em> $2^{100}$ states simultaneously.</p>
+    <div class="did-you-know">
+      <div class="dyk-label">💡 Shor's Algorithm</div>
+      <p>In 1994, Peter Shor formulated an algorithm that can theoretically factor large prime numbers exponentially faster than any known classical algorithm. If a large enough stable quantum computer is built, it will break modern RSA encryption overnight.</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>🔬 Core Quantum Principles</h2>
+    <table class="spec-table">
+      <thead><tr><th>Principle</th><th>Scientific Definition</th><th>Computational Impact</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Superposition</strong></td><td>A quantum system remains in a linear combination of multiple states until measured.</td><td>Allows processing of a vast number of possibilities simultaneously without extra time.</td></tr>
+        <tr><td><strong>Entanglement</strong></td><td>Particles become inextricably linked; the state of one instantly dictates the state of another, regardless of distance.</td><td>Enables complex correlation of data points and exponentially scales computational power per qubit.</td></tr>
+        <tr><td><strong>Decoherence</strong></td><td>The loss of quantum coherence (state) due to interaction with the environment (heat, radiation).</td><td>The biggest hurdle in building quantum computers; requires cooling systems to near absolute zero (-273°C).</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content-section">
+    <h2>📊 Research Resources & Papers</h2>
+    <p>Quantum computing is at the bleeding edge of physics and computer science. Explore these canonical papers and resources:</p>
+    <ul>
+      <li><strong>"Quantum computation and quantum information"</strong> - Nielsen & Chuang - <em>The definitive textbook on the subject.</em></li>
+      <li><strong>"Quantum Supremacy Using a Programmable Superconducting Processor"</strong> - Google AI Quantum (Nature, 2019) - <em>The landmark paper claiming the first proof of quantum supremacy.</em></li>
+    </ul>
+    <div class="related-grid" style="margin-top: 15px;">
+      <a href="https://quantum-computing.ibm.com/" target="_blank" class="buy-btn">⚛️ IBM Quantum Experience</a>
+      <a href="https://qiskit.org/" target="_blank" class="buy-btn flipkart">🐍 Qiskit (Python SDK)</a>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>🧪 Hardware Approaches to Qubits</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <h4>Superconducting Circuits</h4>
+        <p class="product-spec">Loops of superconducting wire cooled to near absolute zero. Used by IBM & Google.</p>
+        <p class="product-price">Fastest gates, but high error rates.</p>
+      </div>
+      <div class="product-card">
+        <h4>Trapped Ions</h4>
+        <p class="product-spec">Individual ionized atoms trapped by electromagnetic fields and controlled by lasers. (IonQ)</p>
+        <p class="product-price">Highly stable, longer coherence times.</p>
+      </div>
+      <div class="product-card">
+        <h4>Photonic Qubits</h4>
+        <p class="product-spec">Using single particles of light (photons) travelling through waveguides. (PsiQuantum)</p>
+        <p class="product-price">Can operate at room temperature.</p>
+      </div>
+      <div class="product-card">
+        <h4>Topological Qubits</h4>
+        <p class="product-spec">Theoretical approach encoding data in braided paths of anyons. (Microsoft research)</p>
+        <p class="product-price">Theoretically immune to decoherence.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

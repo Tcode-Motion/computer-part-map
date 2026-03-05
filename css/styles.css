@@ -53,7 +53,7 @@
 /* The Hover Bridge Fix */
 .sub-nav {
   position: absolute;
-  top: 100%; /* Align exactly at bottom of navbar */
+  top: 100%;
   left: 0;
   background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -67,6 +67,63 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   list-style: none;
   z-index: 1001;
+}
+
+/* Mega Dropdown Styling */
+.mega-dropdown {
+  position: static !important;
+}
+
+.mega-content {
+  width: 90%;
+  max-width: 1000px;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(10px) !important;
+  display: flex;
+  padding: 20px !important;
+  gap: 30px;
+}
+
+.has-dropdown:hover .mega-content {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+.dropdown-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-header {
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  padding: 0 15px;
+}
+
+.sub-nav a {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.sub-nav a:hover {
+  background: rgba(37, 99, 235, 0.1);
+  color: #fff;
+  padding-left: 20px;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 10px 0;
 }
 
 /* Invisible bridge to prevent mouse-out gap */
@@ -83,17 +140,6 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
-
-.sub-nav a {
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.sub-nav a:hover {
-  background: rgba(37, 99, 235, 0.1);
-  color: #2563eb;
 }
 
 /* --- PREMIUM HERO SECTION --- */
@@ -279,3 +325,380 @@
 
 .search-item:hover { background: rgba(255,255,255,0.05); }
 .cat-tag { font-size: 0.7rem; color: #60a5fa; background: rgba(37, 99, 235, 0.1); padding: 2px 8px; border-radius: 4px; }
+
+/* ===================================================================
+   COMPUTER PARTS MAP — Global Design System (Legacy Recovery)
+   =================================================================== */
+
+:root {
+  --primary:       #2563eb;
+  --primary-dark:  #1d4ed8;
+  --primary-glow:  rgba(37, 99, 235, 0.25);
+  --accent:        #f59e0b;
+  --accent-dark:   #d97706;
+  --success:       #10b981;
+  --danger:        #ef4444;
+
+  --bg:            #f0f4ff;
+  --bg-secondary:  #e8edf8;
+  --card-bg:       #ffffff;
+  --navbar-bg:     rgba(15, 23, 42, 0.97);
+  --footer-bg:     #0f172a;
+  --text:          #1e293b;
+  --text-muted:    #64748b;
+  --text-light:    #94a3b8;
+  --border:        rgba(30, 41, 59, 0.12);
+
+  --radius-sm:     6px;
+  --radius-md:     12px;
+  --radius-lg:     20px;
+  --radius-xl:     28px;
+
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md:     0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,0.14);
+  --shadow-glow:   0 0 24px var(--primary-glow);
+
+  --font-ui:      'Inter', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+
+  --transition:   0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-mode {
+  --bg:           #0f172a;
+  --bg-secondary: #1e293b;
+  --card-bg:      #1e293b;
+  --text:         #e2e8f0;
+  --text-muted:   #94a3b8;
+  --text-light:   #64748b;
+  --border:       rgba(255,255,255,0.08);
+}
+
+/* --- Base & Scroll --- */
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-ui); transition: background 0.3s, color 0.3s; }
+
+/* --- Component Hero --- */
+.component-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.component-hero .badge {
+  display: inline-block;
+  background: rgba(37,99,235,0.2);
+  border: 1px solid rgba(37,99,235,0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.component-hero h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem; }
+.component-hero .hero-subtitle { font-size: 1.1rem; opacity: 0.7; max-width: 700px; margin: 0 auto 2rem; }
+.hero-img { width: 300px; height: auto; border-radius: 12px; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5)); }
+
+/* --- Page Layout --- */
+.page-content { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+.content-section {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+.content-section h2 { font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px; }
+.content-section p { line-height: 1.8; color: var(--text-muted); margin-bottom: 1.2rem; }
+
+/* --- Tables --- */
+.spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; border-radius: 8px; overflow: hidden; }
+.spec-table th { background: var(--primary); color: #fff; text-align: left; padding: 12px; }
+.spec-table td { padding: 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+.spec-table tr:hover { background: rgba(37,99,235,0.05); }
+
+/* --- Products --- */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.product-card { background: var(--bg-secondary); border-radius: 12px; padding: 1.5rem; text-align: center; transition: transform 0.3s; }
+.product-card:hover { transform: translateY(-5px); }
+.product-card img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 1rem; }
+.product-price { font-size: 1.2rem; font-weight: 700; color: var(--accent); margin: 0.5rem 0; }
+.buy-btn { display: inline-block; background: var(--primary); color: #fff; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.buy-btn.flipkart { background: #2874f0; }
+
+/* --- Callouts --- */
+.did-you-know { background: rgba(245,158,11,0.1); border-left: 4px solid var(--accent); padding: 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+.dyk-label { font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
+
+/* --- Related --- */
+.related-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.related-link { background: var(--bg-secondary); padding: 8px 16px; border-radius: 30px; font-size: 0.9rem; color: var(--text); text-decoration: none; transition: background 0.3s; }
+.related-link:hover { background: var(--primary); color: #fff; }
+
+/* --- Stat Bars --- */
+.stat-bar-wrap { margin-bottom: 1rem; }
+.stat-bar-label { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 5px; }
+.stat-bar { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+.stat-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width 1.5s ease-in-out; }
+
+/* --- About Page Specific --- */
+.about-hero { padding: 6rem 2rem 4rem; background: #020617; text-align: center; color: #fff; }
+.about-avatar-placeholder { font-size: 4rem; margin-bottom: 1rem; }
+.role-tag { background: rgba(37,99,235,0.1); padding: 4px 16px; border-radius: 20px; color: #60a5fa; display: inline-block; margin-bottom: 1rem; }
+.social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; }
+.social-link { padding: 10px 20px; border-radius: 8px; text-decoration: none; color: #fff; font-weight: 600; }
+.social-link.github { background: #333; }
+.social-link.youtube { background: #ff0000; }
+
+/* --- Category Details Section --- */
+.category-detail-section {
+  padding: 60px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: \"Space Grotesk\", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+  border-left: 4px solid #2563eb;
+  padding-left: 20px;
+}
+
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.page-mini-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.page-mini-card:hover {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: #2563eb;
+  transform: translateY(-5px);
+}
+
+.page-card-icon {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-card-info h4 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.page-card-info p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+
+
+/* --- MAIN CONTAINER --- */
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 5%;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-family: \"Space Grotesk\", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+}
+
+/* --- CATEGORY GRID --- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.cat-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-card::before {
+  content: \"\";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.cat-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(37, 99, 235, 0.5);
+  background: rgba(37, 99, 235, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cat-card:hover::before { opacity: 1; }
+
+.cat-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cat-card h3 {
+  font-family: \"Space Grotesk\", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.cat-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- FOOTER STYLING --- */
+.main-footer {
+  background: #020617;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 80px 5% 40px;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand h3 {
+  font-family: \"Space Grotesk\", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-brand h3 span { color: #2563eb; }
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.footer-social a:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
+
+.footer-links h4 {
+  color: #fff;
+  font-family: \"Space Grotesk\", sans-serif;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: #2563eb; }
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+}
+
+.footer-bottom strong { color: rgba(255, 255, 255, 0.6); }
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .footer-brand p { margin: 0 auto 30px; }
+  .footer-social { justify-content: center; }
+}
+
