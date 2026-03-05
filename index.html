@@ -3,169 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computer Parts Map — Interactive Hardware Encyclopedia</title>
-  <meta name="description" content="Explore and learn about every major computer hardware component — CPUs, GPUs, RAM, storage, networking, peripherals and more.">
+  <title>Computer Parts Map — Ultimate Hardware &amp; Software Guide</title>
+  <meta name="description" content="Explore every part of a computer — from CPUs and GPUs to Software, OS, and History. Interactive hardware guide.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
-<!-- Navbar injected by JS -->
-<div id="navbar-placeholder"></div>
-
-<!-- HERO -->
-<section class="home-hero">
-  <div class="hero-eyebrow">🖥️ Computer Hardware Encyclopedia</div>
-  <h1>Your Complete Guide to<br><span>Computer Parts</span></h1>
-  <p class="hero-desc">Explore detailed pages on every major component — from the CPU that powers your system to the router that connects you to the world.</p>
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <div class="stat-num">20+</div>
-      <div class="stat-label">Components</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="stat-num">6</div>
-      <div class="stat-label">Categories</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="stat-num">45+</div>
-      <div class="stat-label">Images</div>
-    </div>
-    <div class="hero-stat-divider"></div>
-    <div class="hero-stat">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Free & Open</div>
+<body class="dark-mode">
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-circle"></div>
+      <p>Initializing System...</p>
     </div>
   </div>
-</section>
 
-<!-- CATEGORIES -->
-<div class="categories-section">
-  <h2>Browse by Category</h2>
-  <p class="section-sub">Click any component to dive deep into specs, history, types, and top products.</p>
+  <div id="navbar-placeholder"></div>
 
-  <div class="category-cards">
-
-    <!-- Input Devices -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(16,185,129,0.12);color:#10b981">⌨️</div>
-        <div>
-          <h3>Input Devices</h3>
-          <p>How you talk to your computer — keyboards, mice, scanners, and microphones.</p>
+  <section class="premium-hero">
+    <div class="hero-glow"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    
+    <div class="hero-container">
+      <div class="badge-new">✨ Version 2.0 Live</div>
+      <h1>Master Your <span>Computer</span> Knowledge</h1>
+      <p class="hero-description">The ultimate interactive guide to hardware, software, and the secrets behind the screen. From nano-transistors to global servers.</p>
+      
+      <div class="hero-search">
+        <div class="search-input-wrapper">
+          <input type="text" id="hero-search-input" placeholder="Search for 'CPU', 'Linux', 'BIOS'...">
+          <button class="search-main-btn">🔍 Search</button>
         </div>
+        <div id="hero-search-results" class="search-dropdown"></div>
       </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="keyboard.html" class="card-link">⌨️ Keyboard</a>
-          <a href="mouse.html" class="card-link">🖱️ Mouse</a>
-          <a href="scanner.html" class="card-link">📠 Scanner</a>
-          <a href="microphone.html" class="card-link">🎤 Microphone</a>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-val="35">0</span>
+          <span class="stat-label">Guides</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-val="9">0</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-val="100">0</span>
+          <span class="stat-label">% Free</span>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Output Devices -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(37,99,235,0.12);color:#2563eb">🖥️</div>
-        <div>
-          <h3>Output Devices</h3>
-          <p>How your computer communicates back — monitors, printers, speakers, projectors.</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="monitor.html" class="card-link">🖥️ Monitor</a>
-          <a href="printer.html" class="card-link">🖨️ Printer</a>
-          <a href="speakers.html" class="card-link">🔊 Speakers</a>
-          <a href="projector.html" class="card-link">📽️ Projector</a>
-        </div>
-      </div>
+  <main class="main-container">
+    <div class="section-header">
+      <h2>Explore Categories</h2>
+      <p>Select a component category to dive deep into specifications and pricing.</p>
     </div>
 
-    <!-- Core Components -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b">⚙️</div>
-        <div>
-          <h3>Core Components</h3>
-          <p>The brain and memory of a computer — CPUs, GPUs, RAM, and storage drives.</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="cpu.html" class="card-link">⚙️ CPU</a>
-          <a href="gpu.html" class="card-link">🎮 GPU</a>
-          <a href="ram.html" class="card-link">💾 RAM</a>
-          <a href="hdd.html" class="card-link">📀 HDD</a>
-          <a href="ssd.html" class="card-link">⚡ SSD</a>
-          <a href="usb-flash.html" class="card-link">🔌 USB Flash</a>
-          <a href="graphics-card.html" class="card-link">🖥️ Graphics Card</a>
-        </div>
-      </div>
+    <div class="category-grid">
+      <!-- Logic for categories moved to script.js for easier management but basic structure remains -->
+      <a href="#core" class="cat-card">
+        <div class="cat-icon">⚙️</div>
+        <h3>Core Components</h3>
+        <p>CPU, RAM, Motherboard, SSD...</p>
+      </a>
+      <a href="#software" class="cat-card">
+        <div class="cat-icon">💻</div>
+        <h3>Software &amp; OS</h3>
+        <p>Windows, Linux, Kernels...</p>
+      </a>
+      <a href="#output" class="cat-card">
+        <div class="cat-icon">🖥️</div>
+        <h3>Output Devices</h3>
+        <p>Monitors, Printers, Projectors...</p>
+      </a>
+      <a href="#input" class="cat-card">
+        <div class="cat-icon">⌨️</div>
+        <h3>Input Devices</h3>
+        <p>Keyboard, Mouse, Webcam...</p>
+      </a>
     </div>
 
-    <!-- Power Supply -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(239,68,68,0.12);color:#ef4444">🔋</div>
-        <div>
-          <h3>Power Supply</h3>
-          <p>Keeping everything running — PSUs, batteries, and power management.</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="psu.html" class="card-link">🔌 PSU</a>
-          <a href="battery.html" class="card-link">🪫 Battery</a>
-        </div>
-      </div>
-    </div>
+    <div id="category-sections-anchor"></div>
+    <!-- Sections populated by script.js -->
+  </main>
 
-    <!-- Networking -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(99,102,241,0.12);color:#6366f1">🌐</div>
-        <div>
-          <h3>Networking</h3>
-          <p>Connecting to the world — NICs, Wi-Fi adapters, and routers explained.</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="nic.html" class="card-link">🌐 NIC</a>
-          <a href="wifi-adapter.html" class="card-link">📶 Wi-Fi Adapter</a>
-          <a href="router.html" class="card-link">📡 Router</a>
-        </div>
-      </div>
-    </div>
+  <div id="footer-placeholder"></div>
 
-    <!-- Audio -->
-    <div class="category-card">
-      <div class="card-header">
-        <div class="cat-icon" style="background:rgba(168,85,247,0.12);color:#a855f7">🎵</div>
-        <div>
-          <h3>Audio</h3>
-          <p>High-fidelity sound — sound cards, speakers, and audio output systems.</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-links">
-          <a href="sound-card.html" class="card-link">🎵 Sound Card</a>
-          <a href="speakers.html" class="card-link">🔊 Speakers</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Footer injected by JS -->
-<div id="footer-placeholder"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
