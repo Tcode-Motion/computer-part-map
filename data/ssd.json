@@ -1,0 +1,48 @@
+{
+  "name": "Solid State Drive",
+  "definition": "A solid-state storage device that uses integrated circuit assemblies to store data persistently.",
+  "overview": "SSDs have revolutionized storage by replacing moving magnetic platters with NAND flash memory, offering exponentially faster read/write speeds, lower latency, and greater physical durability.",
+  "history": "Early SSDs using RAM appeared in the 1970s and 1980s, but modern flash-based SSDs gained commercial traction in the late 2000s, rapidly overtaking HDDs as the primary boot drive.",
+  "architecture": "Consists of a controller, NAND flash memory chips (SLC, MLC, TLC, QLC), and often DRAM cache. Interfaces evolved from SATA to high-bandwidth NVMe over PCIe.",
+  "working_principle": "Data is written by applying voltage to floating-gate or charge-trap transistors within memory cells, trapping electrons to represent bits of data.",
+  "applications": [
+    "Primary OS boot drive",
+    "High-performance gaming",
+    "Enterprise database storage",
+    "Thin laptops"
+  ],
+  "manufacturing": "Involves complex 3D NAND fabrication, stacking memory cell layers vertically (e.g., 176+ layers) to increase density and reduce cost per gigabyte.",
+  "benchmarks": [
+    "CrystalDiskMark",
+    "AS SSD Benchmark",
+    "ATTO Disk Benchmark"
+  ],
+  "future_research": "Future research focuses on PLC (Penta-Level Cell) NAND for higher density, PCIe 5.0/6.0 controller efficiency, and specialized computational storage where processing happens directly on the drive.",
+  "references": [
+    {
+      "text": "NVM Express Base Specification",
+      "url": "https://nvmexpress.org/"
+    },
+    {
+      "text": "3D NAND Flash Memory Architecture",
+      "url": "https://en.wikipedia.org/wiki/Flash_memory"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "SSD Architecture",
+      "slug": "ssd-architecture.html"
+    }
+  ],
+  "media": {
+    "images": [],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/ssd/ssd-overview.mp3",
+        "caption": "Audio Overview of Solid State Drive",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

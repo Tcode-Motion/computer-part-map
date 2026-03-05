@@ -1,0 +1,55 @@
+{
+  "name": "Linux Operating System",
+  "definition": "A family of open-source Unix-like operating systems based on the Linux kernel.",
+  "overview": "Linux dominates the server, supercomputer, and smartphone (Android) markets. Its open-source nature allows for unparalleled customization, security auditing, and lightweight performance.",
+  "history": "Created by Linus Torvalds in 1991 as a free alternative to MINIX. It rapidly gained adoption in enterprise environments and is now maintained by thousands of contributors globally.",
+  "architecture": "Features a monolithic kernel that handles CPU, memory, and IPC. It interfaces with GNU core utilities and various desktop environments (GNOME, KDE) running on display servers (X11, Wayland).",
+  "working_principle": "Everything in Linux is considered a file. It uses POSIX standards for system calls, robust permission models (rwx), and advanced file systems like ext4, Btrfs, and ZFS.",
+  "applications": [
+    "Cloud computing infrastructure",
+    "Web servers",
+    "Android mobile OS",
+    "IoT and embedded systems"
+  ],
+  "manufacturing": "Developed collaboratively across the globe. Managed via Git (which Torvalds also created) and hosted/reviewed on platforms like the Linux Kernel Mailing List.",
+  "benchmarks": [
+    "Phoronix Test Suite",
+    "Geekbench (Linux)"
+  ],
+  "future_research": "Integration of Rust into the kernel for memory safety, eBPF for advanced observability and networking, and real-time kernel preemptions.",
+  "references": [
+    {
+      "text": "The Linux Kernel Documentation",
+      "url": "https://www.kernel.org/doc/html/latest/"
+    },
+    {
+      "text": "Linux Foundation",
+      "url": "https://www.linuxfoundation.org/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Linux Kernel Deep Dive",
+      "slug": "linux-kernel.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/linux/ChromebookStaplesStore.jpg",
+        "alt_text": "Image of Linux Operating System",
+        "caption": "Technical diagram or image related to Linux Operating System",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/f/f2/ChromebookStaplesStore.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/linux/linux-overview.mp3",
+        "caption": "Audio Overview of Linux Operating System",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

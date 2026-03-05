@@ -1,0 +1,56 @@
+{
+  "name": "Operating Systems",
+  "definition": "System software that manages computer hardware, software resources, and provides common services for computer programs.",
+  "overview": "The Operating System (OS) is the most critical software in a computer. It bridges the gap between hardware and user applications, handling memory management, process scheduling, file systems, and hardware abstraction.",
+  "history": "Early computers lacked OSs, requiring manual batch processing. Key milestones include GM-NAA I (1956), Unix (1969), MS-DOS (1981), and Windows 1.0 (1985).",
+  "architecture": "Modern OS architecture centers around the Kernel (Monolithic, Microkernel, or Hybrid). It includes the hardware abstraction layer (HAL), system call interface, and user space applications.",
+  "working_principle": "The OS kernel operates in privileged mode (Ring 0), directly controlling CPU scheduling, memory allocation (paging/segmentation), and hardware interrupts via device drivers.",
+  "applications": [
+    "Personal computing",
+    "Server management",
+    "Embedded systems",
+    "Mobile devices"
+  ],
+  "manufacturing": "Developed by large engineering teams utilizing languages like C, C++, and increasingly Rust for memory safety. Relies on extensive version control and continuous integration.",
+  "benchmarks": [
+    "Phoronix Test Suite",
+    "UnixBench",
+    "Sysbench"
+  ],
+  "future_research": "Research involves microkernel stability, verified OS kernels (seL4), isolation via unikernels, and AI-driven predictive resource allocation.",
+  "references": [
+    {
+      "text": "Operating Systems: Three Easy Pieces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+    },
+    {
+      "text": "The Linux Kernel Archives",
+      "url": "https://www.kernel.org/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "OS Kernel Architecture",
+      "slug": "os-kernel-architecture.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/operating-systems/Diagram_of_a_security_descriptor_for_a_file_on_Windows.png",
+        "alt_text": "Image of Operating Systems",
+        "caption": "Technical diagram or image related to Operating Systems",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/d/db/Diagram_of_a_security_descriptor_for_a_file_on_Windows.png",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/operating-systems/operating-systems-overview.mp3",
+        "caption": "Audio Overview of Operating Systems",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

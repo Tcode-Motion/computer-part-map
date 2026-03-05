@@ -1,0 +1,48 @@
+{
+  "name": "Microsoft Windows",
+  "definition": "A group of several proprietary graphical operating system families developed and marketed by Microsoft.",
+  "overview": "Windows is the dominant OS for personal computers. It offers vast software compatibility, extensive hardware support, and a user-friendly graphical interface.",
+  "history": "Introduced in 1985 as a graphical shell for MS-DOS. The shift to the robust Windows NT kernel with Windows XP (and later Windows 2000, 7, 10, 11) marked its modern era.",
+  "architecture": "Uses a hybrid kernel architecture (Windows NT kernel). It separates user mode (applications, subsystems) from kernel mode (executive, microkernel, HAL, device drivers).",
+  "working_principle": "Employs a heavily API-driven environment (Win32 API). It uses the NTFS file system, the Windows Registry for configuration, and highly complex driver models (WDDM/WDF).",
+  "applications": [
+    "PC Gaming",
+    "Enterprise workstations",
+    "Creative professional software",
+    "General consumer use"
+  ],
+  "manufacturing": "Developed internally at Microsoft using massive codebases (C, C++, C#). Released via rings (Windows Insider) for telemetry and telemetry-driven stability testing.",
+  "benchmarks": [
+    "PCMark 10",
+    "Cinebench",
+    "3DMark"
+  ],
+  "future_research": "Integration of AI directly into the OS shell (Windows Copilot), ARM architecture transition (Windows on ARM), and cloud-streamed OS capabilities (Windows 365).",
+  "references": [
+    {
+      "text": "Windows Internals",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/"
+    },
+    {
+      "text": "Microsoft Developer Network (MSDN)",
+      "url": "https://developer.microsoft.com/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Windows NT Architecture",
+      "slug": "windows-nt-architecture.html"
+    }
+  ],
+  "media": {
+    "images": [],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/windows/windows-overview.mp3",
+        "caption": "Audio Overview of Microsoft Windows",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

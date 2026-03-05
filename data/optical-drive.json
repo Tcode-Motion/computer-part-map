@@ -1,0 +1,54 @@
+{
+  "name": "Optical Drive",
+  "definition": "A computer drive that uses a laser to read from and write to optical discs like CDs, DVDs, and Blu-rays.",
+  "overview": "While now a legacy component for mainstream users, optical drives use precise laser technology to access data encoded as microscopic pits and lands on a polycarbonate disc.",
+  "history": "CD-ROMs revolutionized software distribution in the 1990s, replacing floppy disks. DVDs introduced movie-quality video, followed by Blu-ray for HD and 4K content.",
+  "architecture": "Consists of a spindle motor, a tracking mechanism, and an optical pickup head containing a semiconductor laser diode and photodiode sensor.",
+  "working_principle": "A laser beam is focused onto the spinning disc. Changes in reflection from pits (indentations) and lands (flat areas) are detected by the photodiode and translated into binary data.",
+  "applications": [
+    "Archival data backup",
+    "Legacy software installation",
+    "High-fidelity audio/video playback (Blu-ray)"
+  ],
+  "manufacturing": "Requires high-precision optics and laser diode alignment, manufactured by companies like LG, Pioneer, and Asus.",
+  "benchmarks": [
+    "Nero DiscSpeed",
+    "Opti Drive Control"
+  ],
+  "future_research": "Holographic versatile discs (HVD) and 5D optical data storage seeking to store terabytes of data in glass for centuries.",
+  "references": [
+    {
+      "text": "Optical Disc Drive Mechanism",
+      "url": "https://en.wikipedia.org/wiki/Optical_disc_drive"
+    },
+    {
+      "text": "Blu-ray Disc Association",
+      "url": "http://www.blu-raydisc.com/"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Optical Laser Technology",
+      "slug": "optical-laser.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/optical-drive/Apple-USB-SuperDrive.jpg",
+        "alt_text": "Image of Optical Drive",
+        "caption": "Technical diagram or image related to Optical Drive",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/8/84/Apple-USB-SuperDrive.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/optical-drive/optical-drive-overview.mp3",
+        "caption": "Audio Overview of Optical Drive",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}

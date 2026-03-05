@@ -1,0 +1,56 @@
+{
+  "name": "Server Hardware & Architecture",
+  "definition": "Computers or systems that provide resources, data, services, or programs to other computers, known as clients, over a network.",
+  "overview": "Servers are the backbone of the internet and enterprise computing. They are engineered for 24/7 reliability, massive I/O throughput, and high-density compute.",
+  "history": "Evolved from massive mainframe computers to rack-mounted x86 servers in the 1990s, and now to ultra-dense blade servers and hyper-converged infrastructure in modern data centers.",
+  "architecture": "Features multi-socket motherboards, ECC (Error-Correcting Code) RAM, redundant power supplies (PSUs), hardware RAID controllers, and baseboard management controllers (BMCs) for out-of-band management.",
+  "working_principle": "Servers run specialized OSs (Linux, Windows Server) to host hypervisors (ESXi, Proxmox) or container engines (Docker, Kubernetes) to maximize hardware utilization across multiple virtual instances.",
+  "applications": [
+    "Web hosting",
+    "Database management",
+    "Cloud computing (AWS, Azure)",
+    "High-Performance Computing (HPC)"
+  ],
+  "manufacturing": "Built by OEMs like Dell, HPE, and Lenovo, or custom-designed by hyperscalers (Google, Meta) focusing on thermal dynamics and power efficiency at scale.",
+  "benchmarks": [
+    "SPECjbb",
+    "Sysbench",
+    "VMmark"
+  ],
+  "future_research": "Liquid cooling adoption, photonics networking, specialized ASIC/NPU integration for AI workloads, and composable infrastructure via CXL (Compute Express Link).",
+  "references": [
+    {
+      "text": "Open Compute Project (OCP)",
+      "url": "https://www.opencompute.org/"
+    },
+    {
+      "text": "Data Center Architecture",
+      "url": "https://en.wikipedia.org/wiki/Data_center"
+    }
+  ],
+  "subpages": [
+    {
+      "title": "Server Infrastructure",
+      "slug": "server-infrastructure.html"
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "local_path": "assets/images/server-guide/Cobalt_Qube_3_Front.jpg",
+        "alt_text": "Image of Server Hardware & Architecture",
+        "caption": "Technical diagram or image related to Server Hardware & Architecture",
+        "source_link": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Cobalt_Qube_3_Front.jpg",
+        "license": "Public Domain / Creative Commons via Wikimedia"
+      }
+    ],
+    "videos": [],
+    "audio": [
+      {
+        "local_path": "assets/audio/server-guide/server-guide-overview.mp3",
+        "caption": "Audio Overview of Server Hardware & Architecture",
+        "type": "audio/mpeg"
+      }
+    ]
+  }
+}
