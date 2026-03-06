@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Clock Speed — Base Clock, Boost, and Turbo Explained | Computer Parts Map</title>
+  <meta name="description" content="CPU clock speed explained: base clock, boost clock, turbo frequencies, GHz meaning, and how clock speed relates to actual performance.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">š¡ CPU Internal Components</div>
+    <h1>CPU Clock Speed — GHz, Boost, and Turbo</h1>
+    <p class="hero-subtitle">Clock speed measures how many cycles a CPU completes per second. A 5 GHz CPU executes 5 billion cycles every second.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– What is Clock Speed?</h2>
+      <p><strong>Clock speed</strong> (or clock rate) is the frequency at which a CPU's internal clock oscillates, measured in <strong>Hertz (Hz)</strong>. Each tick of the clock signals the CPU to perform one step of an operation.</p>
+      <p>Modern CPUs operate in the <strong>GHz (Gigahertz)</strong> range — billions of cycles per second. Higher clock speed generally means faster single-threaded performance, but it's only one factor in overall speed (IPC and core count also matter).</p>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>The Intel Core i9-14900KS can reach <strong>6.2 GHz</strong> out of the box — the highest factory clock speed ever for a consumer CPU. In contrast, the first CPU (Intel 4004) ran at just <strong>740 kHz</strong> — about 8,400é slower.</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>“Š Base Clock vs Boost Clock vs Turbo</h2>
+      <table class="spec-table">
+        <thead><tr><th>Type</th><th>Definition</th><th>When Active</th><th>Example (i9-14900K)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Base Clock</strong></td><td>Guaranteed minimum frequency under sustained workload</td><td>Always (all-core heavy load)</td><td>3.2 GHz</td></tr>
+          <tr><td><strong>Boost Clock</strong></td><td>Maximum frequency on a single core under ideal conditions</td><td>Single-core bursts, good cooling</td><td>5.8 GHz</td></tr>
+          <tr><td><strong>Turbo (TVB)</strong></td><td>Intel's Thermal Velocity Boost — extra boost if temperature allows</td><td>When CPU temp is below threshold</td><td>6.0 GHz</td></tr>
+          <tr><td><strong>Overclocked</strong></td><td>User-set frequency beyond factory specs (K-series CPUs)</td><td>Manual configuration</td><td>6.2+ GHz</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>“ˆ Clock Speed Through the Decades</h2>
+      <table class="spec-table">
+        <thead><tr><th>Era</th><th>CPU Example</th><th>Clock Speed</th><th>Process Node</th></tr></thead>
+        <tbody>
+          <tr><td>1971</td><td>Intel 4004</td><td>740 kHz</td><td>10 µm</td></tr>
+          <tr><td>1978</td><td>Intel 8086</td><td>5-10 MHz</td><td>3 µm</td></tr>
+          <tr><td>1993</td><td>Intel Pentium</td><td>60-66 MHz</td><td>800 nm</td></tr>
+          <tr><td>1999</td><td>AMD Athlon</td><td>1,000 MHz (1 GHz!)</td><td>250 nm</td></tr>
+          <tr><td>2004</td><td>Intel Pentium 4 EE</td><td>3.73 GHz</td><td>90 nm</td></tr>
+          <tr><td>2006-2016</td><td>Core 2 †’ Skylake</td><td>2.0-4.2 GHz</td><td>65-14 nm</td></tr>
+          <tr><td>2018</td><td>Intel i9-9900K</td><td>5.0 GHz boost</td><td>14 nm</td></tr>
+          <tr><td>2022</td><td>AMD Ryzen 9 7950X</td><td>5.7 GHz boost</td><td>5 nm</td></tr>
+          <tr><td>2023</td><td>Intel i9-14900KS</td><td>6.2 GHz boost</td><td>10 nm</td></tr>
+        </tbody>
+      </table>
+      <p><strong>The GHz Myth:</strong> Clock speed alone doesn't determine performance. A Zen 4 core at 5.0 GHz can be faster than a NetBurst core at 3.8 GHz because Zen 4 executes more work per cycle (higher <a href="../core/comparison.html" style="color: #60a5fa;">IPC</a>).</p>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../internals/cores-threads.html">§  Cores</a>
+        <a class="related-link" href="../internals/pipeline.html">”§ Pipeline</a>
+        <a class="related-link" href="../core/comparison.html">”¥ Overclocking</a>
+        <a class="related-link" href="../core/comparison.html">”‹ Power</a>
+        <a class="related-link" href="../core/comparison.html">š¡ Efficiency</a>
+        <a class="related-link" href="../core/overview.html">“– Overview</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

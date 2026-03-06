@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branch Prediction — How CPUs Guess the Future | Computer Parts Map</title>
+  <meta name="description" content="Branch prediction explained: how CPUs predict which code path to execute next, prediction accuracy, speculative execution, and Spectre vulnerability.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">¯ CPU Internal Components</div>
+    <h1>Branch Prediction — How CPUs Predict the Future</h1>
+    <p class="hero-subtitle">Modern CPUs predict which branch of code will execute next with 97%+ accuracy, keeping the pipeline full and avoiding costly stalls.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– What is Branch Prediction?</h2>
+      <p>In any program, there are <strong>branch instructions</strong> — conditional jumps like <code>if/else</code>, loops, and function calls. When the CPU encounters a branch, it doesn't yet know which path to take because the condition hasn't been evaluated.</p>
+      <p>Rather than stalling the entire pipeline 20+ cycles, the CPU <strong>predicts</strong> the likely outcome and speculatively executes instructions along that predicted path. If the prediction is correct (97%+ of the time), no time is wasted. If wrong (a <em>misprediction</em>), the pipeline must be flushed and restarted — losing 15-30 cycles.</p>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>Modern branch predictors like <strong>TAGE</strong> (used in AMD Zen and Intel cores) achieve <strong>97-99% accuracy</strong>. A program may have billions of branches, so even 1% misprediction rate means millions of pipeline flushes.</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>“Š Branch Prediction Strategies</h2>
+      <table class="spec-table">
+        <thead><tr><th>Strategy</th><th>How It Works</th><th>Accuracy</th><th>Used In</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Static (Always Taken)</strong></td><td>Assumes all branches are taken (backwards) or not taken (forward)</td><td>~60-70%</td><td>Simple microcontrollers</td></tr>
+          <tr><td><strong>1-bit Predictor</strong></td><td>Remembers last outcome — predict same direction</td><td>~80-85%</td><td>Early CPUs</td></tr>
+          <tr><td><strong>2-bit Saturating Counter</strong></td><td>Tracks history in 4 states (strong/weak taken/not-taken)</td><td>~90%</td><td>Pentium, early RISC</td></tr>
+          <tr><td><strong>Gshare / Global History</strong></td><td>XORs branch address with global history register to index a prediction table</td><td>~93-95%</td><td>P6, early Zen</td></tr>
+          <tr><td><strong>TAGE (TAgged GEometric)</strong></td><td>Uses multiple history tables of geometrically increasing lengths</td><td>~97-99%</td><td>Modern AMD Zen, Intel Core</td></tr>
+          <tr><td><strong>Perceptron-based</strong></td><td>Uses neural-network-inspired weights to predict branches</td><td>~97-99%</td><td>AMD (Zen 2+)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>’”Spectre — When Branch Prediction Becomes a Vulnerability</h2>
+      <p>In January 2018, researchers disclosed <strong>Spectre</strong> — a class of security vulnerabilities that exploit <strong>speculative execution</strong> (which relies on branch prediction). During mispredicted speculative execution, the CPU temporarily accesses data it shouldn't, leaving traces in the cache that an attacker can read.</p>
+      <table class="spec-table">
+        <thead><tr><th>Vulnerability</th><th>Attack Vector</th><th>Affected</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Spectre V1</strong></td><td>Bounds check bypass</td><td>All modern CPUs</td><td>Software patches, LFENCE</td></tr>
+          <tr><td><strong>Spectre V2</strong></td><td>Branch target injection</td><td>Intel, AMD, ARM</td><td>Retpoline, microcode updates, IBRS</td></tr>
+          <tr><td><strong>Meltdown</strong></td><td>Rogue data cache load</td><td>Intel (mostly), some ARM</td><td>KPTI (kernel page table isolation)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>”¬ External Resources</h2>
+      <ul style="color: var(--text-muted); line-height: 2;">
+        <li><a href="https://en.wikipedia.org/wiki/Branch_predictor" target="_blank" style="color: #60a5fa;">Wikipedia: Branch Predictor</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Speculative_execution" target="_blank" style="color: #60a5fa;">Wikipedia: Speculative Execution</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)" target="_blank" style="color: #60a5fa;">Wikipedia: Spectre Vulnerability</a></li>
+      </ul>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../internals/pipeline.html">”§ Pipeline</a>
+        <a class="related-link" href="../core/architecture.html">›ï¸ Architecture</a>
+        <a class="related-link" href="../internals/instruction-sets.html">“‹ Instruction Sets</a>
+        <a class="related-link" href="../core/overview.html">“– Overview</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

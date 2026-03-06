@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Pipeline — Instruction Pipelining Explained | Computer Parts Map</title>
+  <meta name="description" content="CPU instruction pipeline explained: how pipelining works, pipeline stages, hazards, stalls, and pipeline depth across architectures.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">”§ CPU Internal Components</div>
+    <h1>CPU Pipeline — Instruction Pipelining</h1>
+    <p class="hero-subtitle">Pipelining is the technique that lets CPUs process multiple instructions simultaneously by overlapping stages — like an assembly line in a factory.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– What is Pipelining?</h2>
+      <p>Without pipelining, a CPU would finish one instruction completely before starting the next. <strong>Pipelining</strong> breaks each instruction into stages and processes them in an overlapping fashion — while Instruction 1 is at the Execute stage, Instruction 2 is Decoding, and Instruction 3 is being Fetched.</p>
+      <p>This is analogous to a factory assembly line: no worker waits idle, each handles a different stage of production at the same time.</p>
+    </div>
+    <div class="content-section">
+      <h2>“Š Classic 5-Stage Pipeline</h2>
+      <table class="spec-table">
+        <thead><tr><th>Stage</th><th>Abbreviation</th><th>What Happens</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1. Instruction Fetch</strong></td><td>IF</td><td>Read the next instruction from L1 instruction cache using the Program Counter</td></tr>
+          <tr><td><strong>2. Instruction Decode</strong></td><td>ID</td><td>Determine what the instruction does and read source registers</td></tr>
+          <tr><td><strong>3. Execute</strong></td><td>EX</td><td>ALU performs the computation (add, compare, shift, etc.)</td></tr>
+          <tr><td><strong>4. Memory Access</strong></td><td>MEM</td><td>If needed, read from or write to memory (load/store)</td></tr>
+          <tr><td><strong>5. Write Back</strong></td><td>WB</td><td>Write the result to the destination register</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>š ï¸ Pipeline Hazards</h2>
+      <table class="spec-table">
+        <thead><tr><th>Hazard Type</th><th>Problem</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Data Hazard</strong></td><td>Instruction depends on result of previous instruction that hasn't finished</td><td>Forwarding/Bypassing, pipeline stalls (bubbles)</td></tr>
+          <tr><td><strong>Control Hazard</strong></td><td>Branch instruction changes the flow — pipeline has already fetched wrong instructions</td><td><a href="../internals/branch-prediction.html" style="color: #60a5fa;">Branch prediction</a>, speculative execution</td></tr>
+          <tr><td><strong>Structural Hazard</strong></td><td>Two instructions need the same hardware resource at the same time</td><td>Separate instruction/data caches (Harvard), more execution units</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>“ Pipeline Depth Across Architectures</h2>
+      <table class="spec-table">
+        <thead><tr><th>Architecture</th><th>Stages</th><th>Year</th><th>Strategy</th></tr></thead>
+        <tbody>
+          <tr><td>Intel 486</td><td>5</td><td>1989</td><td>First pipelined x86</td></tr>
+          <tr><td>Pentium Pro (P6)</td><td>14</td><td>1995</td><td>Out-of-order execution</td></tr>
+          <tr><td>Pentium 4 (NetBurst)</td><td>20-31</td><td>2000</td><td>Very deep — enabled high GHz but huge misprediction penalty</td></tr>
+          <tr><td>Core 2 (Merom)</td><td>14</td><td>2006</td><td>Shorter, more efficient</td></tr>
+          <tr><td>AMD Zen 4</td><td>~19</td><td>2022</td><td>Balanced for 5+ GHz</td></tr>
+          <tr><td>Apple Firestorm</td><td>~16</td><td>2020</td><td>8-wide superscalar</td></tr>
+          <tr><td>ARM Cortex-A77</td><td>13</td><td>2019</td><td>Efficiency-focused</td></tr>
+        </tbody>
+      </table>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Deeper Pipeline = Higher Clock But...</div>
+        <p>The Pentium 4's 31-stage pipeline allowed 3.8 GHz clocks, but a branch misprediction wasted <strong>31 cycles</strong> of work. The Core architecture returned to ~14 stages, sacrificing some clock speed for much better efficiency.</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>”¬ External Resources</h2>
+      <ul style="color: var(--text-muted); line-height: 2;">
+        <li><a href="https://en.wikipedia.org/wiki/Instruction_pipelining" target="_blank" style="color: #60a5fa;">Wikipedia: Instruction Pipelining</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Hazard_(computer_architecture)" target="_blank" style="color: #60a5fa;">Wikipedia: Pipeline Hazards</a></li>
+      </ul>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../internals/branch-prediction.html">¯ Branch Prediction</a>
+        <a class="related-link" href="../core/architecture.html">›ï¸ Architecture</a>
+        <a class="related-link" href="../internals/clock-speed.html">š¡ Clock Speed</a>
+        <a class="related-link" href="../internals/cores-threads.html">§  Cores</a>
+        <a class="related-link" href="../core/overview.html">“– Overview</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

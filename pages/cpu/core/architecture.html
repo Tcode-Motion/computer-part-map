@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Architecture — CISC vs RISC, Von Neumann, Superscalar | Computer Parts Map</title>
+  <meta name="description" content="Deep dive into CPU architecture: Von Neumann vs Harvard, CISC vs RISC, pipelining, superscalar design, and modern hybrid architectures explained.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "TechArticle", "headline": "CPU Architecture — CISC vs RISC, Von Neumann, and Superscalar Design", "inLanguage": "en" }
+  </script>
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+
+  <div class="component-hero">
+    <div class="badge">›ï¸ CPU Architecture</div>
+    <h1>CPU Architecture Deep Dive</h1>
+    <p class="hero-subtitle">How processors are designed internally — from Von Neumann's 1945 model to today's out-of-order superscalar chips with billions of transistors.</p>
+  </div>
+
+  <div class="page-content">
+
+    <div class="content-section">
+      <h2>“– What is CPU Architecture?</h2>
+      <p><strong>CPU architecture</strong> (also called <em>microarchitecture</em> or <em>ISA design</em>) refers to the internal design and organization of a processor. It determines how the CPU fetches, decodes, executes, and stores data. Two CPUs can share the same instruction set (like x86-64) but have completely different internal architectures — for example, Intel's Raptor Lake vs AMD's Zen 4.</p>
+      <p>Architecture decisions affect everything: speed, power consumption, heat output, die size, and cost. Understanding CPU architecture is the key to understanding why one processor outperforms another.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>¥ CPU Architecture Explained</h2>
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-bottom:15px;">
+        <iframe allowfullscreen src="https://www.youtube.com/embed/vgPFzblBh7w" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
+      </div>
+    </div>
+
+    <!-- Von Neumann vs Harvard -->
+    <div class="content-section">
+      <h2>›ï¸ Von Neumann vs Harvard Architecture</h2>
+      <p>The two foundational models for computer design, proposed in the 1940s, still influence every CPU today:</p>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Feature</th><th>Von Neumann (1945)</th><th>Harvard Architecture</th><th>Modified Harvard (Modern)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Proposed by</strong></td><td>John von Neumann</td><td>Howard Aiken (Harvard Mark I)</td><td>Used in all modern CPUs</td></tr>
+          <tr><td><strong>Memory</strong></td><td>Single shared memory for data & instructions</td><td>Separate memory for data & instructions</td><td>Separate L1 caches, unified main memory</td></tr>
+          <tr><td><strong>Bus</strong></td><td>Single bus (bottleneck)</td><td>Separate buses (parallel access)</td><td>Separate internal buses, unified external</td></tr>
+          <tr><td><strong>Advantage</strong></td><td>Simpler, flexible, self-modifying code possible</td><td>Faster — can fetch instruction and data simultaneously</td><td>Best of both worlds</td></tr>
+          <tr><td><strong>Disadvantage</strong></td><td>"Von Neumann bottleneck" — CPU waits for memory</td><td>More complex, less flexible</td><td>Complex to design</td></tr>
+          <tr><td><strong>Used in</strong></td><td>Early computers, simple microcontrollers</td><td>DSPs, some microcontrollers (PIC, AVR)</td><td>Intel Core, AMD Ryzen, Apple M-series, ARM Cortex</td></tr>
+        </tbody>
+      </table>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>Every modern desktop CPU uses <strong>Modified Harvard Architecture</strong> — they have separate L1 instruction and L1 data caches (Harvard-style), but share a unified L2/L3 cache and main RAM (Von Neumann-style).</p>
+      </div>
+    </div>
+
+    <!-- CISC vs RISC -->
+    <div class="content-section">
+      <h2>š”ï¸ CISC vs RISC</h2>
+      <p>The two dominant philosophies for instruction set design:</p>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Feature</th><th>CISC (Complex Instruction Set)</th><th>RISC (Reduced Instruction Set)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Philosophy</strong></td><td>Many complex instructions, each does a lot of work</td><td>Few simple instructions, each completes in one clock cycle</td></tr>
+          <tr><td><strong>Examples</strong></td><td>x86 (Intel, AMD)</td><td>ARM (Apple, Qualcomm), RISC-V, MIPS, PowerPC</td></tr>
+          <tr><td><strong>Instruction length</strong></td><td>Variable (1-15 bytes for x86)</td><td>Fixed (4 bytes for ARM)</td></tr>
+          <tr><td><strong>Registers</strong></td><td>Fewer general-purpose (16 in x86-64)</td><td>More general-purpose (31 in AArch64)</td></tr>
+          <tr><td><strong>Memory access</strong></td><td>Instructions can directly operate on memory</td><td>Load/Store — only specific instructions access memory</td></tr>
+          <tr><td><strong>Decoding</strong></td><td>Complex — variable-length instructions are hard to decode</td><td>Simple — fixed-length instructions decode fast</td></tr>
+          <tr><td><strong>Power efficiency</strong></td><td>Higher power consumption</td><td>Lower power — dominates mobile</td></tr>
+          <tr><td><strong>Modern reality</strong></td><td>x86 CPUs internally convert CISC to RISC-like micro-ops</td><td>ARM CPUs have grown more complex over time</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Key insight:</strong> The CISC/RISC distinction has blurred significantly. Modern x86 CPUs (Intel/AMD) decode their complex instructions into simple <em>micro-operations</em> (µops) internally — essentially running a RISC engine under a CISC instruction set.</p>
+    </div>
+
+    <!-- Pipelining & Superscalar -->
+    <div class="content-section">
+      <h2>”§ Pipelining & Superscalar Design</h2>
+      <p><strong>Pipelining</strong> is the technique of overlapping instruction stages (fetch, decode, execute, write-back) so multiple instructions are in-flight simultaneously, like an assembly line:</p>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Clock Cycle</th><th>Stage 1</th><th>Stage 2</th><th>Stage 3</th><th>Stage 4</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cycle 1</td><td>Fetch I1</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Cycle 2</td><td>Fetch I2</td><td>Decode I1</td><td>—</td><td>—</td></tr>
+          <tr><td>Cycle 3</td><td>Fetch I3</td><td>Decode I2</td><td>Execute I1</td><td>—</td></tr>
+          <tr><td>Cycle 4</td><td>Fetch I4</td><td>Decode I3</td><td>Execute I2</td><td>Write I1</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Superscalar</strong> design takes this further — the CPU has multiple execution units and can process 4-8+ instructions <em>simultaneously</em> in the same clock cycle. Modern CPUs like Zen 4 and Golden Cove can dispatch 6+ µops per cycle.</p>
+
+      <h4 style="margin-top: 20px; color: var(--text);">Pipeline Depth by Architecture</h4>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Architecture</th><th>Pipeline Stages</th><th>Year</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Intel 486</td><td>5 stages</td><td>1989</td><td>First pipelined x86</td></tr>
+          <tr><td>Pentium Pro (P6)</td><td>14 stages</td><td>1995</td><td>Out-of-order execution</td></tr>
+          <tr><td>Pentium 4 (NetBurst)</td><td>20-31 stages</td><td>2000</td><td>Very deep for high clocks, but high penalty on misprediction</td></tr>
+          <tr><td>Intel Core (Conroe)</td><td>14 stages</td><td>2006</td><td>Return to shorter pipeline</td></tr>
+          <tr><td>AMD Zen 4</td><td>19 stages</td><td>2022</td><td>Balanced depth for 5+ GHz</td></tr>
+          <tr><td>Apple Firestorm (M1)</td><td>~16 stages</td><td>2020</td><td>8-wide decode, massive reorder buffer</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Out-of-Order Execution -->
+    <div class="content-section">
+      <h2>””Out-of-Order Execution (OoOE)</h2>
+      <p>Most modern CPUs execute instructions <strong>out of program order</strong> to maximize throughput. If Instruction #3 is waiting for data from memory, the CPU can skip ahead and execute Instructions #4, #5, #6 if they don't depend on #3's result.</p>
+      <p>Key components enabling OoOE:</p>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Component</th><th>Function</th><th>Size (Modern CPU)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Reorder Buffer (ROB)</strong></td><td>Tracks all in-flight instructions to ensure results are committed in correct order</td><td>512 entries (Zen 4), 512 (Golden Cove)</td></tr>
+          <tr><td><strong>Reservation Stations</strong></td><td>Hold instructions waiting for their operands to become available</td><td>~200 entries</td></tr>
+          <tr><td><strong>Register Rename</strong></td><td>Eliminates false dependencies by mapping logical registers to a larger physical register file</td><td>192+ physical registers</td></tr>
+          <tr><td><strong>Branch Predictor</strong></td><td>Guesses the outcome of branch instructions to keep pipeline full</td><td>97%+ accuracy (TAGE predictor)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modern Architecture Examples -->
+    <div class="content-section">
+      <h2>”¥ Modern CPU Architectures Compared</h2>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Architecture</th><th>Maker</th><th>Year</th><th>ISA</th><th>Decode Width</th><th>Notable Features</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Zen 4</strong></td><td>AMD</td><td>2022</td><td>x86-64</td><td>4-wide</td><td>AVX-512, V-Cache support, 5nm TSMC</td></tr>
+          <tr><td><strong>Zen 5</strong></td><td>AMD</td><td>2024</td><td>x86-64</td><td>6-wide (rumored)</td><td>Dual pipelines, wider front-end</td></tr>
+          <tr><td><strong>Golden Cove</strong></td><td>Intel</td><td>2021</td><td>x86-64</td><td>6-wide</td><td>Alder Lake P-core, Thread Director</td></tr>
+          <tr><td><strong>Raptor Cove</strong></td><td>Intel</td><td>2022</td><td>x86-64</td><td>6-wide</td><td>Raptor Lake P-core, 6 GHz capable</td></tr>
+          <tr><td><strong>Firestorm (M1)</strong></td><td>Apple</td><td>2020</td><td>ARMv8.5-A</td><td>8-wide</td><td>Widest ARM decode, 630 ROB entries</td></tr>
+          <tr><td><strong>Cortex-X4</strong></td><td>ARM</td><td>2023</td><td>ARMv9.2-A</td><td>10-wide</td><td>Widest ARM design yet, for Snapdragon 8 Gen 3</td></tr>
+          <tr><td><strong>Neoverse V2</strong></td><td>ARM</td><td>2023</td><td>ARMv9</td><td>5-wide</td><td>Cloud server core (AWS Graviton 4)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- External Resources -->
+    <div class="content-section">
+      <h2>”¬ Research & External Resources</h2>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+        <div style="flex: 1; min-width: 280px;">
+          <h4 style="color: var(--text); margin-bottom: 12px;">“š Academic</h4>
+          <ul style="color: var(--text-muted); line-height: 2;">
+            <li><a href="https://en.wikipedia.org/wiki/Microarchitecture" target="_blank" style="color: #60a5fa;">Wikipedia: Microarchitecture</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture" target="_blank" style="color: #60a5fa;">Wikipedia: Von Neumann Architecture</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer" target="_blank" style="color: #60a5fa;">Wikipedia: RISC</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Out-of-order_execution" target="_blank" style="color: #60a5fa;">Wikipedia: Out-of-Order Execution</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Superscalar_processor" target="_blank" style="color: #60a5fa;">Wikipedia: Superscalar Processor</a></li>
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h4 style="color: var(--text); margin-bottom: 12px;">”§ Technical Deep Dives</h4>
+          <ul style="color: var(--text-muted); line-height: 2;">
+            <li><a href="https://www.anandtech.com/show/16084/intel-11th-gen-core-desktop-review" target="_blank" style="color: #60a5fa;">AnandTech: Architecture Reviews</a></li>
+            <li><a href="https://chipsandcheese.com/" target="_blank" style="color: #60a5fa;">Chips and Cheese: Microarchitecture Analysis</a></li>
+            <li><a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=CPU+microarchitecture" target="_blank" style="color: #60a5fa;">IEEE Xplore: CPU Microarchitecture</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Pages -->
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../core/overview.html">“– CPU Overview</a>
+        <a class="related-link" href="../internals/pipeline.html">”§ Pipeline</a>
+        <a class="related-link" href="../internals/branch-prediction.html">¯ Branch Prediction</a>
+        <a class="related-link" href="../internals/instruction-sets.html">“‹ Instruction Sets</a>
+        <a class="related-link" href="../internals/registers.html">“¦ Registers</a>
+        <a class="related-link" href="../internals/cache.html">’¾ Cache Hierarchy</a>
+        <a class="related-link" href="../families/x86.html">’» x86 Architecture</a>
+        <a class="related-link" href="../families/arm.html">“± ARM Architecture</a>
+        <a class="related-link" href="../families/risc-v.html">”“ RISC-V</a>
+        <a class="related-link" href="../core/history.html">“œ CPU History</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Cache — L1, L2, L3 & 3D V-Cache Explained | Computer Parts Map</title>
+  <meta name="description" content="CPU cache hierarchy explained: L1, L2, L3 cache, how cache reduces latency, cache associativity, and AMD's 3D V-Cache technology.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">’¾ CPU Internal Components</div>
+    <h1>CPU Cache — The Memory Hierarchy</h1>
+    <p class="hero-subtitle">Cache is ultra-fast memory built directly into the CPU die. It stores frequently used data to avoid slow accesses to RAM, reducing latency by 100é.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– What is CPU Cache?</h2>
+      <p><strong>CPU Cache</strong> is small, extremely fast SRAM (Static RAM) built directly onto the CPU die. It stores copies of frequently accessed data and instructions so the CPU doesn't have to wait for the much slower main memory (DRAM).</p>
+      <p>CPUs use a <strong>hierarchical cache structure</strong>: L1 (fastest, smallest), L2 (medium), and L3 (largest, shared across cores). Each level trades size for speed.</p>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>L1 cache can deliver data in <strong>~1 nanosecond</strong> (4 clock cycles), while RAM takes <strong>~50-100 nanoseconds</strong>. That's a <strong>50-100é difference</strong>! The AMD Ryzen 9 7950X3D has <strong>128 MB of L3 cache</strong> using 3D V-Cache stacking.</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>¥ CPU Cache Explained</h2>
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-bottom:15px;">
+        <iframe allowfullscreen src="https://www.youtube.com/embed/yi0FhRqDJfo" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>“Š Memory Hierarchy — Speed vs Size</h2>
+      <table class="spec-table">
+        <thead><tr><th>Level</th><th>Size (Typical)</th><th>Latency</th><th>Speed</th><th>Per-Core or Shared?</th><th>Technology</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Registers</strong></td><td>~1 KB</td><td><1 ns (1 cycle)</td><td>Fastest</td><td>Per-core</td><td>Flip-flops</td></tr>
+          <tr><td><strong>L1 Cache</strong></td><td>32-80 KB per core</td><td>~1 ns (4 cycles)</td><td>Very Fast</td><td>Per-core (split I/D)</td><td>6T SRAM</td></tr>
+          <tr><td><strong>L2 Cache</strong></td><td>256 KB – 2 MB per core</td><td>~3-5 ns (12+ cycles)</td><td>Fast</td><td>Per-core</td><td>SRAM</td></tr>
+          <tr><td><strong>L3 Cache</strong></td><td>8 – 384 MB (shared)</td><td>~10-30 ns (40+ cycles)</td><td>Medium</td><td>Shared across all cores</td><td>SRAM</td></tr>
+          <tr><td><strong>RAM (DRAM)</strong></td><td>8 – 256 GB</td><td>~50-100 ns</td><td>Slow (relative)</td><td>Shared (system)</td><td>DRAM</td></tr>
+          <tr><td><strong>SSD (NVMe)</strong></td><td>256 GB – 8 TB</td><td>~50,000 ns (50 µs)</td><td>Very Slow</td><td>Shared (system)</td><td>NAND Flash</td></tr>
+          <tr><td><strong>HDD</strong></td><td>1 – 20 TB</td><td>~10,000,000 ns (10 ms)</td><td>Extremely Slow</td><td>Shared (system)</td><td>Magnetic platters</td></tr>
+        </tbody>
+      </table>
+      <div class="stat-bar-wrap" style="margin-top: 15px;">
+        <div class="stat-bar-label"><span>Registers †’ Fastest</span><span>~0.3 ns</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="100%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>L1 Cache</span><span>~1 ns</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="90%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>L2 Cache</span><span>~4 ns</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="70%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>L3 Cache</span><span>~15 ns</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="50%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>RAM (DDR5)</span><span>~80 ns</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="15%"></div></div>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>”„ Cache Sizes Across Architectures</h2>
+      <table class="spec-table">
+        <thead><tr><th>CPU</th><th>L1 I-Cache</th><th>L1 D-Cache</th><th>L2</th><th>L3</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Intel Core i9-14900K</strong></td><td>32 KB/core (P)</td><td>48 KB/core (P)</td><td>2 MB/core (P), 4 MB/4E</td><td>36 MB (shared)</td><td>2023</td></tr>
+          <tr><td><strong>AMD Ryzen 9 7950X</strong></td><td>32 KB/core</td><td>32 KB/core</td><td>1 MB/core</td><td>64 MB (shared)</td><td>2022</td></tr>
+          <tr><td><strong>AMD Ryzen 9 7950X3D</strong></td><td>32 KB/core</td><td>32 KB/core</td><td>1 MB/core</td><td>128 MB (3D V-Cache)</td><td>2023</td></tr>
+          <tr><td><strong>Apple M3 Max</strong></td><td>192 KB/core (P)</td><td>128 KB/core (P)</td><td>16 MB (P), 4 MB (E)</td><td>System Level Cache</td><td>2023</td></tr>
+          <tr><td><strong>AMD EPYC 9654</strong></td><td>32 KB/core</td><td>32 KB/core</td><td>1 MB/core</td><td>384 MB</td><td>2022</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>ï¸ AMD 3D V-Cache Technology</h2>
+      <p><strong>3D V-Cache</strong> is AMD's breakthrough technology that vertically stacks additional SRAM cache on top of the existing CCD (Core Complex Die) using <strong>TSMC's SoIC (System on Integrated Chips)</strong> packaging.</p>
+      <table class="spec-table">
+        <thead><tr><th>Feature</th><th>Standard Zen 4</th><th>Zen 4 + 3D V-Cache</th></tr></thead>
+        <tbody>
+          <tr><td>L3 Cache per CCD</td><td>32 MB</td><td>96 MB (32 + 64 stacked)</td></tr>
+          <tr><td>Total L3 (16-core)</td><td>64 MB</td><td>128 MB</td></tr>
+          <tr><td>Gaming Performance</td><td>Baseline</td><td>+10-15% higher FPS on average</td></tr>
+          <tr><td>Rendering</td><td>Baseline</td><td>Similar (cache-insensitive)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>”¬ External Resources</h2>
+      <ul style="color: var(--text-muted); line-height: 2;">
+        <li><a href="https://en.wikipedia.org/wiki/CPU_cache" target="_blank" style="color: #60a5fa;">Wikipedia: CPU Cache</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cache_hierarchy" target="_blank" style="color: #60a5fa;">Wikipedia: Cache Hierarchy</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/AMD_3D_V-Cache" target="_blank" style="color: #60a5fa;">Wikipedia: AMD 3D V-Cache</a></li>
+      </ul>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../internals/cores-threads.html">§  Cores</a>
+        <a class="related-link" href="../internals/registers.html">“¦ Registers</a>
+        <a class="related-link" href="../internals/system-bus.html">šŒ System Bus</a>
+        <a class="related-link" href="../core/overview.html">“– Overview</a>
+        <a class="related-link" href="../core/comparison.html">†š Comparison</a>
+        <a class="related-link" href="../future-tech/3d-stacking.html">ï¸ 3D Stacking</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

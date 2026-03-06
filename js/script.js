@@ -59,17 +59,29 @@ const SITE_PAGES = [
     { name: "About Us", url: "about.html", cat: "Misc" }
 ];
 
-// --- Path Helper ---
-// Detects if we are in the root or a subdirectory (like /pages/)
+// --- Path Helper (supports nested page directories) ---
 const getBasePath = () => {
     const path = window.location.pathname;
-    if (path.includes('/pages/')) {
-        return '../';
-    }
-    return '';
+    if (!path.includes('/pages/')) return '';
+    // Count how many dirs deep we are below the site root
+    // /pages/file.html → '../'
+    // /pages/cpu/index.html → '../../'
+    // /pages/cpu/core/overview.html → '../../../'
+    const afterPages = path.split('/pages/')[1] || '';
+    const depth = (afterPages.match(/\//g) || []).length;
+    return '../'.repeat(depth + 1);
 };
 
 const base = getBasePath();
+// Helper to link to pages directory correctly (from ANY depth)
+const pageLink = (file) => {
+    const path = window.location.pathname;
+    if (!path.includes('/pages/')) return `pages/${file}`;
+    // Calculate relative path from current page to /pages/ directory
+    const afterPages = path.split('/pages/')[1] || '';
+    const depth = (afterPages.match(/\//g) || []).length;
+    return (depth > 0 ? '../'.repeat(depth) : '') + file;
+};
 
 // --- Navbar & Footer Injection ---
 const injectCommonElements = () => {
@@ -87,135 +99,171 @@ const injectCommonElements = () => {
           <li><a href="${base}index.html">Home</a></li>
           
           <li class="has-dropdown mega-dropdown">
-            <a href="${base}pages/explore.html">Hardware ▾</a>
-            <div class="sub-nav mega-content">
+            <a href="${pageLink('explore.html')}">Hardware ▾</a>
+            <div class="sub-nav mega-content" style="grid-template-columns: repeat(4, 1fr);">
               <div class="dropdown-column">
                 <h4 class="dropdown-header">⚙️ Core Parts</h4>
-                <a href="${base}pages/cpu.html">CPU (Processor Hub)</a>
-                <a href="${base}pages/gpu.html">GPU (Graphics)</a>
-                <a href="${base}pages/motherboard.html">Motherboard</a>
-                <a href="${base}pages/ram.html">Memory (RAM)</a>
-                <a href="${base}pages/storage.html">Storage (SSD/HDD)</a>
-                <a href="${base}pages/psu.html">Power Supply</a>
-                <a href="${base}pages/cooling.html">Cooling Systems</a>
+                <a href="${pageLink('cpu/index.html')}">CPU (Processors)</a>
+                <a href="${pageLink('gpu/index.html')}">GPU (Graphics)</a>
+                <a href="${pageLink('motherboard/index.html')}">Motherboard</a>
+                <a href="${pageLink('ram/index.html')}">Memory (RAM)</a>
+                <a href="${pageLink('storage/index.html')}">Storage (SSD/HDD)</a>
+                <a href="${pageLink('hardware/psu.html')}">Power Supply</a>
+                <a href="${pageLink('hardware/cooling.html')}">Cooling</a>
               </div>
               <div class="dropdown-column">
-                <h4 class="dropdown-header">🔌 Standards</h4>
-                <a href="${base}pages/pcie.html">PCI Express</a>
-                <a href="${base}pages/nvme.html">NVMe / SATA</a>
-                <a href="${base}pages/usb.html">USB / Thunderbolt</a>
-                <a href="${base}pages/ports.html">I/O Ports</a>
-                <a href="${base}pages/chips.html">Chipsets</a>
+                <h4 class="dropdown-header">🔌 Connectivity</h4>
+                <a href="${pageLink('motherboard/pcie.html')}">PCI Express</a>
+                <a href="${pageLink('storage/nvme.html')}">NVMe / SATA</a>
+                <a href="${pageLink('storage/usb.html')}">USB / Thunderbolt</a>
+                <a href="${pageLink('networking/ethernet.html')}">Network Adapters</a>
+                <a href="${pageLink('hardware/interfaces.html')}">Interface Types</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">⌨️ Peripherals</h4>
-                <a href="${base}pages/monitor.html">Monitor</a>
-                <a href="${base}pages/keyboard.html">Keyboard</a>
-                <a href="${base}pages/mouse.html">Mouse</a>
-                <a href="${base}pages/printer.html">Printer</a>
-                <a href="${base}pages/webcam.html">Webcam</a>
-                <a href="${base}pages/scanner.html">Scanner</a>
+                <a href="${pageLink('peripherals/input.html')}">Input Devices</a>
+                <a href="${pageLink('peripherals/output.html')}">Output Devices</a>
+                <a href="${pageLink('peripherals/monitor.html')}">Displays</a>
+                <a href="${pageLink('peripherals/keyboard.html')}">Keyboard & Mouse</a>
+                <a href="${pageLink('peripherals/audio.html')}">Audio / Speakers</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🛠️ Building</h4>
+                <a href="${pageLink('hardware/pc-build.html')}">PC Building Guide</a>
+                <a href="${pageLink('hardware/case.html')}">Cases & Airflow</a>
+                <a href="${pageLink('hardware/battery.html')}">Batteries</a>
+                <a href="${pageLink('hardware/ups.html')}">UPS (Power Backup)</a>
               </div>
             </div>
           </li>
 
           <li class="has-dropdown mega-dropdown">
-            <a href="${base}pages/cpu.html">Processors ▾</a>
-            <div class="sub-nav mega-content">
+            <a href="${pageLink('cpu/index.html')}">Processors ▾</a>
+            <div class="sub-nav mega-content" style="grid-template-columns: repeat(5, 1fr);">
               <div class="dropdown-column">
-                <h4 class="dropdown-header">🧠 CPU Core</h4>
-                <a href="${base}pages/cpu-overview.html">Overview</a>
-                <a href="${base}pages/cpu-core.html">Cores & Threads</a>
-                <a href="${base}pages/cpu-cache.html">Cache Memory</a>
-                <a href="${base}pages/cpu-clock-speed.html">Clock Speed</a>
-                <a href="${base}pages/cpu-instruction-set.html">Instruction Sets</a>
+                <h4 class="dropdown-header">🧠 Core Basics</h4>
+                <a href="${pageLink('cpu/core/overview.html')}">CPU Overview</a>
+                <a href="${pageLink('cpu/core/how-it-works.html')}">How a CPU Works</a>
+                <a href="${pageLink('cpu/core/architecture.html')}">Architecture Basics</a>
+                <a href="${pageLink('cpu/core/history.html')}">General History</a>
+                <h4 class="dropdown-header" style="margin-top:12px;">⚡ Performance</h4>
+                <a href="${pageLink('cpu/core/comparison.html')}">CPU Comparison</a>
+                <a href="${pageLink('cpu/core/benchmarks.html')}">Benchmarks</a>
+                <a href="${pageLink('cpu/internals/overclocking.html')}">Overclocking</a>
+                <a href="${pageLink('cpu/core/database.html')}">CPU Database</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">⚙️ CPU Internals</h4>
+                <a href="${pageLink('cpu/internals/cores-threads.html')}">Cores & Threads</a>
+                <a href="${pageLink('cpu/internals/clock-speed.html')}">Clock Speed & IPC</a>
+                <a href="${pageLink('cpu/internals/cache.html')}">Cache (L1/L2/L3)</a>
+                <a href="${pageLink('cpu/internals/power-consumption.html')}">Power (TDP)</a>
+                <a href="${pageLink('cpu/internals/efficiency.html')}">Efficiency</a>
+                <a href="${pageLink('cpu/internals/cooling.html')}">Cooling & Thermals</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🔬 Deep Architecture</h4>
+                <a href="${pageLink('cpu/internals/instruction-sets.html')}">Instruction Sets (ISA)</a>
+                <a href="${pageLink('cpu/internals/pipeline.html')}">Execution Pipeline</a>
+                <a href="${pageLink('cpu/internals/branch-prediction.html')}">Branch Prediction</a>
+                <a href="${pageLink('cpu/internals/registers.html')}">Registers</a>
+                <a href="${pageLink('cpu/internals/system-bus.html')}">System Bus</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">🏭 Manufacturing</h4>
-                <a href="${base}pages/cpu-fabrication.html">Fabrication</a>
-                <a href="${base}pages/cpu-nanometer.html">Nanometer Nodes</a>
-                <a href="${base}pages/cpu-transistor.html">Transistors</a>
-                <a href="${base}pages/x86-architecture.html">x86 Architecture</a>
-                <a href="${base}pages/arm-architecture.html">ARM Architecture</a>
+                <a href="${pageLink('cpu/manufacturing/silicon.html')}">Silicon & Wafers</a>
+                <a href="${pageLink('cpu/manufacturing/fabrication.html')}">Fabrication Process</a>
+                <a href="${pageLink('cpu/manufacturing/chip-design.html')}">Chip Design</a>
+                <a href="${pageLink('cpu/manufacturing/transistors.html')}">Transistors</a>
+                <a href="${pageLink('cpu/manufacturing/process-nodes.html')}">Process Nodes (nm)</a>
               </div>
               <div class="dropdown-column">
-                <h4 class="dropdown-header">📊 Data & History</h4>
-                <a href="${base}pages/cpu-database.html">CPU Database</a>
-                <a href="${base}pages/cpu-benchmark.html">Benchmarks</a>
-                <a href="${base}pages/intel-cpu-history.html">Intel History</a>
-                <a href="${base}pages/amd-cpu-history.html">AMD History</a>
-                <a href="${base}pages/apple-silicon-history.html">Apple Silicon</a>
+                <h4 class="dropdown-header">🏛️ Architectures</h4>
+                <a href="${pageLink('cpu/families/x86.html')}">x86 Architecture</a>
+                <a href="${pageLink('cpu/families/arm.html')}">ARM Architecture</a>
+                <a href="${pageLink('cpu/families/apple-silicon.html')}">Apple Silicon</a>
+                <a href="${pageLink('cpu/families/risc-v.html')}">RISC-V</a>
+                <a href="${pageLink('cpu/families/powerpc.html')}">PowerPC</a>
+                <h4 class="dropdown-header" style="margin-top:12px;">🔮 Future Tech</h4>
+                <a href="${pageLink('cpu/future-tech/quantum.html')}">Quantum CPUs</a>
+                <a href="${pageLink('cpu/future-tech/ai-npu.html')}">AI & NPUs</a>
+                <a href="${pageLink('cpu/future-tech/neuromorphic.html')}">Neuromorphic</a>
+                <a href="${pageLink('cpu/future-tech/optical.html')}">Optical CPUs</a>
+                <a href="${pageLink('cpu/future-tech/3d-stacking.html')}">3D Stacking</a>
               </div>
             </div>
           </li>
 
           <li class="has-dropdown mega-dropdown">
-            <a href="${base}pages/architecture.html">Architecture ▾</a>
+            <a href="${pageLink('architecture.html')}">Architecture ▾</a>
             <div class="sub-nav mega-content">
               <div class="dropdown-column">
-                <h4 class="dropdown-header">🏛️ Systems</h4>
-                <a href="${base}pages/von-neumann.html">Von Neumann</a>
-                <a href="${base}pages/harvard-architecture.html">Harvard Arch</a>
-                <a href="${base}pages/bus-system.html">Bus Systems</a>
-                <a href="${base}pages/pipeline.html">Pipelining</a>
+                <h4 class="dropdown-header">🏛️ Architectures</h4>
+                <a href="${pageLink('concepts/von-neumann.html')}">Von Neumann</a>
+                <a href="${pageLink('concepts/harvard-architecture.html')}">Harvard Arch</a>
+                <a href="${pageLink('motherboard/bus-system.html')}">Bus Systems</a>
+                <a href="${pageLink('concepts/instruction-cycle.html')}">Fetch-Execute</a>
+                <a href="${pageLink('concepts/parallel-computing.html')}">Parallel Computing</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">🔬 Deep Logic</h4>
-                <a href="${base}pages/binary.html">Binary & Logic</a>
-                <a href="${base}pages/logic-gates.html">Logic Gates</a>
-                <a href="${base}pages/transistor.html">Transistors</a>
-                <a href="${base}pages/semiconductor.html">Semiconductors</a>
+                <a href="${pageLink('concepts/binary.html')}">Binary & Logic</a>
+                <a href="${pageLink('concepts/logic-gates.html')}">Logic Gates</a>
+                <a href="${pageLink('concepts/turing-logic.html')}">Turing Machines</a>
+                <a href="${pageLink('concepts/transistor.html')}">Transistors</a>
+                <a href="${pageLink('concepts/semiconductor.html')}">Semiconductors</a>
               </div>
               <div class="dropdown-column">
-                <h4 class="dropdown-header">🚀 Future Tech</h4>
-                <a href="${base}pages/quantum-computing.html">Quantum Computing</a>
-                <a href="${base}pages/neuromorphic.html">Neuromorphic</a>
-                <a href="${base}pages/optical-computing.html">Optical Computing</a>
-                <a href="${base}pages/dna-computing.html">DNA Computing</a>
+                <h4 class="dropdown-header">🚀 Future Systems</h4>
+                <a href="${pageLink('systems/quantum-computing.html')}">Quantum Computing</a>
+                <a href="${pageLink('systems/neuromorphic.html')}">Neuromorphic</a>
+                <a href="${pageLink('systems/optical-computing.html')}">Optical Computing</a>
+                <a href="${pageLink('systems/dna-computing.html')}">DNA Computing</a>
               </div>
             </div>
           </li>
 
           <li class="has-dropdown mega-dropdown">
-            <a href="${base}pages/history.html">History ▾</a>
+            <a href="${pageLink('history.html')}">History ▾</a>
             <div class="sub-nav mega-content">
               <div class="dropdown-column">
                 <h4 class="dropdown-header">📅 Timelines</h4>
-                <a href="${base}pages/timeline.html">Interactive Timeline</a>
-                <a href="${base}pages/computer-history.html">General History</a>
-                <a href="${base}pages/computer-generations.html">Generations</a>
+                <a href="${pageLink('timeline.html')}">Interactive Timeline</a>
+                <a href="${pageLink('concepts/history.html')}">General History</a>
+                <a href="${pageLink('systems/computer-generations.html')}">Generations</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">📜 Evolution</h4>
-                <a href="${base}pages/history-cpu.html">CPU Evolution</a>
-                <a href="${base}pages/history-gpu.html">GPU Evolution</a>
-                <a href="${base}pages/history-ram.html">RAM Evolution</a>
-                <a href="${base}pages/history-storage.html">Storage History</a>
+                <a href="${pageLink('cpu/core/history.html')}">CPU Evolution</a>
+                <a href="${pageLink('gpu/history.html')}">GPU Evolution</a>
+                <a href="${pageLink('ram/history.html')}">RAM Evolution</a>
+                <a href="${pageLink('storage/history.html')}">Storage History</a>
               </div>
             </div>
           </li>
 
           <li class="has-dropdown mega-dropdown">
-            <a href="${base}pages/learn.html">Learning ▾</a>
+            <a href="${pageLink('learn.html')}">Learning ▾</a>
             <div class="sub-nav mega-content">
               <div class="dropdown-column">
                 <h4 class="dropdown-header">📖 How It Works</h4>
-                <a href="${base}pages/how-computer-works.html">Computer Basics</a>
-                <a href="${base}pages/boot-process.html">Boot Process</a>
-                <a href="${base}pages/instruction-cycle.html">Fetch-Execute</a>
-                <a href="${base}pages/data-flow.html">Data Flow</a>
+                <a href="${pageLink('how-computer-works.html')}">Computer Basics</a>
+                <a href="${pageLink('boot-process.html')}">Boot Process</a>
+                <a href="${pageLink('data-flow.html')}">Data Flow</a>
+                <a href="${pageLink('systems/computer-types.html')}">Computer Types</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">🛠️ Practical</h4>
-                <a href="${base}pages/pc-build.html">Build a PC</a>
-                <a href="${base}pages/hardware-map.html">Hardware Map</a>
-                <a href="${base}pages/compare.html">Compare Parts</a>
+                <a href="${pageLink('hardware/pc-build.html')}">Build a PC</a>
+                <a href="${pageLink('hardware-map.html')}">Hardware Map</a>
+                <a href="${pageLink('compare.html')}">Compare Parts</a>
+                <a href="${pageLink('systems/supercomputing.html')}">Supercomputing</a>
               </div>
               <div class="dropdown-column">
                 <h4 class="dropdown-header">📊 Visuals</h4>
-                <a href="${base}pages/component-network.html">Network Map</a>
-                <a href="${base}pages/system-map.html">System Map</a>
-                <a href="${base}pages/visualize.html">Visualizer</a>
+                <a href="${pageLink('component-network.html')}">Network Map</a>
+                <a href="${pageLink('system-map.html')}">System Map</a>
+                <a href="${pageLink('visualize.html')}">Visualizer</a>
               </div>
             </div>
           </li>
@@ -224,21 +272,21 @@ const injectCommonElements = () => {
             <a href="#">More ▾</a>
             <ul class="sub-nav">
               <li class="dropdown-header">Software</li>
-              <li><a href="${base}pages/operating-systems.html">Operating Systems</a></li>
-              <li><a href="${base}pages/software-types.html">Software Types</a></li>
+              <li><a href="${pageLink('os/index.html')}">Operating Systems</a></li>
+              <li><a href="${pageLink('software-types.html')}">Software Types</a></li>
               <li class="dropdown-divider"></li>
-              <li class="dropdown-header">Computing</li>
-              <li><a href="${base}pages/server-guide.html">Server Guide</a></li>
-              <li><a href="${base}pages/network.html">Networking</a></li>
-              <li><a href="${base}pages/raspberry-pi.html">Raspberry Pi</a></li>
+              <li class="dropdown-header">Computing Systems</li>
+              <li><a href="${pageLink('systems/server-guide.html')}">Server Guide</a></li>
+              <li><a href="${pageLink('networking/index.html')}">Networking</a></li>
+              <li><a href="${pageLink('systems/raspberry-pi.html')}">Raspberry Pi</a></li>
               <li class="dropdown-divider"></li>
               <li class="dropdown-header">Community</li>
-              <li><a href="${base}pages/contribute.html">How to Contribute</a></li>
-              <li><a href="${base}pages/about.html">About the Project</a></li>
+              <li><a href="${pageLink('contribute.html')}">How to Contribute</a></li>
+              <li><a href="${pageLink('about.html')}">About the Project</a></li>
             </ul>
           </li>
 
-          <li><a href="${base}pages/audio.html">Audio</a></li>
+          <li><a href="${pageLink('peripherals/audio.html')}">Audio</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -247,6 +295,9 @@ const injectCommonElements = () => {
             <div id="nav-search-results" class="search-dropdown"></div>
           </div>
           <button id="theme-toggle" title="Toggle Mode">🌓</button>
+          <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle Menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </nav>`;
@@ -267,29 +318,29 @@ const injectCommonElements = () => {
         <div class="footer-links-group">
           <div class="footer-links">
             <h4>Hardware</h4>
-            <a href="${base}pages/cpu.html">Processors</a>
-            <a href="${base}pages/gpu.html">Graphics Cards</a>
-            <a href="${base}pages/motherboard.html">Motherboards</a>
-            <a href="${base}pages/ram.html">Memory (RAM)</a>
-            <a href="${base}pages/storage.html">Storage (SSD)</a>
+            <a href="${pageLink('cpu.html')}">Processors</a>
+            <a href="${pageLink('gpu.html')}">Graphics Cards</a>
+            <a href="${pageLink('motherboard.html')}">Motherboards</a>
+            <a href="${pageLink('ram.html')}">Memory (RAM)</a>
+            <a href="${pageLink('storage.html')}">Storage (SSD)</a>
           </div>
           
           <div class="footer-links">
             <h4>Software</h4>
-            <a href="${base}pages/operating-systems.html">What is OS?</a>
-            <a href="${base}pages/windows.html">Windows</a>
-            <a href="${base}pages/linux.html">Linux</a>
-            <a href="${base}pages/macos.html">macOS</a>
-            <a href="${base}pages/android.html">Android/iOS</a>
+            <a href="${pageLink('operating-systems.html')}">What is OS?</a>
+            <a href="${pageLink('windows.html')}">Windows</a>
+            <a href="${pageLink('linux.html')}">Linux</a>
+            <a href="${pageLink('macos.html')}">macOS</a>
+            <a href="${pageLink('android.html')}">Android/iOS</a>
           </div>
           
           <div class="footer-links">
             <h4>Resources</h4>
-            <a href="${base}pages/history.html">History</a>
-            <a href="${base}pages/server-guide.html">Servers</a>
-            <a href="${base}pages/quantum-computing.html">Quantum</a>
-            <a href="${base}pages/about.html">About Us</a>
-            <a href="${base}pages/contribute.html">Contribute</a>
+            <a href="${pageLink('history.html')}">History</a>
+            <a href="${pageLink('server-guide.html')}">Servers</a>
+            <a href="${pageLink('quantum-computing.html')}">Quantum</a>
+            <a href="${pageLink('about.html')}">About Us</a>
+            <a href="${pageLink('contribute.html')}">Contribute</a>
           </div>
         </div>
       </div>
@@ -307,35 +358,42 @@ const injectCommonElements = () => {
     
     if (navElement) {
         navElement.innerHTML = navbarHTML;
-        
-        // --- CPU Contextual Sub-Navbar ---
-        const cpuPages = [
-            'cpu.html', 'cpu-overview.html', 'cpu-history.html', 'cpu-architecture.html', 
-            'cpu-core.html', 'cpu-cache.html', 'cpu-fabrication.html', 'cpu-database.html',
-            'intel-cpu-history.html', 'amd-cpu-history.html', 'apple-silicon-history.html',
-            'x86-architecture.html', 'arm-architecture.html', 'cpu-benchmark.html'
-        ];
-        
-        const isCpuPage = cpuPages.some(page => window.location.pathname.includes(page));
-        
-        if (isCpuPage) {
-            const subNavHTML = `
-            <div class="sub-navbar active">
-                <div class="sub-nav-container">
-                    <a href="${base}pages/cpu.html" class="${window.location.pathname.endsWith('cpu.html') ? 'current' : ''}">Hub</a>
-                    <a href="${base}pages/cpu-overview.html" class="${window.location.pathname.includes('overview') ? 'current' : ''}">Overview</a>
-                    <a href="${base}pages/cpu-core.html" class="${window.location.pathname.includes('core') ? 'current' : ''}">Internal Parts</a>
-                    <a href="${base}pages/cpu-fabrication.html" class="${window.location.pathname.includes('fabrication') ? 'current' : ''}">Manufacturing</a>
-                    <a href="${base}pages/x86-architecture.html" class="${window.location.pathname.includes('architecture') ? 'current' : ''}">Architecture</a>
-                    <a href="${base}pages/cpu-database.html" class="${window.location.pathname.includes('database') ? 'current' : ''}">Specs DB</a>
-                    <a href="${base}pages/intel-cpu-history.html" class="${window.location.pathname.includes('history') ? 'current' : ''}">History</a>
-                    <a href="${base}pages/cpu-benchmark.html" class="${window.location.pathname.includes('benchmark') ? 'current' : ''}">Benchmarks</a>
-                </div>
-            </div>`;
-            navElement.insertAdjacentHTML('afterend', subNavHTML);
-        }
+        highlightCurrentPage();
     }
     if (footerElement) footerElement.innerHTML = footerHTML;
+};
+
+// --- Active Page Highlighting ---
+const highlightCurrentPage = () => {
+    const currentPath = window.location.pathname;
+    
+    // Find all links in the navbar
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    navLinks.forEach(link => {
+        // Strip out the origin to just get the matching path part
+        const linkPath = new URL(link.href).pathname;
+        
+        // Match exact path, or if we are at root index.html
+        if (currentPath === linkPath || (currentPath.endsWith('/') && linkPath.endsWith('index.html'))) {
+            // Highlight the exact link
+            link.classList.add('active');
+            
+            // If it's inside a dropdown, highlight the parent dropdown toggle as well
+            const megaDropdown = link.closest('.has-dropdown');
+            if (megaDropdown) {
+                const parentToggle = megaDropdown.querySelector('a');
+                if (parentToggle) parentToggle.classList.add('active');
+                
+                // Also highlight the specific column header it belongs to
+                const parentColumn = link.closest('.dropdown-column');
+                if (parentColumn) {
+                    const columnHeader = parentColumn.querySelector('.dropdown-header');
+                    if (columnHeader) columnHeader.classList.add('active');
+                }
+            }
+        }
+    });
 };
 
 // --- Search Logic ---
@@ -494,13 +552,180 @@ const populateCategorySections = () => {
     anchor.innerHTML = html;
 };
 
+// --- Mobile Nav Toggle ---
+const initMobileNav = () => {
+    const hamburger = document.getElementById('nav-hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (!hamburger || !navMenu) return;
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+
+    // On mobile, toggle dropdowns on click instead of hover
+    const dropdownParents = navMenu.querySelectorAll('.has-dropdown > a');
+    dropdownParents.forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                const parent = link.parentElement;
+                // Close other open dropdowns
+                navMenu.querySelectorAll('.has-dropdown.open').forEach(el => {
+                    if (el !== parent) el.classList.remove('open');
+                });
+                parent.classList.toggle('open');
+            }
+        });
+    });
+
+    // Close menu when a sub-link is clicked
+    navMenu.querySelectorAll('.sub-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 992) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('nav-open');
+                navMenu.querySelectorAll('.has-dropdown.open').forEach(el => el.classList.remove('open'));
+            }
+        });
+    });
+
+    // Close menu on clicking a non-dropdown nav link
+    navMenu.querySelectorAll(':scope > li > a').forEach(link => {
+        link.addEventListener('click', () => {
+            const parent = link.parentElement;
+            if (!parent.classList.contains('has-dropdown') && window.innerWidth <= 992) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            }
+        });
+    });
+};
+
+// --- Global Animations (Scroll Reveal) ---
+const initGlobalAnimations = () => {
+    // 1. Auto-tag elements for animation if they aren't already classed
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach((sec, index) => {
+        if(!sec.classList.contains('reveal') && !sec.classList.contains('reveal-left') && !sec.classList.contains('reveal-scale')) {
+            // Alternate animation styles subtly based on index
+            if (index % 3 === 0) sec.classList.add('reveal-left');
+            else if (index % 5 === 0) sec.classList.add('reveal-scale');
+            else sec.classList.add('reveal');
+        }
+    });
+
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+    
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: Stop observing once revealed
+                // observer.unobserve(entry.target); 
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.15, // Trigger when 15% visible
+        rootMargin: "0px 0px -50px 0px" // Trigger slightly before it hits bottom
+    });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+};
+
+// --- Gamification (Reading Progress & Fun Facts) ---
+const initGamification = () => {
+    // 1. Inject Reading Progress Bar HTML into DOM
+    if (!document.getElementById('reading-progress-container')) {
+        const progressHTML = `
+            <div id="reading-progress-container">
+                <div id="reading-progress-bar"></div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('afterbegin', progressHTML);
+    }
+
+    const progressBar = document.getElementById('reading-progress-bar');
+    
+    // 2. Inject Fun Fact Toast HTML
+    if (!document.getElementById('fun-fact-toast')) {
+        const toastHTML = `
+            <div id="fun-fact-toast">
+                <div class="toast-header">
+                    <span>💡 Did You Know?</span>
+                    <button class="toast-close" onclick="document.getElementById('fun-fact-toast').classList.remove('show')">×</button>
+                </div>
+                <div class="toast-body" id="toast-body-text">Loading fact...</div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', toastHTML);
+    }
+
+    const funFacts = [
+        "The first 1GB hard drive was as big as a refrigerator and weighed 550 lbs!",
+        "The Apollo 11 guidance computer sent man to the moon using less computing power than a modern USB-C charger.",
+        "A single Google search requires more computing power than it took to send Apollo 11 to the moon.",
+        "Over 90% of the world's currency only exists on computers.",
+        "The first computer mouse was made of wood in 1964 by Doug Engelbart.",
+        "There are over 700 programming languages in the world.",
+        "The first webcam was created simply to check the status of a coffee pot at Cambridge University.",
+        "Every day, 2.5 quintillion bytes of data are created.",
+        "Your smartphone has millions of times more memory than the Apollo 11 computers.",
+        "The word 'robot' comes from the Czech word 'robota', meaning forced labor."
+    ];
+
+    // Scroll Logic for Progress Bar and Toast Triggers
+    let factShown = false;
+    
+    window.addEventListener('scroll', () => {
+        // Progress Bar Calculation
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollRatio = (scrollTop / scrollHeight) * 100;
+        
+        if (progressBar) {
+            progressBar.style.width = scrollRatio + '%';
+        }
+
+        // Show Fun Fact Toast around 50% scroll depth (once per page load)
+        if (scrollRatio > 45 && scrollRatio < 55 && !factShown) {
+            const toast = document.getElementById('fun-fact-toast');
+            const toastText = document.getElementById('toast-body-text');
+            
+            if (toast && toastText) {
+                // Pick a random fact
+                const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+                toastText.innerText = randomFact;
+                
+                // Show toast
+                toast.classList.add('show');
+                factShown = true;
+                
+                // Auto-hide after 8 seconds
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 8000);
+            }
+        }
+    });
+};
+
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
     injectCommonElements();
     initTheme();
+    initMobileNav();
     initSearch('nav-search-input', 'nav-search-results');
     initSearch('hero-search-input', 'hero-search-results');
     populateCategorySections();
+    
+    // Initialize Advanced UI features
+    initGlobalAnimations();
+    initGamification();
     
     // Hide loader
     const loader = document.getElementById('loader');

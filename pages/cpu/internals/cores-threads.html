@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Threads — Hyper-Threading & SMT Explained | Computer Parts Map</title>
+  <meta name="description" content="Understanding CPU threads: Hyper-Threading, Simultaneous Multi-Threading (SMT), logical vs physical cores, and how threading improves performance.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">§µ CPU Internal Components</div>
+    <h1>CPU Threads — Hyper-Threading & SMT</h1>
+    <p class="hero-subtitle">A thread is a sequence of instructions that can be executed independently. Modern CPUs use SMT to run 2 threads per core simultaneously.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– What is a Thread?</h2>
+      <p>In computing, a <strong>thread</strong> is the smallest sequence of programmed instructions that can be managed independently by a scheduler. Think of a core as a worker, and threads as tasks that worker can handle.</p>
+      <p>With <strong>Simultaneous Multi-Threading (SMT)</strong> — Intel calls it <strong>Hyper-Threading (HT)</strong> — a single physical core can handle <strong>two threads at once</strong>. It achieves this by duplicating certain parts of the core (register files, instruction queues) while sharing the execution units.</p>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>IBM's POWER10 processor supports <strong>8-way SMT</strong> — each core can run 8 threads simultaneously! A 15-core POWER10 can handle 120 threads. Most consumer CPUs support 2-way SMT.</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>¥ Threads vs Cores Explained</h2>
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-bottom:15px;">
+        <iframe allowfullscreen src="https://www.youtube.com/embed/hwTYDQ0zZOw" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>⚙️ï¸ Physical Cores vs Logical Cores (Threads)</h2>
+      <table class="spec-table">
+        <thead><tr><th>Feature</th><th>Physical Core</th><th>Logical Core (Thread via SMT)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Definition</strong></td><td>Complete hardware processing unit</td><td>Virtual core created by duplicating state registers</td></tr>
+          <tr><td><strong>Execution Units</strong></td><td>Has its own ALU, FPU, decoder</td><td>Shares execution units with the other thread</td></tr>
+          <tr><td><strong>Performance</strong></td><td>Full performance per core</td><td>~15-30% boost (not 2é — threads share resources)</td></tr>
+          <tr><td><strong>Example</strong></td><td>i9-14900K: 24 physical cores</td><td>i9-14900K: 32 threads (8Pé2 + 16Eé1)</td></tr>
+          <tr><td><strong>OS Visibility</strong></td><td>OS sees physical cores</td><td>OS sees logical cores = total threads</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>“Š SMT/Hyper-Threading History</h2>
+      <table class="spec-table">
+        <thead><tr><th>Technology</th><th>Maker</th><th>Year</th><th>Threads/Core</th><th>Used In</th></tr></thead>
+        <tbody>
+          <tr><td>Hyper-Threading (HT)</td><td>Intel</td><td>2002</td><td>2</td><td>Pentium 4, Core i-series</td></tr>
+          <tr><td>SMT2</td><td>AMD</td><td>2017</td><td>2</td><td>Zen architecture (Ryzen)</td></tr>
+          <tr><td>SMT4</td><td>IBM</td><td>2010</td><td>4</td><td>POWER7</td></tr>
+          <tr><td>SMT8</td><td>IBM</td><td>2021</td><td>8</td><td>POWER10</td></tr>
+          <tr><td>No SMT</td><td>Apple</td><td>2020+</td><td>1</td><td>Apple M1/M2/M3 (prefers more physical cores)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Apple's approach:</strong> Apple Silicon chips have no SMT. Instead, they use a large number of physical cores with extremely wide execution units. This avoids the complexity of thread scheduling and reduces power consumption.</p>
+    </div>
+    <div class="content-section">
+      <h2>“ˆ When Do More Threads Help?</h2>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Cinebench (Rendering)</span><span>Scales linearly with threads</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="95%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Video Encoding (Handbrake)</span><span>Excellent scaling</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="90%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Code Compilation</span><span>Good scaling</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="80%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Gaming</span><span>Minimal benefit beyond 8-12 threads</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="40%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Web Browsing</span><span>No benefit beyond 4 threads</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="20%"></div></div>
+      </div>
+    </div>
+    <div class="content-section">
+      <h2>”¬ External Resources</h2>
+      <ul style="color: var(--text-muted); line-height: 2;">
+        <li><a href="https://en.wikipedia.org/wiki/Simultaneous_multithreading" target="_blank" style="color: #60a5fa;">Wikipedia: Simultaneous Multithreading</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Hyper-threading" target="_blank" style="color: #60a5fa;">Wikipedia: Hyper-Threading</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Thread_(computing)" target="_blank" style="color: #60a5fa;">Wikipedia: Thread (Computing)</a></li>
+      </ul>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="cpu-core.html">§  CPU Cores</a>
+        <a class="related-link" href="cpu-pipeline.html">”§ Pipeline</a>
+        <a class="related-link" href="cpu-branch-prediction.html">¯ Branch Prediction</a>
+        <a class="related-link" href="../core/benchmarks.html">“Š Benchmarks</a>
+        <a class="related-link" href="cpu-overview.html">“– CPU Overview</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

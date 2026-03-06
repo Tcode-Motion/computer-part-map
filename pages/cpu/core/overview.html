@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Overview — What is a CPU? | Computer Parts Map</title>
+  <meta name="description" content="Complete guide to CPUs — how they work, the fetch-decode-execute cycle, core components, and why the CPU is the brain of every computer.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "CPU Overview — What is a Central Processing Unit?",
+    "description": "A comprehensive guide explaining CPUs, the fetch-decode-execute cycle, and how processors work.",
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+
+  <div class="component-hero">
+    <div class="badge">§  Core CPU Pages</div>
+    <h1>CPU Overview — What is a CPU?</h1>
+    <p class="hero-subtitle">The Central Processing Unit is the brain of every computer — executing billions of instructions per second to power everything from your browser to AI models.</p>
+  </div>
+
+  <div class="page-content">
+
+    <!-- What is a CPU -->
+    <div class="content-section">
+      <h2>“– What is a CPU?</h2>
+      <p>The <strong>Central Processing Unit (CPU)</strong>, often called the processor, is the primary component of a computer that performs most of the data processing. It interprets and executes instructions from both hardware and software. Think of it as the "brain" of the computer — every click, every keystroke, every calculation passes through the CPU.</p>
+      <p>Modern CPUs contain billions of microscopic transistors etched onto a tiny silicon chip. These transistors act as electrical switches, encoding data in binary (0s and 1s). By switching on and off billions of times per second, the CPU performs complex calculations that power everything from word processing to artificial intelligence.</p>
+      <p>The CPU communicates with other components — RAM, storage, GPU — through a system of buses and controllers on the motherboard. It fetches data, processes it, and sends results back, all happening in nanoseconds.</p>
+      <div class="did-you-know">
+        <div class="dyk-label">’¡ Did You Know?</div>
+        <p>A modern CPU like the AMD Ryzen 9 7950X contains over <strong>13 billion transistors</strong> and can execute up to <strong>700 billion operations per second</strong>. The first CPU, Intel's 4004 (1971), had just 2,300 transistors and ran at 740 kHz.</p>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="content-section">
+      <h2>¥ How a CPU Works — Visual Explanation</h2>
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-bottom:15px;">
+        <iframe allowfullscreen src="https://www.youtube.com/embed/cNN_tTXABUA" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Video: How CPUs Work — a beginner-friendly visual breakdown of processor internals.</p>
+    </div>
+
+    <!-- Fetch-Decode-Execute Cycle -->
+    <div class="content-section">
+      <h2>”„ The Fetch-Decode-Execute Cycle</h2>
+      <p>Every CPU follows a fundamental process called the <strong>instruction cycle</strong> (or fetch-decode-execute cycle). This is the basic operation that repeats billions of times per second:</p>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Stage</th><th>What Happens</th><th>Component Involved</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1. Fetch</strong></td><td>The CPU retrieves the next instruction from RAM using the Program Counter (PC)</td><td>Control Unit (CU), Memory Bus</td></tr>
+          <tr><td><strong>2. Decode</strong></td><td>The instruction is interpreted and broken into micro-operations</td><td>Instruction Decoder</td></tr>
+          <tr><td><strong>3. Execute</strong></td><td>The ALU or FPU performs the actual computation (add, compare, shift, etc.)</td><td>ALU, FPU, Execution Units</td></tr>
+          <tr><td><strong>4. Write Back</strong></td><td>The result is stored in a register or written back to memory</td><td>Registers, Cache, RAM</td></tr>
+        </tbody>
+      </table>
+      <p>Modern CPUs use <strong>pipelining</strong> to overlap these stages — while one instruction is executing, the next is being decoded, and another is being fetched. This dramatically increases throughput.</p>
+    </div>
+
+    <!-- Key Components Inside a CPU -->
+    <div class="content-section">
+      <h2>ï¸ Key Components Inside a CPU</h2>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Component</th><th>Function</th><th>Learn More</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Control Unit (CU)</strong></td><td>Directs all operations — fetches instructions, coordinates data flow between ALU, registers, and memory</td><td>—</td></tr>
+          <tr><td><strong>ALU (Arithmetic Logic Unit)</strong></td><td>Performs mathematical operations (+, ˆ’, é, é·) and logical operations (AND, OR, NOT, XOR)</td><td>—</td></tr>
+          <tr><td><strong>Registers</strong></td><td>Ultra-fast temporary storage inside the CPU (fastest memory in the hierarchy)</td><td><a href="../internals/registers.html">CPU Registers †’</a></td></tr>
+          <tr><td><strong>Cache (L1/L2/L3)</strong></td><td>Small, fast memory that stores frequently accessed data to reduce RAM latency</td><td><a href="../internals/cache.html">CPU Cache †’</a></td></tr>
+          <tr><td><strong>Clock</strong></td><td>Oscillator that synchronizes all operations. Measured in GHz (billions of cycles per second)</td><td><a href="../internals/clock-speed.html">Clock Speed †’</a></td></tr>
+          <tr><td><strong>Cores</strong></td><td>Independent processing units. Modern CPUs have 4–24+ cores for parallel processing</td><td><a href="../internals/cores-threads.html">CPU Cores †’</a></td></tr>
+          <tr><td><strong>Instruction Decoder</strong></td><td>Translates machine code instructions into micro-operations the execution units can process</td><td><a href="../internals/instruction-sets.html">Instruction Sets †’</a></td></tr>
+          <tr><td><strong>Branch Predictor</strong></td><td>Guesses which code path will execute next to keep the pipeline full</td><td><a href="../internals/branch-prediction.html">Branch Prediction †’</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Performance Metrics -->
+    <div class="content-section">
+      <h2>š¡ Key Performance Metrics</h2>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Clock Speed (e.g., 5.0 GHz)</span><span>Impacts single-thread speed</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="90%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Core Count (e.g., 16 cores)</span><span>Impacts multi-thread speed</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="85%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>Cache Size (e.g., 64 MB L3)</span><span>Reduces memory latency</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="75%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>IPC (Instructions Per Clock)</span><span>Architectural efficiency</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="80%"></div></div>
+      </div>
+      <div class="stat-bar-wrap">
+        <div class="stat-bar-label"><span>TDP (Thermal Design Power)</span><span>Power & heat output</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="60%"></div></div>
+      </div>
+    </div>
+
+    <!-- Major CPU Manufacturers -->
+    <div class="content-section">
+      <h2>­ Major CPU Manufacturers</h2>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Manufacturer</th><th>Key Products</th><th>Architecture</th><th>Market</th><th>Website</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Intel</strong></td><td>Core i3/i5/i7/i9, Xeon, Core Ultra</td><td>x86-64 (Raptor Lake, Meteor Lake)</td><td>Desktop, Laptop, Server</td><td><a href="https://www.intel.com/content/www/us/en/products/details/processors.html" target="_blank" rel="noopener">Intel ARK †’</a></td></tr>
+          <tr><td><strong>AMD</strong></td><td>Ryzen 5/7/9, EPYC, Threadripper</td><td>x86-64 (Zen 4, Zen 5)</td><td>Desktop, Laptop, Server</td><td><a href="https://www.amd.com/en/products/processors" target="_blank" rel="noopener">AMD Specs †’</a></td></tr>
+          <tr><td><strong>Apple</strong></td><td>M1, M2, M3, M4 (Pro/Max/Ultra)</td><td>ARM (custom cores)</td><td>Mac, iPad</td><td><a href="https://www.apple.com/mac/" target="_blank" rel="noopener">Apple Silicon †’</a></td></tr>
+          <tr><td><strong>Qualcomm</strong></td><td>Snapdragon 8 Gen 3, X Elite</td><td>ARM (Kryo, Oryon)</td><td>Mobile, Laptop</td><td><a href="https://www.qualcomm.com/products/mobile/snapdragon" target="_blank" rel="noopener">Snapdragon †’</a></td></tr>
+          <tr><td><strong>MediaTek</strong></td><td>Dimensity 9300, Helio</td><td>ARM (Cortex)</td><td>Mobile</td><td><a href="https://www.mediatek.com/products/smartphones" target="_blank" rel="noopener">MediaTek †’</a></td></tr>
+          <tr><td><strong>IBM</strong></td><td>POWER10, z16 Telum</td><td>POWER, z/Architecture</td><td>Enterprise, Mainframe</td><td><a href="https://www.ibm.com/power" target="_blank" rel="noopener">IBM POWER †’</a></td></tr>
+          <tr><td><strong>Ampere</strong></td><td>Altra, AmpereOne</td><td>ARM (Neoverse)</td><td>Cloud Server</td><td><a href="https://amperecomputing.com/" target="_blank" rel="noopener">Ampere †’</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- External Resources -->
+    <div class="content-section">
+      <h2>”¬ Research & External Resources</h2>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+        <div style="flex: 1; min-width: 280px;">
+          <h4 style="color: var(--text); margin-bottom: 12px;">“š Academic & Technical</h4>
+          <ul style="color: var(--text-muted); line-height: 2;">
+            <li><a href="https://en.wikipedia.org/wiki/Central_processing_unit" target="_blank" style="color: #60a5fa;">Wikipedia: Central Processing Unit</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Instruction_cycle" target="_blank" style="color: #60a5fa;">Wikipedia: Instruction Cycle</a></li>
+            <li><a href="https://scholar.google.com/scholar?q=CPU+architecture+design" target="_blank" style="color: #60a5fa;">Google Scholar: CPU Architecture Papers</a></li>
+            <li><a href="https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=microprocessor+design" target="_blank" style="color: #60a5fa;">IEEE Xplore: Microprocessor Design</a></li>
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h4 style="color: var(--text); margin-bottom: 12px;">„ï¸ Hardware Databases</h4>
+          <ul style="color: var(--text-muted); line-height: 2;">
+            <li><a href="https://www.cpu-world.com/" target="_blank" style="color: #60a5fa;">CPU-World: Complete CPU Database</a></li>
+            <li><a href="https://www.techpowerup.com/cpu-specs/" target="_blank" style="color: #60a5fa;">TechPowerUp CPU Specs</a></li>
+            <li><a href="https://www.cpubenchmark.net/" target="_blank" style="color: #60a5fa;">PassMark CPU Benchmark</a></li>
+            <li><a href="https://www.tomshardware.com/best-picks/best-cpus" target="_blank" style="color: #60a5fa;">Tom's Hardware: Best CPUs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Pages -->
+    <div class="content-section">
+      <h2>” Related CPU Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../core/history.html">“œ CPU History</a>
+        <a class="related-link" href="../core/architecture.html">›ï¸ CPU Architecture</a>
+        <a class="related-link" href="../internals/cores-threads.html">§  CPU Cores</a>
+        <a class="related-link" href="../internals/cache.html">’¾ CPU Cache</a>
+        <a class="related-link" href="../internals/clock-speed.html">š¡ Clock Speed</a>
+        <a class="related-link" href="../internals/pipeline.html">”§ Pipeline</a>
+        <a class="related-link" href="../core/comparison.html">†š CPU Comparison</a>
+        <a class="related-link" href="../core/database.html">„ï¸ CPU Database</a>
+        <a class="related-link" href="../manufacturing/fabrication.html">­ Fabrication</a>
+        <a class="related-link" href="../families/x86.html">’» x86 Architecture</a>
+        <a class="related-link" href="../families/arm.html">“± ARM Architecture</a>
+        <a class="related-link" href="../core/history.html">”µ Intel History</a>
+        <a class="related-link" href="../core/history.html">”´ AMD History</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

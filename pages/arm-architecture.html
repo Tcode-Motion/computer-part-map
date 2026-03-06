@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arm Architecture | CPU Encyclopedia</title>
-  <meta name="description" content="In-depth guide on Arm Architecture. Part of the 100-Year CPU Encyclopedia.">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARM Architecture  Mobile to Mac | Computer Parts Map</title>
+  <meta name="description" content="ARM architecture: RISC design, big.LITTLE, ARM licensing model, Cortex cores, and how ARM went from phones to Apple Macs and data centers.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Arm Architecture",
-    "inLanguage": "en"
-  }
-  </script>
 </head>
 <body class="dark-mode">
   <div id="navbar-placeholder"></div>
-  
   <div class="component-hero">
-    <div class="badge">🧠 CPU Architecture Families</div>
-    <h1>Arm Architecture</h1>
-    <p class="hero-subtitle">Comprehensive insights into Arm Architecture, from architecture to execution.</p>
+    <div class="badge">📱 CPU Architecture Families</div>
+    <h1>ARM Architecture  From Phones to Supercomputers</h1>
+    <p class="hero-subtitle">ARM processors power 99% of smartphones, Apple Macs, AWS cloud servers, and the world's fastest supercomputer (Fugaku). Over 250 billion ARM chips have been shipped.</p>
   </div>
-
-  <main class="page-content container mt-5 mb-5">
-    <div class="content-section card p-4 shadow-sm" style="background: var(--card-bg); border-color: var(--border);">
-      <h2>📖 Overview</h2>
-      <p>This module covers the fundamental concepts, history, and technical specifications of <strong>Arm Architecture</strong>. Sourced from academic journals, official manufacturer datasheets, and historical archives.</p>
-      
-      <div class="mt-4">
-        <h4>Related Data Fields Collected</h4>
-        <ul>
-          <li>Architecture & Node</li>
-          <li>Performance Benchmarks</li>
-          <li>Transistor Count & Physics</li>
-        </ul>
-      </div>
-      
-      <div class="alert alert-info mt-4 bg-transparent border-info text-info">
-        <strong>Data Integration:</strong> Live specs for this topic can be queried from <code>/data/cpu-encyclopedia.json</code> via the API.
+  <div class="page-content">
+    <div class="content-section">
+      <h2>📖 What is ARM?</h2>
+      <p><strong>ARM</strong> (Advanced RISC Machines) is a family of RISC instruction set architectures. Unlike Intel/AMD, ARM Holdings <strong>doesn't manufacture chips</strong>  they design the ISA and core blueprints, then <strong>license</strong> them to companies like Apple, Qualcomm, Samsung, and MediaTek who build their own chips.</p>
+      <table class="spec-table">
+        <thead><tr><th>Feature</th><th>ARM</th><th>x86</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Business Model</strong></td><td>IP licensing (designs sold)</td><td>Intel/AMD manufacture own chips</td></tr>
+          <tr><td><strong>ISA Type</strong></td><td>RISC (fixed-length instructions)</td><td>CISC (variable-length)</td></tr>
+          <tr><td><strong>Power Efficiency</strong></td><td>Excellent (mobile-first design)</td><td>Higher power consumption</td></tr>
+          <tr><td><strong>License Holders</strong></td><td>Apple, Qualcomm, Samsung, MediaTek, Ampere, Amazon</td><td>Only Intel and AMD</td></tr>
+          <tr><td><strong>Chips Shipped</strong></td><td>250+ billion</td><td>~10 billion</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>📊 ARM Core Lineup</h2>
+      <table class="spec-table">
+        <thead><tr><th>Core</th><th>Type</th><th>ISA Version</th><th>Target</th><th>Used In</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cortex-A520</strong></td><td>Efficiency</td><td>ARMv9.2</td><td>Background tasks</td><td>Snapdragon 8 Gen 3</td><td>2023</td></tr>
+          <tr><td><strong>Cortex-A720</strong></td><td>Mid Performance</td><td>ARMv9.2</td><td>Sustained workloads</td><td>Snapdragon 8 Gen 3</td><td>2023</td></tr>
+          <tr><td><strong>Cortex-X4</strong></td><td>Peak Performance</td><td>ARMv9.2</td><td>Single-thread burst</td><td>Snapdragon 8 Gen 3</td><td>2023</td></tr>
+          <tr><td><strong>Neoverse V2</strong></td><td>Server</td><td>ARMv9</td><td>Cloud computing</td><td>AWS Graviton 4</td><td>2023</td></tr>
+          <tr><td><strong>Apple Firestorm</strong></td><td>Custom P-core</td><td>ARMv8.5</td><td>Peak performance</td><td>Apple M1</td><td>2020</td></tr>
+          <tr><td><strong>Apple Everest</strong></td><td>Custom P-core</td><td>ARMv8.6</td><td>Peak performance</td><td>Apple M3</td><td>2023</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>🔀 big.LITTLE & DynamIQ</h2>
+      <p>ARM's <strong>big.LITTLE</strong> architecture (2011) pairs high-performance "big" cores with power-efficient "LITTLE" cores. The OS dynamically shifts workloads between them for optimal battery life. <strong>DynamIQ</strong> (2017) improved this by allowing flexible core configurations within a single cluster.</p>
+    </div>
+    <div class="content-section">
+      <h2>🔬 External Resources</h2>
+      <ul style="color: var(--text-muted); line-height: 2;">
+        <li><a href="https://en.wikipedia.org/wiki/ARM_architecture_family" target="_blank" style="color: #60a5fa;">Wikipedia: ARM Architecture</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/ARM_big.LITTLE" target="_blank" style="color: #60a5fa;">Wikipedia: big.LITTLE</a></li>
+        <li><a href="https://www.arm.com/products/silicon-ip-cpu" target="_blank" style="color: #60a5fa;">ARM: CPU IP Portfolio</a></li>
+      </ul>
+    </div>
+    <div class="content-section">
+      <h2>🔗 Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="x86-architecture.html">💻 x86</a>
+        <a class="related-link" href="riscv-architecture.html">🔓 RISC-V</a>
+        <a class="related-link" href="arm-cpu-history.html">📜 ARM History</a>
+        <a class="related-link" href="apple-silicon-history.html">🍎 Apple Silicon</a>
+        <a class="related-link" href="cpu-instruction-set.html">📋 ISA</a>
       </div>
     </div>
-  </main>
-
+  </div>
   <div id="footer-placeholder"></div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

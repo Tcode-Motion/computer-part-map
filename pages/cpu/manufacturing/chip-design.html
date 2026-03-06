@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Chip Design — Die Layout, Chiplets, Packaging | Computer Parts Map</title>
+  <meta name="description" content="CPU chip design: die layout, chiplet architecture, monolithic vs MCM, advanced packaging (Foveros, CoWoS, 3D stacking), and floor planning.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+  <div class="component-hero">
+    <div class="badge">“ CPU Manufacturing</div>
+    <h1>CPU Chip Design — Chiplets & Packaging</h1>
+    <p class="hero-subtitle">Modern CPUs are no longer single monolithic dies — they're made of multiple chiplets connected with advanced packaging technologies.</p>
+  </div>
+  <div class="page-content">
+    <div class="content-section">
+      <h2>“– Monolithic vs Chiplet Design</h2>
+      <p>Traditionally, CPUs were <strong>monolithic</strong> — everything on one die. As transistor counts grew, yields dropped (a single defect kills the whole chip). AMD pioneered the <strong>chiplet</strong> approach with Zen 2 (2019), splitting the CPU into smaller, independent dies connected via an I/O die.</p>
+      <table class="spec-table">
+        <thead><tr><th>Feature</th><th>Monolithic</th><th>Chiplet (MCM)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Example</strong></td><td>Intel Core i9-14900K</td><td>AMD Ryzen 9 7950X (2é CCD + 1é IOD)</td></tr>
+          <tr><td><strong>Yield</strong></td><td>Lower (one defect kills whole die)</td><td>Higher (small dies have better yield)</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Exponentially higher for big dies</td><td>Linear scaling — just add more chiplets</td></tr>
+          <tr><td><strong>Latency</strong></td><td>Lower (everything on one die)</td><td>Slightly higher (inter-chiplet latency)</td></tr>
+          <tr><td><strong>Flexibility</strong></td><td>One size fits all</td><td>Mix and match: different nodes per chiplet</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>“Š Advanced Packaging Technologies</h2>
+      <table class="spec-table">
+        <thead><tr><th>Technology</th><th>Company</th><th>How It Works</th><th>Used In</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Infinity Fabric</strong></td><td>AMD</td><td>High-speed interconnect between CCDs and IOD</td><td>Ryzen, EPYC</td></tr>
+          <tr><td><strong>EMIB</strong></td><td>Intel</td><td>Embedded multi-die bridge (silicon bridge in substrate)</td><td>Ponte Vecchio, Meteor Lake</td></tr>
+          <tr><td><strong>Foveros</strong></td><td>Intel</td><td>3D face-to-face die stacking</td><td>Lakefield, Meteor Lake</td></tr>
+          <tr><td><strong>CoWoS</strong></td><td>TSMC</td><td>Chip-on-Wafer-on-Substrate (silicon interposer)</td><td>NVIDIA H100, AMD MI300</td></tr>
+          <tr><td><strong>SoIC</strong></td><td>TSMC</td><td>System-on-Integrated-Chips (hybrid bonding)</td><td>3D V-Cache for Ryzen</td></tr>
+          <tr><td><strong>UltraFusion</strong></td><td>Apple</td><td>Die-to-die bridge connecting two M-series dies</td><td>M1 Ultra, M2 Ultra</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="cpu-fabrication.html">­ Fabrication</a>
+        <a class="related-link" href="cpu-transistor.html">”¬ Transistors</a>
+        <a class="related-link" href="cpu-nanometer.html">“ Process Nodes</a>
+        <a class="related-link" href="3d-stacked-cpu.html">ï¸ 3D Stacking</a>
+      </div>
+    </div>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

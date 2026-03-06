@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Database — All Processors Searchable | Computer Parts Map</title>
+  <meta name="description" content="Searchable database of 30+ CPUs from Intel, AMD, Apple, Qualcomm, IBM, and Ampere. Specs include cores, clock speed, transistors, fabrication, and TDP.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "TechArticle", "headline": "CPU Database — Complete Processor Specifications", "inLanguage": "en" }
+  </script>
+</head>
+<body class="dark-mode">
+  <div id="navbar-placeholder"></div>
+
+  <div class="component-hero">
+    <div class="badge">„ï¸ CPU Database</div>
+    <h1>CPU Database — All Processors</h1>
+    <p class="hero-subtitle">A searchable, sortable database of 30+ processors from 1971 to 2024. Filter by manufacturer, architecture, year, or spec.</p>
+  </div>
+
+  <div class="page-content">
+
+    <!-- Search & Filter Controls -->
+    <div class="content-section">
+      <h2>” Search & Filter</h2>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px;">
+        <input type="text" id="db-search" placeholder="Search by name, manufacturer, architecture..." style="flex: 2; min-width: 250px; padding: 12px 18px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-size: 1rem; outline: none;">
+        <select id="db-filter-manufacturer" style="flex: 1; min-width: 140px; padding: 12px 14px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-size: 0.95rem; outline: none; cursor: pointer;">
+          <option value="">All Manufacturers</option>
+        </select>
+        <select id="db-sort" style="flex: 1; min-width: 140px; padding: 12px 14px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-size: 0.95rem; outline: none; cursor: pointer;">
+          <option value="year-desc">Year (Newest First)</option>
+          <option value="year-asc">Year (Oldest First)</option>
+          <option value="name-asc">Name (A-Z)</option>
+          <option value="cores-desc">Cores (Most First)</option>
+          <option value="transistors-desc">Transistors (Most First)</option>
+        </select>
+      </div>
+      <p id="db-count" style="color: var(--text-muted); font-size: 0.9rem;">Loading database...</p>
+    </div>
+
+    <!-- Data Table -->
+    <div class="content-section" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+      <h2>“Š Processor Specifications</h2>
+      <table class="spec-table" id="cpu-db-table">
+        <thead>
+          <tr>
+            <th>CPU Name</th>
+            <th>Manufacturer</th>
+            <th>Architecture</th>
+            <th>Year</th>
+            <th>Cores</th>
+            <th>Threads</th>
+            <th>Base Clock</th>
+            <th>Boost Clock</th>
+            <th>Transistors</th>
+            <th>Process</th>
+            <th>L3 Cache</th>
+            <th>TDP</th>
+          </tr>
+        </thead>
+        <tbody id="cpu-db-body">
+          <tr><td colspan="12" style="text-align:center; padding:40px; color:var(--text-muted);">Loading CPU data...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Data Source Info -->
+    <div class="content-section">
+      <h2>“‹ About This Database</h2>
+      <p>This database contains <strong>30+ CPUs</strong> spanning from the <strong>Intel 4004 (1971)</strong> to the latest <strong>AMD Ryzen 9950X (2024)</strong>. Data is sourced from:</p>
+      <div class="related-grid" style="margin-top: 10px;">
+        <a class="related-link" href="https://www.intel.com/content/www/us/en/products/details/processors.html" target="_blank" rel="noopener">”µ Intel ARK</a>
+        <a class="related-link" href="https://www.amd.com/en/products/processors" target="_blank" rel="noopener">”´ AMD Product Specs</a>
+        <a class="related-link" href="https://www.apple.com/mac/" target="_blank" rel="noopener">Ž Apple Silicon</a>
+        <a class="related-link" href="https://en.wikipedia.org/wiki/List_of_Intel_processors" target="_blank" rel="noopener">“š Wikipedia: Intel CPUs</a>
+        <a class="related-link" href="https://en.wikipedia.org/wiki/List_of_AMD_processors" target="_blank" rel="noopener">“š Wikipedia: AMD CPUs</a>
+        <a class="related-link" href="https://www.cpu-world.com/" target="_blank" rel="noopener">„ï¸ CPU-World</a>
+        <a class="related-link" href="https://www.techpowerup.com/cpu-specs/" target="_blank" rel="noopener">„ï¸ TechPowerUp</a>
+        <a class="related-link" href="https://www.cpubenchmark.net/" target="_blank" rel="noopener">“Š PassMark</a>
+      </div>
+      <div class="did-you-know" style="margin-top: 20px;">
+        <div class="dyk-label">’¡ Data Fields Collected Per CPU</div>
+        <p>Name, Manufacturer, Architecture, Release Year, Core Count, Thread Count, Base Clock, Boost Clock, Transistor Count, Fabrication Node, Cache Sizes, TDP, and Supported Instructions.</p>
+      </div>
+    </div>
+
+    <!-- Related Pages -->
+    <div class="content-section">
+      <h2>” Related Pages</h2>
+      <div class="related-grid">
+        <a class="related-link" href="../core/overview.html">“– CPU Overview</a>
+        <a class="related-link" href="../core/comparison.html">†š CPU Comparison</a>
+        <a class="related-link" href="../core/database.html">“Š Benchmarks</a>
+        <a class="related-link" href="../core/history.html">“œ CPU History</a>
+        <a class="related-link" href="../core/history.html">”µ Intel History</a>
+        <a class="related-link" href="../core/history.html">”´ AMD History</a>
+        <a class="related-link" href="../manufacturing/transistors.html">”¬ Transistors</a>
+        <a class="related-link" href="../manufacturing/process-nodes.html">“ Process Nodes</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="../../../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CPU Database Logic -->
+  <script>
+  (function() {
+    let allCPUs = [];
+
+    // Determine base path
+    const basePath = window.location.pathname.includes('/pages/') ? '../' : '';
+
+    async function loadDB() {
+      try {
+        const res = await fetch(basePath + 'data/cpu-encyclopedia.json');
+        const data = await res.json();
+        allCPUs = data.cpus || [];
+        populateManufacturerFilter();
+        renderTable();
+      } catch (e) {
+        document.getElementById('cpu-db-body').innerHTML =
+          '<tr><td colspan="12" style="text-align:center; padding:40px; color:#ef4444;">Failed to load database. Make sure cpu-encyclopedia.json exists.</td></tr>';
+        console.error('DB Load Error:', e);
+      }
+    }
+
+    function populateManufacturerFilter() {
+      const select = document.getElementById('db-filter-manufacturer');
+      const manufacturers = [...new Set(allCPUs.map(c => c.manufacturer))].sort();
+      manufacturers.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m;
+        opt.textContent = m;
+        select.appendChild(opt);
+      });
+    }
+
+    function parseNum(str) {
+      if (typeof str === 'number') return str;
+      if (!str) return 0;
+      const cleaned = String(str).replace(/[^0-9.]/g, '');
+      return parseFloat(cleaned) || 0;
+    }
+
+    function renderTable() {
+      const search = (document.getElementById('db-search').value || '').toLowerCase();
+      const mfg = document.getElementById('db-filter-manufacturer').value;
+      const sort = document.getElementById('db-sort').value;
+
+      let filtered = allCPUs.filter(cpu => {
+        const matchSearch = !search ||
+          cpu.name.toLowerCase().includes(search) ||
+          cpu.manufacturer.toLowerCase().includes(search) ||
+          cpu.architecture.toLowerCase().includes(search) ||
+          String(cpu.release_year).includes(search);
+        const matchMfg = !mfg || cpu.manufacturer === mfg;
+        return matchSearch && matchMfg;
+      });
+
+      // Sort
+      filtered.sort((a, b) => {
+        switch (sort) {
+          case 'year-desc': return (b.release_year || 0) - (a.release_year || 0);
+          case 'year-asc': return (a.release_year || 0) - (b.release_year || 0);
+          case 'name-asc': return a.name.localeCompare(b.name);
+          case 'cores-desc': return (b.cores || 0) - (a.cores || 0);
+          case 'transistors-desc': return parseNum(b.transistors) - parseNum(a.transistors);
+          default: return 0;
+        }
+      });
+
+      const tbody = document.getElementById('cpu-db-body');
+      document.getElementById('db-count').textContent = `Showing ${filtered.length} of ${allCPUs.length} processors`;
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="12" style="text-align:center; padding:30px; color:var(--text-muted);">No CPUs match your search.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(cpu => `
+        <tr>
+          <td><strong>${cpu.name}</strong></td>
+          <td>${cpu.manufacturer}</td>
+          <td>${cpu.architecture}</td>
+          <td>${cpu.release_year || '—'}</td>
+          <td>${cpu.cores || '—'}</td>
+          <td>${cpu.threads || '—'}</td>
+          <td>${cpu.base_clock || '—'}</td>
+          <td>${cpu.boost_clock || '—'}</td>
+          <td>${cpu.transistors || '—'}</td>
+          <td>${cpu.fabrication || '—'}</td>
+          <td>${cpu.cache_l3 || '—'}</td>
+          <td>${cpu.tdp || '—'}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Event listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      // Wait a tick for the page to be ready
+      setTimeout(() => {
+        loadDB();
+        document.getElementById('db-search').addEventListener('input', renderTable);
+        document.getElementById('db-filter-manufacturer').addEventListener('change', renderTable);
+        document.getElementById('db-sort').addEventListener('change', renderTable);
+      }, 100);
+    });
+  })();
+  </script>
+</body>
+</html>
+
+
