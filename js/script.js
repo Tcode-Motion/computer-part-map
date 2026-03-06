@@ -91,7 +91,7 @@ const injectCommonElements = () => {
             <div class="sub-nav mega-content">
               <div class="dropdown-column">
                 <h4 class="dropdown-header">⚙️ Core Parts</h4>
-                <a href="${base}pages/cpu.html">CPU (Processor)</a>
+                <a href="${base}pages/cpu.html">CPU (Processor Hub)</a>
                 <a href="${base}pages/gpu.html">GPU (Graphics)</a>
                 <a href="${base}pages/motherboard.html">Motherboard</a>
                 <a href="${base}pages/ram.html">Memory (RAM)</a>
@@ -115,6 +115,36 @@ const injectCommonElements = () => {
                 <a href="${base}pages/printer.html">Printer</a>
                 <a href="${base}pages/webcam.html">Webcam</a>
                 <a href="${base}pages/scanner.html">Scanner</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown mega-dropdown">
+            <a href="${base}pages/cpu.html">Processors ▾</a>
+            <div class="sub-nav mega-content">
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🧠 CPU Core</h4>
+                <a href="${base}pages/cpu-overview.html">Overview</a>
+                <a href="${base}pages/cpu-core.html">Cores & Threads</a>
+                <a href="${base}pages/cpu-cache.html">Cache Memory</a>
+                <a href="${base}pages/cpu-clock-speed.html">Clock Speed</a>
+                <a href="${base}pages/cpu-instruction-set.html">Instruction Sets</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🏭 Manufacturing</h4>
+                <a href="${base}pages/cpu-fabrication.html">Fabrication</a>
+                <a href="${base}pages/cpu-nanometer.html">Nanometer Nodes</a>
+                <a href="${base}pages/cpu-transistor.html">Transistors</a>
+                <a href="${base}pages/x86-architecture.html">x86 Architecture</a>
+                <a href="${base}pages/arm-architecture.html">ARM Architecture</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">📊 Data & History</h4>
+                <a href="${base}pages/cpu-database.html">CPU Database</a>
+                <a href="${base}pages/cpu-benchmark.html">Benchmarks</a>
+                <a href="${base}pages/intel-cpu-history.html">Intel History</a>
+                <a href="${base}pages/amd-cpu-history.html">AMD History</a>
+                <a href="${base}pages/apple-silicon-history.html">Apple Silicon</a>
               </div>
             </div>
           </li>
