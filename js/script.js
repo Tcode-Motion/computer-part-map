@@ -305,7 +305,36 @@ const injectCommonElements = () => {
     const navElement = document.getElementById('navbar-placeholder');
     const footerElement = document.getElementById('footer-placeholder');
     
-    if (navElement) navElement.innerHTML = navbarHTML;
+    if (navElement) {
+        navElement.innerHTML = navbarHTML;
+        
+        // --- CPU Contextual Sub-Navbar ---
+        const cpuPages = [
+            'cpu.html', 'cpu-overview.html', 'cpu-history.html', 'cpu-architecture.html', 
+            'cpu-core.html', 'cpu-cache.html', 'cpu-fabrication.html', 'cpu-database.html',
+            'intel-cpu-history.html', 'amd-cpu-history.html', 'apple-silicon-history.html',
+            'x86-architecture.html', 'arm-architecture.html', 'cpu-benchmark.html'
+        ];
+        
+        const isCpuPage = cpuPages.some(page => window.location.pathname.includes(page));
+        
+        if (isCpuPage) {
+            const subNavHTML = `
+            <div class="sub-navbar active">
+                <div class="sub-nav-container">
+                    <a href="${base}pages/cpu.html" class="${window.location.pathname.endsWith('cpu.html') ? 'current' : ''}">Hub</a>
+                    <a href="${base}pages/cpu-overview.html" class="${window.location.pathname.includes('overview') ? 'current' : ''}">Overview</a>
+                    <a href="${base}pages/cpu-core.html" class="${window.location.pathname.includes('core') ? 'current' : ''}">Internal Parts</a>
+                    <a href="${base}pages/cpu-fabrication.html" class="${window.location.pathname.includes('fabrication') ? 'current' : ''}">Manufacturing</a>
+                    <a href="${base}pages/x86-architecture.html" class="${window.location.pathname.includes('architecture') ? 'current' : ''}">Architecture</a>
+                    <a href="${base}pages/cpu-database.html" class="${window.location.pathname.includes('database') ? 'current' : ''}">Specs DB</a>
+                    <a href="${base}pages/intel-cpu-history.html" class="${window.location.pathname.includes('history') ? 'current' : ''}">History</a>
+                    <a href="${base}pages/cpu-benchmark.html" class="${window.location.pathname.includes('benchmark') ? 'current' : ''}">Benchmarks</a>
+                </div>
+            </div>`;
+            navElement.insertAdjacentHTML('afterend', subNavHTML);
+        }
+    }
     if (footerElement) footerElement.innerHTML = footerHTML;
 };
 
