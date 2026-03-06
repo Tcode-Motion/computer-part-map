@@ -1,0 +1,1 @@
+Static snapshots (PDF, EPUB, JSON bundles) will be generated here by the CI.

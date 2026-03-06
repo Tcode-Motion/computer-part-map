@@ -1,0 +1,11 @@
+{
+  "cpus": [
+    {
+      "name": "Intel 4004",
+      "year": 1971,
+      "transistors": 2300,
+      "architecture": "4-bit",
+      "importance": "First commercial microprocessor"
+    }
+  ]
+}

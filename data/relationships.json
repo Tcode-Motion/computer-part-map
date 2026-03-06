@@ -1,0 +1,14 @@
+{
+  "relations": [
+    {
+      "source": "CPU",
+      "relation": "uses",
+      "target": "RAM"
+    },
+    {
+      "source": "GPU",
+      "relation": "connects",
+      "target": "PCIe"
+    }
+  ]
+}

@@ -59,6 +59,18 @@ const SITE_PAGES = [
     { name: "About Us", url: "about.html", cat: "Misc" }
 ];
 
+// --- Path Helper ---
+// Detects if we are in the root or a subdirectory (like /pages/)
+const getBasePath = () => {
+    const path = window.location.pathname;
+    if (path.includes('/pages/')) {
+        return '../';
+    }
+    return '';
+};
+
+const base = getBasePath();
+
 // --- Navbar & Footer Injection ---
 const injectCommonElements = () => {
     // Inject lunr.js dynamically
@@ -69,89 +81,134 @@ const injectCommonElements = () => {
     const navbarHTML = `
     <nav class="navbar">
       <div class="nav-container">
-        <a href="index.html" class="nav-logo">⚡ Computer<span>Map</span></a>
+        <a href="${base}index.html" class="nav-logo">⚡ Computer<span>Map</span></a>
         
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="${base}index.html">Home</a></li>
           
           <li class="has-dropdown mega-dropdown">
-            <a href="#">Hardware ▾</a>
+            <a href="${base}pages/explore.html">Hardware ▾</a>
             <div class="sub-nav mega-content">
               <div class="dropdown-column">
-                <h4 class="dropdown-header">⚙️ Core Hardware</h4>
-                <a href="cpu.html">CPU (Processor)</a>
-                <a href="gpu.html">GPU (Graphics)</a>
-                <a href="npu.html">NPU (AI Processor)</a>
-                <a href="motherboard.html">Motherboard</a>
-                <a href="ram.html">RAM (Memory)</a>
-                <a href="psu.html">Power Supply</a>
-                <a href="cooling.html">Cooling Systems</a>
+                <h4 class="dropdown-header">⚙️ Core Parts</h4>
+                <a href="${base}pages/cpu.html">CPU (Processor)</a>
+                <a href="${base}pages/gpu.html">GPU (Graphics)</a>
+                <a href="${base}pages/motherboard.html">Motherboard</a>
+                <a href="${base}pages/ram.html">Memory (RAM)</a>
+                <a href="${base}pages/storage.html">Storage (SSD/HDD)</a>
+                <a href="${base}pages/psu.html">Power Supply</a>
+                <a href="${base}pages/cooling.html">Cooling Systems</a>
               </div>
               <div class="dropdown-column">
-                <h4 class="dropdown-header">⌨️ Input Devices</h4>
-                <a href="keyboard.html">Keyboard</a>
-                <a href="mouse.html">Mouse</a>
-                <a href="webcam.html">Webcam</a>
-                <a href="microphone.html">Microphone</a>
-                <a href="scanner.html">Scanner</a>
-                <a href="touchpad.html">Touchpad</a>
+                <h4 class="dropdown-header">🔌 Standards</h4>
+                <a href="${base}pages/pcie.html">PCI Express</a>
+                <a href="${base}pages/nvme.html">NVMe / SATA</a>
+                <a href="${base}pages/usb.html">USB / Thunderbolt</a>
+                <a href="${base}pages/ports.html">I/O Ports</a>
+                <a href="${base}pages/chips.html">Chipsets</a>
               </div>
               <div class="dropdown-column">
-                <h4 class="dropdown-header">🖥️ Output & Storage</h4>
-                <a href="monitor.html">Monitor</a>
-                <a href="printer.html">Printer</a>
-                <a href="projector.html">Projector</a>
-                <a href="ssd.html">SSD Storage</a>
-                <a href="hdd.html">HDD Storage</a>
-                <a href="optical-drive.html">Optical Drive</a>
+                <h4 class="dropdown-header">⌨️ Peripherals</h4>
+                <a href="${base}pages/monitor.html">Monitor</a>
+                <a href="${base}pages/keyboard.html">Keyboard</a>
+                <a href="${base}pages/mouse.html">Mouse</a>
+                <a href="${base}pages/printer.html">Printer</a>
+                <a href="${base}pages/webcam.html">Webcam</a>
+                <a href="${base}pages/scanner.html">Scanner</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown mega-dropdown">
+            <a href="${base}pages/architecture.html">Architecture ▾</a>
+            <div class="sub-nav mega-content">
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🏛️ Systems</h4>
+                <a href="${base}pages/von-neumann.html">Von Neumann</a>
+                <a href="${base}pages/harvard-architecture.html">Harvard Arch</a>
+                <a href="${base}pages/bus-system.html">Bus Systems</a>
+                <a href="${base}pages/pipeline.html">Pipelining</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🔬 Deep Logic</h4>
+                <a href="${base}pages/binary.html">Binary & Logic</a>
+                <a href="${base}pages/logic-gates.html">Logic Gates</a>
+                <a href="${base}pages/transistor.html">Transistors</a>
+                <a href="${base}pages/semiconductor.html">Semiconductors</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🚀 Future Tech</h4>
+                <a href="${base}pages/quantum-computing.html">Quantum Computing</a>
+                <a href="${base}pages/neuromorphic.html">Neuromorphic</a>
+                <a href="${base}pages/optical-computing.html">Optical Computing</a>
+                <a href="${base}pages/dna-computing.html">DNA Computing</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown mega-dropdown">
+            <a href="${base}pages/history.html">History ▾</a>
+            <div class="sub-nav mega-content">
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">📅 Timelines</h4>
+                <a href="${base}pages/timeline.html">Interactive Timeline</a>
+                <a href="${base}pages/computer-history.html">General History</a>
+                <a href="${base}pages/computer-generations.html">Generations</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">📜 Evolution</h4>
+                <a href="${base}pages/history-cpu.html">CPU Evolution</a>
+                <a href="${base}pages/history-gpu.html">GPU Evolution</a>
+                <a href="${base}pages/history-ram.html">RAM Evolution</a>
+                <a href="${base}pages/history-storage.html">Storage History</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown mega-dropdown">
+            <a href="${base}pages/learn.html">Learning ▾</a>
+            <div class="sub-nav mega-content">
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">📖 How It Works</h4>
+                <a href="${base}pages/how-computer-works.html">Computer Basics</a>
+                <a href="${base}pages/boot-process.html">Boot Process</a>
+                <a href="${base}pages/instruction-cycle.html">Fetch-Execute</a>
+                <a href="${base}pages/data-flow.html">Data Flow</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">🛠️ Practical</h4>
+                <a href="${base}pages/pc-build.html">Build a PC</a>
+                <a href="${base}pages/hardware-map.html">Hardware Map</a>
+                <a href="${base}pages/compare.html">Compare Parts</a>
+              </div>
+              <div class="dropdown-column">
+                <h4 class="dropdown-header">📊 Visuals</h4>
+                <a href="${base}pages/component-network.html">Network Map</a>
+                <a href="${base}pages/system-map.html">System Map</a>
+                <a href="${base}pages/visualize.html">Visualizer</a>
               </div>
             </div>
           </li>
 
           <li class="has-dropdown">
-            <a href="#">Software ▾</a>
+            <a href="#">More ▾</a>
             <ul class="sub-nav">
-              <li class="dropdown-header">Operating Systems</li>
-              <li><a href="operating-systems.html">What is OS?</a></li>
-              <li><a href="windows.html">Windows</a></li>
-              <li><a href="linux.html">Linux</a></li>
-              <li><a href="macos.html">macOS</a></li>
-              <li><a href="android.html">Android</a></li>
-              <li><a href="ios.html">iOS</a></li>
+              <li class="dropdown-header">Software</li>
+              <li><a href="${base}pages/operating-systems.html">Operating Systems</a></li>
+              <li><a href="${base}pages/software-types.html">Software Types</a></li>
               <li class="dropdown-divider"></li>
-              <li class="dropdown-header">Categories</li>
-              <li><a href="software-types.html">Software Types</a></li>
-            </ul>
-          </li>
-
-          <li class="has-dropdown">
-            <a href="#">Computing ▾</a>
-            <ul class="sub-nav">
-              <li class="dropdown-header">Modern & Future</li>
-              <li><a href="raspberry-pi.html">Raspberry Pi & SBCs</a></li>
-              <li><a href="npu.html">Neural Processing Units</a></li>
-              <li><a href="quantum-computing.html">Quantum Computing</a></li>
+              <li class="dropdown-header">Computing</li>
+              <li><a href="${base}pages/server-guide.html">Server Guide</a></li>
+              <li><a href="${base}pages/network.html">Networking</a></li>
+              <li><a href="${base}pages/raspberry-pi.html">Raspberry Pi</a></li>
               <li class="dropdown-divider"></li>
-              <li><a href="computer-history.html">History of Computing</a></li>
-              <li><a href="computer-types.html">Types of Computers</a></li>
-              <li><a href="server-guide.html">Server Guide</a></li>
-              <li><a href="ups.html">UPS Systems</a></li>
-              <li><a href="battery.html">Battery Guide</a></li>
-              <li><a href="nic.html">Networking (NIC)</a></li>
-              <li><a href="router.html">Routers</a></li>
-              <li><a href="wifi-adapter.html">WiFi Adapters</a></li>
+              <li class="dropdown-header">Community</li>
+              <li><a href="${base}pages/contribute.html">How to Contribute</a></li>
+              <li><a href="${base}pages/about.html">About the Project</a></li>
             </ul>
           </li>
 
-          <li class="has-dropdown">
-            <a href="#">Audio ▾</a>
-            <ul class="sub-nav">
-              <li><a href="speakers.html">Speakers</a></li>
-              <li><a href="sound-card.html">Sound Cards</a></li>
-            </ul>
-          </li>
-
-          <li><a href="about.html">About</a></li>
+          <li><a href="${base}pages/audio.html">Audio</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -168,30 +225,50 @@ const injectCommonElements = () => {
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-brand">
-          <h3>⚡ Computer<span>Map</span></h3>
-          <p>The world's most detailed open library for computer hardware and software enthusiasts.</p>
+          <a href="${base}index.html" class="footer-logo">⚡ Computer<span>Map</span></a>
+          <p>The world's most detailed open library for computer hardware and software enthusiasts. Explore every component from transistors to cloud servers.</p>
           <div class="footer-social">
-            <a href="https://tcode-motion.github.io/computer-part-map/" title="Website">🌐</a>
-            <a href="mailto:contact@tcodemotion.com" title="Email">📧</a>
-            <a href="https://github.com/Tcode-Motion/computer-part-map/" target="_blank" title="GitHub">🐙</a>
+            <a href="https://github.com/Tcode-Motion" target="_blank" rel="noopener"><span>🐙</span> GitHub</a>
+            <a href="https://tcode-motion.github.io/computer-part-map/" target="_blank" rel="noopener"><span>🌐</span> Site</a>
+            <a href="mailto:contact@tcodemotion.com"><span>📧</span> Contact</a>
           </div>
         </div>
-        <div class="footer-links">
-          <h4>Explore</h4>
-          <a href="cpu.html">Processors</a>
-          <a href="gpu.html">Graphics Cards</a>
-          <a href="operating-systems.html">Operating Systems</a>
-          <a href="computer-history.html">History</a>
-        </div>
-        <div class="footer-links">
-          <h4>Resources</h4>
-          <a href="about.html">About Us</a>
-          <a href="https://github.com/Tcode-Motion/computer-part-map/blob/main/README.md">Documentation</a>
-          <a href="index.html">Home</a>
+        
+        <div class="footer-links-group">
+          <div class="footer-links">
+            <h4>Hardware</h4>
+            <a href="${base}pages/cpu.html">Processors</a>
+            <a href="${base}pages/gpu.html">Graphics Cards</a>
+            <a href="${base}pages/motherboard.html">Motherboards</a>
+            <a href="${base}pages/ram.html">Memory (RAM)</a>
+            <a href="${base}pages/storage.html">Storage (SSD)</a>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Software</h4>
+            <a href="${base}pages/operating-systems.html">What is OS?</a>
+            <a href="${base}pages/windows.html">Windows</a>
+            <a href="${base}pages/linux.html">Linux</a>
+            <a href="${base}pages/macos.html">macOS</a>
+            <a href="${base}pages/android.html">Android/iOS</a>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <a href="${base}pages/history.html">History</a>
+            <a href="${base}pages/server-guide.html">Servers</a>
+            <a href="${base}pages/quantum-computing.html">Quantum</a>
+            <a href="${base}pages/about.html">About Us</a>
+            <a href="${base}pages/contribute.html">Contribute</a>
+          </div>
         </div>
       </div>
+      
       <div class="footer-bottom">
-        <p>&copy; 2026 Computer Parts Map. Made by <strong>Tcode Motion</strong>.</p>
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 Computer Parts Map. All rights reserved.</p>
+          <p>Made with ❤️ by <strong>Tcode Motion</strong>.</p>
+        </div>
       </div>
     </footer>`;
 

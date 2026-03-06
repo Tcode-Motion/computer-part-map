@@ -1,0 +1,422 @@
+[
+  {
+    "id": "about.html",
+    "title": "About",
+    "url": "pages/about.html"
+  },
+  {
+    "id": "ai-chips.html",
+    "title": "Ai-Chips",
+    "url": "pages/ai-chips.html"
+  },
+  {
+    "id": "android-architecture.html",
+    "title": "Android-Architecture",
+    "url": "pages/android-architecture.html"
+  },
+  {
+    "id": "android-history.html",
+    "title": "Android-History",
+    "url": "pages/android-history.html"
+  },
+  {
+    "id": "android.html",
+    "title": "Android",
+    "url": "pages/android.html"
+  },
+  {
+    "id": "battery.html",
+    "title": "Battery",
+    "url": "pages/battery.html"
+  },
+  {
+    "id": "compare.html",
+    "title": "Compare",
+    "url": "pages/compare.html"
+  },
+  {
+    "id": "computer-generations.html",
+    "title": "Computer-Generations",
+    "url": "pages/computer-generations.html"
+  },
+  {
+    "id": "computer-history.html",
+    "title": "Computer-History",
+    "url": "pages/computer-history.html"
+  },
+  {
+    "id": "computer-types.html",
+    "title": "Computer-Types",
+    "url": "pages/computer-types.html"
+  },
+  {
+    "id": "cooling.html",
+    "title": "Cooling",
+    "url": "pages/cooling.html"
+  },
+  {
+    "id": "cpu-architecture.html",
+    "title": "Cpu-Architecture",
+    "url": "pages/cpu-architecture.html"
+  },
+  {
+    "id": "cpu-benchmarks.html",
+    "title": "Cpu-Benchmarks",
+    "url": "pages/cpu-benchmarks.html"
+  },
+  {
+    "id": "cpu-history.html",
+    "title": "Cpu-History",
+    "url": "pages/cpu-history.html"
+  },
+  {
+    "id": "cpu.html",
+    "title": "Cpu",
+    "url": "pages/cpu.html"
+  },
+  {
+    "id": "dna-computing.html",
+    "title": "Dna-Computing",
+    "url": "pages/dna-computing.html"
+  },
+  {
+    "id": "gpio-guide.html",
+    "title": "Gpio-Guide",
+    "url": "pages/gpio-guide.html"
+  },
+  {
+    "id": "gpu-architecture.html",
+    "title": "Gpu-Architecture",
+    "url": "pages/gpu-architecture.html"
+  },
+  {
+    "id": "gpu-rendering-pipeline.html",
+    "title": "Gpu-Rendering-Pipeline",
+    "url": "pages/gpu-rendering-pipeline.html"
+  },
+  {
+    "id": "gpu.html",
+    "title": "Gpu",
+    "url": "pages/gpu.html"
+  },
+  {
+    "id": "graphics-card.html",
+    "title": "Graphics-Card",
+    "url": "pages/graphics-card.html"
+  },
+  {
+    "id": "hdd.html",
+    "title": "Hdd",
+    "url": "pages/hdd.html"
+  },
+  {
+    "id": "ios-appstore.html",
+    "title": "Ios-Appstore",
+    "url": "pages/ios-appstore.html"
+  },
+  {
+    "id": "ios-security.html",
+    "title": "Ios-Security",
+    "url": "pages/ios-security.html"
+  },
+  {
+    "id": "ios.html",
+    "title": "Ios",
+    "url": "pages/ios.html"
+  },
+  {
+    "id": "iot-types.html",
+    "title": "Iot-Types",
+    "url": "pages/iot-types.html"
+  },
+  {
+    "id": "keyboard.html",
+    "title": "Keyboard",
+    "url": "pages/keyboard.html"
+  },
+  {
+    "id": "linux-distros.html",
+    "title": "Linux-Distros",
+    "url": "pages/linux-distros.html"
+  },
+  {
+    "id": "linux-kernel.html",
+    "title": "Linux-Kernel",
+    "url": "pages/linux-kernel.html"
+  },
+  {
+    "id": "linux.html",
+    "title": "Linux",
+    "url": "pages/linux.html"
+  },
+  {
+    "id": "macos-darwin.html",
+    "title": "Macos-Darwin",
+    "url": "pages/macos-darwin.html"
+  },
+  {
+    "id": "macos-hardware.html",
+    "title": "Macos-Hardware",
+    "url": "pages/macos-hardware.html"
+  },
+  {
+    "id": "macos.html",
+    "title": "Macos",
+    "url": "pages/macos.html"
+  },
+  {
+    "id": "microphone.html",
+    "title": "Microphone",
+    "url": "pages/microphone.html"
+  },
+  {
+    "id": "mobile-ai.html",
+    "title": "Mobile-Ai",
+    "url": "pages/mobile-ai.html"
+  },
+  {
+    "id": "monitor.html",
+    "title": "Monitor",
+    "url": "pages/monitor.html"
+  },
+  {
+    "id": "motherboard-chipset.html",
+    "title": "Motherboard-Chipset",
+    "url": "pages/motherboard-chipset.html"
+  },
+  {
+    "id": "motherboard-components.html",
+    "title": "Motherboard-Components",
+    "url": "pages/motherboard-components.html"
+  },
+  {
+    "id": "motherboard.html",
+    "title": "Motherboard",
+    "url": "pages/motherboard.html"
+  },
+  {
+    "id": "mouse.html",
+    "title": "Mouse",
+    "url": "pages/mouse.html"
+  },
+  {
+    "id": "neuromorphic-chips.html",
+    "title": "Neuromorphic-Chips",
+    "url": "pages/neuromorphic-chips.html"
+  },
+  {
+    "id": "nic.html",
+    "title": "Nic",
+    "url": "pages/nic.html"
+  },
+  {
+    "id": "npu-math.html",
+    "title": "Npu-Math",
+    "url": "pages/npu-math.html"
+  },
+  {
+    "id": "npu.html",
+    "title": "Npu",
+    "url": "pages/npu.html"
+  },
+  {
+    "id": "operating-systems.html",
+    "title": "Operating-Systems",
+    "url": "pages/operating-systems.html"
+  },
+  {
+    "id": "optical-computing.html",
+    "title": "Optical-Computing",
+    "url": "pages/optical-computing.html"
+  },
+  {
+    "id": "optical-drive.html",
+    "title": "Optical-Drive",
+    "url": "pages/optical-drive.html"
+  },
+  {
+    "id": "optical-laser.html",
+    "title": "Optical-Laser",
+    "url": "pages/optical-laser.html"
+  },
+  {
+    "id": "os-kernel-architecture.html",
+    "title": "Os-Kernel-Architecture",
+    "url": "pages/os-kernel-architecture.html"
+  },
+  {
+    "id": "photonics.html",
+    "title": "Photonics",
+    "url": "pages/photonics.html"
+  },
+  {
+    "id": "printer.html",
+    "title": "Printer",
+    "url": "pages/printer.html"
+  },
+  {
+    "id": "projector.html",
+    "title": "Projector",
+    "url": "pages/projector.html"
+  },
+  {
+    "id": "psu.html",
+    "title": "Psu",
+    "url": "pages/psu.html"
+  },
+  {
+    "id": "quantum-computer.html",
+    "title": "Quantum-Computer",
+    "url": "pages/quantum-computer.html"
+  },
+  {
+    "id": "quantum-computing.html",
+    "title": "Quantum-Computing",
+    "url": "pages/quantum-computing.html"
+  },
+  {
+    "id": "quantum-errors.html",
+    "title": "Quantum-Errors",
+    "url": "pages/quantum-errors.html"
+  },
+  {
+    "id": "quantum-logic.html",
+    "title": "Quantum-Logic",
+    "url": "pages/quantum-logic.html"
+  },
+  {
+    "id": "ram-architecture.html",
+    "title": "Ram-Architecture",
+    "url": "pages/ram-architecture.html"
+  },
+  {
+    "id": "ram-types.html",
+    "title": "Ram-Types",
+    "url": "pages/ram-types.html"
+  },
+  {
+    "id": "ram.html",
+    "title": "Ram",
+    "url": "pages/ram.html"
+  },
+  {
+    "id": "raspberry-pi.html",
+    "title": "Raspberry-Pi",
+    "url": "pages/raspberry-pi.html"
+  },
+  {
+    "id": "router.html",
+    "title": "Router",
+    "url": "pages/router.html"
+  },
+  {
+    "id": "sbc-architecture.html",
+    "title": "Sbc-Architecture",
+    "url": "pages/sbc-architecture.html"
+  },
+  {
+    "id": "scanner.html",
+    "title": "Scanner",
+    "url": "pages/scanner.html"
+  },
+  {
+    "id": "search.html",
+    "title": "Search",
+    "url": "pages/search.html"
+  },
+  {
+    "id": "server-guide.html",
+    "title": "Server-Guide",
+    "url": "pages/server-guide.html"
+  },
+  {
+    "id": "server-infrastructure.html",
+    "title": "Server-Infrastructure",
+    "url": "pages/server-infrastructure.html"
+  },
+  {
+    "id": "software-types.html",
+    "title": "Software-Types",
+    "url": "pages/software-types.html"
+  },
+  {
+    "id": "sound-card.html",
+    "title": "Sound-Card",
+    "url": "pages/sound-card.html"
+  },
+  {
+    "id": "speakers.html",
+    "title": "Speakers",
+    "url": "pages/speakers.html"
+  },
+  {
+    "id": "ssd-architecture.html",
+    "title": "Ssd-Architecture",
+    "url": "pages/ssd-architecture.html"
+  },
+  {
+    "id": "ssd.html",
+    "title": "Ssd",
+    "url": "pages/ssd.html"
+  },
+  {
+    "id": "supercomputing.html",
+    "title": "Supercomputing",
+    "url": "pages/supercomputing.html"
+  },
+  {
+    "id": "timeline.html",
+    "title": "Timeline",
+    "url": "pages/timeline.html"
+  },
+  {
+    "id": "touchpad.html",
+    "title": "Touchpad",
+    "url": "pages/touchpad.html"
+  },
+  {
+    "id": "turing-logic.html",
+    "title": "Turing-Logic",
+    "url": "pages/turing-logic.html"
+  },
+  {
+    "id": "ups.html",
+    "title": "Ups",
+    "url": "pages/ups.html"
+  },
+  {
+    "id": "usb-flash.html",
+    "title": "Usb-Flash",
+    "url": "pages/usb-flash.html"
+  },
+  {
+    "id": "visualize.html",
+    "title": "Visualize",
+    "url": "pages/visualize.html"
+  },
+  {
+    "id": "webcam.html",
+    "title": "Webcam",
+    "url": "pages/webcam.html"
+  },
+  {
+    "id": "wifi-adapter.html",
+    "title": "Wifi-Adapter",
+    "url": "pages/wifi-adapter.html"
+  },
+  {
+    "id": "windows-nt-architecture.html",
+    "title": "Windows-Nt-Architecture",
+    "url": "pages/windows-nt-architecture.html"
+  },
+  {
+    "id": "windows-versions.html",
+    "title": "Windows-Versions",
+    "url": "pages/windows-versions.html"
+  },
+  {
+    "id": "windows.html",
+    "title": "Windows",
+    "url": "pages/windows.html"
+  }
+]

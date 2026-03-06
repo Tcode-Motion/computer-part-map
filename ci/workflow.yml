@@ -1,0 +1,17 @@
+name: 100-Year Archive CI
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Data
+        run: echo "Validating..."
+      - name: Build Search Index
+        run: python scripts/build_search_index.py
+      - name: Export PDF/EPUB Snapshots
+        run: echo "Exporting..."
+      - name: Deploy to GitHub Pages
+        run: echo "Deploying..."
