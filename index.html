@@ -21,12 +21,17 @@
 
   <div id="navbar-placeholder"></div>
 
-  <section class="premium-hero">
-    <div class="hero-glow"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
+  <section class="premium-hero" style="position: relative; overflow: hidden;">
+    <!-- 3D Particle Network Background -->
+    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0; pointer-events: auto;"></div>
     
-    <div class="hero-container">
+    <div class="hero-glow" style="z-index: 1;"></div>
+    <div class="hero-orb orb-1" style="z-index: 1;"></div>
+    <div class="hero-orb orb-2" style="z-index: 1;"></div>
+    
+    <div class="hero-container" style="position: relative; z-index: 2; pointer-events: none;">
+      <div style="pointer-events: auto;">
+
       <div class="badge-new">✨ Version 2.0 Live</div>
       <h1>Master Your <span>Computer</span> Knowledge</h1>
       <p class="hero-description">The ultimate interactive guide to hardware, software, and the secrets behind the screen. From nano-transistors to global servers.</p>
@@ -55,35 +60,82 @@
           <span class="stat-label">% Open Source</span>
         </div>
       </div>
+      </div>
     </div>
   </section>
 
-  <main class="main-container">
-    <div class="section-header">
-      <h2>Explore Categories</h2>
-      <p>Select a component category to dive deep into specifications and historical context.</p>
+  <main class="main-container" style="position: relative; z-index: 5;">
+    <!-- ZERO TO HERO EXPLAINER (Beginner Pathway) -->
+    <div class="zero-to-hero-section reveal" style="padding: 40px 0 80px;">
+      <div class="section-header">
+        <h2 style="font-size: 2.5rem; background: linear-gradient(90deg, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">From Zero to Hardware Hero</h2>
+        <p style="font-size: 1.2rem; color: #94a3b8;">No tech knowledge? No problem. Follow the path to absolute tech mastery.</p>
+      </div>
+      <div class="zth-pathway">
+        <div class="zth-step reveal-left">
+          <div class="zth-icon">❓</div>
+          <h4>1. You Are Here</h4>
+          <p>Curious but overwhelmed by tech jargon like "CPU" and "RAM".</p>
+        </div>
+        <div class="zth-connector reveal"></div>
+        <div class="zth-step reveal-scale">
+          <div class="zth-icon">🗺️</div>
+          <h4>2. The Journey</h4>
+          <p>Explore our visual maps, interactive analogies, and fun facts.</p>
+        </div>
+        <div class="zth-connector reveal"></div>
+        <div class="zth-step reveal-left">
+          <div class="zth-icon">⚡</div>
+          <h4>3. Hardware Mastery</h4>
+          <p>Understand how every single part of a computer actually works.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="category-grid">
-      <a href="pages/explore.html" class="cat-card">
-        <div class="cat-icon">⚙️</div>
-        <h3>Core Hardware</h3>
-        <p>CPU, RAM, GPU, SSD, Motherboard...</p>
+    <!-- MASSIVE VISUAL CATEGORY CARDS -->
+    <div class="section-header" style="margin-top: 40px;">
+      <h2 style="font-size: 2.5rem;">Choose Your Domain</h2>
+      <p style="font-size: 1.2rem;">Select a massive component below to begin your visual journey.</p>
+    </div>
+
+    <div class="visual-category-grid">
+      <a href="pages/cpu/index.html" class="v-cat-card reveal-left">
+        <div class="v-cat-img-wrapper">
+          <img src="images/cpu.jpg" alt="CPU Processor" class="v-cat-img" onerror="this.src='https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=600';">
+          <div class="v-cat-overlay"></div>
+        </div>
+        <div class="v-cat-content">
+          <div class="v-cat-icon">⚙️</div>
+          <h3>Core Hardware</h3>
+          <p>Dive into CPUs, GPUs, RAM, and Motherboards. The physical engines of raw computing.</p>
+          <span class="v-cat-btn">Explore Hardware →</span>
+        </div>
       </a>
-      <a href="pages/operating-systems.html" class="cat-card">
-        <div class="cat-icon">💻</div>
-        <h3>Software &amp; OS</h3>
-        <p>Windows, Linux, Android, iOS...</p>
+      
+      <a href="pages/operating-systems.html" class="v-cat-card reveal-scale">
+        <div class="v-cat-img-wrapper">
+          <img src="images/os.jpg" alt="Operating System" class="v-cat-img" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600';">
+          <div class="v-cat-overlay"></div>
+        </div>
+        <div class="v-cat-content">
+          <div class="v-cat-icon">💻</div>
+          <h3>Software & OS</h3>
+          <p>Windows, Linux, code execution, and how invisible software commands physical hardware.</p>
+          <span class="v-cat-btn">Explore Software →</span>
+        </div>
       </a>
-      <a href="pages/architecture.html" class="cat-card">
-        <div class="cat-icon">🏛️</div>
-        <h3>Systems Arch</h3>
-        <p>Von Neumann, Bus, Logic, Pipelines...</p>
-      </a>
-      <a href="pages/history.html" class="cat-card">
-        <div class="cat-icon">📜</div>
-        <h3>History</h3>
-        <p>Generations, Timelines, Evolution...</p>
+
+      <a href="pages/architecture.html" class="v-cat-card reveal">
+        <div class="v-cat-img-wrapper">
+          <img src="images/architecture.jpg" alt="System Architecture" class="v-cat-img" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600';">
+          <div class="v-cat-overlay"></div>
+        </div>
+        <div class="v-cat-content">
+          <div class="v-cat-icon">🏛️</div>
+          <h3>System Architecture</h3>
+          <p>Pipelines, Von Neumann design, and how data physically travels through the machine.</p>
+          <span class="v-cat-btn">Explore Architecture →</span>
+        </div>
       </a>
     </div>
 
@@ -92,8 +144,40 @@
 
   <div id="footer-placeholder"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    // Initialize Particles JS Background for Premium Feel
+    document.addEventListener("DOMContentLoaded", function() {
+        if(document.getElementById('particles-js')){
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": "#60a5fa" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.4, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false } },
+                    "size": { "value": 3, "random": true, "anim": { "enable": true, "speed": 2, "size_min": 0.1, "sync": false } },
+                    "line_linked": { "enable": true, "distance": 150, "color": "#c084fc", "opacity": 0.4, "width": 1 },
+                    "move": { "enable": true, "speed": 1.5, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": { "enable": true, "mode": "grab" },
+                        "onclick": { "enable": true, "mode": "push" },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": { "distance": 200, "line_linked": { "opacity": 0.8, "color": "#ec4899" } },
+                        "push": { "particles_nb": 4 }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
