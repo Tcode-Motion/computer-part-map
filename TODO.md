@@ -2,9 +2,9 @@
 
 ## 1. High Priority (Critical Functionality)
 ### Fix Missing Core Assets (CSS/JS)
-- [ ] In `pages/cpu/index.html`, fix link to `../../../css/styles.css`
-- [ ] In `pages/cpu/index.html`, fix link to `../../../js/script.js`
-- [ ] In `pages/cpu/index.html`, fix link to `../../../js/script.js`
+- [x] In `pages/cpu/index.html`, fix link to `../../../css/styles.css` (fixed: path corrected to `../../css/styles.css`)
+- [x] In `pages/cpu/index.html`, fix link to `../../../js/script.js` (fixed: path corrected to `../../js/script.js`, duplicate include removed)
+- [x] In `pages/cpu/index.html`, fix link to `../../../js/script.js` (fixed: path corrected to `../../js/script.js`, duplicate include removed)
 
 ### Fix Broken Links
 - [ ] Fix 1 broken links in `index.html`
